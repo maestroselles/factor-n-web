@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth overflow-y-scroll">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animación Profesional 2D y 3D - Factor N</title>
+    
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        factor: {
+                            bg: '#212733',
+                            panel: '#2c3543',
+                            border: '#414e60',
+                            green: '#00e0c0',
+                            greenHover: '#33ebd4',
+                            cyan: '#00f0ff',
+                            textLight: '#f0f0f0',
+                            textMuted: '#a0a0a0'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #212733;
+            color: #f0f0f0;
+        }
+        
+        .glass-panel {
+            background: rgba(20, 20, 20, 0.7);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .content-card {
+            background: #2c3543;
+            border: 1px solid #414e60;
+            border-radius: 24px;
+        }
+
+        .syllabus-item {
+            border-left: 2px solid #414e60;
+            transition: all 0.3s ease;
+        }
+        .syllabus-item:hover {
+            border-left-color: #00e0c0;
+            background: rgba(0, 224, 192, 0.03);
+        }
+
+        .input-field {
+            background: rgba(13, 10, 26, 0.5);
+            border: 1px solid #414e60;
+            transition: all 0.3s ease;
+        }
+        .input-field:focus {
+            border-color: #00e0c0;
+            outline: none;
+            box-shadow: 0 0 15px rgba(0, 224, 192, 0.1);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-factor-green selection:text-black min-h-screen flex flex-col">
+
+    <!-- Fixed Header -->
+    <header class="fixed top-0 w-full z-50 glass-panel">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-2">
+                    <span class="text-3xl font-extrabold tracking-tight text-white">Factor <span class="text-factor-green">N</span></span>
+                </a>
+
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="escuela.html" class="text-sm font-bold text-factor-green transition-colors">Escuela</a>
+                    <a href="empresas.html" class="text-sm font-semibold text-factor-textLight hover:text-factor-green transition-colors">Empresas</a>
+                    <a href="conocenos.html" class="text-sm font-semibold text-factor-textLight hover:text-factor-green transition-colors">Conócenos</a>
+                    <a href="recursos.html" class="text-sm font-semibold text-factor-textLight hover:text-factor-green transition-colors">Recursos</a>
+                </nav>
+
+                <div class="hidden md:flex">
+                    <a href="contacto.html" class="px-6 py-2.5 rounded-full text-xs font-extrabold uppercase tracking-widest bg-factor-green text-black border-2 border-factor-green hover:bg-factor-greenHover transition-all flex items-center gap-2 shadow-[0_0_15px_rgba(0,224,192,0.2)]">
+                        Contacto <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="h-20"></div>
+
+    <!-- Hero Visual -->
+    <section class="relative h-[300px] md:h-[400px] overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&q=80&w=1920" alt="Animación Hero" class="w-full h-full object-cover opacity-60">
+        <!-- Overlay Gradient -->
+        <div class="absolute inset-0 bg-gradient-to-t from-[#212733] via-[#212733]/40 to-[#212733]/20"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-[#212733] via-transparent to-transparent"></div>
+        
+        <div class="absolute inset-0 flex flex-col justify-between py-8">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+                <nav class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-factor-textMuted mb-6">
+                    <a href="escuela.html" class="hover:text-factor-green transition-colors">Escuela</a>
+                    <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    <span class="text-factor-green">Programas de í‰lite</span>
+                </nav>
+                <h1 class="text-4xl md:text-7xl font-extrabold text-white mb-6 leading-[0.9] tracking-tighter">
+                    Animación Profesional <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-factor-cyan to-factor-green">2D y 3D</span>
+                </h1>
+            </div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+                <div class="flex flex-wrap gap-3">
+                    <div class="flex items-center gap-2 px-4 py-2 rounded-xl bg-factor-panel/80 backdrop-blur-md border border-white/10 text-sm">
+                        <i class="fa-solid fa-location-dot text-factor-green"></i>
+                        <span class="text-white font-semibold">Presencial (Valencia)</span>
+                    </div>
+                    <div class="flex items-center gap-2 px-4 py-2 rounded-xl bg-factor-panel/80 backdrop-blur-md border border-white/10 text-sm">
+                        <i class="fa-solid fa-clock text-factor-green"></i>
+                        <span class="text-white font-semibold">600 Horas</span>
+                    </div>
+                    <div class="flex items-center gap-2 px-4 py-2 rounded-xl bg-factor-panel/80 backdrop-blur-md border border-white/10 text-sm">
+                        <i class="fa-solid fa-calendar text-factor-green"></i>
+                        <span class="text-white font-semibold">9 Meses</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Detallada -->
+    <section class="py-8 lg:py-12 bg-[#212733] relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16">
+                
+                <!-- Columna Izquierda: Contenido -->
+                <div class="lg:col-span-2 space-y-16">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-6">Visión del Programa</h3>
+                        <p class="text-xl text-factor-textMuted leading-relaxed">
+                            Nos alejamos del modelo "generalista". Este programa troncal se centra puramente en la animación de personajes, biomecánica, acting avanzado y respuesta a retakes de directores reales.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                            <span class="w-8 h-8 rounded-lg bg-factor-green/10 text-factor-green flex items-center justify-center text-sm font-black italic">01</span>
+                            Objetivos del Programa
+                        </h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="p-6 rounded-2xl border border-factor-border/30 bg-factor-panel/50">
+                                <i class="fa-solid fa-person-running text-factor-cyan mb-4 text-xl"></i>
+                                <h4 class="text-white font-bold mb-2 text-lg">Biomecánica</h4>
+                                <p class="text-factor-textMuted text-sm">Domina el peso, el equilibrio y el movimiento orgánico para dar vida a cualquier criatura.</p>
+                            </div>
+                            <div class="p-6 rounded-2xl border border-factor-border/30 bg-factor-panel/50">
+                                <i class="fa-solid fa-masks-theater text-factor-green mb-4 text-xl"></i>
+                                <h4 class="text-white font-bold mb-2 text-lg">Acting Avanzado</h4>
+                                <p class="text-factor-textMuted text-sm">Aprende a transmitir emociones complejas y sutilezas psicológicas a través del movimiento.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                            <span class="w-8 h-8 rounded-lg bg-factor-green/10 text-factor-green flex items-center justify-center text-sm font-black italic">02</span>
+                            Temario Académico
+                        </h2>
+                        <div class="space-y-4">
+                            <div class="syllabus-item p-6 bg-factor-panel/30 rounded-r-xl">
+                                <h4 class="text-white font-bold mb-1">Módulo 1: Los 12 Principios de la Animación</h4>
+                                <p class="text-factor-textMuted text-xs">Domina la base clásica aplicada a flujos de trabajo modernos en 3D.</p>
+                            </div>
+                            <div class="syllabus-item p-6 bg-factor-panel/30 rounded-r-xl">
+                                <h4 class="text-white font-bold mb-1">Módulo 2: Body Mechanics y Locomoción</h4>
+                                <p class="text-white/80 text-xs">Ciclos de caminado, carreras, saltos y transiciones de peso complejas.</p>
+                            </div>
+                            <div class="syllabus-item p-6 bg-factor-panel/30 rounded-r-xl">
+                                <h4 class="text-white font-bold mb-1">Módulo 3: Pantomima y Acting Facial</h4>
+                                <p class="text-white/80 text-xs">Sincroní­a labial (Lip-sync) y micro-expresiones para personajes de cine.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha: Sidebar -->
+                <div class="space-y-8">
+                    <!-- Caja Reserva -->
+                    <div class="content-card p-8 border-factor-green/30 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-factor-green/5 rounded-bl-full pointer-events-none"></div>
+                        <h3 class="text-xl font-bold text-white mb-6">Reserva tu plaza</h3>
+                        <p class="text-sm text-factor-textMuted mb-8 leading-relaxed">Nuestras plazas son extremadamente limitadas para garantizar el seguimiento individualizado.</p>
+                        <a href="#contacto" class="block w-full py-4 rounded-xl bg-factor-green text-black text-center font-black uppercase tracking-widest hover:bg-factor-greenHover transition-all shadow-[0_0_20px_rgba(0,224,192,0.3)] mb-4">
+                            Solicitar Admisión
+                        </a>
+                        <p class="text-[10px] text-center text-factor-textMuted uppercase tracking-widest font-bold">Próxima convocatoria: Octubre 2026</p>
+                    </div>
+
+                    <!-- Caja Profesor -->
+                    <div class="content-card p-8 border-factor-border/50">
+                        <h2 class="text-xl font-bold text-white mb-8 text-center uppercase tracking-widest text-[10px] opacity-60">Dirección Académica</h2>
+                        <div class="text-center">
+                            <div class="w-32 h-32 rounded-full border-2 border-factor-green mx-auto mb-6 p-1 bg-black">
+                                <img src="https://picsum.photos/seed/jaime/200/200" alt="Jaime Maestro" class="w-full h-full object-cover rounded-full grayscale">
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-1">Jaime Maestro</h3>
+                            <p class="text-factor-green text-[10px] font-black uppercase tracking-widest mb-6">Director & Academy Award Nominee</p>
+                            <p class="text-xs text-factor-textMuted leading-relaxed italic">
+                                "No animamos personajes, animamos intenciones. El movimiento es solo la consecuencia de un pensamiento."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section id="contacto" class="py-20 bg-[#1a1e28] border-t border-factor-border/30">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-white mb-4">Â¿Quieres ser animador profesional?</h2>
+                <p class="text-factor-textMuted">Déjanos tus datos y Jaime Maestro o nuestro equipo académico se pondrá en contacto contigo.</p>
+            </div>
+            
+            <form class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-widest text-factor-textMuted mb-2">Nombre Completo</label>
+                        <input type="text" class="input-field w-full px-5 py-4 rounded-xl text-white" placeholder="Tu nombre...">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-widest text-factor-textMuted mb-2">Email</label>
+                        <input type="email" class="input-field w-full px-5 py-4 rounded-xl text-white" placeholder="tu@email.com">
+                    </div>
+                </div>
+                <button class="w-full py-5 rounded-xl bg-factor-cyan text-black font-black uppercase tracking-widest hover:scale-[1.02] transition-all shadow-[0_0_20px_rgba(0,240,255,0.2)]">
+                    Enviar Solicitud
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-factor-border text-sm border-t border-factor-border/30 bg-factor-bg">
+        <p>&copy; 2026 Factor N. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
+
+

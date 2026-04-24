@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth overflow-y-scroll">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conócenos - Factor N y Chicharra Films</title>
+    
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        factor: {
+                            bg: '#212733',
+                            panel: '#2c3543',
+                            border: '#414e60',
+                            green: '#00e0c0',
+                            greenHover: '#33ebd4',
+                            cyan: '#00f0ff',
+                            textLight: '#f0f0f0',
+                            textMuted: '#a0a0a0'
+                        }
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #212733;
+            color: #f0f0f0;
+        }
+        
+        .glass-panel {
+            background: rgba(20, 20, 20, 0.7);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .highlight-box {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        /* Profile Card Hover Effect */
+        .profile-card {
+            background: #2c3543;
+            border: 1px solid #414e60;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .profile-card:hover {
+            border-color: rgba(0, 224, 192, 0.4);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px -10px rgba(0,0,0,0.8);
+        }
+        .profile-image-container {
+            transition: all 0.4s ease;
+        }
+        .profile-card:hover .profile-image-container {
+            border-color: #00e0c0;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-factor-green selection:text-black min-h-screen flex flex-col">
+
+    <!-- Fixed Header -->
+    <header class="fixed top-0 w-full z-50 glass-panel">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+                    <span class="text-3xl font-extrabold tracking-tight text-white">Factor <span class="text-factor-green">N</span></span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="escuela.html" class="text-sm font-semibold text-factor-textLight hover:text-factor-green transition-colors">Escuela</a>
+                    <a href="empresas.html" class="text-sm font-semibold text-factor-textLight hover:text-factor-green transition-colors">Empresas</a>
+                    <a href="conocenos.html" class="text-sm font-bold text-factor-green transition-colors">Conócenos</a>
+                    <a href="recursos.html" class="text-sm font-semibold text-factor-textLight hover:text-factor-green transition-colors">Recursos</a>
+                </nav>
+
+                <!-- CTA -->
+                <div class="hidden md:flex">
+                    <a href="contacto.html" class="px-6 py-2.5 rounded-full text-xs font-extrabold uppercase tracking-widest bg-factor-green text-black border-2 border-factor-green hover:bg-factor-greenHover hover:border-factor-greenHover transition-all flex items-center gap-2 shadow-[0_0_15px_rgba(0,224,192,0.2)] hover:shadow-[0_0_20px_rgba(0,224,192,0.4)]">
+                        Contacto <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-factor-textLight hover:text-factor-green transition-colors">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Spacer for Fixed Header -->
+    <div class="h-20"></div>
+
+    <!-- Intro: Liderazgo Representativo -->
+    <section class="relative pt-10 pb-12 lg:pt-16 lg:pb-16 overflow-hidden bg-factor-panel">
+        <!-- Background Accents -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-radial from-factor-cyan/10 to-transparent opacity-50 blur-3xl pointer-events-none rounded-full"></div>
+        
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-8 text-white mx-auto leading-tight">
+                El <span class="text-transparent bg-clip-text bg-gradient-to-r from-factor-cyan to-factor-green">Liderazgo Representativo</span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-factor-textMuted font-light leading-relaxed mb-6">
+                El mayor desgaste cognitivo de una persona neurodivergente no es la tarea técnica, es el <strong>"Masking"</strong>: el esfuerzo agotador y constante por imitar comportamientos normotípicos para encajar socialmente.
+            </p>
+            <p class="text-lg md:text-xl text-factor-textMuted font-light leading-relaxed">
+                Factor N y Chicharra Films erradican el masking desde la puerta de entrada. Nuestro equipo directivo, fundacional y docente está formado por gigantes de la élite de la industria que son, a su vez, neurodivergentes. Entendemos tu talento y tu genialidad, porque <span class="text-white font-semibold">compartimos tu neurología</span>.
+            </p>
+        </div>
+    </section>
+
+    <!-- Grid Equipo Directivo -->
+    <section class="py-12 lg:py-16 bg-[#1a1e28] border-y border-factor-border/30 relative z-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-factor-green/30 bg-factor-green/10 text-factor-green text-xs font-bold uppercase tracking-wider mb-4 shadow-[0_0_15px_rgba(0,224,192,0.1)]">
+                    <i class="fa-solid fa-users"></i> Autoridad Técnica y Clínica
+                </div>
+                <h2 class="text-3xl font-bold text-white">Conoce a los Arquitectos</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Jaime Maestro -->
+                <div class="profile-card rounded-2xl p-8 relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-factor-green/5 rounded-bl-full pointer-events-none group-hover:bg-factor-green/10 transition-colors duration-500"></div>
+                    <div class="flex items-center justify-center mb-6">
+                        <div class="profile-image-container w-32 h-32 rounded-full border-2 border-factor-border overflow-hidden bg-black flex items-center justify-center p-1 shadow-xl">
+                            <!-- Placeholder Profile -->
+                            <img src="https://picsum.photos/seed/jaime/200/200" alt="Jaime Maestro" class="w-full h-full object-cover rounded-full grayscale group-hover:grayscale-0 transition-all duration-500">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold text-white mb-1">Jaime Maestro</h3>
+                        <div class="text-factor-green font-bold text-xs uppercase tracking-widest mb-4">Dirección Ejecutiva y Académica</div>
+                        <p class="text-factor-textMuted text-sm leading-relaxed mb-4">
+                            Referente del arte digital internacional con 30 años de experiencia. Codirector de largometrajes globales como <em>Animal Crackers (Netflix)</em>. 
+                        </p>
+                        <div class="inline-flex flex-wrap justify-center gap-2">
+                            <span class="bg-factor-cyan/10 text-factor-cyan border border-factor-cyan/30 text-[10px] uppercase font-bold px-2 py-1 rounded"><i class="fa-solid fa-award mr-1"></i> 2 Premios Goya</span>
+                            <span class="bg-white/5 text-factor-textLight border border-white/10 text-[10px] uppercase font-bold px-2 py-1 rounded">TEA 1 & AACC</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laura Herrera -->
+                <div class="profile-card rounded-2xl p-8 relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-factor-cyan/5 rounded-bl-full pointer-events-none group-hover:bg-factor-cyan/10 transition-colors duration-500"></div>
+                    <div class="flex items-center justify-center mb-6">
+                        <div class="profile-image-container w-32 h-32 rounded-full border-2 border-factor-border overflow-hidden bg-black flex items-center justify-center p-1 shadow-xl">
+                            <img src="https://picsum.photos/seed/laura/200/200" alt="Laura Herrera Garrido" class="w-full h-full object-cover rounded-full grayscale group-hover:grayscale-0 transition-all duration-500">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold text-white mb-1">Laura Herrera Garrido</h3>
+                        <div class="text-factor-cyan font-bold text-xs uppercase tracking-widest mb-4">Dir. Psicología Clínica y Metodología</div>
+                        <p class="text-factor-textMuted text-sm leading-relaxed mb-4">
+                            Psicóloga General Sanitaria especializada en neurodesarrollo infantil y adulto. Audita la metodología y dirige la Escuela de Familias.
+                        </p>
+                        <div class="inline-flex flex-wrap justify-center gap-2">
+                            <span class="bg-factor-green/10 text-factor-green border border-factor-green/30 text-[10px] uppercase font-bold px-2 py-1 rounded"><i class="fa-solid fa-stethoscope mr-1"></i> CV-10140</span>
+                            <span class="bg-white/5 text-factor-textLight border border-white/10 text-[10px] uppercase font-bold px-2 py-1 rounded">ADOS-2 / ADI-R</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nadia Ruiz -->
+                <div class="profile-card rounded-2xl p-8 relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-[#ff00ff]/5 rounded-bl-full pointer-events-none group-hover:bg-[#ff00ff]/10 transition-colors duration-500"></div>
+                    <div class="flex items-center justify-center mb-6">
+                        <div class="profile-image-container w-32 h-32 rounded-full border-2 border-factor-border overflow-hidden bg-black flex items-center justify-center p-1 shadow-xl">
+                            <img src="https://picsum.photos/seed/nadia/200/200" alt="Nadia Ruiz" class="w-full h-full object-cover rounded-full grayscale group-hover:grayscale-0 transition-all duration-500">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold text-white mb-1">Nadia Ruiz</h3>
+                        <div class="text-[#ff00ff] font-bold text-xs uppercase tracking-widest mb-4">Dir. Inclusión y Relaciones B2B</div>
+                        <p class="text-factor-textMuted text-sm leading-relaxed mb-4">
+                            Socióloga, Máster en Perfilación y doctoranda en Autismo y Empleo (UPV). Forma a los RRHH externos para asegurar aterrizajes laborales sanos.
+                        </p>
+                        <div class="inline-flex flex-wrap justify-center gap-2">
+                            <span class="bg-white/5 text-factor-textLight border border-white/10 text-[10px] uppercase font-bold px-2 py-1 rounded"><i class="fa-solid fa-venus mr-1"></i> Brecha de Género</span>
+                            <span class="bg-white/5 text-factor-textLight border border-white/10 text-[10px] uppercase font-bold px-2 py-1 rounded">TEA 1 & AACC</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nicolás Maestro -->
+                <div class="profile-card rounded-2xl p-8 relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-factor-cyan/5 rounded-bl-full pointer-events-none group-hover:bg-factor-cyan/10 transition-colors duration-500"></div>
+                    <div class="flex items-center justify-center mb-6">
+                        <div class="profile-image-container w-32 h-32 rounded-full border-2 border-factor-border overflow-hidden bg-black flex items-center justify-center p-1 shadow-xl">
+                            <img src="https://picsum.photos/seed/nicolas/200/200" alt="Nicolás Maestro" class="w-full h-full object-cover rounded-full grayscale group-hover:grayscale-0 transition-all duration-500">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold text-white mb-1">Nicolás Maestro</h3>
+                        <div class="text-factor-cyan font-bold text-xs uppercase tracking-widest mb-4">Managing Partner & Alianzas B2B</div>
+                        <p class="text-factor-textMuted text-sm leading-relaxed mb-4">
+                            Estratega empresarial y cofundador de IN Capital Studios y The Core School. Especialista en la venta B2B corporativa y captación de fondos ESG.
+                        </p>
+                        <div class="inline-flex flex-wrap justify-center gap-2">
+                            <span class="bg-factor-cyan/10 text-factor-cyan border border-factor-cyan/30 text-[10px] uppercase font-bold px-2 py-1 rounded"><i class="fa-solid fa-handshake mr-1"></i> Corporativo LGD</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Héctor Ponce -->
+                <div class="profile-card rounded-2xl p-8 relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-factor-green/5 rounded-bl-full pointer-events-none group-hover:bg-factor-green/10 transition-colors duration-500"></div>
+                    <div class="flex items-center justify-center mb-6">
+                        <div class="profile-image-container w-32 h-32 rounded-full border-2 border-factor-border overflow-hidden bg-black flex items-center justify-center p-1 shadow-xl">
+                            <img src="https://picsum.photos/seed/hector/200/200" alt="Héctor Ponce" class="w-full h-full object-cover rounded-full grayscale group-hover:grayscale-0 transition-all duration-500">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold text-white mb-1">Héctor Ponce</h3>
+                        <div class="text-factor-green font-bold text-xs uppercase tracking-widest mb-4">Dirección de Arte y Composición</div>
+                        <p class="text-factor-textMuted text-sm leading-relaxed mb-4">
+                            Supervisor de Efectos Visuales (VFX) con más de 30 años en superproducciones globales. Inyecta el ritmo real y la exigencia de la industria en las aulas.
+                        </p>
+                        <div class="inline-flex flex-wrap justify-center gap-2">
+                            <span class="bg-white/5 text-factor-textLight border border-white/10 text-[10px] uppercase font-bold px-2 py-1 rounded"><i class="fa-solid fa-film mr-1"></i> Cine & VFX</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rafel Bernabeu -->
+                <div class="profile-card rounded-2xl p-8 relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-factor-cyan/5 rounded-bl-full pointer-events-none group-hover:bg-factor-cyan/10 transition-colors duration-500"></div>
+                    <div class="flex items-center justify-center mb-6">
+                        <div class="profile-image-container w-32 h-32 rounded-full border-2 border-factor-border overflow-hidden bg-black flex items-center justify-center p-1 shadow-xl">
+                            <img src="https://picsum.photos/seed/rafel/200/200" alt="Rafel Bernabeu" class="w-full h-full object-cover rounded-full grayscale group-hover:grayscale-0 transition-all duration-500">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold text-white mb-1">Rafel Bernabeu</h3>
+                        <div class="text-factor-cyan font-bold text-xs uppercase tracking-widest mb-4">CTO & Dirección de Tecnología</div>
+                        <p class="text-factor-textMuted text-sm leading-relaxed mb-4">
+                            Arquitecto del Pipeline de éxitos como Tadeo Jones. Diseña la infraestructura del laboratorio y dirige la integración de IA y Scripting.
+                        </p>
+                        <div class="inline-flex flex-wrap justify-center gap-2">
+                            <span class="bg-factor-green/10 text-factor-green border border-factor-green/30 text-[10px] uppercase font-bold px-2 py-1 rounded"><i class="fa-solid fa-code mr-1"></i> Python & Pipeline</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Ergonomía Sensorial -->
+    <section class="py-12 lg:py-16 relative overflow-hidden bg-factor-panel">
+        <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-gradient-radial from-factor-green/5 to-transparent opacity-40 blur-3xl pointer-events-none rounded-full"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                <!-- Columna Texto -->
+                <div>
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-factor-green/30 bg-factor-green/10 text-factor-green text-xs font-bold uppercase tracking-wider mb-6">
+                        <i class="fa-solid fa-shield-cat"></i> Entorno Biológicamente Seguro
+                    </div>
+                    <h2 class="text-3xl lg:text-4xl font-extrabold text-white mb-6 leading-tight">
+                        Aulas con <span class="text-factor-green">Ergonomía Sensorial</span> estricta auditada.
+                    </h2>
+                    <p class="text-factor-textMuted mb-6 leading-relaxed">
+                        Las aulas tradicionales, con luces fluorescentes parpadeantes, ruido superpuesto y colores estridentes, son entornos hostiles que provocan sobrecarga estimular (meltdowns).
+                    </p>
+                    <p class="text-factor-textMuted leading-relaxed">
+                        El Laboratorio Físico de Factor N ha sido auditado clínicamente para garantizar que el entorno deje de ser un elemento de estrés. Incorporamos <strong>atenuación lumínica regulable, pintura mate absorbente, acústica selectiva y zonas de descompresión aisladas (Quiet Rooms)</strong>. Así logramos que el 100% de la energía cognitiva del alumno se destine exclusivamente a crear y aprender.
+                    </p>
+                </div>
+                
+                <!-- Columna Visual -->
+                <div class="relative">
+                    <div class="aspect-video rounded-2xl overflow-hidden border border-factor-border/50 relative shadow-[0_0_50px_rgba(0,0,0,0.8)]">
+                        <img src="https://picsum.photos/seed/lab/800/600" alt="Laboratorio Factor N" class="w-full h-full object-cover opacity-80 filter contrast-125">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-factor-bg/80 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-factor-green flex items-center justify-center shadow-[0_0_15px_rgba(0,224,192,0.5)]">
+                                <i class="fa-solid fa-volume-xmark text-black"></i>
+                            </div>
+                            <span class="text-white font-bold tracking-widest uppercase text-xs">Zona de Descompresión Activa</span>
+                        </div>
+                    </div>
+                    <!-- Decoración flotante -->
+                    <div class="absolute -right-6 -top-6 w-24 h-24 bg-factor-cyan/10 rounded-full border border-factor-cyan/20 backdrop-blur-sm flex items-center justify-center animate-[spin_10s_linear_infinite]">
+                        <i class="fa-solid fa-sun text-factor-cyan"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer placeholder to balance the page -->
+    <footer class="py-12 text-center text-factor-border text-sm border-t border-factor-border/30">
+        <p>&copy; 2026 Factor N. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

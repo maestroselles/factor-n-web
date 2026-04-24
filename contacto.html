@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth overflow-y-scroll">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Factor N</title>
+    
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        factor: {
+                            bg: '#212733',
+                            panel: '#2c3543',
+                            border: '#414e60',
+                            green: '#00e0c0',
+                            greenHover: '#33ebd4',
+                            cyan: '#00f0ff',
+                            textLight: '#f0f0f0',
+                            textMuted: '#a0a0a0'
+                        }
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #212733;
+            color: #f0f0f0;
+        }
+        
+        .glass-panel {
+            background: rgba(20, 20, 20, 0.7);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        /* Form Inputs Custom Styling */
+        .input-field {
+            background-color: #2c3543;
+            border: 1px solid #414e60;
+            color: #f0f0f0;
+            transition: all 0.3s ease;
+        }
+        .input-field:focus {
+            outline: none;
+            border-color: #00e0c0;
+            box-shadow: 0 0 10px rgba(0,224,192,0.2);
+        }
+
+        /* Custom Radio Button Style */
+        .radio-custom:checked + div {
+            border-color: #00e0c0;
+            background-color: rgba(0, 224, 192, 0.05);
+        }
+        .radio-custom:checked + div .radio-indicator {
+            background-color: #00e0c0;
+            border-color: #00e0c0;
+        }
+
+        /* Custom Checkbox Style */
+        .checkbox-custom:checked + div {
+            background-color: #00e0c0;
+            border-color: #00e0c0;
+        }
+        .checkbox-custom:checked + div i {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-factor-green selection:text-black min-h-screen flex flex-col">
+
+    <!-- Fixed Header -->
+    <header class="fixed top-0 w-full z-50 glass-panel">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+                    <span class="text-3xl font-extrabold tracking-tight text-white">Factor <span class="text-factor-green">N</span></span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="escuela.html" class="text-sm font-semibold text-factor-textLight hover:text-factor-green transition-colors">Escuela</a>
+                    <a href="empresas.html" class="text-sm font-semibold text-factor-textLight hover:text-factor-green transition-colors">Empresas</a>
+                    <a href="conocenos.html" class="text-sm font-semibold text-factor-textLight hover:text-factor-green transition-colors">Conócenos</a>
+                    <a href="recursos.html" class="text-sm font-semibold text-factor-textLight hover:text-factor-green transition-colors">Recursos</a>
+                </nav>
+
+                <!-- CTA -->
+                <div class="hidden md:flex">
+                    <a href="contacto.html" class="px-6 py-2.5 rounded-full text-xs font-extrabold uppercase tracking-widest bg-factor-green text-black border-2 border-factor-green hover:bg-factor-greenHover hover:border-factor-greenHover transition-all flex items-center gap-2 shadow-[0_0_15px_rgba(0,224,192,0.2)] hover:shadow-[0_0_20px_rgba(0,224,192,0.4)]">
+                        Contacto <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-factor-textLight hover:text-factor-green transition-colors">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Spacer for Fixed Header -->
+    <div class="h-20"></div>
+
+    <!-- Contact Section -->
+    <section class="relative pt-8 pb-12 lg:pt-10 lg:pb-16 overflow-hidden flex-grow">
+        <!-- Background Accents -->
+        <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-radial from-factor-green/5 to-transparent opacity-50 blur-3xl pointer-events-none rounded-full"></div>
+        <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gradient-radial from-factor-cyan/5 to-transparent opacity-40 blur-3xl pointer-events-none rounded-full"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
+                
+                <!-- Columna Izquierda: Información de Contacto -->
+                <div class="lg:col-span-5 flex flex-col">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-factor-green/30 bg-factor-green/10 text-factor-green text-xs font-bold uppercase tracking-wider mb-6 w-max shadow-[0_0_15px_rgba(0,224,192,0.1)]">
+                        <i class="fa-solid fa-bolt"></i> Inicia tu proceso
+                    </div>
+                    
+                    <h1 class="text-4xl lg:text-5xl font-extrabold tracking-tight mb-6 text-white leading-tight">
+                        Da el primer paso hacia la <span class="text-factor-green">Excelencia</span>.
+                    </h1>
+                    
+                    <!-- Embudo de Admisión -->
+                    <div class="bg-[#2c3543] border border-factor-border/50 rounded-2xl p-6 mb-8 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-factor-green/5 rounded-bl-full pointer-events-none"></div>
+                        <h3 class="text-lg font-bold text-white mb-4"><i class="fa-solid fa-filter text-factor-green mr-2"></i> Nuestro Embudo de Admisión</h3>
+                        <ul class="space-y-4 relative z-10">
+                            <li class="flex gap-3">
+                                <div class="w-6 h-6 rounded-full bg-factor-border text-xs flex items-center justify-center font-bold text-white flex-shrink-0 mt-0.5">1</div>
+                                <div>
+                                    <strong class="text-white text-sm block">Cuéntanos tu caso</strong>
+                                    <p class="text-xs text-factor-textMuted">Rellena el formulario con tus inquietudes. Te escuchamos sin juzgar.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-3">
+                                <div class="w-6 h-6 rounded-full bg-factor-border text-xs flex items-center justify-center font-bold text-white flex-shrink-0 mt-0.5">2</div>
+                                <div>
+                                    <strong class="text-white text-sm block">Evaluación Clínica</strong>
+                                    <p class="text-xs text-factor-textMuted">Nuestro equipo psicológico audita tu perfil (ADOS-2/ADI-R si es necesario).</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-3">
+                                <div class="w-6 h-6 rounded-full bg-factor-green text-xs flex items-center justify-center font-bold text-black flex-shrink-0 mt-0.5">3</div>
+                                <div>
+                                    <strong class="text-factor-green text-sm block">Admisión Oficial</strong>
+                                    <p class="text-xs text-factor-textMuted">Te asignamos la formación y ruta idónea para tu neurotipo.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Datos Directos -->
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4 text-factor-textMuted hover:text-white transition-colors group">
+                            <div class="w-10 h-10 rounded-full border border-factor-border flex items-center justify-center group-hover:border-factor-green group-hover:text-factor-green transition-colors">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs uppercase tracking-wider font-bold mb-0.5">Teléfono Directo</p>
+                                <p class="text-white font-semibold">+34 616 96 90 35</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 text-factor-textMuted hover:text-white transition-colors group">
+                            <div class="w-10 h-10 rounded-full border border-factor-border flex items-center justify-center group-hover:border-factor-cyan group-hover:text-factor-cyan transition-colors">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs uppercase tracking-wider font-bold mb-0.5">Email de Admisiones</p>
+                                <p class="text-white font-semibold">admisiones@factorn.es</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 text-factor-textMuted hover:text-white transition-colors group">
+                            <div class="w-10 h-10 rounded-full border border-factor-border flex items-center justify-center group-hover:border-factor-green group-hover:text-factor-green transition-colors">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs uppercase tracking-wider font-bold mb-0.5">Nuestra Sede</p>
+                                <p class="text-white font-semibold">Valencia, España</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha: Formulario Inteligente UI -->
+                <div class="lg:col-span-7">
+                    <div class="bg-[#1a1e28] border border-factor-border/40 rounded-3xl p-8 lg:p-10 shadow-2xl relative">
+                        <!-- Neon glow accent -->
+                        <div class="absolute -top-px left-1/2 -translate-x-1/2 w-1/2 h-[1px] bg-gradient-to-r from-transparent via-factor-green to-transparent opacity-50"></div>
+                        
+                        <h2 class="text-2xl font-bold text-white mb-2">Formulario de Contacto Inteligente</h2>
+                        <p class="text-sm text-factor-textMuted mb-8">Selecciona tu perfil para que podamos derivar tu solicitud al departamento adecuado.</p>
+                        
+                        <form action="#" method="POST">
+                            <!-- Selector Inicial (Radio Buttons) -->
+                            <div class="mb-8">
+                                <label class="block text-xs font-bold uppercase tracking-wider text-factor-textMuted mb-4">¿En qué podemos ayudarte?</label>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    
+                                    <label class="relative cursor-pointer group">
+                                        <input type="radio" name="perfil" value="alumno" class="peer sr-only radio-custom" checked>
+                                        <div class="border border-factor-border bg-[#2c3543] rounded-xl p-4 flex items-center gap-3 transition-all duration-300 hover:border-factor-border/80">
+                                            <div class="w-5 h-5 rounded-full border-2 border-factor-border flex items-center justify-center radio-indicator transition-colors">
+                                                <div class="w-2 h-2 rounded-full bg-black"></div>
+                                            </div>
+                                            <div>
+                                                <span class="block text-sm font-bold text-white">Soy Alumno / Familia</span>
+                                                <span class="block text-xs text-factor-textMuted mt-0.5">Información sobre cursos y admisión</span>
+                                            </div>
+                                        </div>
+                                    </label>
+
+                                    <label class="relative cursor-pointer group">
+                                        <input type="radio" name="perfil" value="empresa" class="peer sr-only radio-custom">
+                                        <div class="border border-factor-border bg-[#2c3543] rounded-xl p-4 flex items-center gap-3 transition-all duration-300 hover:border-factor-border/80">
+                                            <div class="w-5 h-5 rounded-full border-2 border-factor-border flex items-center justify-center radio-indicator transition-colors">
+                                                <div class="w-2 h-2 rounded-full bg-black"></div>
+                                            </div>
+                                            <div>
+                                                <span class="block text-sm font-bold text-white">Represento a una Empresa</span>
+                                                <span class="block text-xs text-factor-textMuted mt-0.5">Consultoría LGD y B2B</span>
+                                            </div>
+                                        </div>
+                                    </label>
+
+                                </div>
+                            </div>
+
+                            <!-- Campos de Input -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label class="block text-xs font-bold text-factor-textMuted uppercase tracking-wider mb-2" for="nombre">Nombre Completo *</label>
+                                    <input type="text" id="nombre" class="input-field w-full rounded-lg px-4 py-3 text-sm focus:ring-0" placeholder="Ej. Carlos García">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-factor-textMuted uppercase tracking-wider mb-2" for="email">Email *</label>
+                                    <input type="email" id="email" class="input-field w-full rounded-lg px-4 py-3 text-sm focus:ring-0" placeholder="ejemplo@correo.com">
+                                </div>
+                            </div>
+
+                            <div class="mb-6">
+                                <label class="block text-xs font-bold text-factor-textMuted uppercase tracking-wider mb-2" for="telefono">Teléfono (Opcional)</label>
+                                <input type="tel" id="telefono" class="input-field w-full rounded-lg px-4 py-3 text-sm focus:ring-0" placeholder="+34 600 000 000">
+                            </div>
+
+                            <div class="mb-8">
+                                <label class="block text-xs font-bold text-factor-textMuted uppercase tracking-wider mb-2" for="mensaje">Cuéntanos tu caso *</label>
+                                <textarea id="mensaje" rows="4" class="input-field w-full rounded-lg px-4 py-3 text-sm focus:ring-0 resize-none" placeholder="Describe brevemente tu situación o intereses..."></textarea>
+                            </div>
+
+                            <!-- Checkbox Legal -->
+                            <div class="mb-8">
+                                <label class="flex items-start gap-3 cursor-pointer group">
+                                    <div class="relative flex items-center mt-0.5">
+                                        <input type="checkbox" class="sr-only checkbox-custom" required>
+                                        <div class="w-5 h-5 rounded border border-factor-border bg-[#2c3543] flex items-center justify-center transition-colors group-hover:border-factor-border/80">
+                                            <i class="fa-solid fa-check text-black text-xs opacity-0 transition-opacity"></i>
+                                        </div>
+                                    </div>
+                                    <span class="text-xs text-factor-textMuted leading-relaxed">
+                                        He leído y acepto la <a href="#" class="text-factor-green hover:underline">Política de Privacidad</a>. Acepto expresamente el tratamiento de mis datos personales, <strong>incluyendo datos de salud o evaluaciones clínicas</strong> que pueda aportar voluntariamente durante este proceso de admisión.
+                                    </span>
+                                </label>
+                            </div>
+
+                            <!-- Botón Enviar -->
+                            <button type="button" class="w-full py-4 rounded-xl text-sm font-extrabold uppercase tracking-widest bg-factor-green text-black hover:bg-factor-greenHover transition-all flex justify-center items-center gap-2 shadow-[0_0_20px_rgba(0,224,192,0.2)] hover:shadow-[0_0_30px_rgba(0,224,192,0.4)]">
+                                Iniciar Proceso de Admisión <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer placeholder to balance the page -->
+    <footer class="py-8 text-center text-factor-border text-sm border-t border-factor-border/30">
+        <p>&copy; 2026 Factor N. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

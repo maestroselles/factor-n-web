@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factor N | Escuela de Arte y Tecnología</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#0a0a0a',
+                            panel: '#151515',
+                            light: '#f0f0f0',
+                            primary: '#b2ff05', // Neon/Lime Green
+                            secondary: '#00f0ff', // Cyan
+                        }
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #f0f0f0;
+        }
+        /* Custom glow effects */
+        .glow-primary {
+            box-shadow: 0 0 40px rgba(178, 255, 5, 0.15);
+        }
+        .glow-primary-strong:hover {
+            box-shadow: 0 0 30px rgba(178, 255, 5, 0.4);
+        }
+        /* Accent borders */
+        .border-t-brand {
+            border-top: 4px solid #b2ff05;
+        }
+        .border-l-brand {
+            border-left: 4px solid #b2ff05;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-primary selection:text-black">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed w-full z-50 bg-brand-dark/90 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-2">
+                    <span class="text-3xl font-extrabold text-white tracking-tighter">Factor <span class="text-brand-primary">N</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#vision" class="text-gray-300 hover:text-brand-primary transition-colors text-sm uppercase tracking-wider font-semibold">Visión</a>
+                    <a href="#divisiones" class="text-gray-300 hover:text-brand-primary transition-colors text-sm uppercase tracking-wider font-semibold">Escuela / Empresas</a>
+                    <a href="#programas" class="text-gray-300 hover:text-brand-primary transition-colors text-sm uppercase tracking-wider font-semibold">Programas</a>
+                    <a href="#equipo" class="text-gray-300 hover:text-brand-primary transition-colors text-sm uppercase tracking-wider font-semibold">Equipo</a>
+                    <a href="#contacto" class="bg-brand-primary text-black px-6 py-2 rounded-full font-bold text-sm uppercase tracking-wide hover:bg-white transition-colors">Contactar</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-300 hover:text-white focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <!-- Background decorative elements -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-primary/10 rounded-full blur-[120px] -z-10"></div>
+        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-secondary/5 rounded-full blur-[100px] -z-10"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="inline-block mb-4 px-4 py-1 rounded-full border border-gray-700 bg-gray-800/50 backdrop-blur-sm">
+                <span class="text-brand-primary text-xs font-bold uppercase tracking-widest"><i class="fa-solid fa-bolt mr-2"></i>Escuela de Alto Rendimiento</span>
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight tracking-tight">
+                Transformando la neurodivergencia <br class="hidden md:block" /> en <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-secondary">ventaja competitiva</span>.
+            </h1>
+            
+            <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-400 font-light leading-relaxed mb-10">
+                La primera escuela de arte tecnológico y digital de España diseñada para canalizar el talento excepcional de perfiles TEA 1, TDAH y AACC hacia las industrias creativas.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#divisiones" class="bg-brand-primary text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-[#99db04] transition-all glow-primary-strong flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-user-astronaut"></i> Para Alumnos
+                </a>
+                <a href="#empresas" class="bg-transparent border-2 border-gray-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:border-brand-secondary hover:text-brand-secondary transition-all flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-building"></i> Para Empresas
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- VISION / PROBLEM & SOLUTION -->
+    <section id="vision" class="py-24 bg-brand-panel border-y border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-4">El talento invisible. <span class="text-brand-primary">La respuesta necesaria.</span></h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">Una fractura entre un sistema educativo que excluye y una industria que necesita perfiles de élite desesperadamente.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Reto Box -->
+                <div class="bg-[#111] border border-gray-800 rounded-2xl p-8 lg:p-12 hover:border-gray-600 transition-colors">
+                    <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                        <i class="fa-solid fa-triangle-exclamation text-brand-primary"></i> El Reto Global
+                    </h3>
+                    <p class="text-gray-400 text-lg mb-4 leading-relaxed">El sistema educativo reglado, diseñado bajo estándares normotípicos, expulsa a diario a mentes brillantes por su falta de adaptación a metodologías rígidas. Esto aboca al aislamiento a jóvenes con capacidades viso-espaciales asombrosas, haciéndoles interiorizar un falso sentimiento de incapacidad.</p>
+                    <p class="text-gray-400 text-lg mb-8 leading-relaxed">Paralelamente, el mercado laboral y la industria creativa sufren un cuello de botella: una <strong>escasez crítica de talento hiper-especializado</strong> capaz de mantener los niveles de precisión extrema que exigen las nuevas tecnologías. Es un desperdicio inasumible de potencial.</p>
+                    
+                    <div class="flex gap-12 pt-6 border-t border-gray-800">
+                        <div>
+                            <p class="text-4xl font-extrabold text-brand-secondary mb-1">80%</p>
+                            <p class="text-xs text-gray-500 uppercase tracking-wider font-semibold">Desempleo autismo adulto</p>
+                        </div>
+                        <div>
+                            <p class="text-4xl font-extrabold text-white mb-1">0</p>
+                            <p class="text-xs text-gray-500 uppercase tracking-wider font-semibold">Centros adaptados en España</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Solución Box -->
+                <div class="bg-[#111] border border-gray-800 rounded-2xl p-8 lg:p-12 hover:border-brand-primary transition-colors relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-brand-primary/5 rounded-full blur-[60px] -z-10"></div>
+                    <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                        <i class="fa-solid fa-lightbulb text-brand-primary"></i> La Solución: Factor N
+                    </h3>
+                    <p class="text-gray-300 text-lg mb-4 leading-relaxed">Corregimos esta fractura con un modelo educativo pionero: el <strong>Aprendizaje por Proyectos</strong> bajo un <strong>Liderazgo Representativo</strong>. Nuestro equipo docente está formado por profesionales de la industria que también son neurodivergentes.</p>
+                    <p class="text-gray-300 text-lg mb-4 leading-relaxed">Creamos un entorno de estricta ergonomía sensorial para que el alumno se enfoque 100% en crear, y en paralelo, <strong>formamos a las empresas</strong> para que adapten sus equipos e integren este talento.</p>
+                    <p class="text-gray-300 text-lg mb-8 leading-relaxed">Entendemos su neurología porque la compartimos. Restauramos su seguridad, incluimos una <strong>Escuela de Familias</strong> y garantizamos su inserción real tutorizando su <em>reel</em> y entrenando <em>soft skills</em> clave.</p>
+                    
+                    <div class="pt-6 border-t border-gray-800">
+                        <p class="text-brand-primary font-bold text-xl uppercase tracking-wide">No hacemos terapia. Formamos creadores de élite.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE TWO DIVISIONS SECTION -->
+    <section id="divisiones" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold text-white mb-4">Un Ecosistema <span class="text-brand-primary">Dual</span></h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">Factor N conecta directamente la formación de élite con las necesidades del mercado tecnológico a través de dos divisiones especializadas.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- DIVISION 1: ESCUELA -->
+                <div id="escuela" class="bg-gray-900 border border-gray-800 rounded-2xl p-10 hover:border-brand-primary transition-colors duration-300 relative overflow-hidden group shadow-2xl">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-brand-primary/10 rounded-bl-full -z-10 group-hover:scale-150 transition-transform duration-500"></div>
+                    
+                    <div class="w-16 h-16 bg-brand-primary/20 rounded-xl flex items-center justify-center mb-8">
+                        <i class="fa-solid fa-graduation-cap text-3xl text-brand-primary"></i>
+                    </div>
+                    
+                    <h3 class="text-3xl font-bold text-white mb-4">Factor N <span class="text-brand-primary font-light">| Escuela</span></h3>
+                    <p class="text-gray-400 mb-6 text-lg">Formación técnica de Nivel 1 en un entorno de estricta ergonomía sensorial. Superamos las métricas tradicionales y potenciamos el perfil cognitivo de cada alumno.</p>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check text-brand-primary mt-1"></i>
+                            <span class="text-gray-300"><strong>Liderazgo Representativo:</strong> Aprende de profesionales que comparten tu misma neurología.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check text-brand-primary mt-1"></i>
+                            <span class="text-gray-300"><strong>Ergonomía Sensorial:</strong> Aulas diseñadas sin sobrecarga estimular para fomentar el hiperfoco.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check text-brand-primary mt-1"></i>
+                            <span class="text-gray-300"><strong>Escuela de Familias:</strong> Acompañamiento clínico y logístico para el entorno del alumno.</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="#programas" class="inline-flex items-center gap-2 text-brand-primary font-bold hover:text-white transition-colors uppercase tracking-wide text-sm">
+                        Ver Programas Formativos <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- DIVISION 2: EMPRESAS -->
+                <div id="empresas" class="bg-gray-900 border border-gray-800 rounded-2xl p-10 hover:border-brand-secondary transition-colors duration-300 relative overflow-hidden group shadow-2xl">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-brand-secondary/10 rounded-bl-full -z-10 group-hover:scale-150 transition-transform duration-500"></div>
+                    
+                    <div class="w-16 h-16 bg-brand-secondary/20 rounded-xl flex items-center justify-center mb-8">
+                        <i class="fa-solid fa-building-user text-3xl text-brand-secondary"></i>
+                    </div>
+                    
+                    <h3 class="text-3xl font-bold text-white mb-4">Factor N <span class="text-brand-secondary font-light">| Empresas</span></h3>
+                    <p class="text-gray-400 mb-6 text-lg">El puente entre el talento invisible y tu empresa. Consultoría corporativa para transformar la diversidad en tu mayor ventaja competitiva y mejorar tus métricas ESG.</p>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check text-brand-secondary mt-1"></i>
+                            <span class="text-gray-300"><strong>Cumplimiento LGD:</strong> Cubre el 2% de reserva legal con perfiles técnicos hiper-especializados.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check text-brand-secondary mt-1"></i>
+                            <span class="text-gray-300"><strong>Becas y RSC:</strong> Apadrina talento sin recursos y mejora drásticamente tus reportes de sostenibilidad.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check text-brand-secondary mt-1"></i>
+                            <span class="text-gray-300"><strong>Formación a RRHH:</strong> Capacitamos a tus equipos para acoger, retener y potenciar perfiles neurodivergentes.</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="#contacto" class="inline-flex items-center gap-2 text-brand-secondary font-bold hover:text-white transition-colors uppercase tracking-wide text-sm">
+                        Súmate como Partner <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- METHODOLOGY / SPIKY PROFILE -->
+    <section class="py-16 bg-[#111111] border-y border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-white mb-10">Capitalizamos el <span class="text-brand-primary">"Perfil en Picos"</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-6">
+                    <div class="text-brand-primary text-3xl mb-3"><i class="fa-solid fa-crosshairs"></i></div>
+                    <h4 class="text-lg font-bold text-white mb-2">Hiperfoco Sistémico</h4>
+                    <p class="text-gray-400 text-sm">Concentración extrema indispensable para el modelado 3D complejo y la depuración de código.</p>
+                </div>
+                <div class="p-6 border-x border-gray-800">
+                    <div class="text-brand-secondary text-3xl mb-3"><i class="fa-solid fa-microchip"></i></div>
+                    <h4 class="text-lg font-bold text-white mb-2">Reconocimiento de Patrones</h4>
+                    <p class="text-gray-400 text-sm">Facilidad intrínseca para detectar discrepancias visuales y anomalías. Ideal para VFX y Control de Calidad.</p>
+                </div>
+                <div class="p-6">
+                    <div class="text-brand-primary text-3xl mb-3"><i class="fa-solid fa-lightbulb"></i></div>
+                    <h4 class="text-lg font-bold text-white mb-2">Pensamiento Lateral</h4>
+                    <p class="text-gray-400 text-sm">Cableado neurológico que permite abordar problemas técnicos y narrativos desde ángulos inéditos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COURSES SECTION -->
+    <section id="programas" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold text-white mb-4">Programas <span class="text-brand-primary">Formativos</span></h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">Nuestro itinerario combina la técnica artesanal profunda con la productividad asistida por Inteligencia Artificial.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Course 1 -->
+                <div class="bg-gray-900 border border-gray-800 rounded-2xl p-8 hover:-translate-y-2 transition-transform duration-300">
+                    <div class="text-brand-primary text-3xl mb-4"><i class="fa-solid fa-cube"></i></div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Animación Profesional</h3>
+                    <p class="text-brand-primary text-sm font-semibold uppercase tracking-wider mb-4">Curso Troncal • Mañanas</p>
+                    <p class="text-gray-400 mb-6">Programa de inmersión total (600 horas / 9 meses) dirigido por la Dirección Académica. Base sólida en animación 3D, entornos virtuales y motores en tiempo real adaptada a los estándares de la industria.</p>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="bg-gray-900 border border-gray-800 rounded-2xl p-8 hover:-translate-y-2 transition-transform duration-300">
+                    <div class="text-brand-secondary text-3xl mb-4"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h3 class="text-2xl font-bold text-white mb-2">VFX, Prog. e IA</h3>
+                    <p class="text-brand-secondary text-sm font-semibold uppercase tracking-wider mb-4">Especialización • Tardes</p>
+                    <p class="text-gray-400 mb-6">Cursos intensivos (300 horas / 9 meses) enfocados en la manipulación digital, la lógica nodal, *compositing* avanzado, lenguajes de scripting y la integración de IA en el *pipeline*.</p>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="bg-gray-900 border border-gray-800 rounded-2xl p-8 hover:-translate-y-2 transition-transform duration-300">
+                    <div class="text-white text-3xl mb-4"><i class="fa-solid fa-rocket"></i></div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Atracción Temprana</h3>
+                    <p class="text-white text-sm font-semibold uppercase tracking-wider mb-4">Fines de Semana • Verano</p>
+                    <p class="text-gray-400 mb-6">Campamentos inmersivos y cursos cortos diseñados como "cantera de talento" para jóvenes neurodivergentes de entre 14 y 17 años. Una primera toma de contacto segura y motivadora.</p>
+                </div>
+            </div>
+            
+            <!-- Aula B banner -->
+            <div class="mt-12 bg-gradient-to-r from-gray-900 to-[#111] border border-gray-800 rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Desarrollo Integral (Soft Skills)</h3>
+                    <p class="text-gray-400">Todos nuestros programas técnicos se complementan con entrenamiento en habilidades blandas, creación de portfolio, preparación de entrevistas y gestión de los Derechos de Autor.</p>
+                </div>
+                <div class="shrink-0 text-brand-primary text-4xl">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM SECTION -->
+    <section id="equipo" class="py-24 bg-[#0a0a0a] border-t border-gray-800 relative">
+        <div class="absolute inset-0 bg-brand-secondary/5 -z-10"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold text-white mb-4">Liderazgo <span class="text-brand-secondary">Representativo</span></h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">Un equipo fundador único que combina la élite de la industria audiovisual con el máximo rigor clínico y sociológico. Entendemos tu talento, porque lo compartimos.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+                <!-- Jaime -->
+                <div class="bg-gray-900/80 border border-gray-700 rounded-2xl p-8 backdrop-blur-sm">
+                    <div class="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center mb-6 text-brand-primary text-2xl border border-gray-600">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-1">Jaime Maestro</h3>
+                    <p class="text-brand-primary text-sm font-bold uppercase mb-4">Dirección Académica y Ejecutiva</p>
+                    <p class="text-gray-400 text-sm">Referente internacional del arte digital. Ganador de dos Premios Goya y codirector de largometrajes globales (*Animal Crackers*). Su diagnóstico de doble excepcionalidad (TEA 1 y AACC) demuestra que la neurodivergencia es compatible con la excelencia absoluta.</p>
+                </div>
+
+                <!-- Laura -->
+                <div class="bg-gray-900/80 border border-gray-700 rounded-2xl p-8 backdrop-blur-sm">
+                    <div class="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center mb-6 text-brand-secondary text-2xl border border-gray-600">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-1">Laura Herrera Garrido</h3>
+                    <p class="text-brand-secondary text-sm font-bold uppercase mb-4">Dirección Clínica y Metodología</p>
+                    <p class="text-gray-400 text-sm">Psicóloga General Sanitaria (Col. CV-10140). Especialista con años de experiencia en intervención (ADOS-2, ADI-R). Es la piedra angular del bienestar del alumnado, audita la metodología del centro y lidera la vital "Escuela de Familias".</p>
+                </div>
+
+                <!-- Nadia -->
+                <div class="bg-gray-900/80 border border-gray-700 rounded-2xl p-8 backdrop-blur-sm">
+                    <div class="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center mb-6 text-brand-secondary text-2xl border border-gray-600">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-1">Nadia Ruiz</h3>
+                    <p class="text-brand-secondary text-sm font-bold uppercase mb-4">Inclusión y Relaciones Corporativas</p>
+                    <p class="text-gray-400 text-sm">Socióloga y doctoranda en Autismo y Empleo (UPV). Mujer con perfil TEA 1 y AACC. Lidera el puente entre la escuela y la industria: audita a las empresas contratantes y garantiza un aterrizaje laboral en entornos libres de prejuicios.</p>
+                </div>
+            </div>
+
+            <!-- Bottom Row (Tech) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Hector -->
+                <div class="bg-gray-900/80 border border-gray-700 rounded-2xl p-8 backdrop-blur-sm">
+                    <div class="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center mb-6 text-white text-2xl border border-gray-600">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-1">Héctor Ponce</h3>
+                    <p class="text-gray-300 text-sm font-bold uppercase mb-4">Dirección de Arte y Composición</p>
+                    <p class="text-gray-400 text-sm">Supervisor de VFX con más de 30 años de experiencia en superproducciones. Asegura que los estándares de calidad de la escuela preparen al alumno de forma realista para la presión del mercado.</p>
+                </div>
+
+                <!-- Rafel -->
+                <div class="bg-gray-900/80 border border-gray-700 rounded-2xl p-8 backdrop-blur-sm">
+                    <div class="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center mb-6 text-white text-2xl border border-gray-600">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-1">Rafel Bernabeu</h3>
+                    <p class="text-gray-300 text-sm font-bold uppercase mb-4">CTO & Dirección de Tecnología</p>
+                    <p class="text-gray-400 text-sm">Ingeniero Informático y experto en Pipeline tecnológico en producciones masivas (*Saga Tadeo Jones*). Arquitecto de la red de la escuela y responsable de la formación en Programación e IA.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / FOOTER SECTION -->
+    <section id="contacto" class="py-24 relative">
+        <div class="absolute inset-0 bg-gradient-to-t from-brand-primary/5 to-transparent -z-10"></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-extrabold text-white mb-6">Hagámoslo <span class="text-brand-primary">Posible</span></h2>
+            <p class="text-xl text-gray-400 mb-10">Tanto si buscas una oportunidad educativa de élite para tu hijo, como si representas a una corporación buscando talento tecnológico e impacto social, hablemos.</p>
+            
+            <div class="bg-gray-900 border border-gray-800 rounded-2xl p-8 max-w-2xl mx-auto shadow-2xl">
+                <div class="mb-6">
+                    <p class="text-white font-bold text-xl">Equipo Factor N <span class="text-gray-500 font-normal text-base block sm:inline sm:ml-2">Información y Partnerships</span></p>
+                </div>
+                <div class="flex flex-col sm:flex-row justify-center gap-4 mb-8">
+                    <div class="flex items-center justify-center gap-2 text-gray-300 bg-gray-800 py-3 px-6 rounded-lg">
+                        <i class="fa-brands fa-whatsapp text-brand-primary text-xl"></i> 616 969 035
+                    </div>
+                    <div class="flex items-center justify-center gap-2 text-gray-300 bg-gray-800 py-3 px-6 rounded-lg">
+                        <i class="fa-solid fa-envelope text-brand-primary text-xl"></i> contact@factorn.es
+                    </div>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="https://wa.me/34616969035" target="_blank" class="bg-brand-primary text-black px-8 py-3 rounded-full font-bold text-sm uppercase tracking-wider hover:bg-white transition-colors text-center">
+                        Escríbenos por WhatsApp
+                    </a>
+                    <a href="mailto:contact@factorn.es" class="bg-transparent border-2 border-gray-600 text-white px-8 py-3 rounded-full font-bold text-sm uppercase tracking-wider hover:border-brand-primary hover:text-brand-primary transition-colors text-center">
+                        Enviar Email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#050505] py-8 border-t border-gray-900 text-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-gray-600 text-sm">© 2026 Chicharra Films Coop. V. | Proyecto Factor N.</p>
+            <div class="flex space-x-4">
+                <span class="text-gray-600 text-sm">Valencia, España</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

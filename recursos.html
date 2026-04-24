@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth overflow-y-scroll">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos - Factor N</title>
+    
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        factor: {
+                            bg: '#212733',
+                            panel: '#2c3543',
+                            border: '#414e60',
+                            green: '#00e0c0',
+                            greenHover: '#33ebd4',
+                            cyan: '#00f0ff',
+                            textLight: '#f0f0f0',
+                            textMuted: '#a0a0a0'
+                        }
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #212733;
+            color: #f0f0f0;
+        }
+        
+        .glass-panel {
+            background: rgba(20, 20, 20, 0.7);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .resource-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .resource-card:hover {
+            background: rgba(255, 255, 255, 0.04);
+            border-color: rgba(0, 240, 255, 0.4);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px -10px rgba(0, 240, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-factor-green selection:text-black min-h-screen flex flex-col">
+
+    <!-- Fixed Header -->
+    <header class="fixed top-0 w-full z-50 glass-panel">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+                    <span class="text-3xl font-extrabold tracking-tight text-white">Factor <span class="text-factor-green">N</span></span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="escuela.html" class="text-sm font-semibold text-factor-textLight hover:text-factor-green transition-colors">Escuela</a>
+                    <a href="empresas.html" class="text-sm font-semibold text-factor-textLight hover:text-factor-green transition-colors">Empresas</a>
+                    <a href="conocenos.html" class="text-sm font-semibold text-factor-textLight hover:text-factor-green transition-colors">Conócenos</a>
+                    <a href="recursos.html" class="text-sm font-bold text-factor-green transition-colors">Recursos</a>
+                </nav>
+
+                <!-- CTA -->
+                <div class="hidden md:flex">
+                    <a href="contacto.html" class="px-6 py-2.5 rounded-full text-xs font-extrabold uppercase tracking-widest bg-factor-green text-black border-2 border-factor-green hover:bg-factor-greenHover hover:border-factor-greenHover transition-all flex items-center gap-2 shadow-[0_0_15px_rgba(0,224,192,0.2)] hover:shadow-[0_0_20px_rgba(0,224,192,0.4)]">
+                        Contacto <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-factor-textLight hover:text-factor-green transition-colors">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Spacer for Fixed Header -->
+    <div class="h-20"></div>
+
+    <!-- Hero Section -->
+    <section class="relative pt-10 pb-12 lg:pt-16 lg:pb-16 overflow-hidden">
+        <!-- Background Accents -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-radial from-factor-cyan/10 to-transparent opacity-50 blur-3xl pointer-events-none rounded-full"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-factor-cyan/30 bg-factor-cyan/10 text-factor-cyan text-xs font-bold uppercase tracking-wider mb-6 shadow-[0_0_15px_rgba(0,240,255,0.1)]">
+                <i class="fa-solid fa-folder-open"></i> Centro de Conocimiento
+            </div>
+            
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 text-white mx-auto leading-tight">
+                Recursos para la <span class="text-transparent bg-clip-text bg-gradient-to-r from-factor-cyan to-factor-green">Neuroinclusión.</span>
+            </h1>
+            
+            <p class="mt-4 text-lg md:text-xl text-factor-textMuted font-light leading-relaxed max-w-2xl mx-auto">
+                Guías, whitepapers y herramientas diseñadas por nuestro equipo clínico para facilitar la integración del talento neurodivergente en la industria tecnológica.
+            </p>
+        </div>
+    </section>
+
+    <!-- Recursos Grid -->
+    <section class="py-12 lg:py-16 relative z-20 flex-grow border-y border-factor-border/30 bg-[#1a1e28]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                
+                <!-- Recurso 1: Manual LGD -->
+                <div class="resource-card rounded-2xl p-8 flex flex-col group">
+                    <div class="w-12 h-12 bg-factor-cyan/10 rounded-xl flex items-center justify-center mb-6 text-factor-cyan group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-regular fa-file-pdf text-2xl"></i>
+                    </div>
+                    <div class="mb-2 inline-flex items-center gap-2">
+                        <span class="bg-white/10 text-white text-[10px] uppercase font-bold tracking-widest px-2 py-0.5 rounded">Guía B2B</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Guía Práctica: Cumplimiento LGD en Estudios de Arte</h3>
+                    <p class="text-factor-textMuted text-sm leading-relaxed flex-grow mb-6">
+                        Cómo transformar el 2% de cuota obligatoria en una ventaja productiva. Incluye marco legal, incentivos fiscales y casos de éxito.
+                    </p>
+                    <a href="#" class="inline-flex w-max items-center gap-2 text-sm font-bold text-factor-cyan hover:text-[#00d0dd] transition-colors border-b border-factor-cyan pb-1">
+                        Descargar PDF <i class="fa-solid fa-download"></i>
+                    </a>
+                </div>
+
+                <!-- Recurso 2: Ergonomía Sensorial -->
+                <div class="resource-card rounded-2xl p-8 flex flex-col group">
+                    <div class="w-12 h-12 bg-factor-green/10 rounded-xl flex items-center justify-center mb-6 text-factor-green group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-lightbulb text-2xl"></i>
+                    </div>
+                    <div class="mb-2 inline-flex items-center gap-2">
+                        <span class="bg-white/10 text-white text-[10px] uppercase font-bold tracking-widest px-2 py-0.5 rounded">Auditoría</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Checklist de Ergonomía Sensorial en Oficinas</h3>
+                    <p class="text-factor-textMuted text-sm leading-relaxed flex-grow mb-6">
+                        Parámetros auditados clínicamente para iluminar, aislar acústicamente y configurar puestos de trabajo amigables para perfiles TEA.
+                    </p>
+                    <a href="#" class="inline-flex w-max items-center gap-2 text-sm font-bold text-factor-green hover:text-factor-greenHover transition-colors border-b border-factor-green pb-1">
+                        Descargar Checklist <i class="fa-solid fa-download"></i>
+                    </a>
+                </div>
+
+                <!-- Recurso 3: Onboarding -->
+                <div class="resource-card rounded-2xl p-8 flex flex-col group">
+                    <div class="w-12 h-12 bg-factor-cyan/10 rounded-xl flex items-center justify-center mb-6 text-factor-cyan group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-user-plus text-2xl"></i>
+                    </div>
+                    <div class="mb-2 inline-flex items-center gap-2">
+                        <span class="bg-white/10 text-white text-[10px] uppercase font-bold tracking-widest px-2 py-0.5 rounded">RRHH</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Manual de Onboarding Asíncrono</h3>
+                    <p class="text-factor-textMuted text-sm leading-relaxed flex-grow mb-6">
+                        Protocolos de comunicación para directores de arte y supervisores. Cómo dar feedback técnico mitigando la ansiedad social del equipo.
+                    </p>
+                    <a href="#" class="inline-flex w-max items-center gap-2 text-sm font-bold text-factor-cyan hover:text-[#00d0dd] transition-colors border-b border-factor-cyan pb-1">
+                        Leer Artículo <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer placeholder to balance the page -->
+    <footer class="py-12 text-center text-factor-border text-sm">
+        <p>&copy; 2026 Factor N. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

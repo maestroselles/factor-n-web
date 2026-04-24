@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth overflow-y-scroll">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuela Factor N - Formación de í‰lite</title>
+    
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        factor: {
+                            bg: '#212733',
+                            panel: '#2c3543',
+                            border: '#414e60',
+                            green: '#00e0c0',
+                            greenHover: '#33ebd4',
+                            cyan: '#00f0ff',
+                            textLight: '#f0f0f0',
+                            textMuted: '#a0a0a0'
+                        }
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #212733;
+            color: #f0f0f0;
+        }
+        
+        .glass-panel {
+            background: rgba(20, 20, 20, 0.7);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .highlight-box {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .highlight-box:hover {
+            border-color: rgba(0, 224, 192, 0.3);
+            background: rgba(255, 255, 255, 0.05);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.8);
+        }
+        
+        .course-card {
+            background: #2c3543;
+            border: 1px solid #414e60;
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .course-card:hover {
+            border-color: #00e0c0;
+            box-shadow: 0 20px 40px -10px rgba(0,224,192,0.15);
+            transform: translateY(-5px);
+        }
+
+        /* Fix sub-pixel flickering on scale */
+        .course-card img {
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            transform: translate3d(0,0,0) scale(1.01);
+            width: 102% !important;
+            height: 102% !important;
+            object-fit: cover;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(1.01);
+        }
+        .course-card:hover img {
+            transform: translate(-50%, -50%) scale(1.1) !important;
+        }
+        
+        .support-box {
+            background: linear-gradient(145deg, #212733 0%, #2c3543 100%);
+            border: 1px solid #414e60;
+            border-left: 4px solid #00f0ff;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-factor-green selection:text-black min-h-screen flex flex-col">
+
+    <!-- Fixed Header -->
+    <header class="fixed top-0 w-full z-50 glass-panel">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+                    <span class="text-3xl font-extrabold tracking-tight text-white">Factor <span class="text-factor-green">N</span></span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="escuela.html" class="text-sm font-bold text-factor-green transition-colors">Escuela</a>
+                    <a href="empresas.html" class="text-sm font-semibold text-factor-textLight hover:text-factor-green transition-colors">Empresas</a>
+                    <a href="conocenos.html" class="text-sm font-semibold text-factor-textLight hover:text-factor-green transition-colors">Conócenos</a>
+                    <a href="recursos.html" class="text-sm font-semibold text-factor-textLight hover:text-factor-green transition-colors">Recursos</a>
+                </nav>
+
+                <!-- CTA -->
+                <div class="hidden md:flex">
+                    <a href="contacto.html" class="px-6 py-2.5 rounded-full text-xs font-extrabold uppercase tracking-widest bg-factor-green text-black border-2 border-factor-green hover:bg-factor-greenHover hover:border-factor-greenHover transition-all flex items-center gap-2 shadow-[0_0_15px_rgba(0,224,192,0.2)] hover:shadow-[0_0_20px_rgba(0,224,192,0.4)]">
+                        Contacto <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-factor-textLight hover:text-factor-green transition-colors">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Spacer for Fixed Header -->
+    <div class="h-20"></div>
+
+    <!-- Hero Section -->
+    <section class="relative pt-10 pb-12 lg:pt-16 lg:pb-16 overflow-hidden bg-[#2c3543] isolation-auto">
+        <!-- Background Accents -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gradient-radial from-factor-cyan/10 to-transparent opacity-50 blur-3xl pointer-events-none rounded-full"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-factor-cyan/30 bg-factor-cyan/10 text-factor-cyan text-xs font-bold uppercase tracking-wider mb-6 shadow-[0_0_15px_rgba(0,240,255,0.1)]">
+                <i class="fa-solid fa-graduation-cap"></i> Ecosistema Académico
+            </div>
+            
+            <h1 class="text-3xl md:text-4xl lg:text-[2.75rem] font-extrabold tracking-tight mb-6 text-white mx-auto leading-tight">
+                No hacemos terapia. Formamos <span class="text-transparent bg-clip-text bg-gradient-to-r from-factor-cyan to-factor-green">talento de élite.</span>
+            </h1>
+            
+            <p class="mt-4 text-lg md:text-xl text-factor-textMuted font-light leading-relaxed max-w-3xl mx-auto">
+                Enseí±amos a través de un Liderazgo Representativo. Fórmate con profesionales de la industria que comparten tu misma neurologí­a en un entorno de seguridad psicológica total y ergonomí­a sensorial.
+            </p>
+        </div>
+    </section>
+
+    <!-- Catálogo de Cursos Presenciales -->
+    <section class="py-12 lg:py-16 relative overflow-hidden bg-[#1a1e28] border-y border-factor-border/30 z-20">
+        <div class="absolute right-0 top-1/4 w-[400px] h-[400px] bg-gradient-radial from-factor-green/5 to-transparent opacity-40 blur-3xl pointer-events-none rounded-full"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-3">Laboratorio de <span class="text-factor-green">Alto Rendimiento</span></h2>
+                    <p class="text-factor-textMuted max-w-xl">Formación presencial inmersiva. Equipos Workstation (i9, RTX 4090) para asegurar que el hardware jamás sea un cuello de botella para tu hiperfoco.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Curso 1: Animación 3D -->
+                <div class="course-card flex flex-col h-full group">
+                    <div class="relative h-48 overflow-hidden bg-[#2c3543] isolation-auto">
+                        <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&q=80&w=800" alt="Animación Profesional 2D y 3D" class="w-full h-full object-cover  will-change-transform transition-transform duration-500">
+                        <div class="absolute -inset-[1px] bg-gradient-to-t from-[#2c3543] to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 flex gap-2">
+                            <span class="bg-black/60 backdrop-blur-md border border-white/10 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full"><i class="fa-regular fa-clock text-factor-green mr-1"></i> 600H</span>
+                            <span class="bg-black/60 backdrop-blur-md border border-white/10 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full"><i class="fa-solid fa-calendar-days text-factor-green mr-1"></i> 9 Meses</span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow -mt-px relative z-10 bg-[#2c3543] rounded-b-2xl">
+                        <h3 class="text-xl font-bold text-white mb-2">Animación Profesional 2D y 3D</h3>
+                        <p class="text-factor-textMuted text-sm mb-6 flex-grow">
+                            Nos alejamos del modelo "generalista". Este programa troncal se centra puramente en la animación de personajes, biomecánica, acting avanzado y respuesta a retakes de directores reales.
+                        </p>
+                        <a href="curso-animacion.html" class="w-full py-3 rounded-full text-xs font-extrabold uppercase tracking-widest bg-transparent text-factor-green border-2 border-factor-green hover:bg-factor-green hover:text-black transition-all flex justify-center items-center gap-2">
+                            Más información <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Curso 2: VFX -->
+                <div class="course-card flex flex-col h-full group">
+                    <div class="relative h-48 overflow-hidden bg-[#2c3543] isolation-auto">
+                        <img src="https://images.unsplash.com/photo-1540655037529-dec987208707?auto=format&fit=crop&q=80&w=800" alt="Especialización en VFX" class="w-full h-full object-cover  will-change-transform transition-transform duration-500 filter contrast-125">
+                        <div class="absolute -inset-[1px] bg-gradient-to-t from-[#2c3543] to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 flex gap-2">
+                            <span class="bg-black/60 backdrop-blur-md border border-white/10 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full"><i class="fa-regular fa-clock text-factor-cyan mr-1"></i> 300H</span>
+                            <span class="bg-black/60 backdrop-blur-md border border-white/10 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full"><i class="fa-solid fa-calendar-days text-factor-cyan mr-1"></i> 9 Meses</span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow -mt-px relative z-10 bg-[#2c3543] rounded-b-2xl">
+                        <h3 class="text-xl font-bold text-white mb-2">VFX asistido por IA</h3>
+                        <p class="text-factor-textMuted text-sm mb-6 flex-grow">
+                            Diseñado para los obsesos del control de calidad visual. Lógica nodal en Nuke, chroma keying, matchmoving y la innovación de integrar Inteligencia Artificial generativa en tu pipeline.
+                        </p>
+                        <a href="curso-vfx.html" class="w-full py-3 rounded-full text-xs font-extrabold uppercase tracking-widest bg-transparent text-factor-cyan border-2 border-factor-cyan hover:bg-factor-cyan hover:text-black transition-all flex justify-center items-center gap-2">
+                            Más información <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Curso 3: Programación -->
+                <div class="course-card flex flex-col h-full group">
+                    <div class="relative h-48 overflow-hidden bg-[#2c3543] isolation-auto">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800" alt="Programación e IA" class="w-full h-full object-cover  will-change-transform transition-transform duration-500 filter hue-rotate-180">
+                        <div class="absolute -inset-[1px] bg-gradient-to-t from-[#2c3543] to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 flex gap-2">
+                            <span class="bg-black/60 backdrop-blur-md border border-white/10 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full"><i class="fa-regular fa-clock text-factor-green mr-1"></i> 300H</span>
+                            <span class="bg-black/60 backdrop-blur-md border border-white/10 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full"><i class="fa-solid fa-calendar-days text-factor-green mr-1"></i> 9 Meses</span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow -mt-px relative z-10 bg-[#2c3543] rounded-b-2xl">
+                        <h3 class="text-xl font-bold text-white mb-2">Programación asistida por IA</h3>
+                        <p class="text-factor-textMuted text-sm mb-6 flex-grow">
+                            Para los perfiles más analíticos. Conviértete en Arquitecto de Software: Python, scripting avanzado, desarrollo de herramientas personalizadas (Tool dev) y creación de shaders.
+                        </p>
+                        <a href="curso-animacion.html" class="w-full py-3 rounded-full text-xs font-extrabold uppercase tracking-widest bg-transparent text-factor-green border-2 border-factor-green hover:bg-factor-green hover:text-black transition-all flex justify-center items-center gap-2">
+                            Más información <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Catálogo de Cursos Online -->
+    <section class="py-12 lg:py-16 relative overflow-hidden bg-[#212733] border-t border-factor-border/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-factor-cyan/30 bg-factor-cyan/10 text-factor-cyan text-[10px] font-bold uppercase tracking-wider mb-4">
+                        <i class="fa-solid fa-globe"></i> Global
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-3">Campus <span class="text-factor-cyan">Online</span></h2>
+                    <p class="text-factor-textMuted max-w-xl">Formación especializada remota diseí±ada para adaptarse a tu ritmo y a tu entorno seguro. Sesiones sí­ncronas y así­ncronas con feedback hiper-detallado de supervisores en activo.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Curso 1: Portfolio -->
+                <div class="course-card flex flex-col h-full group">
+                    <div class="relative h-48 overflow-hidden bg-[#2c3543] isolation-auto">
+                        <img src="https://picsum.photos/seed/portfolio/600/400" alt="Mejora de Portfolio" class="w-full h-full object-cover  will-change-transform transition-transform duration-500 filter sepia-[.3]">
+                        <div class="absolute -inset-[1px] bg-gradient-to-t from-[#2c3543] to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 flex gap-2">
+                            <span class="bg-black/60 backdrop-blur-md border border-white/10 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full"><i class="fa-regular fa-clock text-factor-cyan mr-1"></i> 150H</span>
+                            <span class="bg-black/60 backdrop-blur-md border border-white/10 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full"><i class="fa-solid fa-globe text-factor-cyan mr-1"></i> 100% Online</span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow -mt-px relative z-10 bg-[#2c3543] rounded-b-2xl">
+                        <h3 class="text-xl font-bold text-white mb-2">Mejora de Portfolio</h3>
+                        <p class="text-factor-textMuted text-sm mb-6 flex-grow">
+                            Auditorí­a técnica y narrativa de tus piezas. Aprende a filtrar, pulir y presentar tu trabajo para que hable el lenguaje que exigen los reclutadores de los grandes estudios.
+                        </p>
+                        <a href="curso-programacion.html" class="w-full py-3 rounded-full text-xs font-extrabold uppercase tracking-widest bg-transparent text-factor-cyan border-2 border-factor-cyan hover:bg-factor-cyan hover:text-black transition-all flex justify-center items-center gap-2">
+                            Más Información <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Curso 2: Modelado -->
+                <div class="course-card flex flex-col h-full group">
+                    <div class="relative h-48 overflow-hidden bg-[#2c3543] isolation-auto">
+                        <img src="https://picsum.photos/seed/modeling/600/400" alt="Modelado asistido con IA" class="w-full h-full object-cover  will-change-transform transition-transform duration-500 filter saturate-150">
+                        <div class="absolute -inset-[1px] bg-gradient-to-t from-[#2c3543] to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 flex gap-2">
+                            <span class="bg-black/60 backdrop-blur-md border border-white/10 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full"><i class="fa-regular fa-clock text-factor-cyan mr-1"></i> 200H</span>
+                            <span class="bg-black/60 backdrop-blur-md border border-white/10 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full"><i class="fa-solid fa-globe text-factor-cyan mr-1"></i> 100% Online</span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow -mt-px relative z-10 bg-[#2c3543] rounded-b-2xl">
+                        <h3 class="text-xl font-bold text-white mb-2">Modelado y Texturizado asistido con IA</h3>
+                        <p class="text-factor-textMuted text-sm mb-6 flex-grow">
+                            Flujos de trabajo hí­bridos combinando ZBrush/Maya con redes neuronales. Optimización de tiempos en concept art 3D, mapeo UV y generación de texturas de alta resolución.
+                        </p>
+                        <a href="curso-programacion.html" class="w-full py-3 rounded-full text-xs font-extrabold uppercase tracking-widest bg-transparent text-factor-cyan border-2 border-factor-cyan hover:bg-factor-cyan hover:text-black transition-all flex justify-center items-center gap-2">
+                            Más Información <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Curso 3: Placeholder para cuadrar el grid -->
+                <div class="course-card flex flex-col h-full group border-dashed border-factor-border bg-transparent hover:bg-factor-cyan/5">
+                    <div class="p-6 flex flex-col flex-grow -mt-px relative z-10 bg-[#2c3543] rounded-b-2xl items-center justify-center text-center opacity-50 group-hover:opacity-100 transition-opacity">
+                        <div class="w-16 h-16 rounded-full bg-factor-cyan/10 flex items-center justify-center mb-4 text-factor-cyan group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-plus text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Próximos Programas</h3>
+                        <p class="text-factor-textMuted text-sm">
+                            Estamos desarrollando nuevas formaciones online adaptadas a la demanda del mercado y de la neurodivergencia.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Metodologí­a: Perfil en Picos -->
+    <section class="py-12 lg:py-16 bg-[#1a1e28] border-y border-factor-border/30 relative z-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-white mb-4">La Capitalización del <span class="text-factor-green">"Perfil en Picos"</span></h2>
+                <p class="text-factor-textMuted max-w-2xl mx-auto">Mientras la educación tradicional invierte toda su energí­a en "corregir" al alumno para que sea promedio, en Factor N potenciamos tus fortalezas biológicas hasta llevarlas a la excelencia absoluta.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Hiperfoco -->
+                <div class="highlight-box rounded-xl p-8 text-center group">
+                    <div class="w-16 h-16 mx-auto bg-factor-green/10 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-bullseye text-3xl text-factor-green"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Hiperfoco Sistémico</h3>
+                    <p class="text-factor-textMuted text-sm leading-relaxed">
+                        Capacidad biológica de sumergirse en tareas durante horas sin fatiga atencional. La cualidad más buscada en la industria para retopologí­a, depuración de código y VFX.
+                    </p>
+                </div>
+                
+                <!-- Patrones -->
+                <div class="highlight-box rounded-xl p-8 text-center group">
+                    <div class="w-16 h-16 mx-auto bg-factor-cyan/10 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-microchip text-3xl text-factor-cyan"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Reconocimiento de Patrones</h3>
+                    <p class="text-factor-textMuted text-sm leading-relaxed">
+                        Sensibilidad innata para detectar anomalí­as visuales y lógicas en fracciones de segundo. El talento definitivo para Control de Calidad (QA), Compositing y analí­tica de datos.
+                    </p>
+                </div>
+                
+                <!-- Pensamiento Lateral -->
+                <div class="highlight-box rounded-xl p-8 text-center group">
+                    <div class="w-16 h-16 mx-auto bg-factor-green/10 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-lightbulb text-3xl text-factor-green"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Pensamiento Lateral</h3>
+                    <p class="text-factor-textMuted text-sm leading-relaxed">
+                        Cableado neurológico libre de sesgos normativos. Permite abordar problemas técnicos y narrativos desde ángulos inéditos. El motor de la innovación y el troubleshooting en I+D.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Red de Apoyo & Soft Skills -->
+    <section class="py-12 lg:py-16 bg-[#212733] border-t border-factor-border/50 relative z-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="support-box rounded-2xl p-8 lg:p-12 relative overflow-hidden bg-[#2c3543] isolation-auto">
+                <!-- Decorative Elements -->
+                <div class="absolute top-0 right-0 w-64 h-64 bg-factor-cyan/5 rounded-bl-full pointer-events-none"></div>
+                <i class="fa-solid fa-shield-halved absolute -right-4 -bottom-4 text-[150px] text-factor-cyan/10 pointer-events-none"></i>
+                
+                <div class="flex flex-col lg:flex-row gap-10 relative z-10">
+                    <div class="lg:w-1/3">
+                        <div class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-factor-cyan/10 text-factor-cyan mb-6">
+                            <i class="fa-solid fa-users-viewfinder text-xl"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold text-white mb-4">Desarrollo Integral y <span class="text-factor-cyan">Red de Apoyo</span></h2>
+                        <p class="text-factor-textMuted">La técnica prodigiosa no sirve de nada si no cuentas con las herramientas para sostener tu entorno social y laboral. En el Aula B construimos tu escudo.</p>
+                    </div>
+                    
+                    <div class="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-lg font-bold text-white mb-2 flex items-center gap-2"><i class="fa-solid fa-user-tie text-factor-cyan"></i> Entrenamientos Laborales</h3>
+                            <p class="text-sm text-factor-textMuted leading-relaxed">
+                                Realizamos simulacros de entrevistas de trabajo fí­sica y digitalmente, mitigando la severa ansiedad social. Entrenamos la gestión de la frustración al recibir feedback de directores de arte.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-white mb-2 flex items-center gap-2"><i class="fa-solid fa-house-chimney-medical text-factor-cyan"></i> Escuela de Familias</h3>
+                            <p class="text-sm text-factor-textMuted leading-relaxed">
+                                Empoderamos a padres y tutores con herramientas logí­sticas y de contención emocional, acompaí±ándolos en el complejo salto al mundo adulto y profesional de sus hijos.
+                            </p>
+                        </div>
+                        <div class="border-t border-factor-border/50 pt-6">
+                            <h3 class="text-lg font-bold text-white mb-2 flex items-center gap-2"><i class="fa-solid fa-scale-balanced text-factor-cyan"></i> Derechos Digitales</h3>
+                            <p class="text-sm text-factor-textMuted leading-relaxed">
+                                Formación intensiva en Propiedad Intelectual, Copyright y monetización de assets para proteger al creador frente a abusos de la industria.
+                            </p>
+                        </div>
+                        <div class="border-t border-factor-border/50 pt-6">
+                            <h3 class="text-lg font-bold text-white mb-2 flex items-center gap-2"><i class="fa-solid fa-comments text-factor-cyan"></i> Soft Skills</h3>
+                            <p class="text-sm text-factor-textMuted leading-relaxed">
+                                Desarrollo de la comunicación, trabajo en equipo así­ncrono y adaptación al entorno corporativo para garantizar una inserción sana en grandes producciones.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer placeholder to balance the page -->
+    <footer class="py-12 text-center text-factor-border text-sm">
+        <p>&copy; 2026 Factor N. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
+
+
