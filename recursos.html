@@ -75,8 +75,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
-                <a href="index.html" class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
-                    <span class="text-3xl font-extrabold tracking-tight text-white">Factor <span class="text-factor-green">N</span></span>
+                <a href="index.html" class="flex-shrink-0 flex items-center h-11 px-1 group cursor-pointer">
+                    <span class="text-2xl font-black uppercase tracking-tight text-white">Factor <span class="text-factor-green">N</span></span>
                 </a>
 
                 <!-- Desktop Menu -->
@@ -193,5 +193,25 @@
         <p>&copy; 2026 Factor N. Todos los derechos reservados.</p>
     </footer>
 
+    <!-- mobile-menu-script -->
+    <script>
+        const btn = document.querySelector('button i.fa-bars')?.parentElement;
+        if (btn) {
+            btn.onclick = () => {
+                const nav = document.querySelector('nav.hidden');
+                nav?.classList.toggle('hidden');
+                nav?.classList.toggle('flex');
+                nav?.classList.toggle('flex-col');
+                nav?.classList.toggle('absolute');
+                nav?.classList.toggle('top-20');
+                nav?.classList.toggle('left-0');
+                nav?.classList.toggle('w-full');
+                nav?.classList.toggle('bg-factor-bg');
+                nav?.classList.toggle('p-8');
+                nav?.classList.toggle('border-b');
+                nav?.classList.toggle('border-factor-border/30');
+            }
+        }
+    </script>
 </body>
 </html>
