@@ -71,38 +71,7 @@
 <body class="antialiased selection:bg-factor-green selection:text-black min-h-screen flex flex-col">
 
     <!-- Fixed Header -->
-    <header class="fixed top-0 w-full z-50 glass-panel">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <!-- Logo -->
-                <a href="index.html" class="flex-shrink-0 flex items-center h-11 px-1 group cursor-pointer">
-                    <span class="text-[50px] font-bold tracking-tight text-white">Factor <span class="text-factor-green font-extrabold">N</span></span>
-                </a>
-
-                <!-- Desktop Menu -->
-                <nav class="hidden md:flex space-x-8 items-center">
-                    <a href="escuela.html" class="text-[19px] font-semibold text-factor-textLight hover:text-factor-green transition-colors">Escuela</a>
-                    <a href="empresas.html" class="text-[19px] font-semibold text-factor-textLight hover:text-factor-green transition-colors">Empresas</a>
-                    <a href="conocenos.html" class="text-[19px] font-semibold text-factor-textLight hover:text-factor-green transition-colors">Conócenos</a>
-                    <a href="recursos.html" class="text-[19px] font-semibold text-factor-green transition-colors">Recursos</a>
-                </nav>
-
-                <!-- CTA -->
-                <div class="hidden md:flex">
-                    <a href="contacto.html" class="px-6 py-2.5 rounded-full text-xs font-extrabold uppercase tracking-widest bg-factor-green text-black border-2 border-factor-green hover:bg-factor-greenHover hover:border-factor-greenHover transition-all flex items-center gap-2 shadow-[0_0_15px_rgba(0,224,192,0.2)] hover:shadow-[0_0_20px_rgba(0,224,192,0.4)]">
-                        Contacto <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <!-- Mobile Menu Button -->
-                <div class="md:hidden flex items-center">
-                    <button class="text-factor-textLight hover:text-factor-green transition-colors">
-                        <i class="fa-solid fa-bars text-2xl"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </header>
+    <div id="header-container"></div>
 
     <!-- Spacer for Fixed Header -->
     <div class="h-20"></div>
@@ -185,29 +154,10 @@
     </section>
 
     <!-- Footer placeholder to balance the page -->
-    <footer class="py-12 text-center text-factor-border text-sm">
-        <p>&copy; 2026 Factor N. Todos los derechos reservados.</p>
-    </footer>
+    <div id="footer-container"></div>
 
     <!-- mobile-menu-script -->
-    <script>
-        const btn = document.querySelector('button i.fa-bars')?.parentElement;
-        if (btn) {
-            btn.onclick = () => {
-                const nav = document.querySelector('nav.hidden');
-                nav?.classList.toggle('hidden');
-                nav?.classList.toggle('flex');
-                nav?.classList.toggle('flex-col');
-                nav?.classList.toggle('absolute');
-                nav?.classList.toggle('top-20');
-                nav?.classList.toggle('left-0');
-                nav?.classList.toggle('w-full');
-                nav?.classList.toggle('bg-factor-bg');
-                nav?.classList.toggle('p-8');
-                nav?.classList.toggle('border-b');
-                nav?.classList.toggle('border-factor-border/30');
-            }
-        }
-    </script>
+    
+    <script src="js/loadComponents.js"></script>
 </body>
 </html>

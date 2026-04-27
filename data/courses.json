@@ -1,0 +1,80 @@
+[
+    {
+        "id": "animacion",
+        "title": "Animación Profesional 2D y 3D",
+        "category": "Programas de Élite",
+        "hours": "600H",
+        "duration": "9 Meses",
+        "mode": "Presencial / Online",
+        "description": "Nos alejamos del modelo 'generalista'. Este programa troncal se centra puramente en la animación de personajes, biomecánica, acting avanzado y respuesta a retakes de directores reales.",
+        "image": "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&q=80&w=800",
+        "link": "curso-animacion.html",
+        "accentColor": "factor-green",
+        "icon": "fa-film"
+    },
+    {
+        "id": "vfx",
+        "title": "VFX asistido por IA",
+        "category": "Programas de Élite",
+        "hours": "300H",
+        "duration": "9 Meses",
+        "mode": "Presencial / Online",
+        "description": "Diseñado para los obsesos del control de calidad visual. Lógica nodal en Nuke, chroma keying, matchmoving y la innovación de integrar Inteligencia Artificial generativa en tu pipeline.",
+        "image": "https://images.unsplash.com/photo-1540655037529-dec987208707?auto=format&fit=crop&q=80&w=800",
+        "link": "curso-vfx.html",
+        "accentColor": "factor-cyan",
+        "icon": "fa-wand-magic-sparkles"
+    },
+    {
+        "id": "programacion",
+        "title": "Programación asistida por IA",
+        "category": "Programas de Élite",
+        "hours": "300H",
+        "duration": "9 Meses",
+        "mode": "Presencial / Online",
+        "description": "Para los perfiles más analíticos. Conviértete en Arquitecto de Software: Python, scripting avanzado, desarrollo de herramientas personalizadas (Tool dev) y creación de shaders.",
+        "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800",
+        "link": "curso-programacion.html",
+        "accentColor": "factor-green",
+        "icon": "fa-code"
+    },
+    {
+        "id": "evaluacion",
+        "title": "Evaluación Clínica de Alto Rendimiento",
+        "category": "Paso Obligatorio",
+        "hours": "Paso Obligatorio",
+        "duration": "",
+        "mode": "Presencial / Online",
+        "description": "Identificamos ventajas competitivas, no discapacidades. Auditoría neurobiológica obligatoria para diseñar tu hoja de ruta en Factor N.",
+        "image": "https://picsum.photos/seed/clinic/600/400",
+        "link": "curso-evaluacion.html",
+        "accentColor": "factor-cyan",
+        "icon": "fa-stethoscope"
+    },
+    {
+        "id": "portfolio",
+        "title": "Mejora de Portfolio",
+        "category": "Campus Online",
+        "hours": "150H",
+        "duration": "",
+        "mode": "100% Online",
+        "description": "Auditoría técnica y narrativa de tus piezas. Aprende a filtrar, pulir y presentar tu trabajo para que hable el lenguaje que exigen los reclutadores de los grandes estudios.",
+        "image": "https://picsum.photos/seed/portfolio/600/400",
+        "link": "curso-portfolio.html",
+        "accentColor": "factor-cyan",
+        "icon": "fa-globe"
+    },
+    {
+        "id": "modelado",
+        "title": "Modelado y Texturizado asistido con IA",
+        "category": "Campus Online",
+        "hours": "200H",
+        "duration": "",
+        "mode": "100% Online",
+        "description": "Flujos de trabajo híbridos combinando ZBrush/Maya con redes neuronales. Optimización de tiempos en concept art 3D, mapeo UV y generación de texturas de alta resolución.",
+        "image": "https://picsum.photos/seed/modeling/600/400",
+        "link": "curso-modelado.html",
+        "accentColor": "factor-cyan",
+        "icon": "fa-cube"
+    }
+]

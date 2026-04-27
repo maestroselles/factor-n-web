@@ -1,0 +1,62 @@
+<header class="fixed top-0 w-full z-50 glass-panel">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            <!-- Logo -->
+            <a href="index.html" class="flex-shrink-0 flex items-center h-11 px-1 group cursor-pointer">
+                <span class="text-[50px] font-bold tracking-tight text-white">Factor <span class="text-factor-green font-extrabold">N</span></span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="escuela.html" class="text-[19px] font-semibold text-factor-textLight hover:text-factor-green transition-colors" id="nav-escuela">Escuela</a>
+                <a href="empresas.html" class="text-[19px] font-semibold text-factor-textLight hover:text-factor-green transition-colors" id="nav-empresas">Empresas</a>
+                <a href="conocenos.html" class="text-[19px] font-semibold text-factor-textLight hover:text-factor-green transition-colors" id="nav-conocenos">Conócenos</a>
+                <a href="recursos.html" class="text-[19px] font-semibold text-factor-textLight hover:text-factor-green transition-colors" id="nav-recursos">Recursos</a>
+            </nav>
+
+            <!-- CTA -->
+            <div class="hidden md:flex">
+                <a href="contacto.html" class="px-6 py-2.5 rounded-full text-xs font-extrabold uppercase tracking-widest bg-factor-green text-black border-2 border-factor-green hover:bg-factor-greenHover hover:border-factor-greenHover transition-all flex items-center gap-2 shadow-[0_0_15px_rgba(0,224,192,0.2)] hover:shadow-[0_0_20px_rgba(0,224,192,0.4)]">
+                    Contacto <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden flex items-center">
+                <button class="text-factor-textLight hover:text-factor-green transition-colors" id="mobile-menu-btn">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<script>
+    // Highlight active menu item
+    const currentPage = window.location.pathname.split('/').pop();
+    if (currentPage) {
+        const linkId = 'nav-' + currentPage.replace('.html', '');
+        const activeLink = document.getElementById(linkId);
+        if (activeLink) {
+            activeLink.classList.remove('text-factor-textLight', 'hover:text-factor-green');
+            activeLink.classList.add('text-factor-green');
+        }
+    }
+
+    // Mobile Menu Toggle
+    const btn = document.getElementById('mobile-menu-btn');
+    if (btn) {
+        btn.onclick = () => {
+            const nav = document.querySelector('nav.hidden') || document.querySelector('nav.flex.flex-col');
+            if(nav) {
+                if(nav.classList.contains('hidden')) {
+                    nav.classList.remove('hidden');
+                    nav.classList.add('flex', 'flex-col', 'absolute', 'top-20', 'left-0', 'w-full', 'bg-factor-bg', 'p-8', 'border-b', 'border-factor-border/30');
+                } else {
+                    nav.classList.add('hidden');
+                    nav.classList.remove('flex', 'flex-col', 'absolute', 'top-20', 'left-0', 'w-full', 'bg-factor-bg', 'p-8', 'border-b', 'border-factor-border/30');
+                }
+            }
+        }
+    }
+</script>
