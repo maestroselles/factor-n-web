@@ -164,7 +164,7 @@
     <div class="h-20"></div>
 
     <!-- Netflix-Style Featured Banner Carousel -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6 relative z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 mb-8 relative z-40">
         <div class="relative rounded-2xl overflow-hidden group border border-factor-border/50 shadow-2xl bg-factor-panel">
             
             <!-- Contenedor del Slider -->
@@ -209,6 +209,12 @@
                 </a>
 
             </div>
+
+            <!-- Netflix-Style Slider Indicators -->
+            <div class="absolute bottom-6 left-8 md:left-16 flex gap-2 z-30">
+                <div class="slider-dot w-8 h-1 bg-factor-green rounded-full shadow-[0_0_10px_rgba(0,224,192,0.6)]"></div>
+                <div class="slider-dot w-8 h-1 bg-white/20 rounded-full hover:bg-white/40 transition-colors cursor-pointer"></div>
+            </div>
             
             <!-- Controles laterales -->
             <button onclick="const s = document.getElementById('banner-slider'); s.scrollBy({left: -s.clientWidth, behavior: 'smooth'})" class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-black/60 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-factor-green hover:text-black border border-white/10 backdrop-blur-md z-10 hover:scale-110">
@@ -221,39 +227,31 @@
     </div>
 
     <!-- Hero Section -->
-    <section class="relative pt-10 pb-16 lg:pt-16 lg:pb-24 overflow-hidden flex-grow">
+    <section class="relative py-8 overflow-hidden flex-grow">
         <!-- Background Accents -->
         <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gradient-radial from-factor-green/10 to-transparent opacity-60 blur-3xl pointer-events-none rounded-full"></div>
         <div class="absolute bottom-0 right-0 w-[400px] h-[400px] bg-gradient-radial from-factor-cyan/10 to-transparent opacity-40 blur-3xl pointer-events-none rounded-full"></div>
         
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center max-w-4xl mx-auto">
-                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-factor-cyan/30 bg-factor-cyan/10 text-factor-cyan text-xs font-bold uppercase tracking-wider mb-8 shadow-[0_0_15px_rgba(0,240,255,0.1)]">
-                    <i class="fa-solid fa-microchip"></i> Hub de Talento Tecnológico
-                </div>
-                
-                <h1 class="text-5xl md:text-6xl lg:text-[5rem] font-extrabold tracking-tight mb-8 leading-[1.1] text-white">
-                    Transformando la neurodivergencia en <span class="text-transparent bg-clip-text bg-gradient-to-r from-factor-green to-factor-cyan inline-block">ventaja competitiva</span>
+                <h1 class="text-5xl md:text-6xl lg:text-[5.5rem] font-extrabold tracking-tight mb-8 leading-[1] text-white">
+                    Hub de <span class="text-transparent bg-clip-text bg-gradient-to-r from-factor-green to-factor-cyan inline-block">Talento Divergente</span>
                 </h1>
                 
-                <p class="mt-6 text-lg md:text-xl text-factor-textMuted font-light leading-relaxed mb-10 max-w-3xl mx-auto">
-                    Identificamos, entrenamos y conectamos a mentes excepcionales con la élite de la industria tecnológica. Transformamos la etiqueta de "necesidad especial" en el activo más valioso para las corporaciones.
-                </p>
-                
-                <div class="flex flex-col sm:flex-row gap-5 justify-center items-center">
-                    <a href="#" class="w-full sm:w-auto px-8 py-4 rounded-full text-sm font-extrabold uppercase tracking-widest bg-factor-green text-black border-2 border-factor-green hover:bg-factor-greenHover hover:border-factor-greenHover transition-all flex justify-center items-center gap-3 shadow-[0_0_20px_rgba(0,224,192,0.3)] hover:shadow-[0_0_30px_rgba(0,224,192,0.5)] hover:-translate-y-1">
-                        Ver Escuela <i class="fa-solid fa-graduation-cap text-lg"></i>
-                    </a>
-                    <a href="#" class="w-full sm:w-auto px-8 py-4 rounded-full text-sm font-extrabold uppercase tracking-widest text-factor-green border-2 border-factor-green hover:bg-factor-green/10 transition-all flex justify-center items-center gap-3 hover:-translate-y-1">
-                        Servicios B2B <i class="fa-solid fa-briefcase text-lg"></i>
-                    </a>
+                <div class="mt-8 text-lg md:text-xl text-factor-textMuted font-light leading-relaxed max-w-3xl mx-auto space-y-6">
+                    <p>
+                        Factor N no es solo una escuela; es un ecosistema dise&ntilde;ado para capitalizar el potencial &uacute;nico de la neurodivergencia. Somos el puente entre mentes excepcionales con perfiles de alta especializaci&oacute;n t&eacute;cnica y las corporaciones que buscan la excelencia en la era de la inteligencia artificial y la creatividad digital.
+                    </p>
+                    <p class="text-white font-medium italic border-l-2 border-factor-green pl-6 py-1">
+                        Aqu&iacute;, el hiperfoco es nuestra herramienta de trabajo y la diversidad cognitiva nuestra mayor ventaja competitiva.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Problem & Solution Block -->
-    <section class="py-16 border-t border-factor-border/30 relative bg-[#1a1e28] z-20">
+    <section class="py-8 border-t border-factor-border/30 relative bg-[#1a1e28] z-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
                 
@@ -271,10 +269,10 @@
                     
                     <div class="space-y-4">
                         <p class="text-factor-textMuted leading-relaxed text-[15px]">
-                            El sistema educativo reglado fracasa estrepitosamente a la hora de integrar a mentes que funcionan fuera de la campana de Gauss, abocándolas al aislamiento y al falso sentimiento de incapacidad.
+                            El sistema educativo reglado, dise&ntilde;ado bajo est&aacute;ndares normot&iacute;picos, expulsa a diario a mentes brillantes por su falta de adaptaci&oacute;n a metodolog&iacute;as r&iacute;gidas. Esto aboca al aislamiento a j&oacute;venes con capacidades viso-espaciales asombrosas, haci&eacute;ndoles interiorizar un falso sentimiento de incapacidad.
                         </p>
                         <p class="text-factor-textMuted leading-relaxed text-[15px]">
-                            Paralelamente, el mercado laboral global y la industria creativa sufren un cuello de botella letal por la <strong class="text-white">escasez crí­tica de talento hiper-especializado</strong>. Es un desperdicio inasumible de potencial.
+                            Paralelamente, el mercado laboral y la industria creativa sufren un cuello de botella: una <strong class="text-white">escasez cr&iacute;tica de talento hiper-especializado</strong> capaz de mantener los niveles de precisi&oacute;n extrema que exigen las nuevas tecnolog&iacute;as. Es un desperdicio inasumible de potencial.
                         </p>
                     </div>
                     
@@ -304,10 +302,13 @@
                     
                     <div class="space-y-4">
                         <p class="text-factor-textMuted leading-relaxed text-[15px]">
-                            Corregimos esta fractura con un modelo pionero: <strong class="text-factor-green">Liderazgo Representativo</strong>. Nuestro equipo docente está formado por profesionales de la industria que también son neurodivergentes.
+                            Corregimos esta fractura con un modelo educativo pionero: el <strong class="text-factor-green">Aprendizaje por Proyectos</strong> bajo un <strong class="text-white">Liderazgo Representativo</strong>. Nuestro equipo docente est&aacute; formado por profesionales de la industria que tambi&eacute;n son neurodivergentes.
                         </p>
                         <p class="text-factor-textMuted leading-relaxed text-[15px]">
-                            Capitalizamos el <strong class="text-white">"Perfil en Picos"</strong>: hiperfoco sistémico, reconocimiento de patrones y pensamiento lateral. Restauramos su seguridad en un entorno de estricta ergonomía sensorial.
+                            Creamos un entorno de estricta ergonom&iacute;a sensorial para que el alumno se enfoque 100% en aprender, y en paralelo, <strong class="text-white">formamos a las empresas</strong> para que adapten sus equipos e integren este talento.
+                        </p>
+                        <p class="text-factor-textMuted leading-relaxed text-[15px]">
+                            Entendemos su neurolog&iacute;a porque la compartimos. Restauramos su seguridad, incluimos una <strong class="text-factor-cyan">Escuela de Familias</strong> y garantizamos su inserci&oacute;n real tutorizando su <em>reel</em> y entrenando <em>soft skills</em> clave para su vida diaria y profesional.
                         </p>
                     </div>
                     
@@ -338,7 +339,7 @@
     </section>
 
     <!-- Logos Carousel -->
-    <section class="py-16 bg-[#212733] border-y border-factor-border/30 relative z-20 overflow-hidden bg-factor-panel">
+    <section class="py-8 bg-[#212733] border-y border-factor-border/30 relative z-20 overflow-hidden bg-factor-panel">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10 text-center">
             <h3 class="text-xs font-bold text-factor-textMuted uppercase tracking-[0.2em]">El Ecosistema Tecnológico e Institucional</h3>
             <div class="w-12 h-1 bg-factor-border mx-auto mt-4 rounded-full"></div>
@@ -420,8 +421,35 @@
         </div>
     </section>
 
-    <!-- mobile-menu-script -->
+    <!-- slider and mobile-menu-script -->
     <script>
+        // Banner Slider Indicators
+        const slider = document.getElementById('banner-slider');
+        const dots = document.querySelectorAll('.slider-dot');
+        
+        if (slider && dots.length > 0) {
+            const updateDots = () => {
+                const scrollLeft = slider.scrollLeft;
+                const width = slider.offsetWidth;
+                const index = Math.round(scrollLeft / width);
+                
+                dots.forEach((dot, i) => {
+                    if (i === index) {
+                        dot.style.backgroundColor = '#00e0c0';
+                        dot.style.boxShadow = '0 0 10px rgba(0,224,192,0.6)';
+                    } else {
+                        dot.style.backgroundColor = 'rgba(255,255,255,0.2)';
+                        dot.style.boxShadow = 'none';
+                    }
+                });
+            };
+
+            slider.addEventListener('scroll', updateDots);
+            // Initial call
+            updateDots();
+        }
+
+        // Mobile Menu
         const btn = document.querySelector('button i.fa-bars')?.parentElement;
         if (btn) {
             btn.onclick = () => {
