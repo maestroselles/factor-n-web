@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animación Profesional 2D y 3D - Factor N</title>
+    
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        factor: {
+                            bg: '#212733',
+                            panel: '#2c3543',
+                            border: '#414e60',
+                            green: '#00e0c0',
+                            greenHover: '#33ebd4',
+                            cyan: '#00f0ff',
+                            textLight: '#f0f0f0',
+                            textMuted: '#a0a0a0'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #212733;
+            color: #f0f0f0;
+        }
+        
+        .glass-panel {
+            background: rgba(20, 20, 20, 0.7);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .content-card {
+            background: #2c3543;
+            border: 1px solid #414e60;
+            border-radius: 24px;
+        }
+
+        .syllabus-item {
+            border-left: 2px solid #414e60;
+            transition: all 0.3s ease;
+        }
+        .syllabus-item:hover {
+            border-left-color: #00e0c0;
+            background: rgba(0, 224, 192, 0.03);
+        }
+
+        .input-field {
+            background: rgba(13, 10, 26, 0.5);
+            border: 1px solid #414e60;
+            transition: all 0.3s ease;
+        }
+        .input-field:focus {
+            border-color: #00e0c0;
+            outline: none;
+            box-shadow: 0 0 15px rgba(0, 224, 192, 0.1);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-factor-green selection:text-black min-h-screen flex flex-col">
+
+    <!-- Fixed Header -->
+    <div id="header-container"></div>
+
+    <div class="h-20"></div>
+
+    <!-- Hero Visual -->
+    <section id="course-hero" class="relative h-[300px] md:h-[400px] overflow-hidden">
+        <!-- RENDERED DYNAMICALLY BY js/renderCourseDetails.js -->
+    </section>
+
+    <!-- Info Detallada -->
+    <section class="pt-2 pb-12 lg:pt-4 lg:pb-16 bg-[#212733] relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+                
+                <!-- Columna Izquierda: Contenido Principal -->
+                <div class="lg:col-span-8 space-y-8">
+                    
+                    <!-- Intro -->
+                    <div id="course-vision">
+                        <!-- RENDERED DYNAMICALLY BY js/renderCourseDetails.js -->
+                    </div>
+
+                    <!-- Temario (Se carga dinámicamente) -->
+                    <div>
+                        <h2 class="text-3xl font-black text-white mb-8 tracking-tight">Temario del Curso</h2>
+                        <div id="syllabus-container" class="space-y-4">
+                            <!-- Los módulos se cargan desde data/courses.json vía js/renderCourseDetails.js -->
+                        </div>
+                    </div>
+
+                    <!-- Pipeline de Trabajo (Dinámico) -->
+                    <div id="software-pipeline-container">
+                        <!-- Cargado dinámicamente -->
+                    </div>
+
+                    <!-- Metodología de Alto Rendimiento (Dinámico) -->
+                    <div id="methodology-container">
+                        <!-- Cargado dinámicamente -->
+                    </div>
+
+                </div>
+
+                <!-- Columna Derecha: Sidebar -->
+                <div class="lg:col-span-4 space-y-8">
+                    
+                    <!-- Solicita información (AHORA PRIMERO) -->
+                    <div class="content-card p-8 border-factor-border/30 bg-[#1a1e28]">
+                        <h4 class="text-white font-bold text-lg mb-4 flex items-center gap-2">
+                            <i class="fa-solid fa-envelope text-factor-cyan"></i> Solicita información
+                        </h4>
+                        <p class="text-xs text-factor-textMuted mb-6 leading-relaxed">Déjanos tus datos y te enviaremos el dossier completo del curso.</p>
+                        <form action="mailto:contact@factorn.es" method="get" enctype="text/plain" class="space-y-4">
+                            <input type="hidden" name="subject" value="Información Curso">
+                            <div>
+                                <label class="block text-[10px] font-bold uppercase tracking-widest text-factor-textMuted mb-2">Nombre Completo</label>
+                                <input type="text" name="name" class="input-field w-full px-5 py-4 rounded-xl text-white text-sm" placeholder="Tu nombre..." required>
+                            </div>
+                            <div>
+                                <label class="block text-[10px] font-bold uppercase tracking-widest text-factor-textMuted mb-2">Email</label>
+                                <input type="email" name="email" class="input-field w-full px-5 py-4 rounded-xl text-white text-sm" placeholder="tu@email.com" required>
+                            </div>
+                            <div>
+                                <label class="block text-[10px] font-bold uppercase tracking-widest text-factor-textMuted mb-2">Comentarios / Dudas</label>
+                                <textarea name="message" class="input-field w-full px-5 py-4 rounded-xl text-white text-sm h-32 resize-none" placeholder="¿Tienes alguna duda o comentario?"></textarea>
+                            </div>
+                            <button type="submit" class="w-full py-4 rounded-xl bg-factor-cyan text-black font-black uppercase tracking-widest text-xs hover:scale-[1.02] transition-all shadow-[0_0_15px_rgba(0,240,255,0.1)]">
+                                Enviar Consulta
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Profesores del curso -->
+                    <div id="professors-container" class="space-y-4">
+                        <!-- Cargado dinámicamente -->
+                    </div>
+
+                    <!-- Perfil del Alumno -->
+                    <div id="target-audience-container">
+                        <!-- Cargado dinámicamente -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <div id="footer-container"></div>
+
+    <!-- mobile-menu-script -->
+    
+    <script src="js/loadComponents.js"></script>
+    <script src="js/renderCourseDetails.js"></script>
+</body>
+</html>
+
+

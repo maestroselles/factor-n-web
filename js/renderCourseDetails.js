@@ -3,9 +3,14 @@
  * Cruzando datos con data/team.json para que los profesores sean dinámicos.
  */
 async function loadCourseDetails() {
-    const path = window.location.pathname;
-    const pageName = path.split('/').pop() || 'index.html';
-    let courseId = pageName.replace('curso-', '').replace('.html', '');
+    const urlParams = new URLSearchParams(window.location.search);
+    let courseId = urlParams.get('id');
+    
+    if (!courseId) {
+        const path = window.location.pathname;
+        const pageName = path.split('/').pop() || 'index.html';
+        courseId = pageName.replace('curso-', '').replace('.html', '');
+    }
     
     if (!courseId || courseId === 'index') return;
 
