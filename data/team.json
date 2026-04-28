@@ -5,7 +5,10 @@
         "role": "Dirección Ejecutiva y Académica",
         "image": "./img/team/jaime.jpg",
         "bio": "Referente del arte digital internacional con 30 años de experiencia. Codirector de largometrajes globales como Animal Crackers (Netflix).",
-        "tags": ["2 Premios Goya", "TEA 1 & AACC"],
+        "tags": [
+            "2 Premios Goya",
+            "TEA 1 & AACC"
+        ],
         "accentColor": "factor-green"
     },
     {
@@ -14,7 +17,10 @@
         "role": "Dir. Psicología Clínica y Metodología",
         "image": "./img/team/laura.jpg",
         "bio": "Psicóloga General Sanitaria especializada en neurodesarrollo infantil y adulto. Audita la metodología y dirige la Escuela de Familias.",
-        "tags": ["CV-10140", "ADOS-2 / ADI-R"],
+        "tags": [
+            "CV-10140",
+            "ADOS-2 / ADI-R"
+        ],
         "accentColor": "factor-cyan"
     },
     {
@@ -23,7 +29,10 @@
         "role": "Dir. Inclusión y Relaciones B2B",
         "image": "./img/team/nadia.jpg",
         "bio": "Socióloga, Máster en Perfilación y doctoranda en Autismo y Empleo (UPV). Forma a los RRHH externos para asegurar aterrizajes laborales sanos.",
-        "tags": ["Brecha de Género", "TEA 1 & AACC"],
+        "tags": [
+            "Brecha de Género",
+            "TEA 1 & AACC"
+        ],
         "accentColor": "#ff00ff"
     },
     {
@@ -32,7 +41,9 @@
         "role": "Managing Partner & Alianzas B2B",
         "image": "./img/team/nicolas.jpg",
         "bio": "Estratega empresarial y cofundador de IN Capital Studios y The Core School. Especialista en la venta B2B corporativa y captación de fondos ESG.",
-        "tags": ["Corporativo LGD"],
+        "tags": [
+            "Corporativo LGD"
+        ],
         "accentColor": "factor-cyan"
     },
     {
@@ -41,7 +52,9 @@
         "role": "Dirección de Arte y Composición",
         "image": "./img/team/hector.jpg",
         "bio": "Supervisor de Efectos Visuales (VFX) con más de 30 años en superproducciones globales. Inyecta el ritmo real y la exigencia de la industria en las aulas.",
-        "tags": ["Cine & VFX"],
+        "tags": [
+            "Cine & VFX"
+        ],
         "accentColor": "factor-green"
     },
     {
@@ -50,7 +63,9 @@
         "role": "CTO & Dirección de Tecnología",
         "image": "./img/team/rafel.jpg",
         "bio": "Arquitecto del Pipeline de éxitos como Tadeo Jones. Diseña la infraestructura del laboratorio y dirige la integración de IA y Scripting.",
-        "tags": ["Python & Pipeline"],
+        "tags": [
+            "Python & Pipeline"
+        ],
         "accentColor": "factor-cyan"
     }
 ]
