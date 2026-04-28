@@ -26,7 +26,11 @@
                 "role": "Director General",
                 "image": "./img/team/jaime.jpg",
                 "bio": "Ex-director de equipos de animación en producciones internacionales y nominado al Premio Goya. Especialista en biomecánica y acting.",
-                "tags": ["Goya", "Disney", "Pixar"]
+                "tags": [
+                    "Goya",
+                    "Disney",
+                    "Pixar"
+                ]
             }
         ],
         "syllabus": [
@@ -119,6 +123,56 @@
             }
         ],
         "nextDate": "Octubre 2026"
+    },
+    {
+        "id": "programacion",
+        "title": "Programación asistida por IA",
+        "category": "Curso Presencial",
+        "hours": "300H",
+        "duration": "9 Meses",
+        "mode": "Presencial / Online",
+        "level": "Técnico / Élite",
+        "description": "Para los perfiles más analíticos. Conviértete en Arquitecto de Software: Python, scripting avanzado, desarrollo de herramientas personalizadas (Tool dev) y creación de shaders.",
+        "image": "./img/courses/programacion.jpg",
+        "link": "curso-programacion.html",
+        "accentColor": "factor-green",
+        "icon": "fa-code",
+        "featured": false,
+        "banner": {
+            "image": "./img/banners/programacion.jpg",
+            "tag": "Perfil Tecnológico",
+            "title": "Programación & IA",
+            "subtitle": "Domina el lenguaje de la industria. Crea tus propias herramientas y shaders optimizados para producción real."
+        },
+        "professors": [
+            {
+                "name": "Jaime Maestro",
+                "role": "Dirección Académica",
+                "image": "./img/team/jaime.jpg",
+                "bio": "Supervisión de pipelines y flujos de trabajo técnicos para optimizar la producción creativa."
+            }
+        ],
+        "syllabus": [
+            {
+                "title": "Python para Producción",
+                "description": "Aprende a automatizar tareas complejas en Maya, Houdini o Blender usando Python.",
+                "items": [
+                    "Sintaxis básica y avanzada",
+                    "Scripting para DCCs",
+                    "Creación de GUIs personalizadas",
+                    "Gestión de datos de producción"
+                ]
+            }
+        ],
+        "targetAudience": {
+            "title": "Perfil del Alumno",
+            "traits": [
+                "Capacidad lógica y matemática",
+                "Interés por la optimización de procesos",
+                "Mentalidad de 'problem solver'",
+                "Curiosidad por el desarrollo de herramientas"
+            ]
+        }
     },
     {
         "id": "vfx",
@@ -222,106 +276,6 @@
         ]
     },
     {
-        "id": "programacion",
-        "title": "Programación asistida por IA",
-        "category": "Curso Presencial",
-        "hours": "300H",
-        "duration": "9 Meses",
-        "mode": "Presencial / Online",
-        "level": "Técnico / Élite",
-        "description": "Para los perfiles más analíticos. Conviértete en Arquitecto de Software: Python, scripting avanzado, desarrollo de herramientas personalizadas (Tool dev) y creación de shaders.",
-        "image": "./img/courses/programacion.jpg",
-        "link": "curso-programacion.html",
-        "accentColor": "factor-green",
-        "icon": "fa-code",
-        "featured": false,
-        "banner": {
-            "image": "./img/banners/programacion.jpg",
-            "tag": "Perfil Tecnológico",
-            "title": "Programación & IA",
-            "subtitle": "Domina el lenguaje de la industria. Crea tus propias herramientas y shaders optimizados para producción real."
-        },
-        "professors": [
-            {
-                "name": "Jaime Maestro",
-                "role": "Dirección Académica",
-                "image": "./img/team/jaime.jpg",
-                "bio": "Supervisión de pipelines y flujos de trabajo técnicos para optimizar la producción creativa."
-            }
-        ],
-        "syllabus": [
-            {
-                "title": "Python para Producción",
-                "description": "Aprende a automatizar tareas complejas en Maya, Houdini o Blender usando Python.",
-                "items": [
-                    "Sintaxis básica y avanzada",
-                    "Scripting para DCCs",
-                    "Creación de GUIs personalizadas",
-                    "Gestión de datos de producción"
-                ]
-            }
-        ],
-        "targetAudience": {
-            "title": "Perfil del Alumno",
-            "traits": [
-                "Capacidad lógica y matemática",
-                "Interés por la optimización de procesos",
-                "Mentalidad de 'problem solver'",
-                "Curiosidad por el desarrollo de herramientas"
-            ]
-        }
-    },
-    {
-        "id": "evaluacion",
-        "title": "Evaluación Clínica",
-        "category": "Curso Online",
-        "hours": "Fase Previa",
-        "duration": "1 Sesión",
-        "mode": "Presencial / Online",
-        "level": "Diagnóstico",
-        "description": "Identificamos ventajas competitivas, no discapacidades. Auditoría neurobiológica obligatoria para diseñar tu hoja de ruta en Factor N.",
-        "image": "./img/courses/evaluacion.jpg",
-        "link": "curso-evaluacion.html",
-        "accentColor": "factor-cyan",
-        "icon": "fa-stethoscope",
-        "featured": false,
-        "banner": {
-            "image": "./img/banners/evaluacion.jpg",
-            "tag": "Paso Obligatorio",
-            "title": "Evaluación de Alto Rendimiento",
-            "subtitle": "Analizamos tu perfil neurobiológico para potenciar tus habilidades viso-espaciales únicas."
-        },
-        "professors": [
-            {
-                "name": "Equipo Clínico",
-                "role": "Especialistas",
-                "image": "./img/team/equipo_clinico.jpg",
-                "bio": "Profesionales especializados en neurodiversidad y perfiles cognitivos de alto rendimiento."
-            }
-        ],
-        "syllabus": [
-            {
-                "title": "Análisis Cognitivo",
-                "description": "Evaluación detallada de las capacidades de atención, memoria y procesamiento viso-espacial.",
-                "items": [
-                    "Métricas de atención",
-                    "Percepción espacial",
-                    "Velocidad de procesamiento",
-                    "Estilos de aprendizaje"
-                ]
-            }
-        ],
-        "targetAudience": {
-            "title": "Perfil del Alumno",
-            "traits": [
-                "Candidatos a programas de élite",
-                "Interés por el autoconocimiento biológico",
-                "Búsqueda de alto rendimiento sin burnout",
-                "Perfiles neurodivergentes confirmados o sospechados"
-            ]
-        }
-    },
-    {
         "id": "portfolio",
         "title": "Mejora de Portfolio",
         "category": "Curso Online",
@@ -418,6 +372,56 @@
                 "Interés por el diseño de personajes y assets",
                 "Mentalidad técnica para la optimización",
                 "Deseo de agilizar flujos con nuevas tecnologías"
+            ]
+        }
+    },
+    {
+        "id": "evaluacion",
+        "title": "Evaluación Clínica",
+        "category": "Curso Online",
+        "hours": "Fase Previa",
+        "duration": "1 Sesión",
+        "mode": "Presencial / Online",
+        "level": "Diagnóstico",
+        "description": "Identificamos ventajas competitivas, no discapacidades. Auditoría neurobiológica obligatoria para diseñar tu hoja de ruta en Factor N.",
+        "image": "./img/courses/evaluacion.jpg",
+        "link": "curso-evaluacion.html",
+        "accentColor": "factor-cyan",
+        "icon": "fa-stethoscope",
+        "featured": false,
+        "banner": {
+            "image": "./img/banners/evaluacion.jpg",
+            "tag": "Paso Obligatorio",
+            "title": "Evaluación de Alto Rendimiento",
+            "subtitle": "Analizamos tu perfil neurobiológico para potenciar tus habilidades viso-espaciales únicas."
+        },
+        "professors": [
+            {
+                "name": "Equipo Clínico",
+                "role": "Especialistas",
+                "image": "./img/team/equipo_clinico.jpg",
+                "bio": "Profesionales especializados en neurodiversidad y perfiles cognitivos de alto rendimiento."
+            }
+        ],
+        "syllabus": [
+            {
+                "title": "Análisis Cognitivo",
+                "description": "Evaluación detallada de las capacidades de atención, memoria y procesamiento viso-espacial.",
+                "items": [
+                    "Métricas de atención",
+                    "Percepción espacial",
+                    "Velocidad de procesamiento",
+                    "Estilos de aprendizaje"
+                ]
+            }
+        ],
+        "targetAudience": {
+            "title": "Perfil del Alumno",
+            "traits": [
+                "Candidatos a programas de élite",
+                "Interés por el autoconocimiento biológico",
+                "Búsqueda de alto rendimiento sin burnout",
+                "Perfiles neurodivergentes confirmados o sospechados"
             ]
         }
     }
