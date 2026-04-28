@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth overflow-y-scroll">
+<html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evaluación Clínica de Alto Rendimiento - Factor N</title>
+    <title>Evaluación Clínica - Factor N</title>
     
     <!-- Google Fonts: Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,28 +57,19 @@
             border-radius: 24px;
         }
 
-        .syllabus-item {
-            border-left: 2px solid #414e60;
-            transition: all 0.3s ease;
-        }
-        .syllabus-item:hover {
-            border-left-color: #00e0c0;
-            background: rgba(0, 224, 192, 0.03);
-        }
-
         .input-field {
             background: rgba(13, 10, 26, 0.5);
             border: 1px solid #414e60;
             transition: all 0.3s ease;
         }
         .input-field:focus {
-            border-color: #00e0c0;
+            border-color: #00f0ff;
             outline: none;
-            box-shadow: 0 0 15px rgba(0, 224, 192, 0.1);
+            box-shadow: 0 0 15px rgba(0, 240, 255, 0.1);
         }
     </style>
 </head>
-<body class="antialiased selection:bg-factor-green selection:text-black min-h-screen flex flex-col">
+<body class="antialiased selection:bg-factor-cyan selection:text-black min-h-screen flex flex-col">
 
     <!-- Fixed Header -->
     <div id="header-container"></div>
@@ -86,170 +77,90 @@
     <div class="h-20"></div>
 
     <!-- Hero Visual -->
-    <section class="relative h-[300px] md:h-[400px] overflow-hidden">
-        <img src="https://picsum.photos/seed/clinic/1920/1080" alt="Evaluación Clínica Hero" class="w-full h-full object-cover opacity-60">
-        <!-- Overlay Gradient -->
-        <div class="absolute inset-0 bg-gradient-to-t from-[#212733] via-[#212733]/40 to-[#212733]/20"></div>
-        <div class="absolute inset-0 bg-gradient-to-r from-[#212733] via-transparent to-transparent"></div>
-        
-        <div class="absolute inset-0 flex flex-col justify-between py-8">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-                <nav class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-factor-textMuted mb-6">
-                    <a href="escuela.html" class="hover:text-factor-green transition-colors">Escuela</a>
-                    <i class="fa-solid fa-chevron-right text-[10px]"></i>
-                    <span class="text-factor-green">Programas de Élite</span>
-                </nav>
-                <h1 class="text-4xl md:text-7xl font-extrabold text-white mb-6 leading-[0.9] tracking-tighter">
-                    Evaluación Clínica de <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-factor-cyan to-factor-green">Alto Rendimiento</span>
-                </h1>
-            </div>
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-                <div class="flex flex-wrap gap-3">
-                    <div class="flex items-center gap-2 px-4 py-2 rounded-xl bg-factor-panel/80 backdrop-blur-md border border-white/10 text-sm">
-                        <i class="fa-solid fa-location-dot text-factor-green"></i>
-                        <span class="text-white font-semibold">Presencial (Valencia)</span>
-                    </div>
-                    <div class="flex items-center gap-2 px-4 py-2 rounded-xl bg-factor-panel/80 backdrop-blur-md border border-white/10 text-sm">
-                        <i class="fa-solid fa-clock text-factor-green"></i>
-                        <span class="text-white font-semibold">Intensivo</span>
-                    </div>
-                    <div class="flex items-center gap-2 px-4 py-2 rounded-xl bg-factor-panel/80 backdrop-blur-md border border-white/10 text-sm">
-                        <i class="fa-solid fa-calendar text-factor-green"></i>
-                        <span class="text-white font-semibold">Abierto</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section id="course-hero" class="relative h-[300px] md:h-[400px] overflow-hidden">
+        <!-- RENDERED DYNAMICALLY BY js/renderCourseDetails.js -->
     </section>
 
     <!-- Info Detallada -->
-    <section class="py-8 lg:py-12 bg-[#212733] relative">
+    <section class="pt-2 pb-12 lg:pt-4 lg:pb-16 bg-[#212733] relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
                 
-                <!-- Columna Izquierda: Contenido -->
-                <div class="lg:col-span-2 space-y-16">
-                    <div>
-                        <h3 class="text-2xl font-bold text-white mb-6">Visión del Programa</h3>
-                        <p class="text-xl text-factor-textMuted leading-relaxed">
-                            No evaluamos discapacidades, identificamos ventajas competitivas. Nuestro proceso clínico audita el perfil neurobiológico del alumno para diseñar una ruta de aprendizaje basada en el Hiperfoco y el Reconocimiento de Patrones.
-                        </p>
+                <!-- Columna Izquierda: Contenido Principal -->
+                <div class="lg:col-span-8 space-y-12">
+                    
+                    <!-- Intro -->
+                    <div id="course-vision">
+                        <!-- RENDERED DYNAMICALLY BY js/renderCourseDetails.js -->
                     </div>
 
+                    <!-- Temario (Se carga dinámicamente) -->
                     <div>
-                        <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
-                            <span class="w-8 h-8 rounded-lg bg-factor-green/10 text-factor-green flex items-center justify-center text-sm font-black italic">01</span>
-                            Objetivos del Programa
-                        </h2>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div class="p-6 rounded-2xl border border-factor-border/30 bg-factor-panel/50">
-                                <i class="fa-solid fa-stethoscope text-factor-cyan mb-4 text-xl"></i>
-                                <h4 class="text-white font-bold mb-2 text-lg">Perfilación Neuro-artística</h4>
-                                <p class="text-factor-textMuted text-sm">Determinamos cómo tu cerebro procesa la información visual y espacial para potenciar tu creatividad.</p>
-                            </div>
-                            <div class="p-6 rounded-2xl border border-factor-border/30 bg-factor-panel/50">
-                                <i class="fa-solid fa-shield-halved text-factor-green mb-4 text-xl"></i>
-                                <h4 class="text-white font-bold mb-2 text-lg">Ergonomía Sensorial</h4>
-                                <p class="text-factor-textMuted text-sm">Identificamos los disparadores de estrés para crear un entorno de trabajo adaptado a tu sistema nervioso.</p>
-                            </div>
+                        <h2 class="text-3xl font-black text-white mb-8 tracking-tight">Temario del Curso</h2>
+                        <div id="syllabus-container" class="space-y-4">
+                            <!-- Los módulos se cargan desde data/courses.json vía js/renderCourseDetails.js -->
                         </div>
                     </div>
 
-                    <div>
-                        <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
-                            <span class="w-8 h-8 rounded-lg bg-factor-green/10 text-factor-green flex items-center justify-center text-sm font-black italic">02</span>
-                            Temario Académico
-                        </h2>
-                        <div class="space-y-4">
-                            <div class="syllabus-item p-6 bg-factor-panel/30 rounded-r-xl">
-                                <h4 class="text-white font-bold mb-1">Módulo 1: Evaluación ADOS-2 y ADI-R (Adaptada)</h4>
-                                <p class="text-factor-textMuted text-xs">Pruebas estándar de oro adaptadas al entorno de alto rendimiento tecnológico.</p>
+                    <!-- Pipeline de Trabajo (Dinámico) -->
+                    <div id="software-pipeline-container">
+                        <!-- Cargado dinámicamente -->
+                    </div>
+
+                    <!-- Metodología de Alto Rendimiento (Dinámico) -->
+                    <div id="methodology-container">
+                        <!-- Cargado dinámicamente -->
+                    </div>
+
+                </div>
+
+                <!-- Columna Derecha: Sidebar -->
+                <div class="lg:col-span-4 space-y-8">
+                    
+                    <!-- Solicita información -->
+                    <div class="content-card p-8 border-factor-border/30 bg-[#1a1e28]">
+                        <h4 class="text-white font-bold text-lg mb-4 flex items-center gap-2">
+                            <i class="fa-solid fa-envelope text-factor-cyan"></i> Solicita información
+                        </h4>
+                        <p class="text-xs text-factor-textMuted mb-6 leading-relaxed">Déjanos tus datos y te enviaremos el dossier completo del curso.</p>
+                        <form action="mailto:contact@factorn.es" method="get" enctype="text/plain" class="space-y-4">
+                            <input type="hidden" name="subject" value="Información Curso">
+                            <div>
+                                <label class="block text-[10px] font-bold uppercase tracking-widest text-factor-textMuted mb-2">Nombre Completo</label>
+                                <input type="text" name="name" class="input-field w-full px-5 py-4 rounded-xl text-white text-sm" placeholder="Tu nombre..." required>
                             </div>
-                            <div class="syllabus-item p-6 bg-factor-panel/30 rounded-r-xl">
-                                <h4 class="text-white font-bold mb-1">Módulo 2: Análisis de Capacidades Cognitivas</h4>
-                                <p class="text-factor-textMuted text-xs">Medición de funciones ejecutivas, memoria de trabajo y velocidad de procesamiento.</p>
+                            <div>
+                                <label class="block text-[10px] font-bold uppercase tracking-widest text-factor-textMuted mb-2">Email</label>
+                                <input type="email" name="email" class="input-field w-full px-5 py-4 rounded-xl text-white text-sm" placeholder="tu@email.com" required>
                             </div>
-                            <div class="syllabus-item p-6 bg-factor-panel/30 rounded-r-xl">
-                                <h4 class="text-white font-bold mb-1">Módulo 3: Plan de Formación Personalizado</h4>
-                                <p class="text-factor-textMuted text-xs">Creación de la hoja de ruta académica basada en el Perfil en Picos del alumno.</p>
+                            <div>
+                                <label class="block text-[10px] font-bold uppercase tracking-widest text-factor-textMuted mb-2">Comentarios / Dudas</label>
+                                <textarea name="message" class="input-field w-full px-5 py-4 rounded-xl text-white text-sm h-32 resize-none" placeholder="¿Tienes alguna duda o comentario?"></textarea>
                             </div>
-                        </div>
+                            <button type="submit" class="w-full py-4 rounded-xl bg-factor-cyan text-black font-black uppercase tracking-widest text-xs hover:scale-[1.02] transition-all shadow-[0_0_15px_rgba(0,240,255,0.1)]">
+                                Enviar Consulta
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Profesores del curso -->
+                    <div id="professors-container" class="space-y-4">
+                        <!-- Cargado dinámicamente -->
+                    </div>
+
+                    <!-- Perfil del Alumno -->
+                    <div id="target-audience-container">
+                        <!-- Cargado dinámicamente -->
                     </div>
                 </div>
 
-                <!-- Columna Derecha: Sidebar (Alineada) -->
-                <div class="space-y-8">
-                    <!-- Caja Reserva -->
-                    <div class="content-card p-8 border-factor-green/30 relative overflow-hidden">
-                        <div class="absolute top-0 right-0 w-32 h-32 bg-factor-green/5 rounded-bl-full pointer-events-none"></div>
-                        <h3 class="text-xl font-bold text-white mb-6">Reserva tu plaza</h3>
-                        <p class="text-sm text-factor-textMuted mb-8 leading-relaxed">Este es el paso obligatorio para acceder a cualquier formación de Factor N. Evaluación realizada por psicólogos clínicos colegiados.</p>
-                        <a href="#contacto" class="block w-full py-4 rounded-xl bg-factor-green text-black text-center font-black uppercase tracking-widest hover:bg-factor-greenHover transition-all shadow-[0_0_20px_rgba(0,224,192,0.3)] mb-4">
-                            Solicitar Cita
-                        </a>
-                        <p class="text-[10px] text-center text-factor-textMuted uppercase tracking-widest font-bold">Disponibilidad inmediata</p>
-                    </div>
-
-                    <!-- Caja Profesor -->
-                    <div class="content-card p-8 border-factor-border/50">
-                        <h2 class="text-xl font-bold text-white mb-8 text-center uppercase tracking-widest text-[10px] opacity-60">Dirección Clínica</h2>
-                        <div class="text-center">
-                            <div class="w-32 h-32 rounded-full border-2 border-factor-green mx-auto mb-6 p-1 bg-black">
-                                <img src="https://picsum.photos/seed/laura/200/200" alt="Laura Herrera" class="w-full h-full object-cover rounded-full grayscale">
-                            </div>
-                            <h3 class="text-xl font-bold text-white mb-1">Laura Herrera</h3>
-                            <p class="text-factor-green text-[10px] font-black uppercase tracking-widest mb-6">Psicóloga Clínica & Metodología</p>
-                            <p class="text-xs text-factor-textMuted leading-relaxed italic">
-                                "Nuestra misión es que el alumno deje de luchar contra su entorno y empiece a aprovechar su talento."
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Caja Perfil -->
-                    <div class="p-8 rounded-2xl bg-factor-cyan/5 border border-factor-cyan/20">
-                        <h4 class="text-factor-cyan font-bold text-sm mb-4"><i class="fa-solid fa-graduation-cap mr-2"></i> Quién debe asistir</h4>
-                        <ul class="text-[11px] text-factor-textMuted space-y-3 leading-relaxed">
-                            <li class="flex gap-2"><i class="fa-solid fa-check text-factor-cyan"></i> Candidatos a programas de Factor N.</li>
-                            <li class="flex gap-2"><i class="fa-solid fa-check text-factor-cyan"></i> Personas con sospecha de neurodivergencia.</li>
-                            <li class="flex gap-2"><i class="fa-solid fa-check text-factor-cyan"></i> Familias que buscan orientación especializada.</li>
-                        </ul>
-                    </div>
-                </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Formulario de Contacto -->
-    <section id="contacto" class="py-20 bg-[#1a1e28] border-t border-factor-border/30">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-white mb-4">Solicita tu evaluación</h2>
-                <p class="text-factor-textMuted">Déjanos tus datos y nos pondremos en contacto para concertar una cita previa con Laura Herrera.</p>
-            </div>
-            
-            <form class="space-y-6">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                        <label class="block text-xs font-bold uppercase tracking-widest text-factor-textMuted mb-2">Nombre Completo</label>
-                        <input type="text" class="input-field w-full px-5 py-4 rounded-xl text-white" placeholder="Tu nombre...">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-bold uppercase tracking-widest text-factor-textMuted mb-2">Email</label>
-                        <input type="email" class="input-field w-full px-5 py-4 rounded-xl text-white" placeholder="tu@email.com">
-                    </div>
-                </div>
-                <button class="w-full py-5 rounded-xl bg-factor-cyan text-black font-black uppercase tracking-widest hover:scale-[1.02] transition-all shadow-[0_0_20px_rgba(0,240,255,0.2)]">
-                    Enviar Solicitud de Cita
-                </button>
-            </form>
         </div>
     </section>
 
     <div id="footer-container"></div>
 
-    <!-- mobile-menu-script -->
-    
     <script src="js/loadComponents.js"></script>
+    <script src="js/renderCourseDetails.js"></script>
 </body>
 </html>
-

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth overflow-y-scroll">
+<html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -86,244 +86,80 @@
     <div class="h-20"></div>
 
     <!-- Hero Visual -->
-    <section class="relative h-[300px] md:h-[400px] overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&q=80&w=1920" alt="Animación Hero" class="w-full h-full object-cover opacity-60">
-        <!-- Overlay Gradient -->
-        <div class="absolute inset-0 bg-gradient-to-t from-[#212733] via-[#212733]/40 to-[#212733]/20"></div>
-        <div class="absolute inset-0 bg-gradient-to-r from-[#212733] via-transparent to-transparent"></div>
-        
-        <div class="absolute inset-0 flex flex-col justify-between py-8">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-                <nav class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-factor-textMuted mb-6">
-                    <a href="escuela.html" class="hover:text-factor-green transition-colors">Escuela</a>
-                    <i class="fa-solid fa-chevron-right text-[10px]"></i>
-                    <span class="text-factor-green">Programas de Élite</span>
-                </nav>
-                <h1 class="text-4xl md:text-7xl font-extrabold text-white mb-6 leading-[0.9] tracking-tighter">
-                    Animación Profesional <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-factor-cyan to-factor-green">2D y 3D</span>
-                </h1>
-            </div>
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-                <div class="flex flex-wrap gap-3">
-                    <div class="flex items-center gap-2 px-4 py-2 rounded-xl bg-factor-panel/80 backdrop-blur-md border border-white/10 text-sm">
-                        <i class="fa-solid fa-location-dot text-factor-green"></i>
-                        <span class="text-white font-semibold">Presencial (Valencia)</span>
-                    </div>
-                    <div class="flex items-center gap-2 px-4 py-2 rounded-xl bg-factor-panel/80 backdrop-blur-md border border-white/10 text-sm">
-                        <i class="fa-solid fa-clock text-factor-green"></i>
-                        <span class="text-white font-semibold">600 Horas</span>
-                    </div>
-                    <div class="flex items-center gap-2 px-4 py-2 rounded-xl bg-factor-panel/80 backdrop-blur-md border border-white/10 text-sm">
-                        <i class="fa-solid fa-calendar text-factor-green"></i>
-                        <span class="text-white font-semibold">9 Meses</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section id="course-hero" class="relative h-[300px] md:h-[400px] overflow-hidden">
+        <!-- RENDERED DYNAMICALLY BY js/renderCourseDetails.js -->
     </section>
 
     <!-- Info Detallada -->
-    <section class="py-12 lg:py-20 bg-[#212733] relative">
+    <section class="pt-2 pb-12 lg:pt-4 lg:pb-16 bg-[#212733] relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
                 
                 <!-- Columna Izquierda: Contenido Principal -->
-                <div class="lg:col-span-8 space-y-16">
+                <div class="lg:col-span-8 space-y-8">
                     
                     <!-- Intro -->
-                    <div>
-                        <h3 class="text-3xl font-black text-white mb-6 tracking-tight">El estándar de la <span class="text-factor-green">Industria Real</span></h3>
-                        <p class="text-xl text-factor-textMuted leading-relaxed font-light mb-6">
-                            Nos alejamos del modelo "generalista". Este programa troncal se centra puramente en la animación de personajes, biomecánica, acting avanzado y respuesta a retakes de directores reales.
-                        </p>
-                        <p class="text-[15px] text-factor-textMuted leading-relaxed">
-                            A diferencia de otras escuelas, aquí no perderás el tiempo aprendiendo botones que nunca usarás. Te enseñamos a pensar como un animador, a entender el peso, la física y, sobre todo, la psicología del personaje. El hiperfoco de un cerebro neurodivergente es capaz de detectar microexpresiones que otros pasan por alto; nosotros te enseñamos a plasmarlas en 3D.
-                        </p>
+                    <div id="course-vision">
+                        <!-- RENDERED DYNAMICALLY BY js/renderCourseDetails.js -->
                     </div>
 
-                    <!-- Temario (Moved up) -->
+                    <!-- Temario (Se carga dinámicamente) -->
                     <div>
                         <h2 class="text-3xl font-black text-white mb-8 tracking-tight">Temario del Curso</h2>
-                        
-                        <div class="space-y-4">
-                            <!-- Módulo 1 -->
-                            <div class="group relative bg-[#1a1e28] rounded-2xl p-6 lg:p-8 border border-factor-border/30 hover:border-factor-green/50 transition-all duration-300">
-                                <div class="absolute left-0 top-0 bottom-0 w-1 bg-factor-green rounded-l-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                                <div class="flex flex-col md:flex-row md:items-start gap-4 md:gap-8">
-                                    <div class="text-4xl font-black text-factor-border group-hover:text-factor-green transition-colors">01</div>
-                                    <div>
-                                        <h4 class="text-white font-bold text-xl mb-3">Biomecánica y Fundamentos</h4>
-                                        <p class="text-factor-textMuted text-sm leading-relaxed mb-4">Domina el peso, el equilibrio y el movimiento orgánico. No animamos muñecos, damos vida a cuerpos físicos sujetos a la gravedad y a fuerzas dinámicas.</p>
-                                        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-factor-textMuted/80">
-                                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-factor-green/50 text-xs"></i> Los 12 Principios Clásicos</li>
-                                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-factor-green/50 text-xs"></i> Bouncing Balls & Pendulums</li>
-                                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-factor-green/50 text-xs"></i> Ciclos de caminado y carrera</li>
-                                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-factor-green/50 text-xs"></i> Poses de fuerza y línea de acción</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Módulo 2 -->
-                            <div class="group relative bg-[#1a1e28] rounded-2xl p-6 lg:p-8 border border-factor-border/30 hover:border-factor-green/50 transition-all duration-300">
-                                <div class="absolute left-0 top-0 bottom-0 w-1 bg-factor-green rounded-l-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                                <div class="flex flex-col md:flex-row md:items-start gap-4 md:gap-8">
-                                    <div class="text-4xl font-black text-factor-border group-hover:text-factor-green transition-colors">02</div>
-                                    <div>
-                                        <h4 class="text-white font-bold text-xl mb-3">Acting Avanzado y Pantomima</h4>
-                                        <p class="text-factor-textMuted text-sm leading-relaxed mb-4">Aprende a transmitir emociones complejas y sutilezas psicológicas a través del movimiento corporal sin necesidad de diálogo.</p>
-                                        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-factor-textMuted/80">
-                                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-factor-green/50 text-xs"></i> Subtexto y pensamiento</li>
-                                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-factor-green/50 text-xs"></i> Timing cómico y dramático</li>
-                                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-factor-green/50 text-xs"></i> Interacción con props</li>
-                                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-factor-green/50 text-xs"></i> Referencias de video reales</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Módulo 3 -->
-                            <div class="group relative bg-[#1a1e28] rounded-2xl p-6 lg:p-8 border border-factor-border/30 hover:border-factor-green/50 transition-all duration-300">
-                                <div class="absolute left-0 top-0 bottom-0 w-1 bg-factor-green rounded-l-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                                <div class="flex flex-col md:flex-row md:items-start gap-4 md:gap-8">
-                                    <div class="text-4xl font-black text-factor-border group-hover:text-factor-green transition-colors">03</div>
-                                    <div>
-                                        <h4 class="text-white font-bold text-xl mb-3">Facial y Lip-Sync</h4>
-                                        <p class="text-factor-textMuted text-sm leading-relaxed mb-4">La culminación de la actuación. Sincronía labial perfecta y el estudio anatómico de la cara para crear micro-expresiones creíbles.</p>
-                                        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-factor-textMuted/80">
-                                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-factor-green/50 text-xs"></i> Fonemas y shapes</li>
-                                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-factor-green/50 text-xs"></i> Anatomía muscular facial</li>
-                                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-factor-green/50 text-xs"></i> Ojos y dirección de mirada</li>
-                                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-factor-green/50 text-xs"></i> Pulido final para Reel</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                        <div id="syllabus-container" class="space-y-4">
+                            <!-- Los módulos se cargan desde data/courses.json vía js/renderCourseDetails.js -->
                         </div>
                     </div>
 
-                    <!-- Software -->
-                    <div class="py-8 border-y border-factor-border/30">
-                        <h4 class="text-[11px] font-black uppercase tracking-[0.2em] text-factor-textMuted mb-6">Pipeline de Trabajo</h4>
-                        <div class="flex flex-wrap gap-8 items-center opacity-70">
-                            <!-- Software placeholders using text/icons since we don't have SVGs -->
-                            <div class="flex items-center gap-2 group"><i class="fa-brands fa-unity text-3xl group-hover:text-white transition-colors"></i><span class="font-bold text-sm">Autodesk Maya</span></div>
-                            <div class="flex items-center gap-2 group"><i class="fa-brands fa-steam text-3xl group-hover:text-white transition-colors"></i><span class="font-bold text-sm">ZBrush</span></div>
-                            <div class="flex items-center gap-2 group"><i class="fa-solid fa-cube text-3xl group-hover:text-[#ea7600] transition-colors"></i><span class="font-bold text-sm">Blender</span></div>
-                            <div class="flex items-center gap-2 group"><i class="fa-brands fa-python text-3xl group-hover:text-yellow-400 transition-colors"></i><span class="font-bold text-sm">Python (Scripts)</span></div>
-                        </div>
+                    <!-- Pipeline de Trabajo (Dinámico) -->
+                    <div id="software-pipeline-container">
+                        <!-- Cargado dinámicamente -->
                     </div>
 
-                    <!-- La Diferencia Factor N -->
-                    <div class="bg-factor-panel/50 rounded-3xl p-8 lg:p-10 border border-factor-green/20 relative overflow-hidden">
-                        <div class="absolute -right-10 -top-10 w-40 h-40 bg-factor-green/10 rounded-full blur-3xl"></div>
-                        <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
-                            <i class="fa-solid fa-bolt text-factor-green"></i>
-                            Metodología de Alto Rendimiento
-                        </h2>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                            <div>
-                                <h4 class="text-white font-bold mb-3 text-lg flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-factor-green"></div> Ergonomía Sensorial</h4>
-                                <p class="text-factor-textMuted text-sm leading-relaxed">Aulas con luz regulable, reducción de ruido ambiental y auriculares ANC permitidos en todo momento. Cero 'Masking'.</p>
-                            </div>
-                            <div>
-                                <h4 class="text-white font-bold mb-3 text-lg flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-factor-cyan"></div> Trabajo Asíncrono</h4>
-                                <p class="text-factor-textMuted text-sm leading-relaxed">Entendemos que la energía fluctúa. Objetivos semanales por hitos, no calentando la silla en un horario rígido.</p>
-                            </div>
-                            <div>
-                                <h4 class="text-white font-bold mb-3 text-lg flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-factor-green"></div> Feedback Directo</h4>
-                                <p class="text-factor-textMuted text-sm leading-relaxed">Críticas constructivas literales, claras y sin dobles sentidos. Comunicación adaptada para mentes neurodivergentes.</p>
-                            </div>
-                            <div>
-                                <h4 class="text-white font-bold mb-3 text-lg flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-factor-cyan"></div> Liderazgo Representativo</h4>
-                                <p class="text-factor-textMuted text-sm leading-relaxed">Tus supervisores comparten tu neurología. Han llegado a lo más alto de la industria y saben exactamente cómo potenciar tu talento.</p>
-                            </div>
-                        </div>
+                    <!-- Metodología de Alto Rendimiento (Dinámico) -->
+                    <div id="methodology-container">
+                        <!-- Cargado dinámicamente -->
                     </div>
 
                 </div>
 
-                <!-- Columna Derecha: Sidebar STICKY -->
-                <div class="lg:col-span-4">
-                    <div class="sticky top-28 space-y-6">
-                        
-                        <!-- Caja Reserva (Primary CTA) -->
-                        <div class="content-card p-8 border-factor-green/50 bg-[#1e2430] relative overflow-hidden shadow-2xl">
-                            <div class="absolute top-0 right-0 w-32 h-32 bg-factor-green/10 rounded-bl-full pointer-events-none"></div>
-                            
-                            <div class="mb-6 pb-6 border-b border-factor-border/30">
-                                <div class="text-factor-green font-bold text-sm tracking-widest uppercase mb-2">Próxima Edición</div>
-                                <div class="text-3xl font-black text-white">Octubre 2026</div>
-                                <div class="text-xs text-factor-textMuted mt-2"><i class="fa-solid fa-triangle-exclamation text-yellow-500 mr-1"></i> Plazas muy limitadas</div>
+                <!-- Columna Derecha: Sidebar -->
+                <div class="lg:col-span-4 space-y-8">
+                    
+                    <!-- Solicita información (AHORA PRIMERO) -->
+                    <div class="content-card p-8 border-factor-border/30 bg-[#1a1e28]">
+                        <h4 class="text-white font-bold text-lg mb-4 flex items-center gap-2">
+                            <i class="fa-solid fa-envelope text-factor-cyan"></i> Solicita información
+                        </h4>
+                        <p class="text-xs text-factor-textMuted mb-6 leading-relaxed">Déjanos tus datos y te enviaremos el dossier completo del curso.</p>
+                        <form action="mailto:contact@factorn.es" method="get" enctype="text/plain" class="space-y-4">
+                            <input type="hidden" name="subject" value="Información Curso">
+                            <div>
+                                <label class="block text-[10px] font-bold uppercase tracking-widest text-factor-textMuted mb-2">Nombre Completo</label>
+                                <input type="text" name="name" class="input-field w-full px-5 py-4 rounded-xl text-white text-sm" placeholder="Tu nombre..." required>
                             </div>
-
-                            <ul class="space-y-4 text-sm text-factor-textLight">
-                                <li class="flex items-center justify-between"><span>Modalidad:</span> <strong class="text-white">Presencial</strong></li>
-                                <li class="flex items-center justify-between"><span>Duración:</span> <strong class="text-white">9 Meses</strong></li>
-                                <li class="flex items-center justify-between"><span>Dedicación:</span> <strong class="text-white">600 Horas</strong></li>
-                                <li class="flex items-center justify-between"><span>Nivel:</span> <strong class="text-white">Avanzado / Élite</strong></li>
-                            </ul>
-                        </div>
-
-                        <!-- Solicita información (Replacing Clinical Evaluation) -->
-                        <div class="content-card p-8 border-factor-cyan/30 bg-[#1a1e28]">
-                            <h4 class="text-white font-bold text-lg mb-4 flex items-center gap-2">
-                                <i class="fa-solid fa-envelope text-factor-cyan"></i> Solicita información
-                            </h4>
-                            <p class="text-xs text-factor-textMuted mb-6 leading-relaxed">Déjanos tus datos y te enviaremos el dossier completo del curso.</p>
-                            <form action="mailto:contact@factorn.es" method="get" enctype="text/plain" class="space-y-4">
-                                <input type="hidden" name="subject" value="Información: Animación Profesional 2D y 3D">
-                                <div>
-                                    <label class="block text-[10px] font-bold uppercase tracking-widest text-factor-textMuted mb-2">Nombre Completo</label>
-                                    <input type="text" name="name" class="input-field w-full px-5 py-4 rounded-xl text-white text-sm" placeholder="Tu nombre..." required>
-                                </div>
-                                <div>
-                                    <label class="block text-[10px] font-bold uppercase tracking-widest text-factor-textMuted mb-2">Email</label>
-                                    <input type="email" name="email" class="input-field w-full px-5 py-4 rounded-xl text-white text-sm" placeholder="tu@email.com" required>
-                                </div>
-                                <button type="submit" class="w-full py-4 rounded-xl bg-factor-cyan text-black font-black uppercase tracking-widest text-xs hover:scale-[1.02] transition-all shadow-[0_0_15px_rgba(0,240,255,0.1)]">
-                                    Enviar Consulta
-                                </button>
-                            </form>
-                        </div>
-
-                        <!-- Profesores del curso -->
-                        <div class="space-y-4">
-                            <!-- Caja Profesor 1 -->
-                            <div class="content-card p-6 border-factor-border/30 bg-[#1a1e28]">
-                                <h2 class="font-bold text-white mb-6 text-center uppercase tracking-widest text-[10px] opacity-60">Profesor del curso</h2>
-                                <div class="flex items-center gap-4 mb-4">
-                                    <div class="w-16 h-16 rounded-full border-2 border-factor-green p-0.5 bg-black shrink-0">
-                                        <img src="https://picsum.photos/seed/jaime/200/200" alt="Jaime Maestro" class="w-full h-full object-cover rounded-full grayscale">
-                                    </div>
-                                    <div>
-                                        <h3 class="text-base font-bold text-white mb-1">Jaime Maestro</h3>
-                                        <p class="text-[11px] text-factor-green font-semibold uppercase tracking-wider">Director General</p>
-                                    </div>
-                                </div>
-                                <p class="text-xs text-factor-textMuted leading-relaxed">
-                                    Ex-director de equipos de animación en producciones internacionales y nominado al Premio Goya. Especialista en biomecánica y acting.
-                                </p>
+                            <div>
+                                <label class="block text-[10px] font-bold uppercase tracking-widest text-factor-textMuted mb-2">Email</label>
+                                <input type="email" name="email" class="input-field w-full px-5 py-4 rounded-xl text-white text-sm" placeholder="tu@email.com" required>
                             </div>
-
-                            <!-- Caja Profesor 2 (Placeholder) -->
-                            <div class="content-card p-6 border-factor-border/30 bg-[#1a1e28]">
-                                <h2 class="font-bold text-white mb-6 text-center uppercase tracking-widest text-[10px] opacity-60">Profesor del curso</h2>
-                                <div class="flex items-center gap-4 mb-4">
-                                    <div class="w-16 h-16 rounded-full border-2 border-factor-cyan p-0.5 bg-black shrink-0">
-                                        <img src="https://picsum.photos/seed/prof2/200/200" alt="Profesor" class="w-full h-full object-cover rounded-full grayscale">
-                                    </div>
-                                    <div>
-                                        <h3 class="text-base font-bold text-white mb-1">Nombre Profesor</h3>
-                                        <p class="text-[11px] text-factor-cyan font-semibold uppercase tracking-wider">Especialista Animación</p>
-                                    </div>
-                                </div>
-                                <p class="text-xs text-factor-textMuted leading-relaxed">
-                                    Profesional en activo en grandes estudios con más de 10 años de experiencia en animación de personajes para cine y videojuegos.
-                                </p>
+                            <div>
+                                <label class="block text-[10px] font-bold uppercase tracking-widest text-factor-textMuted mb-2">Comentarios / Dudas</label>
+                                <textarea name="message" class="input-field w-full px-5 py-4 rounded-xl text-white text-sm h-32 resize-none" placeholder="¿Tienes alguna duda o comentario?"></textarea>
                             </div>
-                        </div>
+                            <button type="submit" class="w-full py-4 rounded-xl bg-factor-cyan text-black font-black uppercase tracking-widest text-xs hover:scale-[1.02] transition-all shadow-[0_0_15px_rgba(0,240,255,0.1)]">
+                                Enviar Consulta
+                            </button>
+                        </form>
+                    </div>
 
+                    <!-- Profesores del curso -->
+                    <div id="professors-container" class="space-y-4">
+                        <!-- Cargado dinámicamente -->
+                    </div>
+
+                    <!-- Perfil del Alumno -->
+                    <div id="target-audience-container">
+                        <!-- Cargado dinámicamente -->
                     </div>
                 </div>
 
@@ -338,6 +174,7 @@
     <!-- mobile-menu-script -->
     
     <script src="js/loadComponents.js"></script>
+    <script src="js/renderCourseDetails.js"></script>
 </body>
 </html>
 

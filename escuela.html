@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth overflow-y-scroll">
+<html lang="es" class="scroll-smooth ">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -147,11 +147,9 @@
         </div>
 
     </section>
-
     <!-- Catálogo de Cursos Presenciales -->
-    <section id="cursos" class="py-8 relative overflow-hidden bg-[#1a1e28] border-y border-factor-border/30 z-20">
+    <section id="cursos-presenciales-section" class="py-8 relative overflow-hidden bg-[#1a1e28] border-y border-factor-border/30 z-20 hidden">
         <div class="absolute right-0 top-1/4 w-[400px] h-[400px] bg-gradient-radial from-factor-green/5 to-transparent opacity-40 blur-3xl pointer-events-none rounded-full"></div>
-        
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="flex flex-col md:flex-row justify-between items-end mb-12">
                 <div>
@@ -159,166 +157,74 @@
                     <p class="text-factor-textMuted max-w-2xl">Un espacio seguro para que mentes extraordinarias hagan cosas extraordinarias.</p>
                 </div>
             </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <!-- Curso 1: Animación 3D -->
-                <div class="course-card flex flex-col h-full group">
-                    <div class="relative h-48 overflow-hidden bg-[#2c3543] isolation-auto">
-                        <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&q=80&w=800" alt="Animación Profesional 2D y 3D" class="w-full h-full object-cover  will-change-transform transition-transform duration-500">
-                        <div class="absolute -inset-[1px] bg-gradient-to-t from-[#2c3543] to-transparent"></div>
-                        <div class="absolute top-4 left-4 flex gap-2">
-                            <span class="bg-black/60 backdrop-blur-md border border-white/10 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full"><i class="fa-regular fa-clock text-factor-green mr-1"></i> 600H</span>
-                            <span class="bg-black/60 backdrop-blur-md border border-white/10 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full"><i class="fa-solid fa-calendar-days text-factor-green mr-1"></i> 9 Meses</span>
-                        </div>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow -mt-px relative z-10 bg-[#2c3543] rounded-b-2xl">
-                        <h3 class="text-xl font-bold text-white mb-2">Animación Profesional 2D y 3D</h3>
-                        <p class="text-factor-textMuted text-sm mb-6 flex-grow">
-                            Nos alejamos del modelo "generalista". Este programa troncal se centra puramente en la animación de personajes, biomecánica, acting avanzado y respuesta a retakes de directores reales.
-                        </p>
-                        <a href="curso-animacion.html" class="w-full py-3 rounded-full text-xs font-extrabold uppercase tracking-widest bg-transparent text-factor-green border-2 border-factor-green hover:bg-factor-green hover:text-black transition-all flex justify-center items-center gap-2">
-                            Más información <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Curso 2: VFX -->
-                <div class="course-card flex flex-col h-full group">
-                    <div class="relative h-48 overflow-hidden bg-[#2c3543] isolation-auto">
-                        <img src="https://images.unsplash.com/photo-1540655037529-dec987208707?auto=format&fit=crop&q=80&w=800" alt="Especialización en VFX" class="w-full h-full object-cover  will-change-transform transition-transform duration-500 filter contrast-125">
-                        <div class="absolute -inset-[1px] bg-gradient-to-t from-[#2c3543] to-transparent"></div>
-                        <div class="absolute top-4 left-4 flex gap-2">
-                            <span class="bg-black/60 backdrop-blur-md border border-white/10 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full"><i class="fa-regular fa-clock text-factor-cyan mr-1"></i> 300H</span>
-                            <span class="bg-black/60 backdrop-blur-md border border-white/10 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full"><i class="fa-solid fa-calendar-days text-factor-cyan mr-1"></i> 9 Meses</span>
-                        </div>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow -mt-px relative z-10 bg-[#2c3543] rounded-b-2xl">
-                        <h3 class="text-xl font-bold text-white mb-2">VFX asistido por IA</h3>
-                        <p class="text-factor-textMuted text-sm mb-6 flex-grow">
-                            Diseñado para los obsesos del control de calidad visual. Lógica nodal en Nuke, chroma keying, matchmoving y la innovación de integrar Inteligencia Artificial generativa en tu pipeline.
-                        </p>
-                        <a href="curso-vfx.html" class="w-full py-3 rounded-full text-xs font-extrabold uppercase tracking-widest bg-transparent text-factor-cyan border-2 border-factor-cyan hover:bg-factor-cyan hover:text-black transition-all flex justify-center items-center gap-2">
-                            Más información <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Curso 3: Programación -->
-                <div class="course-card flex flex-col h-full group">
-                    <div class="relative h-48 overflow-hidden bg-[#2c3543] isolation-auto">
-                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800" alt="Programación e IA" class="w-full h-full object-cover  will-change-transform transition-transform duration-500 filter hue-rotate-180">
-                        <div class="absolute -inset-[1px] bg-gradient-to-t from-[#2c3543] to-transparent"></div>
-                        <div class="absolute top-4 left-4 flex gap-2">
-                            <span class="bg-black/60 backdrop-blur-md border border-white/10 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full"><i class="fa-regular fa-clock text-factor-green mr-1"></i> 300H</span>
-                            <span class="bg-black/60 backdrop-blur-md border border-white/10 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full"><i class="fa-solid fa-calendar-days text-factor-green mr-1"></i> 9 Meses</span>
-                        </div>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow -mt-px relative z-10 bg-[#2c3543] rounded-b-2xl">
-                        <h3 class="text-xl font-bold text-white mb-2">Programación asistida por IA</h3>
-                        <p class="text-factor-textMuted text-sm mb-6 flex-grow">
-                            Para los perfiles más analíticos. Conviértete en Arquitecto de Software: Python, scripting avanzado, desarrollo de herramientas personalizadas (Tool dev) y creación de shaders.
-                        </p>
-                        <a href="curso-programacion.html" class="w-full py-3 rounded-full text-xs font-extrabold uppercase tracking-widest bg-transparent text-factor-green border-2 border-factor-green hover:bg-factor-green hover:text-black transition-all flex justify-center items-center gap-2">
-                            Más información <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Curso 4: Evaluación Clínica -->
-                <div class="course-card flex flex-col h-full group">
-                    <div class="relative h-48 overflow-hidden bg-[#2c3543] isolation-auto">
-                        <img src="https://picsum.photos/seed/clinic/600/400" alt="Evaluación Clínica" class="w-full h-full object-cover  will-change-transform transition-transform duration-500 saturate-50">
-                        <div class="absolute -inset-[1px] bg-gradient-to-t from-[#2c3543] to-transparent"></div>
-                        <div class="absolute top-4 left-4 flex gap-2">
-                            <span class="bg-black/60 backdrop-blur-md border border-white/10 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full"><i class="fa-solid fa-stethoscope text-factor-cyan mr-1"></i> Paso Obligatorio</span>
-                        </div>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow -mt-px relative z-10 bg-[#2c3543] rounded-b-2xl">
-                        <h3 class="text-xl font-bold text-white mb-2">Evaluación Clínica de Alto Rendimiento</h3>
-                        <p class="text-factor-textMuted text-sm mb-6 flex-grow">
-                            Identificamos ventajas competitivas, no discapacidades. Auditoría neurobiológica obligatoria para diseñar tu hoja de ruta en Factor N.
-                        </p>
-                        <a href="curso-evaluacion.html" class="w-full py-3 rounded-full text-xs font-extrabold uppercase tracking-widest bg-transparent text-factor-cyan border-2 border-factor-cyan hover:bg-factor-cyan hover:text-black transition-all flex justify-center items-center gap-2">
-                            Más información <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
+            <div id="grid-presencial" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
         </div>
     </section>
 
-    <section class="py-8 relative overflow-hidden bg-[#212733] border-t border-factor-border/30">
+    <!-- Campus Online -->
+    <section id="cursos-online-section" class="py-8 relative overflow-hidden bg-[#212733] border-t border-factor-border/30 hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="flex flex-col md:flex-row justify-between items-end mb-12">
                 <div>
-
                     <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-3">Campus <span class="text-factor-cyan">Online</span></h2>
-                    <p class="text-factor-textMuted max-w-xl">Formación especializada remota diseñada para adaptarse a tu ritmo y a tu entorno seguro. Sesiones síncronas y asíncronas con feedback hiper-detallado de supervisores en activo.</p>
+                    <p class="text-factor-textMuted max-w-xl">Formación especializada remota diseñada para adaptarse a tu ritmo y a tu entorno seguro.</p>
                 </div>
             </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <!-- Curso 1: Portfolio -->
-                <div class="course-card flex flex-col h-full group">
-                    <div class="relative h-48 overflow-hidden bg-[#2c3543] isolation-auto">
-                        <img src="https://picsum.photos/seed/portfolio/600/400" alt="Mejora de Portfolio" class="w-full h-full object-cover  will-change-transform transition-transform duration-500 filter sepia-[.3]">
-                        <div class="absolute -inset-[1px] bg-gradient-to-t from-[#2c3543] to-transparent"></div>
-                        <div class="absolute top-4 left-4 flex gap-2">
-                            <span class="bg-black/60 backdrop-blur-md border border-white/10 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full"><i class="fa-regular fa-clock text-factor-cyan mr-1"></i> 150H</span>
-                            <span class="bg-black/60 backdrop-blur-md border border-white/10 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full"><i class="fa-solid fa-globe text-factor-cyan mr-1"></i> 100% Online</span>
-                        </div>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow -mt-px relative z-10 bg-[#2c3543] rounded-b-2xl">
-                        <h3 class="text-xl font-bold text-white mb-2">Mejora de Portfolio</h3>
-                        <p class="text-factor-textMuted text-sm mb-6 flex-grow">
-                            Auditoría técnica y narrativa de tus piezas. Aprende a filtrar, pulir y presentar tu trabajo para que hable el lenguaje que exigen los reclutadores de los grandes estudios.
-                        </p>
-                        <a href="curso-portfolio.html" class="w-full py-3 rounded-full text-xs font-extrabold uppercase tracking-widest bg-transparent text-factor-cyan border-2 border-factor-cyan hover:bg-factor-cyan hover:text-black transition-all flex justify-center items-center gap-2">
-                            Más Información <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Curso 2: Modelado -->
-                <div class="course-card flex flex-col h-full group">
-                    <div class="relative h-48 overflow-hidden bg-[#2c3543] isolation-auto">
-                        <img src="https://picsum.photos/seed/modeling/600/400" alt="Modelado asistido con IA" class="w-full h-full object-cover  will-change-transform transition-transform duration-500 filter saturate-150">
-                        <div class="absolute -inset-[1px] bg-gradient-to-t from-[#2c3543] to-transparent"></div>
-                        <div class="absolute top-4 left-4 flex gap-2">
-                            <span class="bg-black/60 backdrop-blur-md border border-white/10 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full"><i class="fa-regular fa-clock text-factor-cyan mr-1"></i> 200H</span>
-                            <span class="bg-black/60 backdrop-blur-md border border-white/10 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full"><i class="fa-solid fa-globe text-factor-cyan mr-1"></i> 100% Online</span>
-                        </div>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow -mt-px relative z-10 bg-[#2c3543] rounded-b-2xl">
-                        <h3 class="text-xl font-bold text-white mb-2">Modelado y Texturizado asistido con IA</h3>
-                        <p class="text-factor-textMuted text-sm mb-6 flex-grow">
-                            Flujos de trabajo híbridos combinando ZBrush/Maya con redes neuronales. Optimización de tiempos en concept art 3D, mapeo UV y generación de texturas de alta resolución.
-                        </p>
-                        <a href="curso-modelado.html" class="w-full py-3 rounded-full text-xs font-extrabold uppercase tracking-widest bg-transparent text-factor-cyan border-2 border-factor-cyan hover:bg-factor-cyan hover:text-black transition-all flex justify-center items-center gap-2">
-                            Más Información <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Curso 3: Placeholder para cuadrar el grid -->
-                <div class="course-card flex flex-col h-full group border-dashed border-factor-border bg-transparent hover:bg-factor-cyan/5">
-                    <div class="p-6 flex flex-col flex-grow -mt-px relative z-10 bg-[#2c3543] rounded-b-2xl items-center justify-center text-center opacity-50 group-hover:opacity-100 transition-opacity">
-                        <div class="w-16 h-16 rounded-full bg-factor-cyan/10 flex items-center justify-center mb-4 text-factor-cyan group-hover:scale-110 transition-transform">
-                            <i class="fa-solid fa-plus text-2xl"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-white mb-2">Próximos Programas</h3>
-                        <p class="text-factor-textMuted text-sm">
-                            Estamos desarrollando nuevas formaciones online adaptadas a la demanda del mercado y de la neurodivergencia.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
+            <div id="grid-online" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
         </div>
     </section>
+
+    <script>
+        async function loadCourses() {
+            try {
+                const res = await fetch('data/courses.json');
+                const courses = await res.json();
+                
+                if (!courses || !Array.isArray(courses)) return;
+
+                // Filtro robusto: quita espacios y pasa a minúsculas
+                const presenciales = courses.filter(c => 
+                    c.category && c.category.trim().toLowerCase() === 'curso presencial'
+                );
+                const online = courses.filter(c => 
+                    c.category && c.category.trim().toLowerCase() === 'curso online'
+                );
+
+                const renderCard = (c, colorClass) => `
+                    <div class="course-card flex flex-col h-full group">
+                        <div class="relative h-48 overflow-hidden bg-[#2c3543] isolation-auto">
+                            <img src="${c.image || './img/courses/placeholder.jpg'}" alt="${c.title}" class="w-full h-full object-cover will-change-transform transition-transform duration-500">
+                            <div class="absolute -inset-[1px] bg-gradient-to-t from-[#2c3543] to-transparent"></div>
+                            <div class="absolute top-4 left-4 flex gap-2">
+                                ${c.hours ? `<span class="bg-black/60 backdrop-blur-md border border-white/10 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full"><i class="fa-regular fa-clock text-${colorClass} mr-1"></i> ${c.hours}</span>` : ''}
+                                ${c.duration ? `<span class="bg-black/60 backdrop-blur-md border border-white/10 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full"><i class="fa-solid fa-calendar-days text-${colorClass} mr-1"></i> ${c.duration}</span>` : ''}
+                            </div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow -mt-px relative z-10 bg-[#2c3543] rounded-b-2xl">
+                            <h3 class="text-xl font-bold text-white mb-2">${c.title}</h3>
+                            <p class="text-factor-textMuted text-sm mb-6 flex-grow">${(c.description || '').substring(0, 160)}...</p>
+                            <a href="curso-detalles.html?id=${c.id}" class="w-full py-3 rounded-full text-xs font-extrabold uppercase tracking-widest bg-transparent text-${colorClass} border-2 border-${colorClass} hover:bg-${colorClass} hover:text-black transition-all flex justify-center items-center gap-2">
+                                Más información <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                `;
+
+                if (presenciales.length > 0) {
+                    document.getElementById('cursos-presenciales-section').classList.remove('hidden');
+                    document.getElementById('grid-presencial').innerHTML = presenciales.map(c => renderCard(c, 'factor-green')).join('');
+                }
+
+                if (online.length > 0) {
+                    document.getElementById('cursos-online-section').classList.remove('hidden');
+                    document.getElementById('grid-online').innerHTML = online.map(c => renderCard(c, 'factor-cyan')).join('');
+                }
+            } catch (err) {
+                console.error("Error cargando cursos:", err);
+            }
+        }
+        loadCourses();
+    </script>
 
     <!-- Metodología: Perfil en Picos -->
     <section class="py-12 lg:py-8 bg-[#1a1e28] border-y border-factor-border/30 relative z-20">

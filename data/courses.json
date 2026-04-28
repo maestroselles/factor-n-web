@@ -2,79 +2,423 @@
     {
         "id": "animacion",
         "title": "Animación Profesional 2D y 3D",
-        "category": "Programas de Élite",
+        "category": "Curso Presencial",
         "hours": "600H",
         "duration": "9 Meses",
         "mode": "Presencial / Online",
+        "level": "Avanzado / Élite",
         "description": "Nos alejamos del modelo 'generalista'. Este programa troncal se centra puramente en la animación de personajes, biomecánica, acting avanzado y respuesta a retakes de directores reales.",
-        "image": "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&q=80&w=800",
+        "image": "./img/courses/animacion.jpg",
         "link": "curso-animacion.html",
         "accentColor": "factor-green",
-        "icon": "fa-film"
+        "icon": "fa-film",
+        "featured": true,
+        "spotsStatus": "PLAZAS LIMITADAS",
+        "banner": {
+            "image": "./img/banners/animacion.jpg",
+            "tag": "[ÚLTIMAS PLAZAS] EVALUACIÓN CLÍNICA",
+            "title": "Máster en Animación 3D",
+            "subtitle": "Fórmate en un entorno de estricta ergonomía sensorial con profesionales de la élite de Hollywood. Aprendizaje por Proyectos sin masking."
+        },
+        "professors": [
+            {
+                "name": "Jaime Maestro",
+                "role": "Director General",
+                "image": "./img/team/jaime.jpg",
+                "bio": "Ex-director de equipos de animación en producciones internacionales y nominado al Premio Goya. Especialista en biomecánica y acting.",
+                "tags": ["Goya", "Disney", "Pixar"]
+            }
+        ],
+        "syllabus": [
+            {
+                "title": "Biomecánica y Fundamentos",
+                "description": "Domina el peso, el equilibrio y el movimiento orgánico. No animamos muñecos, damos vida a cuerpos físicos sujetos a la gravedad.",
+                "items": [
+                    "Los 12 Principios Clásicos",
+                    "Bouncing Balls & Pendulums",
+                    "Ciclos de caminado y carrera",
+                    "Poses de fuerza y línea de acción"
+                ]
+            },
+            {
+                "title": "Acting Avanzado y Pantomima",
+                "description": "Aprende a transmitir emociones complejas y sutilezas psicológicas a través del movimiento corporal.",
+                "items": [
+                    "Subtexto y pensamiento",
+                    "Timing cómico y dramático",
+                    "Interacción con props",
+                    "Referencias de video reales"
+                ]
+            },
+            {
+                "title": "Facial y Lip-Sync",
+                "description": "La culminación de la actuación. Sincronía labial perfecta y el estudio anatómico de la cara para crear micro-expresiones creíbles.",
+                "items": [
+                    "Fonemas y shapes",
+                    "Anatomía muscular facial",
+                    "Ojos y dirección de mirada",
+                    "Pulido final para Reel"
+                ]
+            }
+        ],
+        "targetAudience": {
+            "title": "Perfil del Alumno",
+            "traits": [
+                "Obsesión por el detalle y el movimiento",
+                "Capacidad de observación analítica",
+                "Perfil creativo con paciencia infinita",
+                "Deseo de trabajar en la élite del cine/videojuegos"
+            ]
+        },
+        "software": [
+            {
+                "name": "Autodesk Maya",
+                "icon": "fa-brands fa-unity"
+            },
+            {
+                "name": "ZBrush",
+                "icon": "fa-brands fa-steam"
+            },
+            {
+                "name": "Blender",
+                "icon": "fa-solid fa-cube"
+            },
+            {
+                "name": "Python",
+                "icon": "fa-brands fa-python"
+            },
+            {
+                "name": "3dsmax",
+                "icon": "fa-solid fa-laptop-code"
+            },
+            {
+                "name": "After Effects",
+                "icon": "fa-solid fa-wand-magic-sparkles"
+            }
+        ],
+        "methodology": [
+            {
+                "title": "Ergonomía Sensorial",
+                "text": "Aulas con luz regulable, reducción de ruido ambiental y auriculares ANC permitidos en todo momento. Cero 'Masking'.",
+                "icon": "fa-solid fa-eye"
+            },
+            {
+                "title": "Trabajo Asíncrono",
+                "text": "Entendemos que la energía fluctúa. Objetivos semanales por hitos, no calentando la silla en un horario rígido.",
+                "icon": "fa-solid fa-clock"
+            },
+            {
+                "title": "Sin Distracciones",
+                "text": "Entorno optimizado para el hiperfoco. Eliminamos el ruido visual y auditivo para que solo importe tu aprendizaje.",
+                "icon": "fa-solid fa-brain"
+            },
+            {
+                "title": "Liderazgo Representativo",
+                "text": "Tus supervisores comparten tu neurología. Han llegado a lo más alto de la industria y saben exactamente cómo potenciar tu talento.",
+                "icon": "fa-solid fa-user-tie"
+            }
+        ],
+        "nextDate": "Octubre 2026"
     },
     {
         "id": "vfx",
         "title": "VFX asistido por IA",
-        "category": "Programas de Élite",
+        "category": "Curso Presencial",
         "hours": "300H",
         "duration": "9 Meses",
         "mode": "Presencial / Online",
+        "level": "Avanzado / Élite",
         "description": "Diseñado para los obsesos del control de calidad visual. Lógica nodal en Nuke, chroma keying, matchmoving y la innovación de integrar Inteligencia Artificial generativa en tu pipeline.",
-        "image": "https://images.unsplash.com/photo-1540655037529-dec987208707?auto=format&fit=crop&q=80&w=800",
+        "image": "./img/courses/vfx.jpg",
         "link": "curso-vfx.html",
         "accentColor": "factor-cyan",
-        "icon": "fa-wand-magic-sparkles"
+        "icon": "fa-wand-magic-sparkles",
+        "featured": true,
+        "spotsStatus": "PLAZAS LIMITADAS",
+        "banner": {
+            "image": "./img/banners/vfx.jpg",
+            "tag": "Inscripción Abierta",
+            "title": "VFX & Composición Avanzada",
+            "subtitle": "Domina el pipeline de efectos visuales combinando la precisión nodal de Nuke con la potencia creativa de la IA Generativa."
+        },
+        "professors": [
+            {
+                "name": "Héctor Ponce",
+                "role": "VFX Supervisor",
+                "image": "./img/team/hector.jpg",
+                "bio": "Especialista en composición y post-producción con amplia experiencia en publicidad de alto nivel y cine."
+            }
+        ],
+        "syllabus": [
+            {
+                "title": "Composición Nodal en Nuke",
+                "description": "Entiende la arquitectura de Nuke y domina el flujo de trabajo basado en nodos para un control total de la imagen.",
+                "items": [
+                    "Arquitectura de canales",
+                    "Keying de precisión",
+                    "Matchmoving 3D",
+                    "Rotoscopia avanzada"
+                ]
+            },
+            {
+                "title": "IA Generativa en el Pipeline",
+                "description": "Aprende a integrar herramientas de IA para acelerar procesos de clean-up y extensión de decorados.",
+                "items": [
+                    "Inpainting inteligente",
+                    "Generación de assets con IA",
+                    "Reducción de ruido neuronal",
+                    "Upscaling y mejora de texturas"
+                ]
+            }
+        ],
+        "targetAudience": {
+            "title": "Perfil del Alumno",
+            "traits": [
+                "Mente técnica y lógica (nodos)",
+                "Ojo crítico para el fotorrealismo",
+                "Interés por las nuevas herramientas de IA",
+                "Aspiración a compositor senior"
+            ]
+        },
+        "software": [
+            {
+                "name": "Nuke",
+                "icon": "fa-solid fa-layer-group"
+            },
+            {
+                "name": "Houdini",
+                "icon": "fa-solid fa-fire-flame-curved"
+            },
+            {
+                "name": "Midjourney",
+                "icon": "fa-solid fa-robot"
+            },
+            {
+                "name": "After Effects",
+                "icon": "fa-solid fa-wand-magic-sparkles"
+            }
+        ],
+        "methodology": [
+            {
+                "title": "Lógica Nodal",
+                "text": "Domina la composición avanzada mediante nodos. El estándar de los grandes estudios de efectos visuales.",
+                "icon": "fa-solid fa-diagram-project"
+            },
+            {
+                "title": "IA Generativa",
+                "text": "Aprende a usar modelos de IA para acelerar el rotoscopiado, limpieza y creación de assets digitales.",
+                "icon": "fa-solid fa-microchip"
+            },
+            {
+                "title": "Hiper-Foco Factor N",
+                "text": "Entorno optimizado sin distracciones para que tu flujo de trabajo creativo sea ininterrumpido.",
+                "icon": "fa-solid fa-brain"
+            },
+            {
+                "title": "Pipeline Real",
+                "text": "Trabaja con archivos reales de cine para entender cómo se integran los VFX en una producción profesional.",
+                "icon": "fa-solid fa-film"
+            }
+        ]
     },
     {
         "id": "programacion",
         "title": "Programación asistida por IA",
-        "category": "Programas de Élite",
+        "category": "Curso Presencial",
         "hours": "300H",
         "duration": "9 Meses",
         "mode": "Presencial / Online",
+        "level": "Técnico / Élite",
         "description": "Para los perfiles más analíticos. Conviértete en Arquitecto de Software: Python, scripting avanzado, desarrollo de herramientas personalizadas (Tool dev) y creación de shaders.",
-        "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800",
+        "image": "./img/courses/programacion.jpg",
         "link": "curso-programacion.html",
         "accentColor": "factor-green",
-        "icon": "fa-code"
+        "icon": "fa-code",
+        "featured": false,
+        "banner": {
+            "image": "./img/banners/programacion.jpg",
+            "tag": "Perfil Tecnológico",
+            "title": "Programación & IA",
+            "subtitle": "Domina el lenguaje de la industria. Crea tus propias herramientas y shaders optimizados para producción real."
+        },
+        "professors": [
+            {
+                "name": "Jaime Maestro",
+                "role": "Dirección Académica",
+                "image": "./img/team/jaime.jpg",
+                "bio": "Supervisión de pipelines y flujos de trabajo técnicos para optimizar la producción creativa."
+            }
+        ],
+        "syllabus": [
+            {
+                "title": "Python para Producción",
+                "description": "Aprende a automatizar tareas complejas en Maya, Houdini o Blender usando Python.",
+                "items": [
+                    "Sintaxis básica y avanzada",
+                    "Scripting para DCCs",
+                    "Creación de GUIs personalizadas",
+                    "Gestión de datos de producción"
+                ]
+            }
+        ],
+        "targetAudience": {
+            "title": "Perfil del Alumno",
+            "traits": [
+                "Capacidad lógica y matemática",
+                "Interés por la optimización de procesos",
+                "Mentalidad de 'problem solver'",
+                "Curiosidad por el desarrollo de herramientas"
+            ]
+        }
     },
     {
         "id": "evaluacion",
-        "title": "Evaluación Clínica de Alto Rendimiento",
-        "category": "Paso Obligatorio",
-        "hours": "Paso Obligatorio",
-        "duration": "",
+        "title": "Evaluación Clínica",
+        "category": "Curso Online",
+        "hours": "Fase Previa",
+        "duration": "1 Sesión",
         "mode": "Presencial / Online",
+        "level": "Diagnóstico",
         "description": "Identificamos ventajas competitivas, no discapacidades. Auditoría neurobiológica obligatoria para diseñar tu hoja de ruta en Factor N.",
-        "image": "https://picsum.photos/seed/clinic/600/400",
+        "image": "./img/courses/evaluacion.jpg",
         "link": "curso-evaluacion.html",
         "accentColor": "factor-cyan",
-        "icon": "fa-stethoscope"
+        "icon": "fa-stethoscope",
+        "featured": false,
+        "banner": {
+            "image": "./img/banners/evaluacion.jpg",
+            "tag": "Paso Obligatorio",
+            "title": "Evaluación de Alto Rendimiento",
+            "subtitle": "Analizamos tu perfil neurobiológico para potenciar tus habilidades viso-espaciales únicas."
+        },
+        "professors": [
+            {
+                "name": "Equipo Clínico",
+                "role": "Especialistas",
+                "image": "./img/team/equipo_clinico.jpg",
+                "bio": "Profesionales especializados en neurodiversidad y perfiles cognitivos de alto rendimiento."
+            }
+        ],
+        "syllabus": [
+            {
+                "title": "Análisis Cognitivo",
+                "description": "Evaluación detallada de las capacidades de atención, memoria y procesamiento viso-espacial.",
+                "items": [
+                    "Métricas de atención",
+                    "Percepción espacial",
+                    "Velocidad de procesamiento",
+                    "Estilos de aprendizaje"
+                ]
+            }
+        ],
+        "targetAudience": {
+            "title": "Perfil del Alumno",
+            "traits": [
+                "Candidatos a programas de élite",
+                "Interés por el autoconocimiento biológico",
+                "Búsqueda de alto rendimiento sin burnout",
+                "Perfiles neurodivergentes confirmados o sospechados"
+            ]
+        }
     },
     {
         "id": "portfolio",
         "title": "Mejora de Portfolio",
-        "category": "Campus Online",
+        "category": "Curso Online",
         "hours": "150H",
-        "duration": "",
+        "duration": "3 Meses",
         "mode": "100% Online",
-        "description": "Auditoría técnica y narrativa de tus piezas. Aprende a filtrar, pulir y presentar tu trabajo para que hable el lenguaje que exigen los reclutadores de los grandes estudios.",
-        "image": "https://picsum.photos/seed/portfolio/600/400",
+        "level": "Intermedio / Senior",
+        "description": "Auditoría técnica y narrativa de tus piezas. Aprende a filtrar, pulir y presentar tu trabajo para que hable el lenguaje que exigen los reclutadores.",
+        "image": "./img/courses/portfolio.jpg",
         "link": "curso-portfolio.html",
         "accentColor": "factor-cyan",
-        "icon": "fa-globe"
+        "icon": "fa-briefcase",
+        "featured": false,
+        "banner": {
+            "image": "./img/banners/portfolio.jpg",
+            "tag": "Campus Online",
+            "title": "Mentoría de Portfolio",
+            "subtitle": "Transforma tu trabajo en una carta de presentación irresistible para los mejores estudios del mundo."
+        },
+        "professors": [
+            {
+                "name": "Supervisores Senior",
+                "role": "Mentores",
+                "image": "./img/team/mentores.jpg",
+                "bio": "Profesionales en activo que revisan reels y portfolios a diario en la industria real."
+            }
+        ],
+        "syllabus": [
+            {
+                "title": "Narrativa Visual",
+                "description": "Aprende a contar una historia con tu reel y a destacar tus mejores habilidades en los primeros segundos.",
+                "items": [
+                    "Selección de piezas",
+                    "Montaje y ritmo",
+                    "Presentación técnica",
+                    "Feedback personalizado"
+                ]
+            }
+        ],
+        "targetAudience": {
+            "title": "Perfil del Alumno",
+            "traits": [
+                "Artistas con material base para reel",
+                "Búsqueda activa de empleo en estudios",
+                "Necesidad de criterio profesional externo",
+                "Ambición por mejorar la calidad de presentación"
+            ]
+        }
     },
     {
         "id": "modelado",
-        "title": "Modelado y Texturizado asistido con IA",
-        "category": "Campus Online",
+        "title": "Modelado asistido con IA",
+        "category": "Curso Online",
         "hours": "200H",
-        "duration": "",
+        "duration": "4 Meses",
         "mode": "100% Online",
-        "description": "Flujos de trabajo híbridos combinando ZBrush/Maya con redes neuronales. Optimización de tiempos en concept art 3D, mapeo UV y generación de texturas de alta resolución.",
-        "image": "https://picsum.photos/seed/modeling/600/400",
+        "level": "Iniciación / Intermedio",
+        "description": "Flujos de trabajo híbridos combinando ZBrush/Maya con redes neuronales. Optimización de tiempos en concept art 3D y mapeo UV.",
+        "image": "./img/courses/modelado.jpg",
         "link": "curso-modelado.html",
         "accentColor": "factor-cyan",
-        "icon": "fa-cube"
+        "icon": "fa-cube",
+        "featured": false,
+        "banner": {
+            "image": "./img/banners/modelado.jpg",
+            "tag": "Campus Online",
+            "title": "Modelado & IA",
+            "subtitle": "Acelera tus procesos de creación 3D integrando flujos de trabajo con inteligencia artificial."
+        },
+        "professors": [
+            {
+                "name": "Artistas 3D Senior",
+                "role": "Docentes",
+                "image": "./img/team/profesores_3d.jpg",
+                "bio": "Especialistas en escultura digital y modelado hard-surface para producciones internacionales."
+            }
+        ],
+        "syllabus": [
+            {
+                "title": "Escultura Digital",
+                "description": "Domina ZBrush y las técnicas de modelado orgánico de alta resolución.",
+                "items": [
+                    "Anatomía digital",
+                    "Retopología optimizada",
+                    "Texturizado con IA",
+                    "Render final"
+                ]
+            }
+        ],
+        "targetAudience": {
+            "title": "Perfil del Alumno",
+            "traits": [
+                "Pasión por la forma y el volumen",
+                "Interés por el diseño de personajes y assets",
+                "Mentalidad técnica para la optimización",
+                "Deseo de agilizar flujos con nuevas tecnologías"
+            ]
+        }
     }
 ]

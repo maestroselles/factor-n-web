@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth overflow-y-scroll">
+<html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -107,7 +107,14 @@
         }
         .logo-track {
             display: inline-flex;
-            animation: scroll-logos 40s linear infinite;
+            animation: scroll-logos 50s linear infinite;
+            width: max-content;
+        }
+        .logo-item {
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+            margin-right: 5rem; /* El espacio entre logos (gap equivalente) */
         }
         @keyframes scroll-logos {
             0% { transform: translateX(0); }
@@ -133,56 +140,17 @@
     <div class="h-20"></div>
 
     <!-- Netflix-Style Featured Banner Carousel -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 mb-8 relative z-40">
-        <div class="relative rounded-2xl overflow-hidden group border border-factor-border/50 shadow-2xl bg-factor-panel">
+    <section class="mx-auto mt-8 mb-8 relative z-40 px-4 sm:px-6 lg:px-8" style="max-width: 1280px; width: 100%;">
+        <div class="relative w-full rounded-2xl overflow-hidden group border border-factor-border/50 shadow-2xl bg-factor-panel">
             
-            <!-- Contenedor del Slider -->
-            <div id="banner-slider" class="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide scroll-smooth">
-                
-                <!-- Slide 1: Escuela -->
-                <a href="curso-animacion.html" class="min-w-full snap-center relative block cursor-pointer group/slide">
-                    <img src="https://picsum.photos/seed/slide1/1200/400" alt="Curso de Animación" class="w-full h-56 md:h-72 lg:h-80 object-cover opacity-60 group-hover/slide:opacity-80 transition-opacity duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-r from-[#212733] via-[#212733]/80 to-transparent flex flex-col justify-center px-8 md:px-16">
-                        <div class="max-w-2xl">
-                            <span class="inline-block px-3 py-1 bg-factor-green text-black text-[10px] font-black uppercase tracking-widest rounded-full mb-4 shadow-[0_0_15px_rgba(0,224,192,0.4)]">
-                                <i class="fa-solid fa-bolt mr-1"></i> [Últimas Plazas] Evaluación Clínica
-                            </span>
-                            <h3 class="text-3xl md:text-5xl font-extrabold text-white mb-3 tracking-tight">Máster en Animación 3D</h3>
-                            <p class="text-factor-textMuted text-sm md:text-base mb-6 max-w-xl leading-relaxed hidden sm:block">
-                                Fórmate en un entorno de estricta ergonomía sensorial con profesionales de la élite de Hollywood. Aprendizaje por Proyectos sin masking.
-                            </p>
-                            <span class="text-white font-bold text-sm uppercase tracking-wider flex items-center gap-2 group-hover/slide:text-factor-green transition-colors">
-                                Ver programa completo <i class="fa-solid fa-arrow-right"></i>
-                            </span>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Slide 2: B2B -->
-                <a href="empresas.html" class="min-w-full snap-center relative block cursor-pointer group/slide">
-                    <img src="https://picsum.photos/seed/slide2/1200/400" alt="Servicios B2B" class="w-full h-56 md:h-72 lg:h-80 object-cover opacity-60 group-hover/slide:opacity-80 transition-opacity duration-500 filter hue-rotate-180">
-                    <div class="absolute inset-0 bg-gradient-to-r from-[#212733] via-[#212733]/80 to-transparent flex flex-col justify-center px-8 md:px-16">
-                        <div class="max-w-2xl">
-                            <span class="inline-block px-3 py-1 bg-factor-cyan text-black text-[10px] font-black uppercase tracking-widest rounded-full mb-4">
-                                Servicios a Empresas
-                            </span>
-                            <h3 class="text-3xl md:text-5xl font-extrabold text-white mb-3 tracking-tight">Cumplimiento LGD Inteligente</h3>
-                            <p class="text-factor-textMuted text-sm md:text-base mb-6 max-w-xl leading-relaxed hidden sm:block">
-                                Transforma la obligación legal del 2% en una ventaja competitiva. Incorpora talento tecnológico hiper-especializado y mejora tus métricas ESG.
-                            </p>
-                            <span class="text-white font-bold text-sm uppercase tracking-wider flex items-center gap-2 group-hover/slide:text-factor-cyan transition-colors">
-                                Descubrir servicios B2B <i class="fa-solid fa-arrow-right"></i>
-                            </span>
-                        </div>
-                    </div>
-                </a>
-
+            <!-- Contenedor del Slider (Se rellena dinámicamente) -->
+            <div id="banner-slider" class="flex w-full overflow-x-auto snap-x snap-mandatory scrollbar-hide scroll-smooth">
+                <!-- Los slides se cargan desde data/courses.json vía js/renderBanner.js -->
             </div>
 
             <!-- Netflix-Style Slider Indicators -->
-            <div class="absolute bottom-6 left-8 md:left-16 flex gap-2 z-30">
-                <div class="slider-dot w-8 h-1 bg-factor-green rounded-full shadow-[0_0_10px_rgba(0,224,192,0.6)]"></div>
-                <div class="slider-dot w-8 h-1 bg-white/20 rounded-full hover:bg-white/40 transition-colors cursor-pointer"></div>
+            <div id="banner-dots" class="absolute bottom-6 left-8 md:left-16 flex gap-2 z-30">
+                <!-- Se generan dinámicamente -->
             </div>
             
             <!-- Controles laterales -->
@@ -193,7 +161,10 @@
                 <i class="fa-solid fa-chevron-right"></i>
             </button>
         </div>
-    </div>
+    </section>
+
+    <!-- Script de carga dinámica -->
+    <script src="js/renderBanner.js"></script>
 
     <!-- Hero Section -->
     <section class="relative pt-0 pb-8 overflow-hidden flex-grow">
@@ -201,13 +172,13 @@
         <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gradient-radial from-factor-green/10 to-transparent opacity-60 blur-3xl pointer-events-none rounded-full"></div>
         <div class="absolute bottom-0 right-0 w-[400px] h-[400px] bg-gradient-radial from-factor-cyan/10 to-transparent opacity-40 blur-3xl pointer-events-none rounded-full"></div>
         
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center max-w-4xl mx-auto">
+        <div class="mx-auto relative z-10" style="max-width: 1280px; padding-left: 1rem; padding-right: 1rem; width: 100%;">
+            <div class="text-center w-full mx-auto">
                 <h1 class="text-5xl md:text-6xl lg:text-[5.5rem] font-extrabold tracking-tight mb-8 leading-[1] text-white">
                     Hub de <span class="text-transparent bg-clip-text bg-gradient-to-r from-factor-green to-factor-cyan inline-block">Talento Divergente</span>
                 </h1>
                 
-                <div class="mt-8 text-lg md:text-xl text-factor-textMuted font-light leading-relaxed max-w-3xl mx-auto space-y-6">
+                <div class="mt-8 text-lg md:text-xl text-factor-textMuted font-light leading-relaxed max-w-3xl mx-auto space-y-6 text-justify">
                     <p>
                         Factor N no es solo una escuela; es un ecosistema dise&ntilde;ado para capitalizar el potencial &uacute;nico de la neurodivergencia. Somos el puente entre mentes excepcionales con perfiles de alta especializaci&oacute;n t&eacute;cnica y las corporaciones que buscan la excelencia en la era de la inteligencia artificial y la creatividad digital.
                     </p>
@@ -215,12 +186,47 @@
                         Aqu&iacute;, el hiperfoco es nuestra herramienta de trabajo y la diversidad cognitiva nuestra mayor ventaja competitiva.
                     </p>
                 </div>
+
+                <!-- Dual Path CTA -->
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+                    <!-- Path: Talento -->
+                    <a href="escuela.html" class="group relative p-10 rounded-[32px] bg-factor-green/[0.03] border border-factor-green/10 backdrop-blur-sm overflow-hidden transition-all duration-500 hover:bg-factor-green/[0.07] hover:border-factor-green/30 hover:-translate-y-2">
+                        <div class="absolute -top-12 -right-12 w-32 h-32 bg-factor-green/5 rounded-full blur-3xl group-hover:bg-factor-green/10 transition-all"></div>
+                        <div class="relative z-10">
+                            <h3 class="text-2xl font-black text-factor-green uppercase tracking-tighter mb-4 text-center">
+                                <i class="fa-solid fa-brain mr-3 text-xl"></i>Soy Talento
+                            </h3>
+                            <p class="text-[15px] text-factor-textMuted leading-relaxed text-justify">Entra en un ecosistema dise&ntilde;ado para tu neurolog&iacute;a. Aprende con proyectos reales, tecnolog&iacute;a de vanguardia y un equipo que habla tu mismo idioma. Convierte tu hiperfoco en tu carrera profesional.</p>
+                        </div>
+                    </a>
+
+                    <!-- Path: Empresa -->
+                    <a href="empresas.html" class="group relative p-10 rounded-[32px] bg-factor-cyan/[0.03] border border-factor-cyan/10 backdrop-blur-sm overflow-hidden transition-all duration-500 hover:bg-factor-cyan/[0.07] hover:border-factor-cyan/30 hover:-translate-y-2">
+                        <div class="absolute -top-12 -right-12 w-32 h-32 bg-factor-cyan/5 rounded-full blur-3xl group-hover:bg-factor-cyan/10 transition-all"></div>
+                        <div class="relative z-10">
+                            <h3 class="text-2xl font-black text-factor-cyan uppercase tracking-tighter mb-4 text-center">
+                                <i class="fa-solid fa-briefcase mr-3 text-xl"></i>Soy Empresa
+                            </h3>
+                            <p class="text-[15px] text-factor-textMuted leading-relaxed text-justify">Encuentra el talento hiper-especializado que tu producci&oacute;n necesita. Te ayudamos a integrar perfiles neurodivergentes de alto rendimiento, optimizando tus equipos y cumpliendo con impacto social real.</p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Transitional Section Header -->
+    <section class="pt-8 pb-4 bg-[#1a1e28] relative z-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-[9px] font-black text-factor-cyan uppercase tracking-[0.4em] mb-4">Nuestra Visión</p>
+            <h2 class="text-4xl md:text-5xl font-black text-white uppercase tracking-tighter italic">
+                FACTOR <span class="text-factor-green">N</span>: REDEFINIENDO EL PARADIGMA
+            </h2>
+        </div>
+    </section>
+
     <!-- Problem & Solution Block -->
-    <section class="py-8 border-t border-factor-border/30 relative bg-[#1a1e28] z-20">
+    <section class="py-8 relative bg-[#1a1e28] z-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
                 
@@ -237,10 +243,10 @@
                     </h2>
                     
                     <div class="space-y-4">
-                        <p class="text-factor-textMuted leading-relaxed text-[15px]">
+                        <p class="text-factor-textMuted leading-relaxed text-[15px] text-justify">
                             El sistema educativo reglado, dise&ntilde;ado bajo est&aacute;ndares normot&iacute;picos, expulsa a diario a mentes brillantes por su falta de adaptaci&oacute;n a metodolog&iacute;as r&iacute;gidas. Esto aboca al aislamiento a j&oacute;venes con capacidades viso-espaciales asombrosas, haci&eacute;ndoles interiorizar un falso sentimiento de incapacidad.
                         </p>
-                        <p class="text-factor-textMuted leading-relaxed text-[15px]">
+                        <p class="text-factor-textMuted leading-relaxed text-[15px] text-justify">
                             Paralelamente, el mercado laboral y la industria creativa sufren un cuello de botella: una <strong class="text-white">escasez cr&iacute;tica de talento hiper-especializado</strong> capaz de mantener los niveles de precisi&oacute;n extrema que exigen las nuevas tecnolog&iacute;as. Es un desperdicio inasumible de potencial.
                         </p>
                     </div>
@@ -270,13 +276,13 @@
                     </h2>
                     
                     <div class="space-y-4">
-                        <p class="text-factor-textMuted leading-relaxed text-[15px]">
+                        <p class="text-factor-textMuted leading-relaxed text-[15px] text-justify">
                             Corregimos esta fractura con un modelo educativo pionero: el <strong class="text-factor-green">Aprendizaje por Proyectos</strong> bajo un <strong class="text-white">Liderazgo Representativo</strong>. Nuestro equipo docente est&aacute; formado por profesionales de la industria que tambi&eacute;n son neurodivergentes.
                         </p>
-                        <p class="text-factor-textMuted leading-relaxed text-[15px]">
+                        <p class="text-factor-textMuted leading-relaxed text-[15px] text-justify">
                             Creamos un entorno de estricta ergonom&iacute;a sensorial para que el alumno se enfoque 100% en aprender, y en paralelo, <strong class="text-white">formamos a las empresas</strong> para que adapten sus equipos e integren este talento.
                         </p>
-                        <p class="text-factor-textMuted leading-relaxed text-[15px]">
+                        <p class="text-factor-textMuted leading-relaxed text-[15px] text-justify">
                             Entendemos su neurolog&iacute;a porque la compartimos. Restauramos su seguridad, incluimos una <strong class="text-factor-cyan">Escuela de Familias</strong> y garantizamos su inserci&oacute;n real tutorizando su <em>reel</em> y entrenando <em>soft skills</em> clave para su vida diaria y profesional.
                         </p>
                     </div>
@@ -284,7 +290,7 @@
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10 pt-8 border-t border-factor-border/40">
                         <div class="flex items-start gap-4">
                             <div class="w-12 h-12 rounded-xl bg-factor-cyan/10 flex items-center justify-center flex-shrink-0 text-factor-cyan">
-                                <i class="fa-solid fa-brain text-xl"></i>
+                                <i class="fa-solid fa-graduation-cap text-xl"></i>
                             </div>
                             <div>
                                 <div class="text-sm text-white font-bold mb-1">Modelo Educativo</div>
@@ -309,85 +315,48 @@
 
     <!-- Logos Carousel -->
     <section class="py-8 bg-[#212733] border-y border-factor-border/30 relative z-20 overflow-hidden bg-factor-panel">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10 text-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8 text-center">
             <h3 class="text-xs font-bold text-factor-textMuted uppercase tracking-[0.2em]">El Ecosistema Tecnológico e Institucional</h3>
-            <div class="w-12 h-1 bg-factor-border mx-auto mt-4 rounded-full"></div>
         </div>
         
-        <div class="logo-carousel w-full py-4">
-            <!-- Continuous track -->
-            <div class="logo-track flex items-center gap-16 md:gap-24 px-12 text-factor-textMuted/50">
-                <!-- Group 1 -->
-                <div class="flex items-center gap-4 hover:text-white transition-colors duration-300 group cursor-default">
-                    <i class="fa-solid fa-building-columns text-4xl group-hover:text-factor-cyan transition-colors"></i>
-                    <div class="flex flex-col">
-                        <span class="text-sm font-black uppercase tracking-widest leading-none">Ministerio</span>
-                        <span class="text-xs font-semibold tracking-widest mt-1">de Cultura</span>
-                    </div>
-                </div>
-                
-                <div class="flex items-center gap-4 hover:text-white transition-colors duration-300 group cursor-default">
-                    <i class="fa-solid fa-puzzle-piece text-4xl group-hover:text-[#0055ff] transition-colors"></i>
-                    <div class="flex flex-col">
-                        <span class="text-sm font-black uppercase tracking-widest leading-none">Asperger</span>
-                        <span class="text-xs font-semibold tracking-widest mt-1">TEA</span>
-                    </div>
-                </div>
-                
-                <div class="flex items-center gap-3 hover:text-white transition-colors duration-300 group cursor-default">
-                    <div class="w-10 h-10 rounded-full border-2 border-current flex items-center justify-center group-hover:border-white group-hover:bg-white group-hover:text-black transition-all">
-                        <span class="text-xl font-black mt-[-2px]">u</span>
-                    </div>
-                    <div class="flex flex-col">
-                        <span class="text-sm font-black uppercase tracking-widest leading-none">Unreal</span>
-                        <span class="text-xs font-semibold tracking-widest mt-1">Engine</span>
-                    </div>
-                </div>
-                
-                <div class="flex items-center gap-4 hover:text-white transition-colors duration-300 group cursor-default">
-                    <i class="fa-solid fa-cube text-4xl group-hover:text-[#ea7600] transition-colors"></i>
-                    <div class="flex flex-col">
-                        <span class="text-sm font-black uppercase tracking-widest leading-none">Blender</span>
-                        <span class="text-xs font-semibold tracking-widest mt-1">Foundation</span>
-                    </div>
-                </div>
-
-                <!-- Group 2 (Duplicate for smooth loop) -->
-                <div class="flex items-center gap-4 hover:text-white transition-colors duration-300 group cursor-default">
-                    <i class="fa-solid fa-building-columns text-4xl group-hover:text-factor-cyan transition-colors"></i>
-                    <div class="flex flex-col">
-                        <span class="text-sm font-black uppercase tracking-widest leading-none">Ministerio</span>
-                        <span class="text-xs font-semibold tracking-widest mt-1">de Cultura</span>
-                    </div>
-                </div>
-                
-                <div class="flex items-center gap-4 hover:text-white transition-colors duration-300 group cursor-default">
-                    <i class="fa-solid fa-puzzle-piece text-4xl group-hover:text-[#0055ff] transition-colors"></i>
-                    <div class="flex flex-col">
-                        <span class="text-sm font-black uppercase tracking-widest leading-none">Asperger</span>
-                        <span class="text-xs font-semibold tracking-widest mt-1">TEA</span>
-                    </div>
-                </div>
-                
-                <div class="flex items-center gap-3 hover:text-white transition-colors duration-300 group cursor-default">
-                    <div class="w-10 h-10 rounded-full border-2 border-current flex items-center justify-center group-hover:border-white group-hover:bg-white group-hover:text-black transition-all">
-                        <span class="text-xl font-black mt-[-2px]">u</span>
-                    </div>
-                    <div class="flex flex-col">
-                        <span class="text-sm font-black uppercase tracking-widest leading-none">Unreal</span>
-                        <span class="text-xs font-semibold tracking-widest mt-1">Engine</span>
-                    </div>
-                </div>
-                
-                <div class="flex items-center gap-4 hover:text-white transition-colors duration-300 group cursor-default">
-                    <i class="fa-solid fa-cube text-4xl group-hover:text-[#ea7600] transition-colors"></i>
-                    <div class="flex flex-col">
-                        <span class="text-sm font-black uppercase tracking-widest leading-none">Blender</span>
-                        <span class="text-xs font-semibold tracking-widest mt-1">Foundation</span>
-                    </div>
-                </div>
-            </div>
+        <div class="logo-carousel w-full pt-0 pb-4">
+            <!-- Continuous track (Se llena dinámicamente) -->
+            <div id="sponsors-track" class="logo-track flex items-center text-factor-textMuted/50"></div>
         </div>
+
+        <script>
+            async function loadSponsors() {
+                try {
+                    const res = await fetch('data/sponsors.json');
+                    let sponsors = await res.json();
+                    const track = document.getElementById('sponsors-track');
+                    
+                    if (!sponsors || sponsors.length === 0) return;
+
+                    const renderItem = (s) => `
+                        <div class="logo-item hover:text-white transition-colors duration-300 group cursor-default">
+                            ${s.logo ? `<img src="${s.logo}" class="h-10 w-auto opacity-50 group-hover:opacity-100 transition-all filter grayscale group-hover:grayscale-0">` : `<i class="${s.icon || 'fa-solid fa-star'} text-4xl group-hover:text-factor-cyan transition-colors"></i>`}
+                            <div class="flex flex-col ml-4">
+                                <span class="text-sm font-black uppercase tracking-widest leading-none">${s.nameLine1}</span>
+                                <span class="text-xs font-semibold tracking-widest mt-1">${s.nameLine2}</span>
+                            </div>
+                        </div>
+                    `;
+
+                    // Para que el loop sea infinito de verdad, necesitamos que el primer grupo 
+                    // cubra al menos el ancho de la pantalla. Repetimos el array varias veces.
+                    let baseList = [...sponsors];
+                    while(baseList.length < 10) { baseList = [...baseList, ...sponsors]; }
+
+                    // El track final tendrá dos copias de esa baseList para que el 0% al -50% sea perfecto
+                    const finalItems = [...baseList, ...baseList];
+                    track.innerHTML = finalItems.map(s => renderItem(s)).join('');
+                } catch (err) {
+                    console.error("Error cargando sponsors:", err);
+                }
+            }
+            loadSponsors();
+        </script>
     </section>
 
     <!-- slider and mobile-menu-script -->

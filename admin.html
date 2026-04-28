@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Control - Factor N</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Outfit', 'sans-serif'] },
+                    colors: {
+                        factor: {
+                            bg: '#151921',
+                            panel: '#1a1e28',
+                            border: '#2c3543',
+                            cyan: '#00f0ff',
+                            green: '#00e0c0',
+                            textMuted: '#a0a0a0'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #151921; color: #f0f0f0; }
+        .admin-card { background: #1a1e28; border: 1px solid #2c3543; border-radius: 20px; }
+        
+        .input-dark { 
+            background: #151921; 
+            border: 1px solid #2c3543; 
+            border-radius: 10px; 
+            padding: 14px 18px;
+            color: white;
+            width: 100%;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        .input-dark:focus { border-color: #00f0ff; outline: none; }
+        
+        .label-style { font-size: 9px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.15em; color: #808080; margin-bottom: 6px; display: block; }
+        .nav-item.active { background: #00f0ff; color: #151921; font-weight: 900; }
+        .list-item.active { border-color: #00f0ff; color: #00f0ff; background: rgba(0,240,255,0.05); }
+        .sticky-header { position: sticky; top: 0; z-index: 50; background: rgba(21, 25, 33, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .switch { position: relative; display: inline-block; width: 40px; height: 20px; }
+        .switch input { opacity: 0; width: 0; height: 0; }
+        .slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #2c3543; transition: .4s; border-radius: 34px; }
+        .slider:before { position: absolute; content: ""; height: 14px; width: 14px; left: 3px; bottom: 3px; background-color: white; transition: .4s; border-radius: 50%; }
+        input:checked + .slider { background-color: #00f0ff; }
+        input:checked + .slider:before { transform: translateX(20px); background-color: #151921; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-thumb { background: #2c3543; border-radius: 10px; }
+        .login-overlay {
+            position: fixed;
+            inset: 0;
+            background: #1a1e28;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-factor-green selection:text-black">
+
+    <!-- Pantalla de Login -->
+    <div id="login-screen" class="login-overlay">
+        <div class="w-full max-w-md p-10 admin-card text-center space-y-8">
+            <div class="w-20 h-20 bg-factor-cyan/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fa-solid fa-lock text-3xl text-factor-cyan"></i>
+            </div>
+            <div>
+                <h2 class="text-2xl font-black text-white uppercase tracking-widest">Acceso Restringido</h2>
+                <p class="text-factor-textMuted text-sm mt-2">Introduce la clave de seguridad para continuar</p>
+            </div>
+            <div class="space-y-4">
+                <input type="password" id="admin-pass" class="input-dark text-center text-2xl tracking-[1em]" placeholder="****" onkeyup="if(event.key==='Enter') checkPass()">
+                <button onclick="checkPass()" class="w-full py-4 rounded-xl bg-factor-cyan text-black font-black uppercase tracking-widest hover:bg-white transition-all">Entrar al Panel</button>
+            </div>
+            <p id="login-error" class="text-red-400 text-xs font-bold uppercase tracking-tighter hidden">Contraseña Incorrecta</p>
+        </div>
+    </div>
+
+    <div id="admin-content" class="min-h-screen flex overflow-hidden opacity-0 transition-opacity duration-500">
+
+    <!-- Sidebar Principal -->
+    <aside class="w-64 border-r border-white/5 p-6 flex flex-col gap-8 bg-[#1a1e28]">
+        <div class="px-2"><span class="text-xl font-black text-white">FACTOR <span class="text-factor-cyan">N</span></span></div>
+        <nav class="space-y-1 flex-1">
+            <button onclick="switchTab('home')" id="tab-home" class="nav-item w-full text-left px-4 py-3 rounded-xl text-[10px] font-black uppercase tracking-widest flex items-center gap-3 transition-all text-white/40 hover:text-white"><i class="fa-solid fa-house"></i> Home</button>
+            <button onclick="switchTab('escuela')" id="tab-escuela" class="nav-item w-full text-left px-4 py-3 rounded-xl text-[10px] font-black uppercase tracking-widest flex items-center gap-3 transition-all text-white/40 hover:text-white active"><i class="fa-solid fa-graduation-cap"></i> Escuela</button>
+            <button onclick="switchTab('profesores')" id="tab-profesores" class="nav-item w-full text-left px-4 py-3 rounded-xl text-[10px] font-black uppercase tracking-widest flex items-center gap-3 transition-all text-white/40 hover:text-white"><i class="fa-solid fa-users"></i> Profesores</button>
+            <button onclick="switchTab('empresas')" id="tab-empresas" class="nav-item w-full text-left px-4 py-3 rounded-xl text-[10px] font-black uppercase tracking-widest flex items-center gap-3 transition-all text-white/40 hover:text-white"><i class="fa-solid fa-briefcase"></i> Empresas</button>
+            <button onclick="switchTab('recursos')" id="tab-recursos" class="nav-item w-full text-left px-4 py-3 rounded-xl text-[10px] font-black uppercase tracking-widest flex items-center gap-3 transition-all text-white/40 hover:text-white"><i class="fa-solid fa-folder-open"></i> Recursos</button>
+        </nav>
+        
+        <div class="pt-6 border-t border-white/5">
+            <button onclick="logout()" class="w-full text-left px-4 py-3 rounded-xl text-[10px] font-black uppercase tracking-widest flex items-center gap-3 transition-all text-red-400/60 hover:text-red-400 hover:bg-red-500/5">
+                <i class="fa-solid fa-power-off"></i> Cerrar Sesión
+            </button>
+        </div>
+    </aside>
+
+    <main class="flex-1 flex flex-col h-screen overflow-hidden">
+        <header class="sticky-header px-10 py-6 flex items-center justify-between">
+            <div class="flex flex-col">
+                <h2 id="section-title" class="text-xl font-black text-white uppercase tracking-tighter">Gestión de Escuela</h2>
+                <div id="github-status" class="text-[8px] font-bold uppercase tracking-widest text-factor-cyan/50 flex items-center gap-2 mt-1">
+                    <i class="fa-solid fa-circle text-[4px] animate-pulse"></i> Sincronizado con GitHub
+                </div>
+            </div>
+            <div class="flex gap-4">
+                <button onclick="showSettings()" class="w-12 h-12 rounded-xl border border-white/10 text-white/40 flex items-center justify-center hover:text-white hover:border-white/30 transition-all"><i class="fa-solid fa-gear"></i></button>
+                <button onclick="showFullData()" class="px-6 py-3 rounded-xl border border-white/10 text-white font-black text-[10px] uppercase">Ver JSON</button>
+                <button id="btn-save" onclick="commitChanges()" class="px-8 py-3 rounded-xl bg-factor-cyan text-black font-black text-[10px] uppercase shadow-lg flex items-center gap-3">
+                    <span id="save-text">Publicar en Web</span>
+                    <i id="save-icon" class="fa-solid fa-cloud-arrow-up"></i>
+                </button>
+            </div>
+        </header>
+
+        <div id="main-scroll" class="flex-1 overflow-y-auto p-10 pb-32">
+            
+            <!-- VISTA HOME (SPONSORS) -->
+            <div id="view-home" class="tab-view hidden space-y-10">
+                <div class="flex gap-10">
+                    <aside class="w-64 shrink-0 space-y-2">
+                        <div class="label-style">Partners / Sponsors</div>
+                        <div id="sponsors-list" class="space-y-1"></div>
+                        <button onclick="createNewItem('sponsors')" class="w-full py-3 mt-4 rounded-xl border border-dashed border-white/20 text-white/40 text-[9px] font-black uppercase transition-all">+ Añadir Sponsor</button>
+                    </aside>
+
+                    <div id="sponsors-editor" class="flex-1 hidden">
+                        <section class="admin-card p-10 space-y-8">
+                            <h3 class="text-lg font-black text-white uppercase tracking-tighter flex items-center gap-3">
+                                <i class="fa-solid fa-handshake text-factor-cyan"></i> Datos del Partner
+                            </h3>
+                            <div class="grid grid-cols-2 gap-6">
+                                <div><label class="label-style">Nombre Línea 1</label><input type="text" id="s-name1" class="input-dark" placeholder="Ej: Ministerio"></div>
+                                <div><label class="label-style">Nombre Línea 2</label><input type="text" id="s-name2" class="input-dark" placeholder="Ej: de Cultura"></div>
+                                <div class="col-span-2"><label class="label-style">Icono (FontAwesome)</label><input type="text" id="s-icon" class="input-dark" placeholder="fa-solid fa-building"></div>
+                                <div class="col-span-2">
+                                    <label class="label-style">Logo Imagen (GitHub)</label>
+                                    <div class="flex gap-2">
+                                        <input type="text" id="s-logo" class="input-dark flex-1" placeholder="./img/sponsors/logo.png">
+                                        <button onclick="triggerUpload('sponsors', 's-logo')" class="px-4 rounded-xl bg-white/5 border border-white/10 text-white/40 hover:text-factor-cyan transition-all"><i class="fa-solid fa-upload"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <div class="mt-8 flex justify-end">
+                            <button onclick="deleteItem('sponsors')" class="px-6 py-3 rounded-xl border border-red-500/20 text-red-500/50 hover:bg-red-500 hover:text-white transition-all text-[9px] font-black uppercase tracking-widest flex items-center gap-2">
+                                <i class="fa-solid fa-trash-can"></i> Eliminar Sponsor
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="view-escuela" class="tab-view space-y-10">
+                <div class="flex gap-10">
+                    <aside class="w-64 shrink-0 space-y-2">
+                        <div class="label-style">Cursos</div>
+                        <div id="escuela-list" class="space-y-1"></div>
+                        <button onclick="createNewItem('escuela')" class="w-full py-3 mt-4 rounded-xl border border-dashed border-white/20 text-white/40 text-[9px] font-black uppercase transition-all">+ Nuevo</button>
+                    </aside>
+
+                    <div id="escuela-editor" class="flex-1 hidden">
+                        <div class="grid grid-cols-12 gap-10">
+                            <!-- COLUMNA IZQUIERDA -->
+                            <div class="col-span-8 space-y-10">
+                                <!-- Identidad -->
+                                <section class="admin-card p-10 space-y-8">
+                                    <h3 class="text-lg font-black text-white uppercase flex items-center gap-3"><i class="fa-solid fa-id-badge text-factor-cyan"></i> Identidad</h3>
+                                    <div class="space-y-6">
+                                        <div class="grid grid-cols-2 gap-6">
+                                            <div><label class="label-style">Título del Curso</label><input type="text" id="c-title" class="input-dark font-bold"></div>
+                                            <div><label class="label-style">Categoría</label><select id="c-category" class="input-dark"><option value="Curso Presencial">CURSO PRESENCIAL</option><option value="Curso Online">CURSO ONLINE</option></select></div>
+                                        </div>
+                                        <div class="grid grid-cols-2 gap-6">
+                                            <div><label class="label-style">Slug (ID URL)</label><input type="text" id="c-id" class="input-dark"></div>
+                                            <div>
+                                                <label class="label-style">Miniatura (Ruta Local)</label>
+                                                <div class="flex gap-2">
+                                                    <input type="text" id="c-thumb" class="input-dark flex-1" placeholder="./img/courses/nombre.jpg">
+                                                    <button onclick="triggerUpload('courses', 'c-thumb')" class="px-4 rounded-xl bg-white/5 border border-white/10 text-white/40 hover:text-factor-cyan transition-all"><i class="fa-solid fa-upload"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section class="admin-card p-10 space-y-6">
+                                    <h3 class="text-lg font-black text-white uppercase">Cuerpo de Página</h3>
+                                    <div class="space-y-6">
+                                        <div>
+                                            <label class="label-style">Banner Hero (Ruta Local)</label>
+                                            <div class="flex gap-2">
+                                                <input type="text" id="c-banner-img" class="input-dark flex-1" placeholder="./img/banners/nombre.jpg">
+                                                <button onclick="triggerUpload('banners', 'c-banner-img')" class="px-4 rounded-xl bg-white/5 border border-white/10 text-white/40 hover:text-factor-cyan transition-all"><i class="fa-solid fa-upload"></i></button>
+                                            </div>
+                                        </div>
+                                        <div><label class="label-style">Subtítulo (Visión de la industria)</label><input type="text" id="c-subtitle" class="input-dark font-bold"></div>
+                                        <div><label class="label-style">Descripción Principal</label><textarea id="c-description" class="input-dark h-40 resize-none leading-relaxed"></textarea></div>
+                                    </div>
+                                </section>
+
+                                <section class="admin-card p-10 space-y-8">
+                                    <div class="flex justify-between items-center"><h3 class="text-lg font-black text-white uppercase">Temario</h3><button onclick="addModule()" class="text-[10px] font-black text-factor-cyan uppercase">+ Módulo</button></div>
+                                    <div id="c-modules" class="space-y-4"></div>
+                                </section>
+
+                                <section class="admin-card p-10 space-y-8">
+                                    <div class="flex justify-between items-center"><h3 class="text-lg font-black text-white uppercase">Metodología</h3><button onclick="addMethod()" class="text-[10px] font-black text-factor-cyan uppercase">+ Punto</button></div>
+                                    <div id="c-method" class="space-y-6"></div>
+                                </section>
+                            </div>
+
+                            <!-- COLUMNA DERECHA -->
+                            <div class="col-span-4 space-y-10">
+                                <!-- Destacar en Home (Alineado superiormente con Identidad) -->
+                                <section class="admin-card p-8 space-y-4">
+                                    <div class="flex items-center justify-between">
+                                        <span class="label-style m-0 text-white">Destacar en Home Banner</span>
+                                        <label class="switch"><input type="checkbox" id="c-featured" onchange="toggleFeatured()"><span class="slider"></span></label>
+                                    </div>
+                                    <div id="c-feat-box" class="space-y-3 opacity-30 pointer-events-none">
+                                        <textarea id="c-feat-desc" class="input-dark h-28 py-3 text-[13px] resize-none" placeholder="Descripción corta para el banner del Home..."></textarea>
+                                    </div>
+                                </section>
+
+                                <section class="admin-card p-8 space-y-6">
+                                    <h3 class="label-style text-white m-0">Ficha y Admisión</h3>
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <div><label class="label-style text-white/40">Horas Totales</label><input type="text" id="c-hours" class="input-dark" placeholder="Ej: 600H"></div>
+                                        <div><label class="label-style text-white/40">Duración</label><input type="text" id="c-duration" class="input-dark" placeholder="Ej: 9 Meses"></div>
+                                        <div><label class="label-style text-white/40">Modalidad</label><input type="text" id="c-mode" class="input-dark" placeholder="Ej: Presencial / Online"></div>
+                                        <div><label class="label-style text-white/40">Nivel</label><input type="text" id="c-level" class="input-dark" placeholder="Ej: Avanzado / Élite"></div>
+                                    </div>
+                                    <div><label class="label-style text-white/40">Próxima Convocatoria</label><input type="text" id="c-next-date" class="input-dark border-factor-cyan/20" placeholder="Ej: Octubre 2026"></div>
+                                    <div>
+                                        <label class="label-style text-white/40">Estado de Plazas</label>
+                                        <select id="c-spots" class="input-dark border-factor-cyan/20">
+                                            <option value="PLAZAS LIMITADAS">PLAZAS LIMITADAS</option>
+                                            <option value="ABIERTAS">ABIERTAS</option>
+                                        </select>
+                                    </div>
+                                </section>
+
+                                <section class="admin-card p-8 space-y-6">
+                                    <div class="flex justify-between items-center"><h3 class="label-style text-white m-0">Software</h3><button onclick="addSoftware()" class="text-[9px] text-factor-cyan font-black uppercase">+ Add</button></div>
+                                    <div id="c-software" class="space-y-2"></div>
+                                </section>
+
+                                <section class="admin-card p-8 space-y-6">
+                                    <div class="flex justify-between items-center"><h3 class="label-style text-white m-0">Profesores</h3><button onclick="addCourseProf()" class="text-[9px] text-factor-cyan font-black uppercase">+ Add</button></div>
+                                    <div id="c-profs-selection" class="space-y-2"></div>
+                                </section>
+
+                                <section class="admin-card p-8 space-y-6">
+                                    <h3 class="label-style text-white m-0">Perfil del Alumno</h3>
+                                    <div id="c-target-traits" class="space-y-2"></div>
+                                    <button onclick="addTargetTrait()" class="w-full py-2 rounded-lg border border-dashed border-white/10 text-[9px] font-black text-white/40 uppercase hover:text-factor-cyan">+ Añadir Rasgo</button>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VISTA PROFESORES -->
+            <div id="view-profesores" class="tab-view hidden space-y-10">
+                <div class="flex gap-10">
+                    <aside class="w-64 shrink-0 space-y-2">
+                        <div class="label-style">Equipo Global</div>
+                        <div id="profesores-list" class="space-y-1"></div>
+                        <button onclick="createNewItem('profesores')" class="w-full py-3 mt-4 rounded-xl border border-dashed border-white/20 text-white/40 text-[9px] font-black uppercase">+ Nuevo</button>
+                    </aside>
+                    <div id="profesores-editor" class="flex-1 space-y-10 hidden">
+                        <section class="admin-card p-10 space-y-8">
+                            <h3 class="text-lg font-black text-white uppercase tracking-tighter">Perfil Docente</h3>
+                            <div class="grid grid-cols-2 gap-6">
+                                <div><label class="label-style">Nombre</label><input type="text" id="p-name" class="input-dark"></div>
+                                <div><label class="label-style">Cargo</label><input type="text" id="p-role" class="input-dark"></div>
+                                <div class="col-span-2">
+                                    <label class="label-style">Imagen (Ruta Local)</label>
+                                    <div class="flex gap-2">
+                                        <input type="text" id="p-image" class="input-dark flex-1" placeholder="./img/team/nombre.jpg">
+                                        <button onclick="triggerUpload('team', 'p-image')" class="px-4 rounded-xl bg-white/5 border border-white/10 text-white/40 hover:text-factor-cyan transition-all"><i class="fa-solid fa-upload"></i></button>
+                                    </div>
+                                </div>
+                                <div class="col-span-2"><label class="label-style">Bio Corta</label><textarea id="p-bio" class="input-dark h-32 resize-none leading-relaxed"></textarea></div>
+                                <div class="col-span-2"><label class="label-style">Tags (Goya, Pixar...)</label><input type="text" id="p-tags" class="input-dark font-bold text-factor-cyan"></div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Input de archivo oculto -->
+        <input type="file" id="file-input" class="hidden" onchange="handleFileSelect(event)">
+    </main>
+
+    <!-- Overlay Configuración -->
+    <div id="settings-overlay" class="fixed inset-0 bg-[#0d1017]/95 backdrop-blur-xl hidden flex items-center justify-center z-[110] p-10">
+        <div class="bg-factor-panel rounded-[32px] p-12 max-w-lg w-full border border-white/10 shadow-2xl">
+            <h2 class="text-2xl font-black text-white mb-2 uppercase">Configuración de GitHub</h2>
+            <p class="text-[10px] text-white/40 uppercase tracking-widest mb-8">Conexión directa con el repositorio</p>
+            <div class="space-y-6">
+                <div><label class="label-style">GitHub Token (ghp_...)</label><input type="password" id="set-token" class="input-dark" placeholder="Pega tu token aquí"></div>
+                <div><label class="label-style">Usuario / Repositorio</label><input type="text" id="set-repo" class="input-dark" placeholder="maestroselles/factor-n-web"></div>
+            </div>
+            <div class="flex flex-col gap-4 mt-10">
+                <div class="flex gap-4">
+                    <button onclick="document.getElementById('settings-overlay').classList.add('hidden')" class="flex-1 py-4 rounded-2xl border border-white/10 text-white font-black uppercase text-xs">Cerrar</button>
+                    <button onclick="saveSettings()" class="flex-1 py-4 rounded-2xl bg-factor-cyan text-black font-black uppercase text-xs">Guardar</button>
+                </div>
+                <button onclick="logout()" class="w-full py-3 text-[9px] font-black text-red-500/50 hover:text-red-500 uppercase tracking-widest transition-all">Cerrar Sesión y Borrar Llave</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- PANTALLA DE LOGIN (Solo si no hay Token) -->
+    <div id="login-screen" class="fixed inset-0 bg-[#0d1017] z-[200] flex items-center justify-center p-6 hidden">
+        <div class="max-w-md w-full space-y-10 text-center">
+            <div class="space-y-4">
+                <h1 class="text-5xl font-black text-white tracking-tighter italic">FACTOR<span class="text-factor-cyan">N</span></h1>
+                <div class="h-px w-20 bg-factor-cyan mx-auto"></div>
+                <p class="text-[10px] text-white/40 uppercase tracking-[0.3em] font-bold">Panel de Administración Privado</p>
+            </div>
+            
+            <div class="bg-factor-panel p-10 rounded-[40px] border border-white/5 shadow-2xl space-y-8">
+                <div class="space-y-2">
+                    <label class="text-[9px] font-black text-factor-cyan uppercase tracking-widest block">Introduce tu Llave de Acceso</label>
+                    <input type="password" id="login-token" class="input-dark text-center tracking-widest" placeholder="ghp_xxxxxxxxxxxxxxxx">
+                </div>
+                <button onclick="attemptLogin()" class="w-full py-5 bg-factor-cyan text-black font-black uppercase text-xs rounded-2xl shadow-xl hover:scale-[1.02] active:scale-95 transition-all flex items-center justify-center gap-3">
+                    Entrar al Sistema <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+            
+            <p class="text-[9px] text-white/20 italic">Acceso restringido. Solo personal autorizado de Factor N.</p>
+        </div>
+    </div>
+
+    <!-- Overlay Exportación -->
+    <div id="output-overlay" class="fixed inset-0 bg-[#0d1017]/98 backdrop-blur-xl hidden flex items-center justify-center z-[100] p-10">
+        <div class="bg-factor-panel rounded-[32px] p-12 max-w-4xl w-full shadow-2xl overflow-y-auto max-h-[90vh]">
+            <h2 class="text-2xl font-black text-white mb-6 uppercase">Explorador de Datos</h2>
+            <div class="space-y-8">
+                <div><h3 class="label-style text-factor-cyan">cursos.json</h3><textarea id="json-courses" class="w-full h-48 bg-black/30 border border-white/5 rounded-xl p-4 font-mono text-[10px] text-factor-cyan/60" readonly></textarea></div>
+                <div><h3 class="label-style text-factor-cyan">team.json</h3><textarea id="json-team" class="w-full h-48 bg-black/30 border border-white/5 rounded-xl p-4 font-mono text-[10px] text-factor-cyan/60" readonly></textarea></div>
+            </div>
+            <button onclick="document.getElementById('output-overlay').classList.add('hidden')" class="w-full mt-8 py-5 rounded-2xl bg-factor-cyan text-black font-black uppercase text-xs">Cerrar</button>
+        </div>
+    </div>
+
+    <script>
+        const INDUSTRY_SOFTWARE = [
+            { name: "Autodesk Maya", icon: "fa-solid fa-cube" }, { name: "ZBrush", icon: "fa-solid fa-gem" }, { name: "Blender", icon: "fa-solid fa-bezier-curve" }, { name: "Foundry Nuke", icon: "fa-solid fa-layer-group" }, { name: "Houdini", icon: "fa-solid fa-fire-flame-curved" }, { name: "Unreal Engine", icon: "fa-solid fa-gamepad" }, { name: "Python (Scripts)", icon: "fa-brands fa-python" }
+        ];
+        let courses = []; let team = []; let sponsors = []; let activeTab = 'escuela'; let activeCourseIdx = -1; let activeProfIdx = -1; let activeSponsorIdx = -1;
+        let currentUploadFolder = ''; let currentTargetId = '';
+
+        // --- GESTIÓN DE CONFIGURACIÓN ---
+        function showSettings() {
+            document.getElementById('set-token').value = localStorage.getItem('fn_gh_token') || '';
+            document.getElementById('set-repo').value = localStorage.getItem('fn_gh_repo') || 'maestroselles/factor-n-web';
+            document.getElementById('settings-overlay').classList.remove('hidden');
+        }
+        function saveSettings() {
+            localStorage.setItem('fn_gh_token', document.getElementById('set-token').value);
+            localStorage.setItem('fn_gh_repo', document.getElementById('set-repo').value);
+            document.getElementById('settings-overlay').classList.add('hidden');
+            checkStatus();
+        }
+        function checkStatus() {
+            const token = localStorage.getItem('fn_gh_token');
+            const status = document.getElementById('github-status');
+            if (token) {
+                status.classList.remove('text-red-500');
+                status.classList.add('text-factor-cyan/50');
+                status.innerHTML = '<i class="fa-solid fa-circle text-[4px] animate-pulse"></i> Sincronizado con GitHub';
+            } else {
+                status.classList.add('text-red-500');
+                status.innerHTML = '<i class="fa-solid fa-circle text-[4px]"></i> Desconectado de GitHub';
+            }
+        }
+
+        // --- SUBIDA DE IMÁGENES A GITHUB ---
+        function triggerUpload(folder, targetId) {
+            currentUploadFolder = folder;
+            currentTargetId = targetId;
+            document.getElementById('file-input').click();
+        }
+        async function handleFileSelect(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            
+            const token = localStorage.getItem('fn_gh_token');
+            const repo = localStorage.getItem('fn_gh_repo');
+            if (!token || !repo) return alert("Configura el Token de GitHub primero");
+
+            const path = `img/${currentUploadFolder}/${file.name}`;
+            const reader = new FileReader();
+            reader.onload = async (e) => {
+                const content = e.target.result.split(',')[1];
+                const url = `https://api.github.com/repos/${repo}/contents/${path}`;
+                
+                try {
+                    // Primero intentamos ver si el archivo ya existe para obtener su SHA (por si es una actualización)
+                    let sha = null;
+                    const checkRes = await fetch(url, { headers: { 'Authorization': `token ${token}` } });
+                    if (checkRes.ok) {
+                        const existingFile = await checkRes.json();
+                        sha = existingFile.sha;
+                    }
+
+                    const res = await fetch(url, {
+                        method: 'PUT',
+                        headers: { 'Authorization': `token ${token}`, 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ 
+                            message: `Subida de imagen: ${file.name}`, 
+                            content: content,
+                            sha: sha // Incluimos SHA si existe para permitir sobreescritura
+                        })
+                    });
+                    
+                    if (res.ok) {
+                        document.getElementById(currentTargetId).value = `./${path}`;
+                        alert("¡Imagen subida correctamente!");
+                    } else {
+                        const err = await res.json();
+                        alert("Error al subir: " + err.message);
+                    }
+                } catch (err) {
+                    alert("Error crítico: " + err);
+                }
+            };
+            reader.readAsDataURL(file);
+        }
+
+        // --- GESTIÓN DE ACCESO (LOGIN) ---
+        function checkPass() {
+            const pass = document.getElementById('admin-pass').value;
+            const error = document.getElementById('login-error');
+            
+            if (pass === '1234') {
+                sessionStorage.setItem('fn_admin_auth', 'true');
+                document.getElementById('login-screen').classList.add('hidden');
+                document.getElementById('admin-content').classList.remove('opacity-0');
+                error.classList.add('hidden');
+                checkStatus(); // Verificar si falta el token
+                initData();
+            } else {
+                error.classList.remove('hidden');
+                document.getElementById('admin-pass').value = '';
+            }
+        }
+
+        function checkAccess() {
+            const isAuth = sessionStorage.getItem('fn_admin_auth');
+            if (isAuth === 'true') {
+                document.getElementById('login-screen').classList.add('hidden');
+                document.getElementById('admin-content').classList.remove('opacity-0');
+                checkStatus();
+                initData();
+            } else {
+                document.getElementById('login-screen').classList.remove('hidden');
+            }
+        }
+
+        function logout() {
+            if (confirm("¿Cerrar sesión de seguridad?")) {
+                sessionStorage.removeItem('fn_admin_auth');
+                location.reload();
+            }
+        }
+
+        function hardLogout() {
+            if (confirm("¿Cerrar sesión y BORRAR Token de GitHub?")) {
+                localStorage.removeItem('fn_gh_token');
+                sessionStorage.removeItem('fn_admin_auth');
+                location.reload();
+            }
+        }
+
+        async function initData() {
+            try {
+                const resC = await fetch('data/courses.json'); courses = await resC.json();
+                const resT = await fetch('data/team.json'); team = await resT.json();
+                const resS = await fetch('data/sponsors.json'); sponsors = await resS.json();
+                renderList('escuela'); renderList('profesores'); renderList('sponsors');
+                checkStatus();
+            } catch (err) {
+                console.error("Error al cargar datos:", err);
+            }
+        }
+
+        // Llamada inicial
+        checkAccess();
+
+        function switchTab(t) {
+            activeTab = t;
+            document.querySelectorAll('.tab-view').forEach(v => v.classList.add('hidden'));
+            document.getElementById(`view-${t}`).classList.remove('hidden');
+            document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+            document.getElementById(`tab-${t}`).classList.add('active');
+            document.getElementById('section-title').innerText = `Gestión de ${t.toUpperCase()}`;
+        }
+        function renderList(type) {
+            const container = document.getElementById(`${type}-list`);
+            if (type === 'escuela') {
+                const presenciales = courses.map((c, i) => ({...c, originalIdx: i})).filter(c => c.category === 'Curso Presencial');
+                const online = courses.map((c, i) => ({...c, originalIdx: i})).filter(c => c.category === 'Curso Online');
+                
+                const renderCourse = (c) => `
+                    <div draggable="true" ondragstart="handleDragStart(event, ${c.originalIdx}, 'escuela')" ondragover="handleDragOver(event)" ondrop="handleDrop(event, ${c.originalIdx}, 'escuela')" class="relative group">
+                        <button onclick="selectItem('escuela', ${c.originalIdx})" class="list-item w-full text-left px-5 py-2.5 rounded-xl border border-white/5 text-[9px] font-black uppercase tracking-widest transition-all ${activeCourseIdx === c.originalIdx ? 'list-item active' : 'text-white/40 hover:bg-white/5'}">
+                            ${c.title}
+                        </button>
+                        <i class="fa-solid fa-grip-vertical absolute right-4 top-1/2 -translate-y-1/2 text-white/10 group-hover:text-white/30 cursor-grab"></i>
+                    </div>
+                `;
+
+                container.innerHTML = `
+                    <div class="mb-6">
+                        <div class="text-[8px] font-black text-factor-cyan uppercase tracking-[0.2em] mb-3 opacity-50">Presenciales</div>
+                        <div class="space-y-1">${presenciales.map(renderCourse).join('')}</div>
+                    </div>
+                    <div>
+                        <div class="text-[8px] font-black text-factor-cyan uppercase tracking-[0.2em] mb-3 opacity-50">Online</div>
+                        <div class="space-y-1">${online.map(renderCourse).join('')}</div>
+                    </div>
+                `;
+            } else {
+                const data = type === 'profesores' ? team : sponsors;
+                container.innerHTML = data.map((item, i) => `
+                    <div 
+                        ${type === 'sponsors' ? 'draggable="true" ondragstart="handleDragStart(event, '+i+', \'sponsors\')" ondragover="handleDragOver(event)" ondrop="handleDrop(event, '+i+', \'sponsors\')"' : ''}
+                        class="relative group"
+                    >
+                        <button onclick="selectItem('${type}', ${i})" class="list-item w-full text-left px-5 py-2.5 rounded-xl border border-white/5 text-[9px] font-black uppercase tracking-widest transition-all ${(type==='profesores'?activeProfIdx:activeSponsorIdx) === i ? 'list-item active' : 'text-white/40 hover:bg-white/5'}">
+                            ${type === 'profesores' ? item.name : item.nameLine1 + ' ' + item.nameLine2}
+                        </button>
+                        ${type === 'sponsors' ? '<i class="fa-solid fa-grip-vertical absolute right-4 top-1/2 -translate-y-1/2 text-white/10 group-hover:text-white/30 cursor-grab"></i>' : ''}
+                    </div>
+                `).join('');
+            }
+        }
+
+        let draggedIdx = -1;
+        let draggedType = '';
+        function handleDragStart(e, idx, type) { draggedIdx = idx; draggedType = type; e.dataTransfer.setData('text/plain', idx); }
+        function handleDragOver(e) { e.preventDefault(); }
+        function handleDrop(e, targetIdx, type) {
+            e.preventDefault();
+            if (draggedIdx === targetIdx || draggedType !== type) return;
+            
+            const data = type === 'escuela' ? courses : sponsors;
+            
+            // Si movemos un curso de una categoría a otra al soltarlo sobre un curso de esa categoría
+            if (type === 'escuela') {
+                const source = data[draggedIdx];
+                const target = data[targetIdx];
+                if (source.category !== target.category) {
+                    source.category = target.category; // Cambio automático de categoría al arrastrar
+                }
+            }
+
+            const item = data.splice(draggedIdx, 1)[0];
+            data.splice(targetIdx, 0, item);
+            renderList(type);
+        }
+        function selectItem(type, idx) {
+            if (type === 'escuela') {
+                activeCourseIdx = idx; const c = courses[idx];
+                document.getElementById('escuela-editor').classList.remove('hidden');
+                document.getElementById('c-title').value = c.title; document.getElementById('c-category').value = c.category; document.getElementById('c-id').value = c.id; document.getElementById('c-thumb').value = c.image || ""; document.getElementById('c-banner-img').value = c.banner?.image || ""; document.getElementById('c-featured').checked = c.featured || false; document.getElementById('c-feat-desc').value = c.banner?.subtitle || "";
+                toggleFeatured(); document.getElementById('c-hours').value = c.hours || ""; document.getElementById('c-duration').value = c.duration || ""; document.getElementById('c-mode').value = c.mode || ""; document.getElementById('c-level').value = c.level || ""; document.getElementById('c-next-date').value = c.nextDate || ""; document.getElementById('c-spots').value = c.spotsStatus || "PLAZAS LIMITADAS"; document.getElementById('c-subtitle').value = c.subtitleVision || ""; document.getElementById('c-description').value = c.description || "";
+                renderTargetTraits(c.targetAudience?.traits || []);
+                renderModules(c.syllabus || []); renderSoftware(c.software || []); renderMethod(c.methodology || []); renderProfSelection(c.professors || []);
+            } else if (type === 'profesores') {
+                activeProfIdx = idx; const p = team[idx];
+                document.getElementById('profesores-editor').classList.remove('hidden');
+                document.getElementById('p-name').value = p.name; document.getElementById('p-role').value = p.role; document.getElementById('p-image').value = p.image; document.getElementById('p-bio').value = p.bio; document.getElementById('p-tags').value = p.tags?.join(', ') || "";
+            } else {
+                activeSponsorIdx = idx; const s = sponsors[idx];
+                document.getElementById('sponsors-editor').classList.remove('hidden');
+                document.getElementById('s-name1').value = s.nameLine1; document.getElementById('s-name2').value = s.nameLine2; document.getElementById('s-icon').value = s.icon; document.getElementById('s-logo').value = s.logo || "";
+            }
+            renderList(type);
+        }
+        function renderTargetTraits(traits) {
+            const container = document.getElementById('c-target-traits');
+            container.innerHTML = (traits || []).map((t, i) => `
+                <div class="flex gap-2 group">
+                    <input type="text" class="input-dark py-1.5 text-[12px] flex-1" value="${t}" onchange="courses[${activeCourseIdx}].targetAudience.traits[${i}] = this.value">
+                    <button onclick="courses[${activeCourseIdx}].targetAudience.traits.splice(${i},1); renderTargetTraits(courses[${activeCourseIdx}].targetAudience.traits)" class="text-white/10 hover:text-red-500"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+            `).join('');
+        }
+        function addTargetTrait() { 
+            if (!courses[activeCourseIdx].targetAudience) courses[activeCourseIdx].targetAudience = { title: "PERFIL DEL ALUMNO", traits: [] };
+            courses[activeCourseIdx].targetAudience.traits.push(""); renderTargetTraits(courses[activeCourseIdx].targetAudience.traits); 
+        }
+        function renderProfSelection(selectedProfs) {
+            const container = document.getElementById('c-profs-selection');
+            container.innerHTML = selectedProfs.map((p, i) => `
+                <div class="flex gap-2 group">
+                    <select class="input-dark py-1.5 text-[10px] flex-1" onchange="updateCourseProf(${i}, this.value)">
+                        <option value="">-- SELECCIONAR PROFESOR --</option>
+                        ${team.map(tp => `<option value="${tp.id}" ${tp.name === p.name ? 'selected' : ''}>${tp.name.toUpperCase()}</option>`).join('')}
+                    </select>
+                    <button onclick="courses[${activeCourseIdx}].professors.splice(${i},1); renderProfSelection(courses[${activeCourseIdx}].professors)" class="text-white/10 hover:text-red-500"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+            `).join('');
+        }
+        function updateCourseProf(idx, profId) {
+            const p = team.find(item => item.id === profId);
+            if (p) courses[activeCourseIdx].professors[idx] = { name: p.name, role: p.role, image: p.image, bio: p.bio, tags: p.tags };
+        }
+        function addCourseProf() { courses[activeCourseIdx].professors.push({ name: "", role: "", image: "", bio: "", tags: [] }); renderProfSelection(courses[activeCourseIdx].professors); }
+        function renderMethod(m) {
+            document.getElementById('c-method').innerHTML = m.map((meth, i) => `
+                <div class="p-6 bg-black/20 rounded-2xl border border-white/5 space-y-4 group">
+                    <div class="flex justify-between items-center"><input type="text" class="bg-transparent border-none text-white font-bold text-base w-full p-0 uppercase" value="${meth.title}" onchange="courses[${activeCourseIdx}].methodology[${i}].title = this.value"><button onclick="courses[${activeCourseIdx}].methodology.splice(${i},1); renderMethod(courses[${activeCourseIdx}].methodology)" class="text-white/10 hover:text-red-500"><i class="fa-solid fa-trash text-[10px]"></i></button></div>
+                    <textarea class="input-dark h-24 py-2 resize-none leading-relaxed" onchange="courses[${activeCourseIdx}].methodology[${i}].text = this.value">${meth.text}</textarea>
+                </div>
+            `).join('');
+        }
+        function addMethod() { courses[activeCourseIdx].methodology.push({ title: "NUEVO PUNTO", text: "" }); renderMethod(courses[activeCourseIdx].methodology); }
+        function renderModules(m) {
+            document.getElementById('c-modules').innerHTML = m.map((mod, i) => `
+                <div class="p-6 bg-black/20 rounded-2xl border border-white/5 space-y-3 group">
+                    <div class="flex justify-between items-center"><input type="text" class="bg-transparent border-none text-white font-bold text-base w-full p-0 uppercase" value="${mod.title}" onchange="courses[${activeCourseIdx}].syllabus[${i}].title = this.value"><button onclick="courses[${activeCourseIdx}].syllabus.splice(${i},1); renderModules(courses[${activeCourseIdx}].syllabus)" class="text-white/10 hover:text-red-500"><i class="fa-solid fa-trash text-[10px]"></i></button></div>
+                    <textarea class="input-dark h-24 py-2 resize-none leading-relaxed" onchange="courses[${activeCourseIdx}].syllabus[${i}].description = this.value">${mod.description}</textarea>
+                </div>
+            `).join('');
+        }
+        function addModule() { courses[activeCourseIdx].syllabus.push({ title: "MÓDULO", description: "" }); renderModules(courses[activeCourseIdx].syllabus); }
+        function renderSoftware(sw) {
+            document.getElementById('c-software').innerHTML = sw.map((s, i) => `
+                <div class="flex gap-2"><select class="input-dark py-1.5 text-[10px] flex-1" onchange="updateSoftware(${i}, this.value)"><option value="">-- SOFTWARE --</option>${INDUSTRY_SOFTWARE.map(isw => `<option value="${isw.name}" ${isw.name === s.name ? 'selected' : ''}>${isw.name.toUpperCase()}</option>`).join('')}</select><button onclick="courses[${activeCourseIdx}].software.splice(${i},1); renderSoftware(courses[activeCourseIdx}].software)" class="text-white/10 hover:text-red-500"><i class="fa-solid fa-xmark"></i></button></div>
+            `).join('');
+        }
+        function updateSoftware(idx, name) { const found = INDUSTRY_SOFTWARE.find(s => s.name === name); if (found) courses[activeCourseIdx].software[idx] = { name: found.name, icon: found.icon }; }
+        function addSoftware() { courses[activeCourseIdx].software.push({ name: "", icon: "" }); renderSoftware(courses[activeCourseIdx].software); }
+        function toggleFeatured() { const isChecked = document.getElementById('c-featured').checked; const box = document.getElementById('c-feat-box'); box.classList.toggle('opacity-30', !isChecked); box.style.pointerEvents = isChecked ? "auto" : "none"; }
+        
+        // --- PUBLICACIÓN DIRECTA EN GITHUB ---
+        async function commitChanges() {
+            // 1. Actualizar datos locales
+            if (activeTab === 'escuela' && activeCourseIdx !== -1) {
+                const c = courses[activeCourseIdx];
+                c.title = document.getElementById('c-title').value; c.category = document.getElementById('c-category').value; c.id = document.getElementById('c-id').value; c.image = document.getElementById('c-thumb').value; c.featured = document.getElementById('c-featured').checked;
+                if (!c.banner) c.banner = {}; c.banner.title = c.title; c.banner.image = document.getElementById('c-banner-img').value; c.banner.subtitle = document.getElementById('c-feat-desc').value;
+                c.hours = document.getElementById('c-hours').value; c.duration = document.getElementById('c-duration').value; c.mode = document.getElementById('c-mode').value; c.level = document.getElementById('c-level').value; c.nextDate = document.getElementById('c-next-date').value; c.spotsStatus = document.getElementById('c-spots').value; c.subtitleVision = document.getElementById('c-subtitle').value; c.description = document.getElementById('c-description').value;
+            } else if (activeTab === 'profesores' && activeProfIdx !== -1) {
+                const p = team[activeProfIdx];
+                p.name = document.getElementById('p-name').value; p.role = document.getElementById('p-role').value; p.image = document.getElementById('p-image').value; p.bio = document.getElementById('p-bio').value; p.tags = document.getElementById('p-tags').value.split(',').map(t => t.trim());
+            } else if (activeTab === 'sponsors' && activeSponsorIdx !== -1) {
+                const s = sponsors[activeSponsorIdx];
+                s.nameLine1 = document.getElementById('s-name1').value; s.nameLine2 = document.getElementById('s-name2').value; s.icon = document.getElementById('s-icon').value; s.logo = document.getElementById('s-logo').value;
+            }
+
+            // 2. Intentar Push a GitHub
+            const token = localStorage.getItem('fn_gh_token');
+            const repo = localStorage.getItem('fn_gh_repo');
+            if (!token || !repo) return alert("Configuración de GitHub incompleta. Cambios guardados solo en sesión.");
+
+            const btn = document.getElementById('btn-save');
+            const saveText = document.getElementById('save-text');
+            const saveIcon = document.getElementById('save-icon');
+            
+            const originalText = saveText.innerText;
+            saveText.innerText = 'Publicando...';
+            saveIcon.className = 'fa-solid fa-spinner animate-spin';
+            btn.disabled = true;
+
+            try {
+                // Publicar archivos necesarios
+                await pushToGithub(repo, token, 'data/courses.json', courses);
+                await pushToGithub(repo, token, 'data/team.json', team);
+                await pushToGithub(repo, token, 'data/sponsors.json', sponsors);
+                
+                alert("¡WEB ACTUALIZADA! Los cambios ya están en GitHub y serán visibles en 1-2 minutos.");
+            } catch (err) {
+                alert("Error al publicar: " + err.message);
+            } finally {
+                saveText.innerText = originalText;
+                saveIcon.className = 'fa-solid fa-cloud-arrow-up';
+                btn.disabled = false;
+            }
+        }
+
+        async function pushToGithub(repo, token, path, data) {
+            const url = `https://api.github.com/repos/${repo}/contents/${path}`;
+            // 1. Obtener el SHA del archivo actual
+            const getRes = await fetch(url, { headers: { 'Authorization': `token ${token}` } });
+            const fileData = await getRes.json();
+            const sha = fileData.sha;
+
+            // 2. Enviar el nuevo contenido
+            const content = btoa(unescape(encodeURIComponent(JSON.stringify(data, null, 4))));
+            const putRes = await fetch(url, {
+                method: 'PUT',
+                headers: { 'Authorization': `token ${token}`, 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    message: `CMS Update: ${path}`,
+                    content: content,
+                    sha: sha
+                })
+            });
+            if (!putRes.ok) throw new Error(`Fallo al actualizar ${path}`);
+        }
+
+        function showFullData() { document.getElementById('json-courses').value = JSON.stringify(courses, null, 4); document.getElementById('json-team').value = JSON.stringify(team, null, 4); document.getElementById('output-overlay').classList.remove('hidden'); }
+        function createNewItem(type) {
+            if (type === 'escuela') courses.push({ id: "nuevo", title: "NUEVO CURSO", category: "Curso Presencial", featured: false, software: [], syllabus: [], methodology: [], professors: [], targetAudience: { title: "PERFIL DEL ALUMNO", traits: [] } });
+            else if (type === 'profesores') team.push({ id: "nuevo-prof", name: "NUEVO MIEMBRO", role: "CARGO", image: "./img/team/placeholder.jpg", bio: "", tags: [] });
+            else sponsors.push({ id: "nuevo-sponsor", nameLine1: "NUEVO", nameLine2: "SPONSOR", icon: "fa-solid fa-star", logo: "" });
+            renderList(type);
+        }
+
+        function deleteItem(type) {
+            const idx = type === 'escuela' ? activeCourseIdx : (type === 'profesores' ? activeProfIdx : activeSponsorIdx);
+            if (idx === -1) return;
+            
+            const data = type === 'escuela' ? courses : (type === 'profesores' ? team : sponsors);
+            const name = type === 'escuela' ? data[idx].title : (type === 'profesores' ? data[idx].name : data[idx].nameLine1 + ' ' + data[idx].nameLine2);
+
+            if (confirm(`¿Estás seguro de que quieres eliminar a "${name}"?`)) {
+                data.splice(idx, 1);
+                
+                // Reset active index and hide editor
+                if (type === 'escuela') { activeCourseIdx = -1; document.getElementById('escuela-editor').classList.add('hidden'); }
+                else if (type === 'profesores') { activeProfIdx = -1; document.getElementById('profesores-editor').classList.add('hidden'); }
+                else { activeSponsorIdx = -1; document.getElementById('sponsors-editor').classList.add('hidden'); }
+                
+                renderList(type);
+                alert("Eliminado. Recuerda pulsar 'Publicar en Web' para guardar los cambios.");
+            }
+        }
+        init();
+    </script>
+</body>
+</html>

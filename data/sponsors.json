@@ -1,0 +1,38 @@
+[
+    {
+        "id": "ministerio",
+        "nameLine1": "Ministerio",
+        "nameLine2": "de Cultura",
+        "icon": "fa-solid fa-building-columns",
+        "logo": "",
+        "order": 1,
+        "color": "#00e0c0"
+    },
+    {
+        "id": "asperger",
+        "nameLine1": "Asperger",
+        "nameLine2": "TEA",
+        "icon": "fa-solid fa-puzzle-piece",
+        "logo": "",
+        "order": 2,
+        "color": "#0055ff"
+    },
+    {
+        "id": "unreal",
+        "nameLine1": "Unreal",
+        "nameLine2": "Engine",
+        "icon": "fa-solid fa-circle",
+        "logo": "",
+        "order": 3,
+        "color": "#ffffff"
+    },
+    {
+        "id": "blender",
+        "nameLine1": "Blender",
+        "nameLine2": "Foundation",
+        "icon": "fa-solid fa-cube",
+        "logo": "",
+        "order": 4,
+        "color": "#ea7600"
+    }
+]
