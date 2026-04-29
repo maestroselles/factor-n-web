@@ -280,16 +280,16 @@
         "id": "portfolio",
         "title": "Mejora de Portfolio",
         "category": "Curso Online",
-        "hours": "150H",
+        "hours": "60H",
         "duration": "3 Meses",
         "mode": "100% Online",
-        "level": "Intermedio / Senior",
+        "level": "Básico > Senior",
         "description": "Auditoría técnica y narrativa de tus piezas. Aprende a filtrar, pulir y presentar tu trabajo para que hable el lenguaje que exigen los reclutadores.",
         "image": "./img/courses/Mejora_tu_reel_mini.png",
         "link": "curso-portfolio.html",
         "accentColor": "factor-cyan",
         "icon": "fa-briefcase",
-        "featured": false,
+        "featured": true,
         "banner": {
             "image": "./img/banners/Mejora_tu_reel.png",
             "tag": "Campus Online",
@@ -298,10 +298,14 @@
         },
         "professors": [
             {
-                "name": "Supervisores Senior",
-                "role": "Mentores",
-                "image": "./img/team/mentores.jpg",
-                "bio": "Profesionales en activo que revisan reels y portfolios a diario en la industria real."
+                "name": "Jaime Maestro",
+                "role": "Dirección Ejecutiva y Académica",
+                "image": "./img/team/Jaime Maestro.jpeg",
+                "bio": "Referente del arte digital internacional con 30 años de experiencia. Codirector de largometrajes globales como Animal Crackers (Netflix).",
+                "tags": [
+                    "2 Premios Goya",
+                    "TEA 1 & AACC"
+                ]
             }
         ],
         "syllabus": [
@@ -325,7 +329,7 @@
                 "Ambición por mejorar la calidad de presentación"
             ]
         },
-        "nextDate": "",
+        "nextDate": "JUNIO 2026",
         "spotsStatus": "PLAZAS LIMITADAS",
         "subtitleVision": ""
     },
