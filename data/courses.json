@@ -291,9 +291,9 @@
         "icon": "fa-briefcase",
         "featured": false,
         "banner": {
-            "image": "./img/banners/portfolio.jpg",
+            "image": "./img/banners/Mejora_tu_reel.png",
             "tag": "Campus Online",
-            "title": "Mentoría de Portfolio",
+            "title": "Mejora de Portfolio",
             "subtitle": "Transforma tu trabajo en una carta de presentación irresistible para los mejores estudios del mundo."
         },
         "professors": [
@@ -324,7 +324,10 @@
                 "Necesidad de criterio profesional externo",
                 "Ambición por mejorar la calidad de presentación"
             ]
-        }
+        },
+        "nextDate": "",
+        "spotsStatus": "PLAZAS LIMITADAS",
+        "subtitleVision": ""
     },
     {
         "id": "modelado",
