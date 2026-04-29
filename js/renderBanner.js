@@ -19,6 +19,9 @@ async function renderHomeBanner() {
             return;
         }
 
+        // Ocultar slider para el fade-in
+        slider.style.opacity = '0';
+
         slider.innerHTML = featuredCourses.map((c, i) => `
             <a href="${c.link || '#'}" class="min-w-full h-[400px] md:h-[320px] relative snap-start overflow-hidden group/banner block">
                 <!-- Imagen con efecto de Zoom al Hover -->
@@ -63,6 +66,10 @@ async function renderHomeBanner() {
                 </div>
             </a>
         `).join('');
+
+        // Transición de entrada
+        slider.style.transition = 'opacity 0.5s ease-in-out';
+        slider.style.opacity = '1';
 
         dotsContainer.innerHTML = featuredCourses.map((_, i) => `
             <div class="slider-dot w-2 h-2 rounded-full transition-all duration-300 bg-white/20"></div>
