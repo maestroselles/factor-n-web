@@ -1,5 +1,62 @@
 [
     {
+        "id": "portfolio",
+        "title": "Mejora tu Portfolio",
+        "category": "Curso Online",
+        "hours": "60H",
+        "duration": "3 Meses",
+        "mode": "100% Online",
+        "level": "Básico > Senior",
+        "description": "Auditoría técnica y narrativa de tus piezas. Aprende a filtrar, pulir y presentar tu trabajo para que hable el lenguaje que exigen los reclutadores.",
+        "image": "./img/courses/Mejora_tu_reel_mini.png",
+        "link": "curso-portfolio.html",
+        "accentColor": "factor-cyan",
+        "icon": "fa-briefcase",
+        "featured": true,
+        "banner": {
+            "image": "./img/banners/Mejora_tu_reel.png",
+            "tag": "Campus Online",
+            "title": "Mejora tu Portfolio",
+            "subtitle": "Transforma tu trabajo en una carta de presentación irresistible para los mejores estudios del mundo."
+        },
+        "professors": [
+            {
+                "name": "Jaime Maestro",
+                "role": "Dirección Ejecutiva y Académica",
+                "image": "./img/team/Jaime Maestro.jpeg",
+                "bio": "Referente del arte digital internacional con 30 años de experiencia. Codirector de largometrajes globales como Animal Crackers (Netflix).",
+                "tags": [
+                    "2 Premios Goya",
+                    "TEA 1 & AACC"
+                ]
+            }
+        ],
+        "syllabus": [
+            {
+                "title": "Narrativa Visual",
+                "description": "Aprende a contar una historia con tu reel y a destacar tus mejores habilidades en los primeros segundos.",
+                "items": [
+                    "Selección de piezas",
+                    "Montaje y ritmo",
+                    "Presentación técnica",
+                    "Feedback personalizado"
+                ]
+            }
+        ],
+        "targetAudience": {
+            "title": "Perfil del Alumno",
+            "traits": [
+                "Artistas con material base para reel",
+                "Búsqueda activa de empleo en estudios",
+                "Necesidad de criterio profesional externo",
+                "Ambición por mejorar la calidad de presentación"
+            ]
+        },
+        "nextDate": "JUNIO 2026",
+        "spotsStatus": "PLAZAS LIMITADAS",
+        "subtitleVision": ""
+    },
+    {
         "id": "animacion",
         "title": "Animación digital",
         "category": "Curso Presencial",
@@ -15,7 +72,11 @@
         "featured": true,
         "spotsStatus": "PLAZAS LIMITADAS",
         "banner": {
+<<<<<<< HEAD
             "image": "./img/courses/animacion.png",
+=======
+            "image": "./img/banners/animacion.png",
+>>>>>>> 87061b34143c14404d11681b5a3e5db26bc26003
             "tag": "[ÚLTIMAS PLAZAS] EVALUACIÓN CLÍNICA",
             "title": "Animación Digital",
             "subtitle": "Fórmate en un entorno de estricta ergonomía sensorial con profesionales de la élite de Hollywood. Aprendizaje por Proyectos sin masking."
@@ -123,7 +184,7 @@
             }
         ],
         "nextDate": "Octubre 2026",
-        "subtitleVision": ""
+        "subtitleVision": "¡Hasta el infinito y más allá!"
     },
     {
         "id": "programacion",
@@ -275,63 +336,6 @@
                 "icon": "fa-solid fa-film"
             }
         ]
-    },
-    {
-        "id": "portfolio",
-        "title": "Mejora de Portfolio",
-        "category": "Curso Online",
-        "hours": "60H",
-        "duration": "3 Meses",
-        "mode": "100% Online",
-        "level": "Básico > Senior",
-        "description": "Auditoría técnica y narrativa de tus piezas. Aprende a filtrar, pulir y presentar tu trabajo para que hable el lenguaje que exigen los reclutadores.",
-        "image": "./img/courses/Mejora_tu_reel_mini.png",
-        "link": "curso-portfolio.html",
-        "accentColor": "factor-cyan",
-        "icon": "fa-briefcase",
-        "featured": true,
-        "banner": {
-            "image": "./img/banners/Mejora_tu_reel.png",
-            "tag": "Campus Online",
-            "title": "Mejora de Portfolio",
-            "subtitle": "Transforma tu trabajo en una carta de presentación irresistible para los mejores estudios del mundo."
-        },
-        "professors": [
-            {
-                "name": "Jaime Maestro",
-                "role": "Dirección Ejecutiva y Académica",
-                "image": "./img/team/Jaime Maestro.jpeg",
-                "bio": "Referente del arte digital internacional con 30 años de experiencia. Codirector de largometrajes globales como Animal Crackers (Netflix).",
-                "tags": [
-                    "2 Premios Goya",
-                    "TEA 1 & AACC"
-                ]
-            }
-        ],
-        "syllabus": [
-            {
-                "title": "Narrativa Visual",
-                "description": "Aprende a contar una historia con tu reel y a destacar tus mejores habilidades en los primeros segundos.",
-                "items": [
-                    "Selección de piezas",
-                    "Montaje y ritmo",
-                    "Presentación técnica",
-                    "Feedback personalizado"
-                ]
-            }
-        ],
-        "targetAudience": {
-            "title": "Perfil del Alumno",
-            "traits": [
-                "Artistas con material base para reel",
-                "Búsqueda activa de empleo en estudios",
-                "Necesidad de criterio profesional externo",
-                "Ambición por mejorar la calidad de presentación"
-            ]
-        },
-        "nextDate": "JUNIO 2026",
-        "spotsStatus": "PLAZAS LIMITADAS",
-        "subtitleVision": ""
     },
     {
         "id": "modelado",
