@@ -169,7 +169,7 @@
 
     </section>
     <!-- Catálogo de Cursos Presenciales -->
-    <section id="cursos-presenciales-section" class="py-8 relative overflow-hidden bg-[#1a1e28] border-y border-factor-border/30 z-20 hidden">
+    <section id="cursos-presenciales-section" class="py-8 relative overflow-hidden bg-[#1a1e28] border-y border-factor-border/30 z-20 min-h-[400px]">
         <div class="absolute right-0 top-1/4 w-[400px] h-[400px] bg-gradient-radial from-factor-green/5 to-transparent opacity-40 blur-3xl pointer-events-none rounded-full"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="flex flex-col md:flex-row justify-between items-end mb-12">
@@ -188,7 +188,7 @@
     </section>
 
     <!-- Campus Online -->
-    <section id="cursos-online-section" class="py-8 relative overflow-hidden bg-[#212733] border-t border-factor-border/30 hidden">
+    <section id="cursos-online-section" class="py-8 relative overflow-hidden bg-[#212733] border-t border-factor-border/30 min-h-[400px]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="flex flex-col md:flex-row justify-between items-end mb-12">
                 <div>
@@ -275,21 +275,23 @@
                 if (presenciales.length > 0) {
                     const grid = document.getElementById('grid-presencial');
                     grid.style.opacity = '0';
-                    document.getElementById('cursos-presenciales-section').classList.remove('hidden');
                     setTimeout(() => {
                         grid.innerHTML = presenciales.map(c => renderCard(c, 'factor-green')).join('');
                         grid.style.opacity = '1';
                     }, 50);
+                } else {
+                    document.getElementById('cursos-presenciales-section').classList.add('hidden');
                 }
 
                 if (online.length > 0) {
                     const grid = document.getElementById('grid-online');
                     grid.style.opacity = '0';
-                    document.getElementById('cursos-online-section').classList.remove('hidden');
                     setTimeout(() => {
                         grid.innerHTML = online.map(c => renderCard(c, 'factor-cyan')).join('');
                         grid.style.opacity = '1';
                     }, 50);
+                } else {
+                    document.getElementById('cursos-online-section').classList.add('hidden');
                 }
             } catch (err) {
                 console.error("Error cargando cursos:", err);
