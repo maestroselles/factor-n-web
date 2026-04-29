@@ -34,5 +34,12 @@
         "logo": "",
         "order": 4,
         "color": "#ea7600"
+    },
+    {
+        "id": "nuevo-sponsor",
+        "nameLine1": "NUEVO",
+        "nameLine2": "SPONSOR",
+        "icon": "fa-solid fa-star",
+        "logo": ""
     }
 ]
