@@ -1,7 +1,7 @@
 [
     {
         "id": "portfolio",
-        "title": "Mejora de Portfolio",
+        "title": "Mejora tu Portfolio",
         "category": "Curso Online",
         "hours": "60H",
         "duration": "3 Meses",
@@ -16,7 +16,7 @@
         "banner": {
             "image": "./img/banners/Mejora_tu_reel.png",
             "tag": "Campus Online",
-            "title": "Mejora de Portfolio",
+            "title": "Mejora tu Portfolio",
             "subtitle": "Transforma tu trabajo en una carta de presentación irresistible para los mejores estudios del mundo."
         },
         "professors": [
