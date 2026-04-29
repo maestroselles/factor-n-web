@@ -15,7 +15,7 @@
         "featured": true,
         "spotsStatus": "PLAZAS LIMITADAS",
         "banner": {
-            "image": "./img/banners/Gemini_Generated_Image_1k45iv1k45iv1k45.png",
+            "image": "./img/banners/animacion.png",
             "tag": "[ÚLTIMAS PLAZAS] EVALUACIÓN CLÍNICA",
             "title": "Animación Profesional 2D y 3D",
             "subtitle": "Fórmate en un entorno de estricta ergonomía sensorial con profesionales de la élite de Hollywood. Aprendizaje por Proyectos sin masking."
@@ -123,7 +123,7 @@
             }
         ],
         "nextDate": "Octubre 2026",
-        "subtitleVision": ""
+        "subtitleVision": "¡Hasta el infinito y más allá!"
     },
     {
         "id": "programacion",
