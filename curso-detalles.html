@@ -132,7 +132,7 @@
                             <i class="fa-solid fa-envelope text-factor-cyan"></i> Solicita información
                         </h4>
                         <p class="text-xs text-factor-textMuted mb-6 leading-relaxed">Déjanos tus datos y te enviaremos el dossier completo del curso.</p>
-                        <form id="course-form" action="https://formsubmit.co/ajax/jaime.maestro@factorn.es" method="POST" class="space-y-4">
+                        <form id="course-form" class="space-y-4">
                             <!-- Datos del curso para el email -->
                             <input type="hidden" name="_subject" value="Nueva solicitud de información de curso">
                             <input type="hidden" id="course-name-hidden" name="curso" value="">
@@ -202,7 +202,7 @@
             const json = JSON.stringify(object);
 
             try {
-                const response = await fetch(cForm.action, {
+                const response = await fetch('https://formsubmit.co/ajax/jaime.maestro@factorn.es', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
                     body: json
