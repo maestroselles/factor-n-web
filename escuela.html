@@ -103,6 +103,28 @@
             border: 1px solid #414e60;
             border-left: 4px solid #00f0ff;
         }
+
+        /* Skeleton & Animations */
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+        .animate-shimmer {
+            animation: shimmer 2s infinite;
+        }
+        .skeleton-placeholder {
+            background: #2a313d;
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .skeleton-placeholder::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: gradient-to-r from-transparent via-white/[0.03] to-transparent;
+            animation: shimmer 2s infinite;
+        }
     </style>
 </head>
 <body class="antialiased selection:bg-factor-green selection:text-black min-h-screen flex flex-col">
@@ -119,20 +141,28 @@
         <div class="flex flex-col lg:flex-row gap-5 items-stretch ">
 
             <!-- LEFT card: Jaime Maestro -->
-            <div class="lg:w-2/5 bg-[#1e2430] border border-factor-border/50 rounded-2xl p-5 lg:p-6 shadow-xl flex flex-col">
-                <!-- One-line header: cyan label + white name -->
+            <div id="escuela-header-card" class="lg:w-2/5 bg-[#1e2430] border border-factor-border/50 rounded-2xl p-5 lg:p-6 shadow-xl flex flex-col transition-opacity duration-500">
+                <!-- One-line header -->
                 <p class="text-base font-extrabold leading-snug mb-4 pb-4 border-b border-factor-border/30">
-                    <span id="escuela-label" class="text-factor-cyan uppercase tracking-widest text-xs"></span>
+                    <span id="escuela-label" class="text-factor-cyan uppercase tracking-widest text-xs">
+                        <span class="inline-block w-20 h-3 bg-white/5 animate-pulse rounded"></span>
+                    </span>
                     <span id="escuela-name" class="text-white"></span>
                 </p>
                 <div id="escuela-description" class="flex-grow space-y-4 text-[15px] leading-relaxed text-factor-textMuted text-justify">
-                    <!-- Dinámico -->
+                    <div class="space-y-3 animate-pulse">
+                        <div class="h-4 bg-white/5 rounded w-full"></div>
+                        <div class="h-4 bg-white/5 rounded w-5/6"></div>
+                        <div class="h-4 bg-white/5 rounded w-4/6"></div>
+                    </div>
                 </div>
             </div>
 
-            <!-- RIGHT card: Vimeo video fills entire card -->
+            <!-- RIGHT card: Vimeo video -->
             <div class="lg:w-[61%] aspect-video rounded-2xl overflow-hidden border border-factor-border/50 shadow-xl bg-black relative min-h-[280px]" id="vimeo-container">
-                <!-- Dinámico -->
+                <div class="absolute inset-0 bg-[#1a1e28] animate-pulse flex items-center justify-center">
+                    <i class="fa-solid fa-play text-white/10 text-6xl"></i>
+                </div>
             </div>
 
         </div>
@@ -148,7 +178,12 @@
                     <p class="text-factor-textMuted max-w-2xl">Un espacio seguro para que mentes extraordinarias hagan cosas extraordinarias.</p>
                 </div>
             </div>
-            <div id="grid-presencial" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+            <div id="grid-presencial" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 transition-opacity duration-500">
+                <!-- Skeleton cards -->
+                <div class="course-card h-80 bg-white/5 animate-pulse"></div>
+                <div class="course-card h-80 bg-white/5 animate-pulse"></div>
+                <div class="course-card h-80 bg-white/5 animate-pulse"></div>
+            </div>
         </div>
     </section>
 
@@ -161,7 +196,12 @@
                     <p class="text-factor-textMuted max-w-xl">Formación especializada remota diseñada para adaptarse a tu ritmo y a tu entorno seguro.</p>
                 </div>
             </div>
-            <div id="grid-online" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+            <div id="grid-online" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 transition-opacity duration-500">
+                <!-- Skeleton cards -->
+                <div class="course-card h-80 bg-white/5 animate-pulse"></div>
+                <div class="course-card h-80 bg-white/5 animate-pulse"></div>
+                <div class="course-card h-80 bg-white/5 animate-pulse"></div>
+            </div>
         </div>
     </section>
 
@@ -180,11 +220,17 @@
                 document.getElementById('vimeo-container').innerHTML = `
                     <iframe
                         src="https://player.vimeo.com/video/${data.vimeoId}?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
-                        class="absolute inset-0 w-full h-full"
+                        class="absolute inset-0 w-full h-full opacity-0 transition-opacity duration-700"
+                        id="hero-vimeo-iframe"
                         frameborder="0"
                         allow="autoplay; fullscreen"
                         allowfullscreen>
                     </iframe>`;
+                
+                setTimeout(() => {
+                    const iframe = document.getElementById('hero-vimeo-iframe');
+                    if (iframe) iframe.style.opacity = '1';
+                }, 100);
             } catch (err) {
                 console.error("Error cargando datos de la escuela:", err);
             }
@@ -227,13 +273,23 @@
                 `;
 
                 if (presenciales.length > 0) {
+                    const grid = document.getElementById('grid-presencial');
+                    grid.style.opacity = '0';
                     document.getElementById('cursos-presenciales-section').classList.remove('hidden');
-                    document.getElementById('grid-presencial').innerHTML = presenciales.map(c => renderCard(c, 'factor-green')).join('');
+                    setTimeout(() => {
+                        grid.innerHTML = presenciales.map(c => renderCard(c, 'factor-green')).join('');
+                        grid.style.opacity = '1';
+                    }, 50);
                 }
 
                 if (online.length > 0) {
+                    const grid = document.getElementById('grid-online');
+                    grid.style.opacity = '0';
                     document.getElementById('cursos-online-section').classList.remove('hidden');
-                    document.getElementById('grid-online').innerHTML = online.map(c => renderCard(c, 'factor-cyan')).join('');
+                    setTimeout(() => {
+                        grid.innerHTML = online.map(c => renderCard(c, 'factor-cyan')).join('');
+                        grid.style.opacity = '1';
+                    }, 50);
                 }
             } catch (err) {
                 console.error("Error cargando cursos:", err);
