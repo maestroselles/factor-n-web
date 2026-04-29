@@ -229,13 +229,20 @@
                             <!-- COLUMNA DERECHA -->
                             <div class="col-span-4 space-y-10">
                                 <!-- Destacar en Home (Alineado superiormente con Identidad) -->
+                                <!-- Destacar en Home -->
                                 <section class="admin-card p-8 space-y-4">
                                     <div class="flex items-center justify-between">
                                         <span class="label-style m-0 text-white">Destacar en Home Banner</span>
-                                        <label class="switch"><input type="checkbox" id="c-featured" onchange="toggleFeatured()"><span class="slider"></span></label>
+                                        <label class="switch"><input type="checkbox" id="c-featured"><span class="slider"></span></label>
                                     </div>
-                                    <div id="c-feat-box" class="space-y-3 opacity-30 pointer-events-none">
-                                        <textarea id="c-feat-desc" class="input-dark h-28 py-3 text-[13px] resize-none" placeholder="Descripción corta para el banner del Home..."></textarea>
+                                </section>
+
+                                <!-- Descripción para Banner / Miniaturas -->
+                                <section class="admin-card p-8 space-y-4">
+                                    <h3 class="label-style text-white m-0">Descripción Banner / Escuela</h3>
+                                    <div class="space-y-3">
+                                        <textarea id="c-feat-desc" class="input-dark h-28 py-3 text-[13px] resize-none" placeholder="Descripción corta (banner/miniatura)..."></textarea>
+                                        <p class="text-[10px] text-white/20 italic">Esta descripción se usa tanto en el Banner del Home como en la miniatura de la sección Escuela.</p>
                                     </div>
                                 </section>
 
@@ -587,7 +594,7 @@
                 activeCourseIdx = idx; const c = courses[idx];
                 document.getElementById('escuela-editor').classList.remove('hidden');
                 document.getElementById('c-title').value = c.title; document.getElementById('c-category').value = c.category; document.getElementById('c-id').value = c.id; document.getElementById('c-thumb').value = c.image || ""; document.getElementById('c-banner-img').value = c.banner?.image || ""; document.getElementById('c-featured').checked = c.featured || false; document.getElementById('c-feat-desc').value = c.banner?.subtitle || "";
-                toggleFeatured(); document.getElementById('c-hours').value = c.hours || ""; document.getElementById('c-duration').value = c.duration || ""; document.getElementById('c-mode').value = c.mode || ""; document.getElementById('c-level').value = c.level || ""; document.getElementById('c-next-date').value = c.nextDate || ""; document.getElementById('c-spots').value = c.spotsStatus || "PLAZAS LIMITADAS"; document.getElementById('c-subtitle').value = c.subtitleVision || ""; document.getElementById('c-description').value = c.description || "";
+                document.getElementById('c-hours').value = c.hours || ""; document.getElementById('c-duration').value = c.duration || ""; document.getElementById('c-mode').value = c.mode || ""; document.getElementById('c-level').value = c.level || ""; document.getElementById('c-next-date').value = c.nextDate || ""; document.getElementById('c-spots').value = c.spotsStatus || "PLAZAS LIMITADAS"; document.getElementById('c-subtitle').value = c.subtitleVision || ""; document.getElementById('c-description').value = c.description || "";
                 renderTargetTraits(c.targetAudience?.traits || []);
                 renderModules(c.syllabus || []); renderSoftware(c.software || []); renderMethod(c.methodology || []); renderProfSelection(c.professors || []);
             } else if (type === 'profesores') {
@@ -630,7 +637,11 @@
             const p = team.find(item => item.id === profId);
             if (p) courses[activeCourseIdx].professors[idx] = { name: p.name, role: p.role, image: p.image, bio: p.bio, tags: p.tags };
         }
-        function addCourseProf() { courses[activeCourseIdx].professors.push({ name: "", role: "", image: "", bio: "", tags: [] }); renderProfSelection(courses[activeCourseIdx].professors); }
+        function addCourseProf() { 
+            if (!courses[activeCourseIdx].professors) courses[activeCourseIdx].professors = [];
+            courses[activeCourseIdx].professors.push({ name: "", role: "", image: "", bio: "", tags: [] }); 
+            renderProfSelection(courses[activeCourseIdx].professors); 
+        }
         function renderMethod(m) {
             document.getElementById('c-method').innerHTML = m.map((meth, i) => `
                 <div class="p-6 bg-black/20 rounded-2xl border border-white/5 space-y-4 group">
@@ -639,7 +650,11 @@
                 </div>
             `).join('');
         }
-        function addMethod() { courses[activeCourseIdx].methodology.push({ title: "NUEVO PUNTO", text: "" }); renderMethod(courses[activeCourseIdx].methodology); }
+        function addMethod() { 
+            if (!courses[activeCourseIdx].methodology) courses[activeCourseIdx].methodology = [];
+            courses[activeCourseIdx].methodology.push({ title: "NUEVO PUNTO", text: "" }); 
+            renderMethod(courses[activeCourseIdx].methodology); 
+        }
         function renderModules(m) {
             document.getElementById('c-modules').innerHTML = m.map((mod, i) => `
                 <div class="p-6 bg-black/20 rounded-2xl border border-white/5 space-y-3 group">
@@ -648,15 +663,23 @@
                 </div>
             `).join('');
         }
-        function addModule() { courses[activeCourseIdx].syllabus.push({ title: "MÓDULO", description: "" }); renderModules(courses[activeCourseIdx].syllabus); }
+        function addModule() { 
+            if (!courses[activeCourseIdx].syllabus) courses[activeCourseIdx].syllabus = [];
+            courses[activeCourseIdx].syllabus.push({ title: "MÓDULO", description: "" }); 
+            renderModules(courses[activeCourseIdx].syllabus); 
+        }
         function renderSoftware(sw) {
             document.getElementById('c-software').innerHTML = sw.map((s, i) => `
                 <div class="flex gap-2"><select class="input-dark py-1.5 text-[10px] flex-1" onchange="updateSoftware(${i}, this.value)"><option value="">-- SOFTWARE --</option>${INDUSTRY_SOFTWARE.map(isw => `<option value="${isw.name}" ${isw.name === s.name ? 'selected' : ''}>${isw.name.toUpperCase()}</option>`).join('')}</select><button onclick="courses[${activeCourseIdx}].software.splice(${i},1); renderSoftware(courses[activeCourseIdx}].software)" class="text-white/10 hover:text-red-500"><i class="fa-solid fa-xmark"></i></button></div>
             `).join('');
         }
         function updateSoftware(idx, name) { const found = INDUSTRY_SOFTWARE.find(s => s.name === name); if (found) courses[activeCourseIdx].software[idx] = { name: found.name, icon: found.icon }; }
-        function addSoftware() { courses[activeCourseIdx].software.push({ name: "", icon: "" }); renderSoftware(courses[activeCourseIdx].software); }
-        function toggleFeatured() { const isChecked = document.getElementById('c-featured').checked; const box = document.getElementById('c-feat-box'); box.classList.toggle('opacity-30', !isChecked); box.style.pointerEvents = isChecked ? "auto" : "none"; }
+        function addSoftware() { 
+            if (!courses[activeCourseIdx].software) courses[activeCourseIdx].software = [];
+            courses[activeCourseIdx].software.push({ name: "", icon: "" }); 
+            renderSoftware(courses[activeCourseIdx].software); 
+        }
+        function toggleFeatured() { /* Ya no bloquea el campo de descripción */ }
         
         // --- PUBLICACIÓN DIRECTA EN GITHUB ---
         async function commitChanges() {

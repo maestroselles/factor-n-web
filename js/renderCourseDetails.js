@@ -8,11 +8,18 @@ async function loadCourseDetails() {
     
     if (!courseId) {
         const path = window.location.pathname;
-        const pageName = path.split('/').pop() || 'index.html';
-        courseId = pageName.replace('curso-', '').replace('.html', '');
+        const pageName = path.split('/').pop() || '';
+        
+        if (pageName && pageName.includes('curso-') && !pageName.includes('curso-detalles')) {
+            courseId = pageName.replace('curso-', '').replace('.html', '');
+        }
     }
     
-    if (!courseId || courseId === 'index') return;
+    // Solo redirigir si estamos en curso-detalles.html y NO tenemos un ID válido
+    if (!courseId && window.location.pathname.includes('curso-detalles')) {
+        window.location.href = 'escuela.html';
+        return;
+    }
 
     function getSoftwareIcon(name) {
         const icons = [
@@ -46,8 +53,11 @@ async function loadCourseDetails() {
         const courses = await resCourses.json();
         const team = await resTeam.json();
         const course = courses.find(c => c.id === courseId || courseId.includes(c.id));
-        
+
         if (!course) return;
+
+        // Actualizar el título de la página dinámicamente
+        document.title = `${course.title} - Factor N`;
 
         const accentText = course.accentColor === 'factor-cyan' ? 'text-factor-cyan' : 'text-factor-green';
         const accentBg = course.accentColor === 'factor-cyan' ? 'bg-factor-cyan' : 'bg-factor-green';
