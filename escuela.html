@@ -122,26 +122,17 @@
             <div class="lg:w-2/5 bg-[#1e2430] border border-factor-border/50 rounded-2xl p-5 lg:p-6 shadow-xl flex flex-col">
                 <!-- One-line header: cyan label + white name -->
                 <p class="text-base font-extrabold leading-snug mb-4 pb-4 border-b border-factor-border/30">
-                    <span class="text-factor-cyan uppercase tracking-widest text-xs">Direcci&oacute;n Acad&eacute;mica</span>
-                    <span class="text-white"> &mdash; Jaime Maestro</span>
+                    <span id="escuela-label" class="text-factor-cyan uppercase tracking-widest text-xs"></span>
+                    <span id="escuela-name" class="text-white"></span>
                 </p>
-                <div class="flex-grow space-y-3 text-[15px] leading-relaxed text-factor-textMuted">
-                    <p>Referente internacional de la animaci&oacute;n y la docencia, Jaime Maestro ha formado a generaciones de profesionales acreditados en estudios como Pixar, ILM, Framestore y el MPC.</p>
-                    <p>Candidato al Goya, director de cortometrajes exhibidos en m&aacute;s de cuarenta festivales internacionales y docente con m&aacute;s de dos d&eacute;cadas de trayectoria.</p>
-                    <p>Factor N es su proyecto m&aacute;s personal: una escuela construida desde dentro, para quienes piensan diferente.</p>
-                    <p>Aqu&iacute; el talento neurodivergente no necesita correcci&oacute;n &mdash; necesita direcci&oacute;n. El hiperfoco no es un s&iacute;ntoma, es la ventaja definitiva.</p>
+                <div id="escuela-description" class="flex-grow space-y-4 text-[15px] leading-relaxed text-factor-textMuted text-justify">
+                    <!-- Dinámico -->
                 </div>
             </div>
 
             <!-- RIGHT card: Vimeo video fills entire card -->
-            <div class="lg:w-[61%] aspect-video rounded-2xl overflow-hidden border border-factor-border/50 shadow-xl bg-black relative min-h-[280px]">
-                <iframe
-                    src="https://player.vimeo.com/video/1168450445?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
-                    class="absolute inset-0 w-full h-full"
-                    frameborder="0"
-                    allow="autoplay; fullscreen"
-                    allowfullscreen>
-                </iframe>
+            <div class="lg:w-[61%] aspect-video rounded-2xl overflow-hidden border border-factor-border/50 shadow-xl bg-black relative min-h-[280px]" id="vimeo-container">
+                <!-- Dinámico -->
             </div>
 
         </div>
@@ -175,7 +166,32 @@
     </section>
 
     <script>
+        async function loadEscuelaData() {
+            try {
+                const res = await fetch('data/escuela.json');
+                const data = await res.json();
+                
+                document.getElementById('escuela-label').innerText = data.header.label;
+                document.getElementById('escuela-name').innerText = ' — ' + data.header.name;
+                
+                const descContainer = document.getElementById('escuela-description');
+                descContainer.innerHTML = data.description.split('\n\n').map(p => `<p>${p}</p>`).join('');
+                
+                document.getElementById('vimeo-container').innerHTML = `
+                    <iframe
+                        src="https://player.vimeo.com/video/${data.vimeoId}?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
+                        class="absolute inset-0 w-full h-full"
+                        frameborder="0"
+                        allow="autoplay; fullscreen"
+                        allowfullscreen>
+                    </iframe>`;
+            } catch (err) {
+                console.error("Error cargando datos de la escuela:", err);
+            }
+        }
+
         async function loadCourses() {
+            loadEscuelaData(); // Cargar también los datos de cabecera
             try {
                 const res = await fetch('data/courses.json');
                 const courses = await res.json();
@@ -202,8 +218,8 @@
                         </div>
                         <div class="p-6 flex flex-col flex-grow -mt-px relative z-10 bg-[#2c3543] rounded-b-2xl">
                             <h3 class="text-xl font-bold text-white mb-2">${c.title}</h3>
-                            <p class="text-factor-textMuted text-sm mb-6 flex-grow">${(c.description || '').substring(0, 160)}...</p>
-                            <a href="curso-detalles.html?id=${c.id}" class="w-full py-3 rounded-full text-xs font-extrabold uppercase tracking-widest bg-transparent text-${colorClass} border-2 border-${colorClass} hover:bg-${colorClass} hover:text-black transition-all flex justify-center items-center gap-2">
+                            <p class="text-factor-textMuted text-sm mb-6 flex-grow leading-relaxed">${c.banner?.subtitle || ''}</p>
+                            <a href="curso-detalles?id=${c.id}" class="w-full py-3 rounded-full text-xs font-extrabold uppercase tracking-widest bg-transparent text-${colorClass} border-2 border-${colorClass} hover:bg-${colorClass} hover:text-black transition-all flex justify-center items-center gap-2">
                                 Más información <i class="fa-solid fa-arrow-right"></i>
                             </a>
                         </div>

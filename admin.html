@@ -97,9 +97,11 @@
         <div class="px-2"><span class="text-xl font-black text-white">FACTOR <span class="text-factor-cyan">N</span></span></div>
         <nav class="space-y-1 flex-1">
             <button onclick="switchTab('home')" id="tab-home" class="nav-item w-full text-left px-4 py-3 rounded-xl text-[10px] font-black uppercase tracking-widest flex items-center gap-3 transition-all text-white/40 hover:text-white"><i class="fa-solid fa-house"></i> Home</button>
-            <button onclick="switchTab('escuela')" id="tab-escuela" class="nav-item w-full text-left px-4 py-3 rounded-xl text-[10px] font-black uppercase tracking-widest flex items-center gap-3 transition-all text-white/40 hover:text-white active"><i class="fa-solid fa-graduation-cap"></i> Escuela</button>
+            <button onclick="switchTab('escuela-page')" id="tab-escuela-page" class="nav-item w-full text-left px-4 py-3 rounded-xl text-[10px] font-black uppercase tracking-widest flex items-center gap-3 transition-all text-white/40 hover:text-white"><i class="fa-solid fa-school"></i> Escuela</button>
+            <button onclick="switchTab('escuela')" id="tab-escuela" class="nav-item w-full text-left px-4 py-3 rounded-xl text-[10px] font-black uppercase tracking-widest flex items-center gap-3 transition-all text-white/40 hover:text-white"><i class="fa-solid fa-graduation-cap"></i> Cursos</button>
+            <button onclick="switchTab('empresas-page')" id="tab-empresas-page" class="nav-item w-full text-left px-4 py-3 rounded-xl text-[10px] font-black uppercase tracking-widest flex items-center gap-3 transition-all text-white/40 hover:text-white"><i class="fa-solid fa-briefcase"></i> Empresas</button>
             <button onclick="switchTab('profesores')" id="tab-profesores" class="nav-item w-full text-left px-4 py-3 rounded-xl text-[10px] font-black uppercase tracking-widest flex items-center gap-3 transition-all text-white/40 hover:text-white"><i class="fa-solid fa-users"></i> Profesores</button>
-            <button onclick="switchTab('empresas')" id="tab-empresas" class="nav-item w-full text-left px-4 py-3 rounded-xl text-[10px] font-black uppercase tracking-widest flex items-center gap-3 transition-all text-white/40 hover:text-white"><i class="fa-solid fa-briefcase"></i> Empresas</button>
+            <button onclick="switchTab('empresas')" id="tab-empresas" class="nav-item w-full text-left px-4 py-3 rounded-xl text-[10px] font-black uppercase tracking-widest flex items-center gap-3 transition-all text-white/40 hover:text-white"><i class="fa-solid fa-handshake"></i> Partners</button>
             <button onclick="switchTab('recursos')" id="tab-recursos" class="nav-item w-full text-left px-4 py-3 rounded-xl text-[10px] font-black uppercase tracking-widest flex items-center gap-3 transition-all text-white/40 hover:text-white"><i class="fa-solid fa-folder-open"></i> Recursos</button>
         </nav>
         
@@ -129,14 +131,68 @@
         </header>
 
         <div id="main-scroll" class="flex-1 overflow-y-auto p-10 pb-32">
+
+            <!-- VISTA ESCUELA (PÁGINA) -->
+            <div id="view-escuela-page" class="tab-view hidden space-y-10">
+                <div class="max-w-4xl space-y-10">
+                    <section class="admin-card p-10 space-y-8">
+                        <h3 class="text-lg font-black text-white uppercase flex items-center gap-3"><i class="fa-solid fa-heading text-factor-cyan"></i> Cabecera Escuela</h3>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div><label class="label-style">Etiqueta (Cyan)</label><input type="text" id="ep-label" class="input-dark"></div>
+                            <div><label class="label-style">Nombre (Blanco)</label><input type="text" id="ep-name" class="input-dark"></div>
+                        </div>
+                    </section>
+                    
+                    <section class="admin-card p-10 space-y-8">
+                        <h3 class="text-lg font-black text-white uppercase flex items-center gap-3"><i class="fa-solid fa-paragraph text-factor-cyan"></i> Descripción Principal</h3>
+                        <textarea id="ep-description" class="input-dark h-64 resize-none leading-relaxed text-sm" placeholder="Escribe aquí los párrafos. Deja una línea en blanco entre ellos para crear nuevos párrafos..."></textarea>
+                    </section>
+
+                    <section class="admin-card p-10 space-y-8">
+                        <h3 class="text-lg font-black text-white uppercase flex items-center gap-3"><i class="fa-brands fa-vimeo-v text-factor-cyan"></i> Enlace Vídeo Vimeo</h3>
+                        <div><label class="label-style">URL de Vimeo</label><input type="text" id="ep-vimeo" class="input-dark" placeholder="Ej: https://vimeo.com/1168450445"></div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- VISTA EMPRESAS (PÁGINA) -->
+            <div id="view-empresas-page" class="tab-view hidden space-y-10">
+                <div class="max-w-4xl space-y-10">
+                    <section class="admin-card p-10 space-y-8">
+                        <h3 class="text-lg font-black text-white uppercase flex items-center gap-3"><i class="fa-solid fa-heading text-factor-green"></i> Cabecera Empresas</h3>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div><label class="label-style">Etiqueta (Cyan)</label><input type="text" id="comp-label" class="input-dark"></div>
+                            <div><label class="label-style">Nombre (Blanco)</label><input type="text" id="comp-name" class="input-dark"></div>
+                        </div>
+                    </section>
+                    
+                    <section class="admin-card p-10 space-y-8">
+                        <h3 class="text-lg font-black text-white uppercase flex items-center gap-3"><i class="fa-solid fa-paragraph text-factor-green"></i> Descripción Principal</h3>
+                        <textarea id="comp-description" class="input-dark h-64 resize-none leading-relaxed text-sm" placeholder="Escribe aquí los párrafos para la página de empresas..."></textarea>
+                    </section>
+
+                    <section class="admin-card p-10 space-y-8">
+                        <h3 class="text-lg font-black text-white uppercase flex items-center gap-3"><i class="fa-brands fa-vimeo-v text-factor-green"></i> Enlace Vídeo Vimeo</h3>
+                        <div><label class="label-style">URL de Vimeo</label><input type="text" id="comp-vimeo" class="input-dark" placeholder="Ej: https://vimeo.com/1168450445"></div>
+                    </section>
+                </div>
+            </div>
             
             <!-- VISTA HOME (SPONSORS) -->
             <div id="view-home" class="tab-view hidden space-y-10">
                 <div class="flex gap-10">
-                    <aside class="w-64 shrink-0 space-y-2">
-                        <div class="label-style">Partners / Sponsors</div>
-                        <div id="sponsors-list" class="space-y-1"></div>
-                        <button onclick="createNewItem('sponsors')" class="w-full py-3 mt-4 rounded-xl border border-dashed border-white/20 text-white/40 text-[9px] font-black uppercase transition-all">+ Añadir Sponsor</button>
+                    <aside class="w-64 shrink-0 space-y-8">
+                        <div>
+                            <div class="label-style uppercase tracking-widest text-factor-cyan text-[9px] mb-4">Cursos en Banner (Home)</div>
+                            <div id="featured-courses-list" class="space-y-1"></div>
+                            <p class="text-[8px] text-white/30 mt-3 leading-tight italic">Para añadir un curso aquí, márcalo como "Destacado" en la pestaña Cursos.</p>
+                        </div>
+                        
+                        <div>
+                            <div class="label-style uppercase tracking-widest text-factor-cyan text-[9px] mb-4">Partners / Sponsors</div>
+                            <div id="sponsors-list" class="space-y-1"></div>
+                            <button onclick="createNewItem('sponsors')" class="w-full py-3 mt-4 rounded-xl border border-dashed border-white/20 text-white/40 text-[9px] font-black uppercase transition-all">+ Añadir Sponsor</button>
+                        </div>
                     </aside>
 
                     <div id="sponsors-editor" class="flex-1 hidden">
@@ -231,11 +287,15 @@
                                 <!-- Destacar en Home (Alineado superiormente con Identidad) -->
                                 <section class="admin-card p-8 space-y-4">
                                     <div class="flex items-center justify-between">
-                                        <span class="label-style m-0 text-white">Destacar en Home Banner</span>
+                                        <span class="label-style m-0 text-white uppercase tracking-widest text-[10px]">Destacar en Home Banner</span>
                                         <label class="switch"><input type="checkbox" id="c-featured" onchange="toggleFeatured()"><span class="slider"></span></label>
                                     </div>
-                                    <div id="c-feat-box" class="space-y-3 opacity-30 pointer-events-none">
-                                        <textarea id="c-feat-desc" class="input-dark h-28 py-3 text-[13px] resize-none" placeholder="Descripción corta para el banner del Home..."></textarea>
+                                </section>
+
+                                <section class="admin-card p-8 space-y-4">
+                                    <label class="label-style text-white m-0 uppercase tracking-widest text-[10px]">Texto de Banner / Miniatura</label>
+                                    <div id="c-feat-box" class="space-y-3">
+                                        <textarea id="c-feat-desc" class="input-dark h-32 py-4 text-[13px] resize-none leading-relaxed" placeholder="Este texto aparecerá en el banner principal del Home (si está destacado) y en la miniatura de la Escuela..."></textarea>
                                     </div>
                                 </section>
 
@@ -369,7 +429,7 @@
         const INDUSTRY_SOFTWARE = [
             { name: "Autodesk Maya", icon: "fa-solid fa-cube" }, { name: "ZBrush", icon: "fa-solid fa-gem" }, { name: "Blender", icon: "fa-solid fa-bezier-curve" }, { name: "Foundry Nuke", icon: "fa-solid fa-layer-group" }, { name: "Houdini", icon: "fa-solid fa-fire-flame-curved" }, { name: "Unreal Engine", icon: "fa-solid fa-gamepad" }, { name: "Python (Scripts)", icon: "fa-brands fa-python" }
         ];
-        let courses = []; let team = []; let sponsors = []; let activeTab = 'escuela'; let activeCourseIdx = -1; let activeProfIdx = -1; let activeSponsorIdx = -1;
+        let courses = []; let team = []; let sponsors = []; let escuelaPageData = {}; let empresaPageData = {}; let activeTab = 'escuela-page'; let activeCourseIdx = -1; let activeProfIdx = -1; let activeSponsorIdx = -1;
         let currentUploadFolder = ''; let currentTargetId = '';
 
         // --- GESTIÓN DE CONFIGURACIÓN ---
@@ -497,14 +557,65 @@
 
         async function initData() {
             try {
-                const resC = await fetch('data/courses.json'); courses = await resC.json();
-                const resT = await fetch('data/team.json'); team = await resT.json();
-                const resS = await fetch('data/sponsors.json'); sponsors = await resS.json();
+                const [rC, rT, rS, rE, rComp] = await Promise.all([
+                    fetch('data/courses.json'), fetch('data/team.json'), fetch('data/sponsors.json'), fetch('data/escuela.json'), fetch('data/empresa.json')
+                ]);
+                courses = await rC.json(); team = await rT.json(); sponsors = await rS.json(); 
+                escuelaPageData = await rE.json(); empresaPageData = await rComp.json();
+                
+                renderFeaturedCourses();
                 renderList('escuela'); renderList('profesores'); renderList('sponsors');
+                switchTab('escuela-page');
                 checkStatus();
             } catch (err) {
                 console.error("Error al cargar datos:", err);
             }
+        }
+
+        function renderFeaturedCourses() {
+            const container = document.getElementById('featured-courses-list');
+            if (!container) return;
+            const featured = courses.map((c, i) => ({ ...c, originalIdx: i })).filter(c => c.featured);
+            
+            if (featured.length === 0) {
+                container.innerHTML = '<div class="text-[8px] text-white/20 py-4 text-center border border-dashed border-white/5 rounded-xl">No hay cursos destacados</div>';
+                return;
+            }
+
+            container.innerHTML = featured.map((c, i) => `
+                <div draggable="true" 
+                     ondragstart="handleDragStart(event, ${c.originalIdx}, 'featured')" 
+                     ondragover="handleDragOver(event)" 
+                     ondrop="handleDrop(event, ${c.originalIdx}, 'featured')"
+                     class="group relative flex items-center p-3 rounded-lg bg-white/5 border border-white/5 hover:border-factor-cyan/30 transition-all cursor-grab active:cursor-grabbing">
+                    <span class="text-[10px] font-bold text-white truncate max-w-[160px] pr-8">${c.title}</span>
+                    <i class="fa-solid fa-grip-vertical absolute right-4 top-1/2 -translate-y-1/2 text-white/10 group-hover:text-white/30"></i>
+                </div>
+            `).join('');
+        }
+
+        let draggedIdx = -1;
+        let draggedType = '';
+        function handleDragStart(e, idx, type) { draggedIdx = idx; draggedType = type; e.dataTransfer.setData('text/plain', idx); }
+        function handleDragOver(e) { e.preventDefault(); }
+        function handleDrop(e, targetIdx, type) {
+            e.preventDefault();
+            if (draggedIdx === targetIdx || draggedType !== type) return;
+            
+            const data = (type === 'featured' || type === 'escuela') ? courses : (type === 'profesores' ? team : sponsors);
+            
+            // Cambio automático de categoría al arrastrar en la pestaña de cursos
+            if (type === 'escuela') {
+                const source = data[draggedIdx];
+                const target = data[targetIdx];
+                if (source.category !== target.category) source.category = target.category;
+            }
+
+            const item = data.splice(draggedIdx, 1)[0];
+            data.splice(targetIdx, 0, item);
+            
+            renderList(type === 'featured' ? 'escuela' : type);
+            if (type === 'featured' || type === 'escuela') renderFeaturedCourses();
         }
 
         // Llamada inicial
@@ -516,8 +627,32 @@
             document.getElementById(`view-${t}`).classList.remove('hidden');
             document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
             document.getElementById(`tab-${t}`).classList.add('active');
-            document.getElementById('section-title').innerText = `Gestión de ${t.toUpperCase()}`;
+
+            // Actualizar título de sección
+            const titles = { 
+                'escuela-page': 'Contenido Escuela', 
+                'escuela': 'Gestión de Cursos', 
+                'empresas-page': 'Contenido Empresas',
+                'profesores': 'Equipo Docente', 
+                'empresas': 'Partners & Sponsors', 
+                'home': 'Gestión Home', 
+                'recursos': 'Recursos' 
+            };
+            document.getElementById('section-title').innerText = titles[t] || 'Panel de Control';
+
+            if (t === 'escuela-page') {
+                document.getElementById('ep-label').value = escuelaPageData.header.label;
+                document.getElementById('ep-name').value = escuelaPageData.header.name;
+                document.getElementById('ep-description').value = escuelaPageData.description;
+                document.getElementById('ep-vimeo').value = escuelaPageData.vimeoId;
+            } else if (t === 'empresas-page') {
+                document.getElementById('comp-label').value = empresaPageData.header.label;
+                document.getElementById('comp-name').value = empresaPageData.header.name;
+                document.getElementById('comp-description').value = empresaPageData.description;
+                document.getElementById('comp-vimeo').value = empresaPageData.vimeoId;
+            }
         }
+
         function renderList(type) {
             const container = document.getElementById(`${type}-list`);
             if (type === 'escuela') {
@@ -559,29 +694,6 @@
             }
         }
 
-        let draggedIdx = -1;
-        let draggedType = '';
-        function handleDragStart(e, idx, type) { draggedIdx = idx; draggedType = type; e.dataTransfer.setData('text/plain', idx); }
-        function handleDragOver(e) { e.preventDefault(); }
-        function handleDrop(e, targetIdx, type) {
-            e.preventDefault();
-            if (draggedIdx === targetIdx || draggedType !== type) return;
-            
-            const data = type === 'escuela' ? courses : sponsors;
-            
-            // Si movemos un curso de una categoría a otra al soltarlo sobre un curso de esa categoría
-            if (type === 'escuela') {
-                const source = data[draggedIdx];
-                const target = data[targetIdx];
-                if (source.category !== target.category) {
-                    source.category = target.category; // Cambio automático de categoría al arrastrar
-                }
-            }
-
-            const item = data.splice(draggedIdx, 1)[0];
-            data.splice(targetIdx, 0, item);
-            renderList(type);
-        }
         function selectItem(type, idx) {
             if (type === 'escuela') {
                 activeCourseIdx = idx; const c = courses[idx];
@@ -630,42 +742,76 @@
             const p = team.find(item => item.id === profId);
             if (p) courses[activeCourseIdx].professors[idx] = { name: p.name, role: p.role, image: p.image, bio: p.bio, tags: p.tags };
         }
-        function addCourseProf() { courses[activeCourseIdx].professors.push({ name: "", role: "", image: "", bio: "", tags: [] }); renderProfSelection(courses[activeCourseIdx].professors); }
+        function addCourseProf() { 
+            if (!courses[activeCourseIdx].professors) courses[activeCourseIdx].professors = [];
+            courses[activeCourseIdx].professors.push({ name: "", role: "", image: "", bio: "", tags: [] }); 
+            renderProfSelection(courses[activeCourseIdx].professors); 
+        }
         function renderMethod(m) {
-            document.getElementById('c-method').innerHTML = m.map((meth, i) => `
+            document.getElementById('c-method').innerHTML = (m || []).map((meth, i) => `
                 <div class="p-6 bg-black/20 rounded-2xl border border-white/5 space-y-4 group">
                     <div class="flex justify-between items-center"><input type="text" class="bg-transparent border-none text-white font-bold text-base w-full p-0 uppercase" value="${meth.title}" onchange="courses[${activeCourseIdx}].methodology[${i}].title = this.value"><button onclick="courses[${activeCourseIdx}].methodology.splice(${i},1); renderMethod(courses[${activeCourseIdx}].methodology)" class="text-white/10 hover:text-red-500"><i class="fa-solid fa-trash text-[10px]"></i></button></div>
                     <textarea class="input-dark h-24 py-2 resize-none leading-relaxed" onchange="courses[${activeCourseIdx}].methodology[${i}].text = this.value">${meth.text}</textarea>
                 </div>
             `).join('');
         }
-        function addMethod() { courses[activeCourseIdx].methodology.push({ title: "NUEVO PUNTO", text: "" }); renderMethod(courses[activeCourseIdx].methodology); }
+        function addMethod() { 
+            if (!courses[activeCourseIdx].methodology) courses[activeCourseIdx].methodology = [];
+            courses[activeCourseIdx].methodology.push({ title: "NUEVO PUNTO", text: "" }); 
+            renderMethod(courses[activeCourseIdx].methodology); 
+        }
         function renderModules(m) {
-            document.getElementById('c-modules').innerHTML = m.map((mod, i) => `
+            document.getElementById('c-modules').innerHTML = (m || []).map((mod, i) => `
                 <div class="p-6 bg-black/20 rounded-2xl border border-white/5 space-y-3 group">
                     <div class="flex justify-between items-center"><input type="text" class="bg-transparent border-none text-white font-bold text-base w-full p-0 uppercase" value="${mod.title}" onchange="courses[${activeCourseIdx}].syllabus[${i}].title = this.value"><button onclick="courses[${activeCourseIdx}].syllabus.splice(${i},1); renderModules(courses[${activeCourseIdx}].syllabus)" class="text-white/10 hover:text-red-500"><i class="fa-solid fa-trash text-[10px]"></i></button></div>
                     <textarea class="input-dark h-24 py-2 resize-none leading-relaxed" onchange="courses[${activeCourseIdx}].syllabus[${i}].description = this.value">${mod.description}</textarea>
                 </div>
             `).join('');
         }
-        function addModule() { courses[activeCourseIdx].syllabus.push({ title: "MÓDULO", description: "" }); renderModules(courses[activeCourseIdx].syllabus); }
+        function addModule() { 
+            if (!courses[activeCourseIdx].syllabus) courses[activeCourseIdx].syllabus = [];
+            courses[activeCourseIdx].syllabus.push({ title: "MÓDULO", description: "" }); 
+            renderModules(courses[activeCourseIdx].syllabus); 
+        }
         function renderSoftware(sw) {
-            document.getElementById('c-software').innerHTML = sw.map((s, i) => `
+            document.getElementById('c-software').innerHTML = (sw || []).map((s, i) => `
                 <div class="flex gap-2"><select class="input-dark py-1.5 text-[10px] flex-1" onchange="updateSoftware(${i}, this.value)"><option value="">-- SOFTWARE --</option>${INDUSTRY_SOFTWARE.map(isw => `<option value="${isw.name}" ${isw.name === s.name ? 'selected' : ''}>${isw.name.toUpperCase()}</option>`).join('')}</select><button onclick="courses[${activeCourseIdx}].software.splice(${i},1); renderSoftware(courses[activeCourseIdx}].software)" class="text-white/10 hover:text-red-500"><i class="fa-solid fa-xmark"></i></button></div>
             `).join('');
         }
         function updateSoftware(idx, name) { const found = INDUSTRY_SOFTWARE.find(s => s.name === name); if (found) courses[activeCourseIdx].software[idx] = { name: found.name, icon: found.icon }; }
-        function addSoftware() { courses[activeCourseIdx].software.push({ name: "", icon: "" }); renderSoftware(courses[activeCourseIdx].software); }
-        function toggleFeatured() { const isChecked = document.getElementById('c-featured').checked; const box = document.getElementById('c-feat-box'); box.classList.toggle('opacity-30', !isChecked); box.style.pointerEvents = isChecked ? "auto" : "none"; }
+        function addSoftware() { 
+            if (!courses[activeCourseIdx].software) courses[activeCourseIdx].software = [];
+            courses[activeCourseIdx].software.push({ name: "", icon: "" }); 
+            renderSoftware(courses[activeCourseIdx].software); 
+        }
+        function toggleFeatured() { /* El texto ahora se usa siempre para las miniaturas, por lo que siempre es editable */ }
         
+        function getVimeoId(url) {
+            if (!url) return "";
+            if (!isNaN(url)) return url; // Si ya es un ID, devolverlo
+            const match = url.match(/(?:vimeo\.com\/|video\/)(\d+)/);
+            return match ? match[1] : url;
+        }
+
         // --- PUBLICACIÓN DIRECTA EN GITHUB ---
         async function commitChanges() {
             // 1. Actualizar datos locales
-            if (activeTab === 'escuela' && activeCourseIdx !== -1) {
+            if (activeTab === 'escuela-page') {
+                escuelaPageData.header.label = document.getElementById('ep-label').value;
+                escuelaPageData.header.name = document.getElementById('ep-name').value;
+                escuelaPageData.description = document.getElementById('ep-description').value;
+                escuelaPageData.vimeoId = getVimeoId(document.getElementById('ep-vimeo').value);
+            } else if (activeTab === 'empresas-page') {
+                empresaPageData.header.label = document.getElementById('comp-label').value;
+                empresaPageData.header.name = document.getElementById('comp-name').value;
+                empresaPageData.description = document.getElementById('comp-description').value;
+                empresaPageData.vimeoId = getVimeoId(document.getElementById('comp-vimeo').value);
+            } else if (activeTab === 'escuela' && activeCourseIdx !== -1) {
                 const c = courses[activeCourseIdx];
                 c.title = document.getElementById('c-title').value; c.category = document.getElementById('c-category').value; c.id = document.getElementById('c-id').value; c.image = document.getElementById('c-thumb').value; c.featured = document.getElementById('c-featured').checked;
                 if (!c.banner) c.banner = {}; c.banner.title = c.title; c.banner.image = document.getElementById('c-banner-img').value; c.banner.subtitle = document.getElementById('c-feat-desc').value;
                 c.hours = document.getElementById('c-hours').value; c.duration = document.getElementById('c-duration').value; c.mode = document.getElementById('c-mode').value; c.level = document.getElementById('c-level').value; c.nextDate = document.getElementById('c-next-date').value; c.spotsStatus = document.getElementById('c-spots').value; c.subtitleVision = document.getElementById('c-subtitle').value; c.description = document.getElementById('c-description').value;
+                renderFeaturedCourses();
             } else if (activeTab === 'profesores' && activeProfIdx !== -1) {
                 const p = team[activeProfIdx];
                 p.name = document.getElementById('p-name').value; p.role = document.getElementById('p-role').value; p.image = document.getElementById('p-image').value; p.bio = document.getElementById('p-bio').value; p.tags = document.getElementById('p-tags').value.split(',').map(t => t.trim());
@@ -677,7 +823,7 @@
             // 2. Intentar Push a GitHub
             const token = localStorage.getItem('fn_gh_token');
             const repo = localStorage.getItem('fn_gh_repo');
-            if (!token || !repo) return alert("Configuración de GitHub incompleta. Cambios guardados solo en sesión.");
+            if (!token || !repo) return alert("Configuración de GitHub incompleta.");
 
             const btn = document.getElementById('btn-save');
             const saveText = document.getElementById('save-text');
@@ -693,6 +839,8 @@
                 await pushToGithub(repo, token, 'data/courses.json', courses);
                 await pushToGithub(repo, token, 'data/team.json', team);
                 await pushToGithub(repo, token, 'data/sponsors.json', sponsors);
+                await pushToGithub(repo, token, 'data/escuela.json', escuelaPageData);
+                await pushToGithub(repo, token, 'data/empresa.json', empresaPageData);
                 
                 alert("¡WEB ACTUALIZADA! Los cambios ya están en GitHub y serán visibles en 1-2 minutos.");
             } catch (err) {
@@ -746,13 +894,14 @@
                 // Reset active index and hide editor
                 if (type === 'escuela') { activeCourseIdx = -1; document.getElementById('escuela-editor').classList.add('hidden'); }
                 else if (type === 'profesores') { activeProfIdx = -1; document.getElementById('profesores-editor').classList.add('hidden'); }
-                else { activeSponsorIdx = -1; document.getElementById('sponsors-editor').classList.add('hidden'); }
-                
+                else if (type === 'sponsors') { activeSponsorIdx = -1; document.getElementById('sponsors-editor').classList.add('hidden'); }
+
                 renderList(type);
+                if (type === 'escuela') renderFeaturedCourses();
                 alert("Eliminado. Recuerda pulsar 'Publicar en Web' para guardar los cambios.");
             }
         }
-        init();
+        initData();
     </script>
 </body>
 </html>

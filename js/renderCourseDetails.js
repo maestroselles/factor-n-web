@@ -3,16 +3,25 @@
  * Cruzando datos con data/team.json para que los profesores sean dinámicos.
  */
 async function loadCourseDetails() {
+    console.log('--- DIAGNÓSTICO DE CARGA ---');
+    console.log('URL actual:', window.location.href);
+    
     const urlParams = new URLSearchParams(window.location.search);
     let courseId = urlParams.get('id');
     
+    console.log('ID detectado por parámetro:', courseId);
+
     if (!courseId) {
         const path = window.location.pathname;
         const pageName = path.split('/').pop() || 'index.html';
         courseId = pageName.replace('curso-', '').replace('.html', '');
+        console.log('ID deducido por ruta:', courseId);
     }
     
-    if (!courseId || courseId === 'index') return;
+    if (!courseId || courseId === 'index' || courseId === 'curso-detalles') {
+        console.warn('No se ha podido identificar el curso. Abortando renderizado.');
+        return;
+    }
 
     function getSoftwareIcon(name) {
         const icons = [
@@ -63,9 +72,9 @@ async function loadCourseDetails() {
         const heroSection = document.getElementById('course-hero');
         if (heroSection && course.banner) {
             heroSection.innerHTML = `
-                <img src="${course.banner.image}" alt="${course.title}" class="w-full h-full object-cover opacity-60">
-                <div class="absolute inset-0 bg-gradient-to-t from-[#212733] via-[#212733]/40 to-[#212733]/20"></div>
-                <div class="absolute inset-0 bg-gradient-to-r from-[#212733] via-transparent to-transparent"></div>
+                <img src="${course.banner.image}" alt="${course.title}" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-r from-[#212733]/40 to-transparent"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-[#212733]/80 via-transparent to-transparent"></div>
                 <div class="absolute inset-0 flex flex-col justify-between py-6">
                     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
                         <nav class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-factor-textMuted mb-6">
@@ -73,7 +82,7 @@ async function loadCourseDetails() {
                             <i class="fa-solid fa-chevron-right text-[10px]"></i>
                             <span class="${accentText}">${course.category || 'Curso'}</span>
                         </nav>
-                        <h1 class="text-4xl md:text-7xl font-extrabold text-white mb-6 leading-[0.9] tracking-tighter uppercase">${course.title}</h1>
+                        <h1 class="text-4xl md:text-7xl font-extrabold text-white mb-6 leading-[0.9] tracking-tighter uppercase" style="text-shadow: 0 4px 12px rgba(0,0,0,0.5);">${course.title}</h1>
                     </div>
                     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex flex-col md:flex-row justify-between items-end gap-6">
                         <div class="flex flex-wrap gap-3">
