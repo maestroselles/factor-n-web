@@ -46,6 +46,14 @@
             background-color: #212733;
             color: #f0f0f0;
         }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+        .animate-shimmer {
+            animation: shimmer 2s infinite;
+        }
         
         .glass-panel {
             background: rgba(20, 20, 20, 0.7);
@@ -144,8 +152,15 @@
         <div class="relative w-full rounded-2xl overflow-hidden group border border-factor-border/50 shadow-2xl bg-factor-panel">
             
             <!-- Contenedor del Slider (Se rellena dinámicamente) -->
-            <div id="banner-slider" class="flex w-full overflow-x-auto snap-x snap-mandatory scrollbar-hide scroll-smooth">
-                <!-- Los slides se cargan desde data/courses.json vía js/renderBanner.js -->
+            <div id="banner-slider" class="flex w-full overflow-x-auto snap-x snap-mandatory scrollbar-hide scroll-smooth h-[400px] md:h-[320px]">
+                <!-- Skeleton Loader: Se muestra mientras carga el JSON -->
+                <div id="banner-skeleton" class="min-w-full h-full relative overflow-hidden bg-[#1e232d]">
+                    <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/[0.03] to-transparent animate-shimmer" style="background-size: 200% 100%;"></div>
+                    <div class="absolute inset-0 flex flex-col justify-center px-6 md:px-16 max-w-3xl">
+                        <div class="w-3/4 h-12 bg-white/5 rounded-lg mb-4 animate-pulse"></div>
+                        <div class="w-1/2 h-6 bg-white/5 rounded-lg animate-pulse"></div>
+                    </div>
+                </div>
             </div>
 
             <!-- Netflix-Style Slider Indicators -->
