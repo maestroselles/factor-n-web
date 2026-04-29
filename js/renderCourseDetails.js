@@ -8,18 +8,11 @@ async function loadCourseDetails() {
     
     if (!courseId) {
         const path = window.location.pathname;
-        const pageName = path.split('/').pop() || '';
-        
-        if (pageName && pageName.includes('curso-') && !pageName.includes('curso-detalles')) {
-            courseId = pageName.replace('curso-', '').replace('.html', '');
-        }
+        const pageName = path.split('/').pop() || 'index.html';
+        courseId = pageName.replace('curso-', '').replace('.html', '');
     }
     
-    // Solo redirigir si estamos en curso-detalles.html y NO tenemos un ID válido
-    if (!courseId && window.location.pathname.includes('curso-detalles')) {
-        window.location.href = 'escuela.html';
-        return;
-    }
+    if (!courseId || courseId === 'index') return;
 
     function getSoftwareIcon(name) {
         const icons = [
@@ -52,12 +45,14 @@ async function loadCourseDetails() {
 
         const courses = await resCourses.json();
         const team = await resTeam.json();
-        const course = courses.find(c => c.id === courseId || courseId.includes(c.id));
+        const course = courses.find(c => c.id === courseId || (c.id && courseId.includes(c.id)));
+        
+        if (!course) {
+            console.error('Curso no encontrado para el ID:', courseId);
+            return;
+        }
 
-        if (!course) return;
-
-        // Actualizar el título de la página dinámicamente
-        document.title = `${course.title} - Factor N`;
+        console.log('Cargando curso:', course.title);
 
         const accentText = course.accentColor === 'factor-cyan' ? 'text-factor-cyan' : 'text-factor-green';
         const accentBg = course.accentColor === 'factor-cyan' ? 'bg-factor-cyan' : 'bg-factor-green';
@@ -66,7 +61,7 @@ async function loadCourseDetails() {
 
         // 1. HERO
         const heroSection = document.getElementById('course-hero');
-        if (heroSection) {
+        if (heroSection && course.banner) {
             heroSection.innerHTML = `
                 <img src="${course.banner.image}" alt="${course.title}" class="w-full h-full object-cover opacity-60">
                 <div class="absolute inset-0 bg-gradient-to-t from-[#212733] via-[#212733]/40 to-[#212733]/20"></div>
@@ -76,7 +71,7 @@ async function loadCourseDetails() {
                         <nav class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-factor-textMuted mb-6">
                             <a href="escuela.html" class="hover:${accentText} transition-colors">Escuela</a>
                             <i class="fa-solid fa-chevron-right text-[10px]"></i>
-                            <span class="${accentText}">${course.category}</span>
+                            <span class="${accentText}">${course.category || 'Curso'}</span>
                         </nav>
                         <h1 class="text-4xl md:text-7xl font-extrabold text-white mb-6 leading-[0.9] tracking-tighter uppercase">${course.title}</h1>
                     </div>
@@ -84,19 +79,19 @@ async function loadCourseDetails() {
                         <div class="flex flex-wrap gap-3">
                             <div class="flex items-center gap-2 px-4 py-2 rounded-xl bg-factor-panel/80 backdrop-blur-md border border-white/10 text-sm">
                                 <i class="fa-solid fa-location-dot ${accentText}"></i>
-                                <span class="text-white font-semibold uppercase text-xs">${course.mode}</span>
+                                <span class="text-white font-semibold uppercase text-xs">${course.mode || 'Presencial'}</span>
                             </div>
                             <div class="flex items-center gap-2 px-4 py-2 rounded-xl bg-factor-panel/80 backdrop-blur-md border border-white/10 text-sm">
                                 <i class="fa-solid fa-clock ${accentText}"></i>
-                                <span class="text-white font-semibold uppercase text-xs">${course.hours}</span>
+                                <span class="text-white font-semibold uppercase text-xs">${course.hours || '-'}</span>
                             </div>
                             <div class="flex items-center gap-2 px-4 py-2 rounded-xl bg-factor-panel/80 backdrop-blur-md border border-white/10 text-sm">
                                 <i class="fa-solid fa-calendar ${accentText}"></i>
-                                <span class="text-white font-semibold uppercase text-xs">${course.duration}</span>
+                                <span class="text-white font-semibold uppercase text-xs">${course.duration || '-'}</span>
                             </div>
                             <div class="flex items-center gap-2 px-4 py-2 rounded-xl bg-factor-panel/80 backdrop-blur-md border border-white/10 text-sm border-dashed">
                                 <i class="fa-solid fa-gauge-high ${accentText}"></i>
-                                <span class="text-white font-semibold uppercase tracking-widest text-[10px]">${course.level}</span>
+                                <span class="text-white font-semibold uppercase tracking-widest text-[10px]">${course.level || 'Todos los niveles'}</span>
                             </div>
                             <div class="flex items-center gap-2 px-4 py-2 rounded-xl bg-factor-cyan/10 border border-factor-cyan/20 text-sm">
                                 <i class="fa-solid fa-circle text-[5px] text-factor-cyan animate-pulse"></i>
@@ -118,7 +113,7 @@ async function loadCourseDetails() {
         if (visionContainer) {
             visionContainer.innerHTML = `
                 <h3 class="text-3xl font-black text-white mb-6 tracking-tight uppercase">${course.subtitleVision || 'El estándar de la Industria Real'}</h3>
-                <p class="text-xl text-factor-textMuted leading-relaxed font-light mb-8">${course.description}</p>`;
+                <p class="text-xl text-factor-textMuted leading-relaxed font-light mb-8">${course.description || ''}</p>`;
         }
 
         // 3. PERFIL DEL ALUMNO (SIDEBAR)
@@ -199,13 +194,10 @@ async function loadCourseDetails() {
                 </div>`;
         }
 
-        // 7. PROFESORES (CRUCE DINÁMICO CON TEAM.JSON)
+        // 7. PROFESORES
         const professorSection = document.getElementById('professors-container');
         if (professorSection && course.professors) {
-            
-            // Mapear los profesores del curso con sus datos reales del equipo
             const dynamicProfs = course.professors.map(courseProf => {
-                // Buscamos en team.json por nombre o por id si existiera
                 return team.find(t => t.name === courseProf.name) || courseProf;
             });
 
@@ -213,27 +205,18 @@ async function loadCourseDetails() {
                 <div class="bg-[#1a1e28] border border-factor-border/30 rounded-3xl p-8 mb-6 group hover:border-factor-cyan/30 transition-all duration-500 relative overflow-hidden">
                     <div class="flex flex-col items-center text-center">
                         <span class="text-[11px] font-black text-white/40 uppercase tracking-[0.2em] mb-6 block border-b border-white/5 pb-2 w-full">Mentor del Programa</span>
-                        
                         <div class="w-24 h-24 rounded-full border-2 border-factor-border overflow-hidden mb-5 group-hover:border-factor-cyan transition-colors">
-                            <img src="${prof.image}" alt="${prof.name}" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                            <img src="${prof.image || './img/team/placeholder.jpg'}" alt="${prof.name}" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
                         </div>
-                        
                         <h4 class="text-xl font-extrabold text-white mb-1 uppercase tracking-tighter">${prof.name}</h4>
-                        <div class="text-factor-cyan font-black text-[9px] uppercase tracking-widest mb-4">${prof.role}</div>
-                        
-                        <p class="text-factor-textMuted text-[13px] leading-relaxed mb-6 font-light">
-                            ${prof.bio}
-                        </p>
-                        
+                        <div class="text-factor-cyan font-black text-[9px] uppercase tracking-widest mb-4">${prof.role || ''}</div>
+                        <p class="text-factor-textMuted text-[13px] leading-relaxed mb-6 font-light">${prof.bio || ''}</p>
                         <div class="flex flex-wrap justify-center gap-2">
                             ${(prof.tags || []).map(tag => `
-                                <span class="bg-factor-cyan/10 text-factor-cyan border border-factor-cyan/20 text-[9px] uppercase font-bold px-3 py-1 rounded-full tracking-wider">
-                                    ${tag}
-                                </span>`).join('')}
+                                <span class="bg-factor-cyan/10 text-factor-cyan border border-factor-cyan/20 text-[9px] uppercase font-bold px-3 py-1 rounded-full tracking-wider">${tag}</span>`).join('')}
                         </div>
                     </div>
-                </div>
-            `).join('');
+                </div>`).join('');
         }
 
     } catch (error) {

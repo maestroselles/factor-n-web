@@ -194,21 +194,15 @@
                     <div class="course-card flex flex-col h-full group">
                         <div class="relative h-48 overflow-hidden bg-[#2c3543] isolation-auto">
                             <img src="${c.image || './img/courses/placeholder.jpg'}" alt="${c.title}" class="w-full h-full object-cover will-change-transform transition-transform duration-500">
-                            <div class="absolute inset-x-0 bottom-0 h-[30%] bg-gradient-to-t from-[#2c3543] to-transparent pointer-events-none"></div>
+                            <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#2c3543] to-transparent"></div>
                             <div class="absolute top-4 left-4 flex gap-2">
                                 ${c.hours ? `<span class="bg-black/60 backdrop-blur-md border border-white/10 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full"><i class="fa-regular fa-clock text-${colorClass} mr-1"></i> ${c.hours}</span>` : ''}
                                 ${c.duration ? `<span class="bg-black/60 backdrop-blur-md border border-white/10 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full"><i class="fa-solid fa-calendar-days text-${colorClass} mr-1"></i> ${c.duration}</span>` : ''}
                             </div>
                         </div>
-                        <div class="px-6 pb-6 flex flex-col flex-grow -mt-10 relative z-20 bg-[#2c3543] rounded-b-2xl">
-                            <!-- Gradient blend with image -->
-                            <div class="absolute inset-x-0 -top-8 h-8 bg-gradient-to-t from-[#2c3543] to-transparent pointer-events-none"></div>
-                            
-                            <div class="pt-4"></div>
-                            <h3 class="text-xl font-bold text-white mb-2 leading-tight">${c.title}</h3>
-                            <p class="text-factor-textMuted text-sm mb-6 flex-grow line-clamp-3 overflow-hidden">
-                                ${c.banner?.subtitle || c.description}
-                            </p>
+                        <div class="p-6 flex flex-col flex-grow -mt-px relative z-10 bg-[#2c3543] rounded-b-2xl">
+                            <h3 class="text-xl font-bold text-white mb-2">${c.title}</h3>
+                            <p class="text-factor-textMuted text-sm mb-6 flex-grow">${(c.description || '').substring(0, 160)}...</p>
                             <a href="curso-detalles.html?id=${c.id}" class="w-full py-3 rounded-full text-xs font-extrabold uppercase tracking-widest bg-transparent text-${colorClass} border-2 border-${colorClass} hover:bg-${colorClass} hover:text-black transition-all flex justify-center items-center gap-2">
                                 Más información <i class="fa-solid fa-arrow-right"></i>
                             </a>
