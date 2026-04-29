@@ -184,8 +184,7 @@
                         
                         <h2 class="text-2xl font-bold text-white mb-2">Formulario de Contacto Inteligente</h2>
                         <p class="text-sm text-factor-textMuted mb-8">Selecciona tu perfil para que podamos derivar tu solicitud al departamento adecuado.</p>
-                        
-                        <form action="#" method="POST">
+                                      <form id="contact-form" action="https://formsubmit.co/ajax/jaime.maestro@factorn.es" method="POST">
                             <!-- Selector Inicial (Radio Buttons) -->
                             <div class="mb-8">
                                 <label class="block text-xs font-bold uppercase tracking-wider text-factor-textMuted mb-4">¿En qué podemos ayudarte?</label>
@@ -224,29 +223,29 @@
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                                 <div>
                                     <label class="block text-xs font-bold text-factor-textMuted uppercase tracking-wider mb-2" for="nombre">Nombre Completo *</label>
-                                    <input type="text" id="nombre" class="input-field w-full rounded-lg px-4 py-3 text-sm focus:ring-0" placeholder="Ej. Carlos García">
+                                    <input type="text" id="nombre" name="nombre" class="input-field w-full rounded-lg px-4 py-3 text-sm focus:ring-0" placeholder="Ej. Carlos García" required>
                                 </div>
                                 <div>
                                     <label class="block text-xs font-bold text-factor-textMuted uppercase tracking-wider mb-2" for="email">Email *</label>
-                                    <input type="email" id="email" class="input-field w-full rounded-lg px-4 py-3 text-sm focus:ring-0" placeholder="ejemplo@correo.com">
+                                    <input type="email" id="email" name="email" class="input-field w-full rounded-lg px-4 py-3 text-sm focus:ring-0" placeholder="ejemplo@correo.com" required>
                                 </div>
                             </div>
 
                             <div class="mb-6">
                                 <label class="block text-xs font-bold text-factor-textMuted uppercase tracking-wider mb-2" for="telefono">Teléfono (Opcional)</label>
-                                <input type="tel" id="telefono" class="input-field w-full rounded-lg px-4 py-3 text-sm focus:ring-0" placeholder="+34 600 000 000">
+                                <input type="tel" id="telefono" name="telefono" class="input-field w-full rounded-lg px-4 py-3 text-sm focus:ring-0" placeholder="+34 600 000 000">
                             </div>
 
                             <div class="mb-8">
                                 <label class="block text-xs font-bold text-factor-textMuted uppercase tracking-wider mb-2" for="mensaje">Cuéntanos tu caso *</label>
-                                <textarea id="mensaje" rows="4" class="input-field w-full rounded-lg px-4 py-3 text-sm focus:ring-0 resize-none" placeholder="Describe brevemente tu situación o intereses..."></textarea>
+                                <textarea id="mensaje" name="mensaje" rows="4" class="input-field w-full rounded-lg px-4 py-3 text-sm focus:ring-0 resize-none" placeholder="Describe brevemente tu situación o intereses..." required></textarea>
                             </div>
 
                             <!-- Checkbox Legal -->
                             <div class="mb-8">
                                 <label class="flex items-start gap-3 cursor-pointer group">
                                     <div class="relative flex items-center mt-0.5">
-                                        <input type="checkbox" class="sr-only checkbox-custom" required>
+                                        <input type="checkbox" name="_optin" class="sr-only checkbox-custom" required>
                                         <div class="w-5 h-5 rounded border border-factor-border bg-[#2c3543] flex items-center justify-center transition-colors group-hover:border-factor-border/80">
                                             <i class="fa-solid fa-check text-black text-xs opacity-0 transition-opacity"></i>
                                         </div>
@@ -258,9 +257,12 @@
                             </div>
 
                             <!-- Botón Enviar -->
-                            <button type="button" class="w-full py-4 rounded-xl text-sm font-extrabold uppercase tracking-widest bg-factor-green text-black hover:bg-factor-greenHover transition-all flex justify-center items-center gap-2 shadow-[0_0_20px_rgba(0,224,192,0.2)] hover:shadow-[0_0_30px_rgba(0,224,192,0.4)]">
-                                Iniciar Proceso de Admisión <i class="fa-solid fa-paper-plane"></i>
+                            <button type="submit" id="submit-btn" class="w-full py-4 rounded-xl text-sm font-extrabold uppercase tracking-widest bg-factor-green text-black hover:bg-factor-greenHover transition-all flex justify-center items-center gap-2 shadow-[0_0_20px_rgba(0,224,192,0.2)] hover:shadow-[0_0_30px_rgba(0,224,192,0.4)]">
+                                <span id="btn-text">Iniciar Proceso de Admisión</span>
+                                <i id="btn-icon" class="fa-solid fa-paper-plane"></i>
                             </button>
+                            
+                            <p id="form-status" class="text-center text-xs font-bold uppercase mt-4 hidden"></p>
                         </form>
                     </div>
                 </div>
@@ -272,8 +274,51 @@
     <!-- Footer placeholder to balance the page -->
     <div id="footer-container"></div>
 
-    <!-- mobile-menu-script -->
-    
     <script src="js/loadComponents.js"></script>
+    <script>
+        const form = document.getElementById('contact-form');
+        const btn = document.getElementById('submit-btn');
+        const btnText = document.getElementById('btn-text');
+        const btnIcon = document.getElementById('btn-icon');
+        const status = document.getElementById('form-status');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            btn.disabled = true;
+            btnText.innerText = 'Enviando...';
+            btnIcon.className = 'fa-solid fa-spinner animate-spin';
+            status.classList.add('hidden');
+
+            const formData = new FormData(form);
+            const object = Object.fromEntries(formData);
+            const json = JSON.stringify(object);
+
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                    body: json
+                });
+
+                if (response.ok) {
+                    status.innerText = '¡Mensaje enviado con éxito! Te contactaremos pronto.';
+                    status.className = 'text-center text-xs font-bold uppercase mt-4 text-factor-green';
+                    status.classList.remove('hidden');
+                    form.reset();
+                } else {
+                    throw new Error('Error en el servidor');
+                }
+            } catch (err) {
+                status.innerText = 'Error al enviar. Por favor, inténtalo de nuevo.';
+                status.className = 'text-center text-xs font-bold uppercase mt-4 text-red-400';
+                status.classList.remove('hidden');
+            } finally {
+                btn.disabled = false;
+                btnText.innerText = 'Iniciar Proceso de Admisión';
+                btnIcon.className = 'fa-solid fa-paper-plane';
+            }
+        });
+    </script>
 </body>
 </html>

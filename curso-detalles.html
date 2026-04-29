@@ -132,11 +132,14 @@
                             <i class="fa-solid fa-envelope text-factor-cyan"></i> Solicita información
                         </h4>
                         <p class="text-xs text-factor-textMuted mb-6 leading-relaxed">Déjanos tus datos y te enviaremos el dossier completo del curso.</p>
-                        <form action="mailto:contact@factorn.es" method="get" enctype="text/plain" class="space-y-4">
-                            <input type="hidden" name="subject" value="Información Curso">
+                        <form id="course-form" action="https://formsubmit.co/ajax/jaime.maestro@factorn.es" method="POST" class="space-y-4">
+                            <!-- Datos del curso para el email -->
+                            <input type="hidden" name="_subject" value="Nueva solicitud de información de curso">
+                            <input type="hidden" id="course-name-hidden" name="curso" value="">
+
                             <div>
                                 <label class="block text-[10px] font-bold uppercase tracking-widest text-factor-textMuted mb-2">Nombre Completo</label>
-                                <input type="text" name="name" class="input-field w-full px-5 py-4 rounded-xl text-white text-sm" placeholder="Tu nombre..." required>
+                                <input type="text" name="nombre" class="input-field w-full px-5 py-4 rounded-xl text-white text-sm" placeholder="Tu nombre..." required>
                             </div>
                             <div>
                                 <label class="block text-[10px] font-bold uppercase tracking-widest text-factor-textMuted mb-2">Email</label>
@@ -144,11 +147,12 @@
                             </div>
                             <div>
                                 <label class="block text-[10px] font-bold uppercase tracking-widest text-factor-textMuted mb-2">Comentarios / Dudas</label>
-                                <textarea name="message" class="input-field w-full px-5 py-4 rounded-xl text-white text-sm h-32 resize-none" placeholder="¿Tienes alguna duda o comentario?"></textarea>
+                                <textarea name="mensaje" class="input-field w-full px-5 py-4 rounded-xl text-white text-sm h-32 resize-none" placeholder="¿Tienes alguna duda o comentario?"></textarea>
                             </div>
-                            <button type="submit" class="w-full py-4 rounded-xl bg-factor-cyan text-black font-black uppercase tracking-widest text-xs hover:scale-[1.02] transition-all shadow-[0_0_15px_rgba(0,240,255,0.1)]">
-                                Enviar Consulta
+                            <button type="submit" id="course-submit-btn" class="w-full py-4 rounded-xl bg-factor-cyan text-black font-black uppercase tracking-widest text-xs hover:scale-[1.02] transition-all shadow-[0_0_15px_rgba(0,240,255,0.1)]">
+                                <span id="course-btn-text">Enviar Consulta</span>
                             </button>
+                            <p id="course-form-status" class="text-center text-[10px] font-bold uppercase mt-2 hidden"></p>
                         </form>
                     </div>
 
@@ -167,15 +171,61 @@
         </div>
     </section>
 
-
-
     <div id="footer-container"></div>
 
-    <!-- mobile-menu-script -->
-    
     <script src="js/loadComponents.js"></script>
     <script src="js/renderCourseDetails.js"></script>
-</body>
+    <script>
+        // Lógica para el formulario de curso
+        const cForm = document.getElementById('course-form');
+        const cBtn = document.getElementById('course-submit-btn');
+        const cBtnText = document.getElementById('course-btn-text');
+        const cStatus = document.getElementById('course-form-status');
+
+        // Intentar capturar el nombre del curso cuando se cargue
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const title = document.querySelector('h1')?.innerText;
+                if (title) document.getElementById('course-name-hidden').value = title;
+            }, 1000);
+        });
+
+        cForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            cBtn.disabled = true;
+            cBtnText.innerText = 'Enviando...';
+            cStatus.classList.add('hidden');
+
+            const formData = new FormData(cForm);
+            const object = Object.fromEntries(formData);
+            const json = JSON.stringify(object);
+
+            try {
+                const response = await fetch(cForm.action, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                    body: json
+                });
+
+                if (response.ok) {
+                    cStatus.innerText = '¡Enviado! Te responderemos pronto.';
+                    cStatus.className = 'text-center text-[10px] font-bold uppercase mt-2 text-factor-cyan';
+                    cStatus.classList.remove('hidden');
+                    cForm.reset();
+                } else {
+                    throw new Error('Error');
+                }
+            } catch (err) {
+                cStatus.innerText = 'Error al enviar.';
+                cStatus.className = 'text-center text-[10px] font-bold uppercase mt-2 text-red-400';
+                cStatus.classList.remove('hidden');
+            } finally {
+                cBtn.disabled = false;
+                cBtnText.innerText = 'Enviar Consulta';
+            }
+        });
+    </script>
 </html>
 
 
