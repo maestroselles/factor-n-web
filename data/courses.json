@@ -1,7 +1,7 @@
 [
     {
         "id": "animacion",
-        "title": "Animación Profesional 2D y 3D",
+        "title": "Animación digital",
         "category": "Curso Presencial",
         "hours": "600H",
         "duration": "9 Meses",
@@ -15,9 +15,9 @@
         "featured": true,
         "spotsStatus": "PLAZAS LIMITADAS",
         "banner": {
-            "image": "./img/banners/Gemini_Generated_Image_1k45iv1k45iv1k45.png",
+            "image": "./img/courses/animacion.png",
             "tag": "[ÚLTIMAS PLAZAS] EVALUACIÓN CLÍNICA",
-            "title": "Animación Profesional 2D y 3D",
+            "title": "Animación Digital",
             "subtitle": "Fórmate en un entorno de estricta ergonomía sensorial con profesionales de la élite de Hollywood. Aprendizaje por Proyectos sin masking."
         },
         "professors": [

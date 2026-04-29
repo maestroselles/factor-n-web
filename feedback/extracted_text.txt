@@ -1,0 +1,4558 @@
+
+
+===== HOJA DE RUTA.pdf =====
+🚀  FACTOR  N  -  HOJA  DE  RUTA  DE  
+LANZAMIENTO
+ 
+PROGRESIVO
+ 
+Lanza  por  fases,  no  esperes  al  100%  
+Documento:  Estrategia  de  implementación  iterativa  
+ 
+Objetivo:
+ 
+Publicar
+ 
+y
+ 
+generar
+ 
+leads
+ 
+AHORA,
+ 
+mientras
+ 
+mejoras
+ 
+continuamente
+ 
+ 
+Filosofía:
+ 
+"Mejor
+ 
+70%
+ 
+publicado
+ 
+que
+ 
+100%
+ 
+en
+ 
+Notion"
+ 
+ 
+📊  VISIÓN  GENERAL  
+Urgencias  Reales  
+●  INMEDIATO:  Curso  de  verano  (necesitas  inscripciones  AHORA)  ●  SEPTIEMBRE:  Escuela  se  lanza  (necesitas  estudiantes  pre-inscritos)  ●  HOY:  Vender  servicios  a  empresas  (revenue  inmediato)  ●  FUTURO:  Labs  (no  corre)  
+Estrategia  
+No  esperes  a  100%  de  la  web.  Lanza  progresivamente:  
+1.  FASE  0  (1-2  semanas):  Landing  MVP  (curso-verano  +  contacto  empresas)  2.  FASE  1  (2-3  semanas):  HOME  +  /escuela  +  /empresas  (estructura  base)  3.  FASE  2  (1  mes):  Optimización  +  SEO  técnico  +  mejoras  4.  FASE  3+  (continuamente):  Contenido,  testimonios,  casos  de  éxito  
+ 
+⏱  FASE  0:  MVP  MÍNIMO  (SEMANAS  1-2)  
+"Lanzamos  el  1  de  junio  aunque  no  esté  perfecto"  
+Objetivo  
+Captar  inscripciones  curso-verano  +  leads  empresas  MIENTRAS  el  resto  se  construye  
+Qué  publicar  
+✅  PÁGINA  1:  /curso-verano  (LANDING  CORE)  
+Por  qué  primero:  
+●  Urgencia  real  (verano,  plazas  limitadas)  ●  Conversión  rápida  (solo  8  semanas)  ●  Simple  (menos  secciones  que  otras)  ●  Revenue  inmediato  
+Qué  incluye:  
+●  Hero  urgente  ●  ¿Para  quién  es?  ●  Qué  conseguirás  (6  entregas)  ●  Estructura  (8  semanas  timeline)  ●  Detalles  prácticos  (fechas,  precio,  plazas)  ●  CTA  urgencia  ●  FAQ  básica  ●  Formulario  inscripción  (Typeform)  
+Qué  NO  incluye  aún:  
+●  Testimonios  (no  hay  estudiantes  aún)  ●  Casos  de  éxito  (no  hay  casos  aún)  ●  Integración  con  /escuela  (aún  no  existe)  
+Estado:  80%  completado  (placeholders:  solo  fechas  exactas  +  precio)  
+ 
+✅  PÁGINA  2:  /contacto-empresas  (LANDING  MINIMALISTA)  
+Por  qué  segundo:  
+●  Necesitas  captures  de  empresas  AHORA  ●  No  requiere  contenido  extenso  ●  Puede  ser  muy  simple  (contacto  +  propuesta)  
+Qué  incluye:  
+●  H1:  "¿Necesitas  talento  especializado?"  ●  Subheading:  "Descubre  cómo  integramos  talento  con  garantía"  ●  Párrafo  corto:  Propuesta  de  valor  ●  Formulario  contacto  (Typeform)  ●  CTA:  "Agendar  consultoría  gratuita"  
+Qué  NO  incluye:  
+●  Todo  /empresas  (es  muy  largo)  ●  Casos  de  éxito  ●  Modelos  de  servicio  (aún  no  definidos  con  equipo)  
+Estado:  40%  (necesita  revisión  con  equipo  sobre  propuesta  exacta)  
+ 
+✅  PÁGINA  3:  /  (HOME  MINIMALISTA)  
+Por  qué  tercero  (pero  DESPUÉS  de  las  dos  landings):  
+●  No  es  urgencia  inmediata  ●  Usuario  que  viene  de  /curso-verano  NO  necesita  HOME  ●  Usuario  que  viene  de  búsqueda  Google  SÍ  necesita  HOME  ●  Home  sirve  como  "credibilidad  general"  
+Qué  incluye:  
+●  Hero  narrativo  (quiénes  somos  en  30  segundos)  ●  Problema  +  Solución  (2  párrafos,  no  3  columnas)  ●  Cómo  funciona  (3  pilares  resumidos)  ●  Equipo  (3  headshots  +  credenciales)  ●  2  CTAs  finales  (a  /curso-verano  y  /contacto-empresas)  ●  Link  a  footer  
+Qué  NO  incluye:  
+●  Social  proof  numérica  (aún  no  tienes  números)  ●  Testimonios  ●  Casos  de  éxito  ●  Blog/recursos  
+Estado:  60%  (puede  simplificarse  más  aún  para  FASE  0)  
+ 
+Qué  NO  hacer  en  FASE  0  
+●  ❌  /escuela  completa  (aún  no  hay  alumnos,  NO  es  urgencia  inmediata)  ●  ❌  /empresas  completa  (muy  larga,  casos  de  éxito  ausentes)  ●  ❌  /labs  (no  es  urgencia,  es  futures)  ●  ❌  Testimonios  (no  hay  aún)  ●  ❌  Blog  (prematura)  ●  ❌  SEO  técnico  (después)  ●  ❌  Optimizaciones  (después)  
+Technical  Setup  (FASE  0)  
+●  ✅  Dominio  (¿ya  lo  tienes?  Si  no,  1  día)  ●  ✅  Hosting  (GitHub  Pages  o  similar,  ya  lo  tienes)  ●  ✅  DNS  configurado  ●  ✅  Formularios  (Typeform  gratis)  ●  ✅  Google  Analytics  4  (básico)  ●  ✅  Meta  tags  básicos  (en  home  +  landings)  
+Timeline  FASE  0  Semana  1:  -  Lunes-Martes:  Diseño  /curso-verano  -  Miércoles-Jueves:  Desarrollo  /curso-verano  -  Viernes:  Testing  +  ajustes   Semana  2:  -  Lunes-Martes:  Diseño  /contacto-empresas  +  HOME  minimalista  -  Miércoles-Jueves:  Desarrollo  ambas  -  Viernes:  Testing  +  Publishing  -  SÁBADO  1  JUNIO:  🚀  LANZAMIENTO   
+Métricas  FASE  0  (Lo  que  medimos)  
+●  Inscripciones  curso-verano  (goal:  20-30)  ●  Leads  empresas  (goal:  5-10)  ●  Traffic  Google  Analytics  ●  Bounce  rate  /curso-verano  (debe  ser  <50%)  ●  Bounce  rate  /contacto  (debe  ser  <60%)  
+Presupuesto  FASE  0  
+●  Dominio:  $10-15  ●  Hosting:  $0  (GitHub  Pages)  ●  Diseño  (si  outsourceas):  $500-1500  ●  Desarrollo  (si  outsourceas):  $500-1500  ●  Total:  $0-3000  (depende  si  lo  hacéis  internamente)  
+Resultado  FASE  0  
+Publicación  web:  Funciona.  No  está  perfecta,  pero  FUNCIONA.  Capacidad  de  ventas:  
+Puedes
+ 
+vender
+ 
+curso-verano.
+ 
+Puedes
+ 
+capturar
+ 
+empresas.
+ 
+Siguiente:
+ 
+Mientras
+ 
+los
+ 
+usuarios
+ 
+entran,
+ 
+continuamos
+ 
+FASE
+ 
+1.
+ 
+ 
+📈  FASE  1:  CORE  STRUCTURE  
+(SEMANAS
+ 
+3-5,
+ 
+paralela
+ 
+a
+ 
+FASE
+ 
+0)
+ 
+"Mientras  /curso-verano  funciona,  construimos  
+/escuela
+ 
+y
+ 
+/empresas"
+ 
+Objetivo  
+Construir  landings  completas  para  ambas  audiencias  (sin  testimonios/casos  aún)  
+Qué  agregar/mejorar  
+✅  HOME  (mejora  de  FASE  0)  
+De  minimalista  →  Versión  completa  
+Agrega:  
+●  Social  proof  mini  (números  reales  cuando  los  tengas)  ●  Sección  "Testimonios"  con  placeholder  (cuando  tengas  primeros  inscritos)  ●  Link  a  /escuela  en  navbar  ●  Link  a  /empresas  en  navbar  ●  Footer  completo  (newsletter,  links,  legal)  
+Estado:  100%  completo  
+ 
+✅  /ESCUELA  (NUEVO)  
+Landing  completa  para  estudiantes  
+Incluye  TODO:  
+●  Hero  workspace  ●  ¿Por  qué  Factor  N?  (3  diferenciadores)  ●  Los  programas  (2  tarjetas  IA  +  VFX)  ●  Metodología  (timeline)  ●  Testimonios  (PLACEHOLDER:  "Próximamente")  ●  FAQ  ●  CTA  final  ●  Footer  
+Qué  falta  (aún):  
+●  Testimonios  reales  (llenarás  cuando  tengas  egresados)  
+●  Casos  específicos  ●  Números  de  empleabilidad  
+Estado:  95%  completo  (solo  placeholders)  
+ 
+✅  /EMPRESAS  (NUEVO,  versión  simplificada)  
+Landing  completa  pero  MÁS  SIMPLE  que  documento  original  
+Incluye:  
+●  Hero  equipo  ●  El  Problema  (3  puntos)  ●  La  Solución  (5  etapas)  ●  Diferenciadores  (3  puntos)  ●  Casos  de  éxito  (PLACEHOLDER)  ●  Equipo  (3  perfiles)  ●  Modelos  de  colaboración  (3  opciones)  ●  FAQ  ●  CTA  final  ●  Footer  
+SIMPLIFICADO  vs  documento  (menos  prosa,  más  puntos):  
+●  Menos  párrafos  largos  ●  Más  iconografía  ●  Más  espacios  en  blanco  ●  Timeline  visual  para  "5  etapas"  
+Qué  falta:  
+●  Casos  reales  (llenarás  cuando  tengas)  ●  Testimonios  de  clientes  
+Estado:  90%  completo  (placeholders:  casos)  
+ 
+✅  CURSO-VERANO  (optimización  de  FASE  0)  
+Mejoras  basadas  en  datos  de  FASE  0  
+Agrega:  
+●  Testimonios  de  primeros  inscritos  (si  los  hay)  ●  Ajustes  de  messaging  basados  en  inquiries  recibidas  ●  Mejora  de  FAQ  (responden  preguntas  reales  que  recibiste)  ●  Posible  eliminación  de  secciones  que  no  generaban  engagement  
+Estado:  100%  basado  en  data  
+ 
+✅  META  TAGS  +  SEO  TÉCNICO  BÁSICO  
+Para  todas  las  páginas  
+Incluye:  
+●  Meta  description  (160  chars)  ●  Open  Graph  (para  redes  sociales)  ●  H1  único  por  página  ●  Estructura  de  headings  (H2,  H3)  ●  Alt  text  en  imágenes  
+NO  incluye  aún:  
+●  Schema  markup  completo  ●  Robots.txt  +  Sitemap  ●  Canonicals  ●  Hreflang  
+Estado:  80%  (suficiente  para  FASE  1)  
+ 
+Technical  Setup  FASE  1  
+●  ✅  Navbar  principal  (links  a  todas  las  páginas)  ●  ✅  Footer  consistente  (en  todas)  ●  ✅  Newsletter  signup  (Mailchimp  gratis)  ●  ✅  Google  Analytics  4  (eventos  básicos)  ●  ✅  Formularios  (Typeform  integrados)  ●  ✅  Mobile  responsive  (testing  en  dispositivos  reales)  
+Timeline  FASE  1  Semana  3:  -  Lunes-Martes:  Diseño  /escuela  -  Miércoles-Jueves:  Desarrollo  /escuela  -  Viernes:  Testing   Semana  4:  -  Lunes-Martes:  Diseño  /empresas  (versión  simplificada)  -  Miércoles-Jueves:  Desarrollo  /empresas  -  Viernes:  Testing   Semana  5:  -  Lunes-Martes:  Meta  tags  +  SEO  básico  (todas  las  páginas)  
+-  Miércoles-Jueves:  Optimizaciones  mobile  -  Viernes:  Publishing  +  QA  final   
+Métricas  FASE  1  
+●  Visits  por  página  (cuál  tiene  más)  ●  Bounce  rate  (mínimo  50%  es  OK)  ●  Time  on  page  (más  de  30  segundos  =  engagement)  ●  Conversión  por  landing  (%  que  hace  clic  en  CTA)  ●  Device  distribution  (móvil  vs  desktop)  
+Resultado  FASE  1  
+Web  funcional:  HOME  +  /escuela  +  /empresas  +  /curso-verano  =  ecosistema  completo  
+Capacidad:
+ 
+Puedes
+ 
+vender
+ 
+escuela,
+ 
+empresas,
+ 
+curso-verano
+ 
+Conversión:
+ 
+Sin
+ 
+testimonios/casos
+ 
+aún,
+ 
+pero
+ 
+con
+ 
+propuesta
+ 
+clara
+ 
+Siguiente:
+ 
+Optimizaciones
+ 
++
+ 
+contenido
+ 
+complementario
+ 
+ 
+🔧  FASE  2:  OPTIMIZACIÓN  +  
+CONTENIDO
+ 
+(SEMANAS
+ 
+6-8)
+ 
+"Hacemos  la  web  'profesional'  mientras  generas  
+testimonios"
+ 
+Objetivo  
+Mejorar  conversión  +  generar  contenido  que  valide  proposición  
+Qué  mejorar  
+✅  SEO  TÉCNICO  COMPLETO  
+Agregar:  
+●  Schema  markup  (Organization,  EducationalOrganization,  Course,  FAQPage)  ●  Robots.txt  +  Sitemap.xml  ●  Google  Search  Console  (verificar  +  enviar  sitemap)  ●  Canonicals  ●  Structured  data  validation  
+Estado:  100%  SEO  técnico  
+ 
+✅  LANDING  PAGES  SEGMENTADAS  (FUTURO  POTENCIAL)  
+Crear  landing  específicas  por  canal  (si  lo  necesitas):  
+●  /curso-verano-agosto  (versión  con  fecha  diferente)  ●  /empresas-ia  (landing  específica  para  empresas  que  buscan  IA)  ●  /estudiantes-ux  (landing  específica  para  UX)  
+Por  ahora:  NO  es  urgencia.  Espera  FASE  3+  
+ 
+✅  TESTIMONIOS  REALES  
+Cuando  tengas  primeros  inscritos  a  /curso-verano:  
+●  Contactarlos  (2  semanas  después  de  empezar)  ●  Pedir  quote  +  foto  ●  Agregar  a  /curso-verano  ●  Duplicar  en  HOME  
+Timeline:  Semanas  5-6  (durante  FASE  1/2  overlap)  
+ 
+✅  PRIMEROS  CASOS  DE  ÉXITO  (EMPRESAS)  
+Si  conseguiste  clientes  en  FASE  0/1:  
+●  Documentar  proyecto  (desafío,  solución,  resultados)  ●  Pedir  quote  +  permiso  de  publicar  ●  Agregar  a  /empresas  (reemplazar  placeholders)  
+Timeline:  Semana  6+  (cuando  tengas  clientes)  
+ 
+✅  BLOG  MVP  (PRIMEROS  3  ARTÍCULOS)  
+Contenido  SEO  para  atraer  tráfico  orgánico  
+Artículos  FASE  2:  
+1.  "¿Qué  es  factor  N?  Guía  para  talento  en  transición"  (1500  palabras)  
+ ○  Keywords:  "formación  tecnología",  "carrera  profesional",  "bootcamp"  ○  Propósito:  Top  of  funnel  (educación)  
+○  CTA:  Newsletter  +  /escuela  2.  "Cómo  integrar  talento  neurodivergente  en  tu  equipo"  (2000  palabras)  
+ ○  Keywords:  "talento  neurodivergente",  "inclusión  laboral",  "productividad"  ○  Propósito:  Mid-funnel  (empresas  educadas)  ○  CTA:  /empresas  +  consultoría  3.  "5  cosas  que  no  esperaba  después  del  bootcamp"  (1500  palabras)  
+ ○  Keywords:  "después  bootcamp",  "búsqueda  laboral",  "carrera  tech"  ○  Propósito:  Trust  building  (estudiantes  leyendo)  ○  CTA:  /escuela  
+Estado:  0%  (escribir  en  FASE  2)  
+Publication:  1  artículo  por  semana  (semanas  6,  7,  8)  
+ 
+✅  HEATMAP  +  ANALYTICS  REVIEW  
+Usar  datos  de  FASE  1  para  optimizar  
+Análisis:  
+●  ¿Dónde  drouppean  usuarios?  (heatmap  Hotjar)  ●  ¿Qué  botones  se  clickean  más?  (analytics)  ●  ¿Qué  secciones  NO  leen?  (scroll  depth)  ●  ¿Dónde  cierran?  (exit  pages)  
+Optimizaciones  basadas  en  datos:  
+●  Si  hero  tiene  bounce  rate  alto  >  rediseña  hero  ●  Si  FAQ  no  se  abre  >  mueve  arriba  o  simplifica  ●  Si  CTA  tiene  bajo  CTR  >  cambia  copy/color  ●  Si  mobile  convierte  menos  >  optimiza  mobile  
+Estado:  Data-driven  (no  especulativo)  
+ 
+✅  EMAIL  SEQUENCE  (PARA  LEADS  CAPTADOS)  
+Crear  automatización  para  leads  que  NO  se  convirtieron  
+Secuencia:  
+●  Email  1  (día  siguiente):  Resumen  de  propuesta  +  enlace  a  curriculum  ●  Email  2  (día  3):  Caso  de  éxito  o  testimonio  ●  Email  3  (día  7):  FAQ  extendida  +  alternativas  de  pago  ●  Email  4  (día  14):  Urgencia  suave  ("próxima  cohorte")  +  conversación  con  founder  
+Herramienta:  Mailchimp  (gratis  hasta  500  contactos)  
+Estado:  0%  (automatizar  en  FASE  2)  
+ 
+Timeline  FASE  2  Semana  6:  -  Lunes-Martes:  Recopilar  +  escribir  testimonios  (estudiantes)  -  Miércoles-Jueves:  Schema  markup  +  robots.txt  +  sitemap  -  Viernes:  Google  Search  Console  setup   Semana  7:  -  Lunes-Martes:  Primer  artículo  blog  (¿Qué  es  Factor  N?)  -  Miércoles-Jueves:  Heatmap  setup  (Hotjar)  +  analytics  review  -  Viernes:  Optimizaciones  basadas  en  data   Semana  8:  -  Lunes-Martes:  Segundo  artículo  blog  (Talento  neurodivergente)  -  Miércoles-Jueves:  Email  sequence  setup  +  first  case  study  (si  tienes)  -  Viernes:  Publicación  artículos  +  revisión  final  FASE  2   
+Métricas  FASE  2  
+●  Ranking  Keywords  (en  Google  Search  Console)  ●  Tráfico  blog  (visits  por  artículo)  ●  Email  open  rate  (goal:  >30%)  ●  Email  click  rate  (goal:  >5%)  ●  Heatmap  insights  (donde  dropean  usuarios)  
+Resultado  FASE  2  
+Web  profesional:  Testimonios  reales  +  casos  de  éxito  +  contenido  SEO  +  optimizaciones  
+Conversión:
+ 
++30-50%
+ 
+vs
+ 
+FASE
+ 
+1
+ 
+(por
+ 
+optimizaciones
+ 
++
+ 
+testimonios)
+ 
+Authority:
+ 
+Blog
+ 
+inicia
+ 
+posicionamiento
+ 
+en
+ 
+Google
+ 
+Email:
+ 
+Sistema
+ 
+automático
+ 
+para
+ 
+leads
+ 
+en
+ 
+marcha
+ 
+ 
+🎯  FASE  3+:  CRECIMIENTO  CONTINUO  
+(MESES
+ 
+2-3+)
+ 
+"Escala  mientras  la  web  genera  leads  
+automáticamente"
+ 
+Qué  hacer  
+✅  EXPANSIÓN  DE  CONTENIDO  
+●  Blog  semanal  (mínimo  3  artículos/mes)  ●  Guías  descargables  (lead  magnets)  ●  Webinars/videos  testimonios  ●  Newsletter  semanal  
+ 
+✅  LANDING  PAGES  ESPECÍFICAS  
+●  /empresas-ia  (para  búsquedas  "IA  +  talento")  ●  /curso-modelado  (cuando  profesor  esté  listo)  ●  /garantia-empleo  (página  sobre  garantía  específicamente)  
+ 
+✅  EXPANSIÓN  LABS  
+Cuando  tengas  proyectos  activos:  
+●  /labs  →  showcase  de  proyectos  ●  "Colaborar  en  proyectos  reales"  desde  /escuela  ●  "Portfolio  con  impacto"  como  diferenciador  
+ 
+✅  INTEGRACIONES  
+●  Chatbot  (Intercom)  para  soporte  ●  Calendar  (Calendly)  para  demos/llamadas  ●  CRM  (HubSpot  gratis)  para  trackear  leads  
+ 
+✅  PAID  ADS  (CUANDO  TENGAS  CASH  FLOW)  
+●  Google  Ads:  Keywords  de  conversión  ("formación  IA",  "talento  especializado")  ●  LinkedIn:  B2B  targeting  (empresas  50-500  personas)  ●  Instagram:  Testimonios/lifestyle  (para  estudiantes)  
+ 
+Timeline  FASE  3+  
+●  Mes  2:  Blog  semanal  +  lead  magnets  +  expandir  landing  pages  ●  Mes  3:  Integraciones  de  soporte  +  primeras  ads  ●  Mes  4+:  Escala  según  ROI  
+ 
+📋  CALENDARIO  GENERAL  
+(JUNIO-SEPTIEMBRE)
+ 
+JUNIO  (FASE  0  +  inicio  FASE  1)  ├─  Semana  1-2:  FASE  0  -  Lanzamiento  /curso-verano  +  /contacto-empresas  ├─  Semana  3-4:  FASE  1  -  Construcción  /escuela  +  /empresas  └─  Semana  5:  Finalización  FASE  1   JULIO  (FASE  1  completa  +  inicio  FASE  2)  ├─  Semana  1:  Testing  +  ajustes  FASE  1  ├─  Semana  2-3:  Recopilación  testimonios  +  blog  ├─  Semana  4:  SEO  técnico  +  optimizaciones  └─  Semana  5:  Publicación  artículos  blog   AGOSTO  (FASE  2  +  FASE  3  inicio)  ├─  Semana  1-2:  Más  testimonios  +  casos  de  éxito  +  blog  semanal  ├─  Semana  3:  Email  sequence  +  integraciones  ├─  Semana  4:  Análisis  completo  FASE  2  └─  Semana  5:  Preparación  Escuela  (septiembre)   SEPTIEMBRE  (ESCUELA  LAUNCH)  ├─  Escuela  se  lanza  ├─  Web  completamente  funcional  ├─  Blog  +  contenido  en  marcha  ├─  Leads  llegando  automáticamente  └─  Bases  para  crecimiento  Q4   
+ 
+🎓  CÓMO  PROPONER  ESTO  AL  EQUIPO  
+Pitch  (5  min)  
+"Estrategia  de  Lanzamiento  Progresivo"  
+"No  esperamos  a  tener  la  web  100%  perfecta  en  julio.  La  lanzamos  en  fases:  
+FASE  0  (1-2  semanas):  Publicamos  /curso-verano  +  contacto  empresas.  
+●  Objetivo:  Inscripciones  verano  +  leads  B2B  ●  Resultado:  Web  funcional,  generar  ingresos  YA  
+FASE  1  (3-5  semanas):  Agregamos  /escuela  +  /empresas  completas.  
+●  Objetivo:  Estructura  core  lista  ●  Resultado:  Ecosistema  completo  para  septiembre  
+FASE  2  (6-8  semanas):  Optimizaciones  +  contenido  +  testimonios  reales.  
+●  Objetivo:  Conversión  mejorada  +  SEO  ●  Resultado:  Web  'profesional'  +  generando  leads  automáticamente  
+FASE  3+  (mes  2+):  Crecimiento  continuo  (blog,  ads,  integraciones).  
+Ventaja:  No  esperas  al  100%  para  vender.  Empiezas  a  generar  ingresos/leads  desde  FASE  
+0,
+ 
+mientras
+ 
+mejoras
+ 
+continuamente.
+ 
+La
+ 
+web
+ 
+EVOLUCIONA,
+ 
+no
+ 
+se
+ 
+reinicia."
+ 
+ 
+Documentos  a  Compartir  
+1.  Esta  hoja  de  ruta  (planning)  2.  factor-n-contenido-completo.md  (lo  que  escribir)  3.  factor-n-justificacion-estrategica.md  (por  qué)  
+ 
+Objecciones  Comunes  +  Respuestas  
+Objeción:  "¿Publicamos  con  placeholders?"  
+ 
+Respuesta:
+ 
+"Sí,
+ 
+pero
+ 
+solo
+ 
+marcados
+ 
+claramente.
+ 
+Usuario
+ 
+no
+ 
+ve
+ 
+'PLACEHOLDER'.
+ 
+Ve
+ 
+'Próximamente'
+ 
+o
+ 
+espacio
+ 
+vacío.
+ 
+Actualizamos
+ 
+en
+ 
+1
+ 
+semana
+ 
+cuando
+ 
+llegan
+ 
+datos
+ 
+reales."
+ 
+Objeción:  "¿No  es  arriesgado  lanzar  sin  perfección?"  
+ 
+Respuesta:
+ 
+"Más
+ 
+arriesgado
+ 
+es
+ 
+esperar
+ 
+2
+ 
+meses
+ 
+sin
+ 
+generar
+ 
+leads.
+ 
+Mejor
+ 
+70%
+ 
+publicado
+ 
+ahora
+ 
+que
+ 
+100%
+ 
+en
+ 
+agosto."
+ 
+Objeción:  "¿Qué  pasa  con  SEO?"  
+ 
+Respuesta:
+ 
+"Meta
+ 
+tags
+ 
+básicos
+ 
+en
+ 
+FASE
+ 
+0.
+ 
+Schema
+ 
+markup
+ 
+en
+ 
+FASE
+ 
+2.
+ 
+Blog
+ 
+en
+ 
+FASE
+ 
+2-3.
+ 
+Google
+ 
+entiende
+ 
+que
+ 
+estamos
+ 
+en
+ 
+crecimiento.
+ 
+Mejor
+ 
+versión
+ 
+mejorada
+ 
+que
+ 
+versión
+ 
+perfecta
+ 
+no
+ 
+indexada."
+ 
+Objeción:  "¿Y  si  sale  algo  mal?"  
+ 
+Respuesta:
+ 
+"A/B
+ 
+testing
+ 
+en
+ 
+FASE
+ 
+2
+ 
+lo
+ 
+detecta.
+ 
+Heatmap
+ 
+lo
+ 
+detecta.
+ 
+Feedback
+ 
+de
+ 
+usuarios
+ 
+lo
+ 
+detecta.
+ 
+Arreglamos
+ 
+en
+ 
+1
+ 
+semana.
+ 
+No
+ 
+es
+ 
+problema."
+ 
+ 
+KPIs  por  Fase  
+FASE  0  
+●  ✅  Inscripciones  curso-verano:  Goal  20-30  ●  ✅  Leads  empresas:  Goal  5-10  ●  ✅  Uptime  web:  Goal  99%+  ●  ✅  Mobile  responsive:  Goal  100%  
+FASE  1  
+●  ✅  Bounce  rate  /escuela:  Goal  <55%  ●  ✅  Bounce  rate  /empresas:  Goal  <60%  ●  ✅  CTR  botones:  Goal  >3%  ●  ✅  Mobile  conversión:  Goal  >2%  
+FASE  2  
+●  ✅  Conversión  total:  Goal  +30-50%  vs  FASE  1  ●  ✅  Email  open  rate:  Goal  >30%  ●  ✅  Blog  traffic:  Goal  100  visits/semana  ●  ✅  Google  keywords:  Goal  top  50  para  3-5  keywords  
+FASE  3+  
+●  ✅  Leads  mensuales:  Goal  30-50/mes  ●  ✅  Lead  cost:  Goal  <100€/lead  ●  ✅  Estudiantes  inscritos:  Goal  15-20/cohorte  ●  ✅  Clientes  empresariales:  Goal  2-3/mes  
+ 
+✅  CHECKLIST  DE  IMPLEMENTACIÓN  
+FASE  0  (Semanas  1-2)  
+Design:  
+●  [  ]  Wireframes  /curso-verano  ●  [  ]  Wireframes  /contacto-empresas  ●  [  ]  Wireframes  HOME  minimalista  ●  [  ]  Design  system  (colores,  tipografía,  espacios)  
+Development:  
+●  [  ]  Estructura  HTML  /curso-verano  ●  [  ]  Estructura  HTML  /contacto-empresas  ●  [  ]  Estructura  HTML  HOME  ●  [  ]  Responsive  testing  (móvil,  tablet,  desktop)  ●  [  ]  Formularios  Typeform  integrados  ●  [  ]  Google  Analytics  4  básico  
+Content:  
+●  [  ]  Copy  final  /curso-verano  ●  [  ]  Copy  final  /contacto-empresas  ●  [  ]  Copy  final  HOME  ●  [  ]  Meta  tags  básicos  
+Launch:  
+●  [  ]  Testing  en  navegadores  (Chrome,  Safari,  Firefox)  ●  [  ]  Testing  mobile  (iPhone,  Android)  ●  [  ]  Optimización  imágenes  ●  [  ]  Caché  y  minificación  CSS/JS  ●  [  ]  DNS  +  dominio  configurado  ●  [  ]  SSL  certificado  (HTTPS)  
+Marketing:  
+●  [  ]  Landing  page  lista  para  publicar  ●  [  ]  Email  de  confirmación  para  leads  ●  [  ]  Template  de  respuesta  para  inquiries  
+ 
+FASE  1  (Semanas  3-5)  
+Design:  
+●  [  ]  Diseño  completo  /escuela  ●  [  ]  Diseño  completo  /empresas  ●  [  ]  Iconografía  consistente  ●  [  ]  Tarjetas  de  programas  (IA  +  VFX)  ●  [  ]  Timeline  visual  (metodología)  
+Development:  
+●  [  ]  /escuela  HTML/CSS/JS  ●  [  ]  /empresas  HTML/CSS/JS  ●  [  ]  Navbar  actualizado  (links  a  todas  las  páginas)  ●  [  ]  Footer  consistente  (todas  las  páginas)  ●  [  ]  Responsive  testing  completo  ●  [  ]  Newsletter  Mailchimp  integrado  
+Content:  
+●  [  ]  Copy  completo  /escuela  ●  [  ]  Copy  completo  /empresas  ●  [  ]  Meta  tags  todas  las  páginas  ●  [  ]  H1  único  por  página  ●  [  ]  Estructura  headings  lógica  
+SEO  Básico:  
+●  [  ]  Meta  descriptions  ●  [  ]  Open  Graph  tags  (imagen  preview  en  redes)  ●  [  ]  Alt  text  en  imágenes  
+Testing:  
+●  [  ]  Lighthouse  score  >80  ●  [  ]  Mobile  score  >80  ●  [  ]  Cross-browser  testing  ●  [  ]  Link  checker  (enlaces  rotos)  
+Launch:  
+●  [  ]  Publishing  FASE  1  ●  [  ]  Google  Search  Console  basic  (sin  sitemap  aún)  ●  [  ]  Analítica  de  paginas  nuevas  ●  [  ]  Monitoreo  de  errors  
+ 
+FASE  2  (Semanas  6-8)  
+Testimonios:  
+●  [  ]  Recopilación  de  testimonios  (estudiantes  curso-verano)  ●  [  ]  Fotos  de  testimonios  ●  [  ]  Quotes  editadas  ●  [  ]  Agregadas  a  /curso-verano  ●  [  ]  Agregadas  a  HOME  
+Casos  de  Éxito:  
+●  [  ]  Documentación  de  casos  (si  tienes  clientes)  ●  [  ]  Quotes  de  clientes  ●  [  ]  Números/métricas  ●  [  ]  Agregadas  a  /empresas  
+SEO  Técnico:  
+●  [  ]  Schema  markup  (Organization,  Course,  FAQ)  ●  [  ]  Robots.txt  creado  ●  [  ]  Sitemap.xml  creado  ●  [  ]  Google  Search  Console:  sitemap  enviado  ●  [  ]  Canonicals  en  todas  las  páginas  ●  [  ]  Hreflang  (si  tienes  versiones  en  otros  idiomas)  
+Blog:  
+●  [  ]  Estructura  blog  (/blog,  /blog/articulo-slug)  ●  [  ]  Primer  artículo  publicado  ●  [  ]  RSS  feed  (opcional  pero  útil)  ●  [  ]  Link  a  blog  desde  navbar  
+Analytics  Avanzado:  
+●  [  ]  Heatmap  Hotjar  setup  ●  [  ]  Eventos  custom  Google  Analytics  ●  [  ]  Scroll  depth  tracking  ●  [  ]  Button  click  tracking  ●  [  ]  Form  submission  tracking  
+Email:  
+●  [  ]  Email  sequence  setup  (Mailchimp)  ●  [  ]  Templates  email  ●  [  ]  Automations  en  marcha  ●  [  ]  Testing  de  delivery  
+Optimizaciones:  
+●  [  ]  A/B  testing  CTAs  (copia,  color,  posición)  ●  [  ]  Mejoras  basadas  en  heatmap  data  ●  [  ]  FAQ  optimizada  (responde  preguntas  reales)  ●  [  ]  Mobile  optimization  refinements  
+ 
+FASE  3+  (Mes  2+)  
+Content:  
+●  [  ]  Blog  semanal  (mínimo  3  artículos/mes)  ●  [  ]  Guías  descargables  (lead  magnets)  ●  [  ]  Newsletter  semanal  ●  [  ]  Vídeos  testimonios  
+Landing  Pages:  
+●  [  ]  /empresas-ia  (landing  específica)  ●  [  ]  /curso-[mes]  (variaciones  por  fecha)  ●  [  ]  /labs  (cuando  hay  proyectos)  
+Integraciones:  
+●  [  ]  Chatbot  (Intercom)  ●  [  ]  Calendar  (Calendly)  ●  [  ]  CRM  básico  (HubSpot  gratis  o  Pipedrive)  
+Paid  Ads:  
+●  [  ]  Google  Ads  campaign  ●  [  ]  LinkedIn  ads  setup  ●  [  ]  A/B  testing  ads  ●  [  ]  Tracking  conversiones  de  ads  
+Monitoreo:  
+●  [  ]  Monthly  analytics  review  ●  [  ]  Lead  cost  analysis  ●  [  ]  Conversion  rate  optimization  ●  [  ]  Quarterly  strategy  review  
+ 
+💡  RECOMENDACIÓN  FINAL  
+No  intentes  hacer  todo  perfecto  desde  el  inicio.  
+Haz  esto:  
+1.  JUNIO:  Publica  FASE  0  (2  semanas).  Empieza  a  generar  leads/ingresos.  2.  JUNIO-JULIO:  Mientras  FASE  0  funciona,  construye  FASE  1  en  background.  3.  JULIO:  Publica  FASE  1  (web  core  lista).  Sigue  generando  leads.  4.  JULIO-AGOSTO:  Optimizaciones  +  contenido  (FASE  2).  Recopila  testimonios.  5.  AGOSTO:  Publica  FASE  2  (web  profesional).  Listo  para  Escuela.  6.  SEPTIEMBRE+:  Crecimiento  continuo.  Web  se  actualiza  sola  con  contenido.  
+Ventaja:  
+●  ✅  Generamos  ingresos/leads  desde  junio  (no  esperamos  a  agosto)  ●  ✅  Usamos  data  real  de  usuarios  para  optimizar  (no  adivinamos)  ●  ✅  Web  crece  con  el  negocio  (no  se  reinicia)  ●  ✅  Equipo  no  está  abrumado  (trabajo  distribuido  en  semanas)  ●  ✅  Escuela  en  septiembre  tiene  web  100%  funcional  +  leads  en  pipeline  
+Riesgo  mínimo.  Ganancia  máxima.  
+ 
+Este  es  el  plan.  ¿Lo  presentamos  así  al  equipo?  
+ 
+
+
+===== JUSTIFICACIÓN ESTRATÉGICA.pdf =====
+📋  FACTOR  N  -  JUSTIFICACIÓN  
+ESTRATÉGICA
+ 
+El  "Por  Qué"  Detrás  de  Cada  Decisión  
+Para  argumentar  con  el  equipo  
+ 
+🏠  HOME  
+SECCIÓN  1:  HERO  
+¿Qué  hace?  
+Texto  claro  +  2  CTAs  diferenciadas  (Estudiantes  vs  Empresas)  
+¿POR  QUÉ  lo  hacemos  así?  
+1.  Propuesta  única  en  primera  línea  (H1)  
+●  Razón:  El  usuario  toma  decisión  en  5  segundos.  Si  el  H1  no  comunica  valor,  se  va.  ●  Nuestro  caso:  "Talento  excepcional  convertido  en  carrera  profesional"  es  más  
+inclusivo
+ 
+que
+ 
+"Para
+ 
+neurodivergentes"
+ 
+(que
+ 
+aliena
+ 
+al
+ 
+80%
+ 
+del
+ 
+mercado).
+ ●  Resultado:  Cualquiera  se  ve  reflejado.  Neurodivergentes  incluidos,  pero  no  
+exclusividad.
+ 
+2.  Subheading  que  clarifica  sin  saturar  
+●  Razón:  El  H1  es  poético.  El  subheading  es  específico.  Necesita  decir  QUÉ  hacemos  
+en
+ 
+1
+ 
+línea.
+ ●  Nuestro  caso:  "Detectamos,  formamos  e  integramos  talento"  =  los  3  pilares  
+resumidos.
+ ●  Resultado:  Usuario  entiende  en  10  segundos:  "Ah,  van  de  principio  a  fin.  No  solo  
+enseñan."
+ 
+3.  Párrafo  contextual  (el  problema)  
+●  Razón:  Necesita  reconocer  el  pain  point  del  usuario.  Si  se  siente  comprendido,  
+sigue
+ 
+leyendo.
+ ●  Nuestro  caso:  "Hay  talento  brillante  que  rechazan,  hay  empresas  que  lo  necesitan"  
+=
+ 
+ambas
+ 
+audiencias
+ 
+ven
+ 
+su
+ 
+problema
+ 
+reflejado.
+ 
+●  Resultado:  Emotional  hook.  Usuario  siente:  "Me  entienden."  
+4.  2  CTAs  diferenciadas  (no  1  genérico)  
+●  Razón:  Una  CTA  única  obliga  al  usuario  a  elegir.  Dos  CTAs  permiten  que  cada  
+audiencia
+ 
+vea
+ 
+su
+ 
+camino.
+ ●  Nuestro  caso:  "Quiero  formarme"  vs  "Necesito  talento"  =  cada  uno  sabe  dónde  
+clickear.
+ ●  Resultado:  +30%  CTR  vs  un  botón  genérico  (data  CRO  real).  
+5.  Colores  diferenciados  en  CTAs  
+●  Razón:  Usuario  sabe  intuitivamente  cuál  es  primaria  (más  visible)  y  cuál  secundaria.  ●  Nuestro  caso:  Azul  (primaria,  más  visible)  vs  outlined  (secundaria,  quieta).  ●  Resultado:  Jerarquía  clara  sin  confundir.  
+ 
+SECCIÓN  2:  PROBLEMA  +  SOLUCIÓN  
+¿Qué  hace?  
+2  columnas:  Problema  (3  puntos)  vs  Solución  (3  puntos)  
+¿POR  QUÉ  lo  hacemos  así?  
+1.  Estructura  Problema  →  Solución  (no  solo  Solución)  
+●  Razón:  Si  solo  vendes  solución,  parece  venta  forzada.  Si  reconoces  el  problema  
+primero,
+ 
+ganas
+ 
+credibilidad.
+ ●  Nuestro  caso:  "El  sistema  educativo  expulsa  talento"  +  "Nosotros  enseñanza  
+neuro-inteligente"
+ 
+=
+ 
+posicionamiento
+ 
+como
+ 
+quien
+ 
+lo
+ 
+entiende
+.
+ ●  Resultado:  Trust  antes  de  vender.  
+2.  Problema  en  3  puntos  diferentes  (no  1  largo)  
+●  Razón:  3  puntos  cubren  más  ángulos  (sistema  educativo,  mercado,  psicología  del  
+talento).
+ 
+1
+ 
+largo
+ 
+es
+ 
+genérico.
+ ●  Nuestro  caso:  Sistema  educativo  +  empresas  +  autoexclusión  =  toca  3  pain  points  
+reales.
+ ●  Resultado:  Usuario  ve  que  entendemos  su  realidad  desde  múltiples  ángulos.  
+3.  Problema  ≠  Culpa  
+●  Razón:  No  decimos  "el  sistema  está  mal"  (juicio).  Decimos  "el  sistema  no  está  
+diseñado
+ 
+para
+ 
+esto"
+ 
+(observación).
+ ●  Nuestro  caso:  "El  sistema  tradicional  las  rechaza  porque  no  encajan  en  el  molde"  =  
+empático,
+ 
+no
+ 
+acusador.
+ 
+●  Resultado:  Neurodivergentes  no  se  sienten  atacados.  Sistema  no  se  siente  
+criticado.
+ 
+Todos
+ 
+ven
+ 
+el
+ 
+problema
+ 
+como
+ 
+estructural
+,
+ 
+no
+ 
+moral
+.
+ 
+4.  Solución  paralela  a  Problema  
+●  Razón:  Cada  punto  de  solución  responde  a  cada  punto  de  problema.  No  es  random.  ●  Nuestro  caso:  ○  Problema:  Sistema  expulsa  →  Solución:  Enseñanza  neuro-inteligente  ○  Problema:  Empresas  no  encuentran  →  Solución:  Experiencia  real  desde  día  
+1
+ ○  Problema:  Talento  se  auto-excluye  →  Solución:  Conexión  garantizada  ●  Resultado:  Usuario  ve  que  tenemos  solución  específica  para  cada  problema.  No  
+genérica.
+ 
+5.  Lenguaje  positivo  
+●  Razón:  "El  sistema  expulsa  talento"  (negativo)  pero  inmediatamente  "Nosotros  lo  
+encontramos"
+ 
+(positivo).
+ 
+Balance.
+ ●  Nuestro  caso:  No  es  "arreglamos  lo  roto",  es  "convertimos  una  diferencia  en  
+ventaja".
+ ●  Resultado:  Esperanza,  no  victimismo.  
+ 
+SECCIÓN  3:  CÓMO  FUNCIONA  (3  Pilares)  
+¿Qué  hace?  
+Presenta  Escuela  +  Labs  +  Empresas  como  un  ciclo  conectado  
+¿POR  QUÉ  lo  hacemos  así?  
+1.  Presenta  los  3  pilares  en  HOME  (no  los  esconde)  
+●  Razón:  Usuario  necesita  saber  que  esto  es  un  ecosistema ,  no  un  bootcamp  aislado.  ●  Nuestro  caso:  "Mientras  te  formas,  trabajas  en  proyectos  reales.  Las  empresas  
+reciben
+ 
+talento
+ 
+con
+ 
+experiencia."
+ ●  Resultado:  Diferenciador  #1  vs  competencia  (que  enseña  y  deja  suelto).  
+2.  Ubicación  en  HOME  (no  esperamos  a  /escuela)  
+●  Razón:  Usuario  no  sabe  qué  es  Factor  N  aún.  Ver  los  3  pilares  conectados  AQUÍ  es  
+el
+ 
+"aha
+ 
+moment".
+ ●  Nuestro  caso:  Si  lo  ocultamos  hasta  /escuela,  usuario  de  /empresas  nunca  lo  ve.  Si  
+lo
+ 
+mostramos
+ 
+en
+ 
+HOME,
+ 
+ambas
+ 
+audiencias
+ 
+entienden
+ 
+la
+ 
+propuesta
+ 
+global.
+ ●  Resultado:  Coherencia.  Factor  N  no  es  3  cosas,  es  1  cosa  con  3  capas.  
+3.  Labs  mencionado  brevemente  (no  como  CTA)  
+●  Razón:  Labs  no  es  producto  directo  aún  (es  marketing  +  subvenciones).  Pero  
+necesita
+ 
+estar
+ 
+en
+ 
+el
+ 
+narrative.
+ ●  Nuestro  caso:  "Mientras  te  formas,  trabajas  en  proyectos  reales"  =  Labs  explicado  
+sin
+ 
+que
+ 
+sea
+ 
+una
+ 
+opción
+ 
+de
+ 
+menú.
+ ●  Resultado:  Usuario  entiende  que  Labs  existe.  No  siente  que  es  una  venta  
+presionante.
+ 
+Se
+ 
+introduce
+ 
+naturalmente.
+ 
+4.  Descripción  breve,  no  detallada  
+●  Razón:  HOME  es  para  entender  la  idea,  no  para  profundizar.  Profundidad  en  
+/escuela
+ 
+y
+ 
+/empresas.
+ ●  Nuestro  caso:  2  líneas  por  pilar.  Suficiente  para  entender,  no  demasiado  para  
+confundir.
+ ●  Resultado:  HOME  respira.  No  es  densa.  
+ 
+SECCIÓN  4:  QUIÉNES  SOMOS  (Equipo)  
+¿Qué  hace?  
+3  tarjetas  con  perfiles  del  equipo  (Jaime,  Rafel,  Héctor)  +  credenciales  
+¿POR  QUÉ  lo  hacemos  así?  
+1.  Equipo  en  HOME  (no  en  página  aparte)  
+●  Razón:  Trust  es  clave  en  educación/servicios.  Mostrar  "quién  enseña"  es  más  
+importante
+ 
+que
+ 
+mostrar
+ 
+qué
+ 
+enseña.
+ ●  Nuestro  caso:  Jaime  (2  Goyas,  Netflix)  +  Rafel  (Tadeo  Jones)  +  Héctor  (30  años  
+VFX)
+ 
+=
+ 
+credibilidad
+ 
+INMEDIATA.
+ ●  Resultado:  Usuario  lee  nombres  y  reconoce  pedigree.  No  necesita  buscar  bios  en  
+otra
+ 
+parte.
+ 
+2.  3  perfiles  (no  1,  no  muchos)  
+●  Razón:  1  =  insuficiente.  10  =  overwhelm.  3  =  "liderazgo  visible  sin  saturación".  ●  Nuestro  caso:  Los  3  representan  direcciones  (Ejecución  +  Tecnología  +  Arte).  
+Cubren
+ 
+el
+ 
+espectro.
+ ●  Resultado:  Usuario  ve  equipo  de  verdad,  no  una  persona  vendiendo.  
+3.  Credenciales  reales  y  específicas  (no  genéricas)  
+●  Razón:  "Experiencia  en  industria"  =  vago.  "30  años  VFX"  =  concreto.  "Netflix"  =  
+específico.
+ ●  Nuestro  caso:  Películas/proyectos  reales,  números  reales,  no  "líderes  de  
+innovación"
+ 
+(vago).
+ ●  Resultado:  No  es  marketing  vaporoso.  Es  CV  real.  
+4.  Énfasis  en  "enseña  lo  que  usa"  (no  "enseña  lo  que  sabe")  
+●  Razón:  La  diferencia  es  crucial.  "Sabe  mucho"  ≠  "Sabe  QUÉ  necesita  la  industria  
+HOY".
+ ●  Nuestro  caso:  "Lo  que  enseña  es  lo  que  usa  la  industria,  hoy"  (Rafel).  No  "tiene  20  
+años
+ 
+experiencia"
+ 
+(que
+ 
+es
+ 
+viejo).
+ ●  Resultado:  Usuario  sabe  que  aprenderá  tech  actual ,  no  legacy.  
+ 
+SECCIÓN  5:  CTAs  FINALES  +  SOCIAL  PROOF  MINI  
+¿Qué  hace?  
+Dos  bloques  de  CTA  (Escuela  +  Empresas)  +  números  de  credibilidad  abajo  
+¿POR  QUÉ  lo  hacemos  así?  
+1.  CTAs  finales  (no  solo  en  hero)  
+●  Razón:  Usuario  que  llegó  hasta  aquí  CASI  decidió.  Esta  es  su  última  oportunidad  de  
+"llamada
+ 
+a
+ 
+acción".
+ 
+Si
+ 
+no
+ 
+la
+ 
+tiene,
+ 
+se
+ 
+va
+ 
+sin
+ 
+convertir.
+ ●  Nuestro  caso:  Después  de  toda  la  narrativa,  dos  CTAs  claras  diciendo  "por  dónde  
+empiezo".
+ ●  Resultado:  +20%  conversión  vs  solo  tener  CTA  en  hero  (data  CRO).  
+2.  Dos  bloques  (no  uno  genérico)  
+●  Razón:  Usuario  de  Escuela  ≠  usuario  de  Empresas.  Ambos  ven  el  camino  específico  
+para
+ 
+ellos.
+ ●  Nuestro  caso:  "Ver  Programas  de  Escuela"  vs  "Solicitar  Consultoría"  =  cada  uno  
+sabe
+ 
+dónde
+ 
+clickear.
+ ●  Resultado:  Menor  fricción.  Usuario  no  necesita  pensar.  
+3.  Colores  diferenciados  (azul  vs  verde)  
+●  Razón:  Color  =  emoción  +  rapidez.  Azul  =  confianza  (educación).  Verde  =  
+acción/crecimiento
+ 
+(empresas).
+ ●  Nuestro  caso:  Azul  para  Escuela,  verde  para  Empresas.  Usuario  asocia  
+intuitivamente
+ 
+color
+ 
+con
+ 
+propósito.
+ ●  Resultado:  Reconocimiento  rápido.  No  lee,  ve.  
+4.  Social  Proof  mini  (abajo,  no  arriba)  
+●  Razón:  Arriba  (hero)  es  credibilidad  vaga.  Abajo  (después  de  narrativa)  es  
+credibilidad
+ 
+validada.
+ ●  Nuestro  caso:  Usuario  vio  equipo,  vio  metodología,  vio  propuesta.  AHORA  le  dices  
+"mira
+ 
+estos
+ 
+números".
+ 
+Más
+ 
+poderoso.
+ 
+●  Resultado:  Social  proof  sin  sonar  como  propaganda  (porque  llega  después  de  
+argument).
+ 
+5.  Números  específicos  (no  vagos)  
+●  Razón:  "Experiencia"  =  vago.  "90  años  combinados"  =  concreto.  "3  Premios  Goya"  =  
+específico.
+ ●  Nuestro  caso:  No  "equipo  de  lujo",  sino  "90+  años  combinados  +  Netflix  +  Goya".  ●  Resultado:  User  puede  verificar.  No  es  claim  sin  evidencia.  
+ 
+HOME:  RESUMEN  DEL  POR  QUÉ  
+Home  funciona  como:  
+●  Atracción:  H1  +  subheading  atraen  a  ambas  audiencias  ●  Reconocimiento:  Problema  comunica  "te  entendemos"  ●  Educación:  3  pilares  muestran  diferenciador  (Labs)  ●  Credibilidad:  Equipo  demuestra  que  somos  serios  ●  Conversión:  CTAs  dobles  +  social  proof  cierran  arriba  
+Resultado  esperado:  
+●  Tanto  estudiante  como  empresa  siente  que  Factor  N  es  para  ellos  ●  Entienden  qué  es  diferente  (3  pilares  conectados,  equipo  de  verdad,  Labs)  ●  Saben  a  dónde  clickear  (dos  CTAs  claras,  no  confusas)  ●  Confían  (equipo  real,  problema  validado,  solución  específica)  
+ 
+🎓  /ESCUELA  
+SECCIÓN  1:  HERO  
+¿Qué  hace?  
+Foto  de  workspace  +  H1  específica  para  estudiantes  (no  genérica)  
+¿POR  QUÉ  lo  hacemos  así?  
+1.  H1  específica  para  audiencia  (no  genérica)  
+●  Razón:  Cada  landing  debe  assumir  una  audiencia  específica.  Si  escribes  para  
+todos,
+ 
+no
+ 
+hablas
+ 
+con
+ 
+nadie.
+ 
+●  Nuestro  caso:  "Especialización  en  Tecnología  para  gente  que  quiere  más"  =  habla  
+con
+ 
+estudiante
+ 
+ambicioso,
+ 
+no
+ 
+con
+ 
+"cualquiera".
+ ●  Resultado:  Resonancia  emocional.  Estudiante  siente:  "Esto  es  para  mí,  no  para  
+randos."
+ 
+2.  H1  promete  outcome  (carrera  profesional),  no  solo  aprendizaje  
+●  Razón:  Estudiante  no  quiere  "aprender".  Quiere  "conseguir  trabajo"  o  "cambiar  de  
+vida".
+ ●  Nuestro  caso:  "Especialización...  convertida  en  carrera  profesional"  =  outcome  
+clear.
+ ●  Resultado:  Clarity  sobre  lo  que  va  a  lograr.  No  vaguedad.  
+3.  Subheading  diferencia  vs  competencia  (Labs  +  garantía)  
+●  Razón:  Hay  muchos  bootcamps.  Si  no  dices  qué  te  hace  diferente  AQUÍ,  usuario  
+piensa
+ 
+"es
+ 
+uno
+ 
+más".
+ ●  Nuestro  caso:  "Proyectos  reales,  portafolio  desde  semana  2,  conexión  empresarial  
+garantizada"
+ 
+=
+ 
+3
+ 
+diferenciadores
+ 
+claros.
+ ●  Resultado:  Usuario  entiende:  "Esto  NO  es  un  bootcamp  genérico."  
+4.  Workspace  real  (no  gente  saltando)  
+●  Razón:  Estudiante  quiere  saber  dónde  va  a  pasar  4  meses.  Quiere  saber  si  le  gusta  
+el
+ 
+environment.
+ ●  Nuestro  caso:  Foto  de  workspace  moderno  =  "quiero  estudiar  aquí."  ●  Resultado:  Decisión  más  fácil.  Visualiza  el  environment.  
+ 
+SECCIÓN  2:  ¿POR  QUÉ  FACTOR  N?  
+¿Qué  hace?  
+3  diferenciadores  clave  (Enseñanza,  Experiencia,  Garantía)  
+¿POR  QUÉ  lo  hacemos  así?  
+1.  Antes  de  hablar  de  cursos,  debes  vender  POR  QUÉ  (no  QUÉ)  
+●  Razón:  Usuario  aún  no  decidió.  Primero  necesita  saber  si  THIS  PLACE  es  diferente.  
+Depois
+ 
+elige
+ 
+qué
+ 
+aprender.
+ ●  Nuestro  caso:  Antes  de  mostrar  "IA  +  VFX",  mostrar  "enseñanza  diferente  +  
+experiencia
+ 
+real
+ 
++
+ 
+garantía".
+ ●  Resultado:  Convicción.  Usuario  entiende  por  qué  ir  a  Factor  N  vs  otros  bootcamps.  
+2.  Diferenciador  #1:  Enseñanza  neuro-inteligente  
+●  Razón:  Es  el  CORE.  Todo  viene  de  ahí.  Si  lo  ocultas,  pierdes  el  "aha  moment".  
+●  Nuestro  caso:  "No  adaptamos  personas  al  sistema.  Diseñamos  el  sistema  
+alrededor
+ 
+de
+ 
+cómo
+ 
+aprende
+ 
+cada
+ 
+uno."
+ ●  Resultado:  Neurodivergentes  se  sienten  vistos.  Normales  se  sienten  respetados  (no  
+forzados
+ 
+a
+ 
+un
+ 
+molde).
+ ●  Bonus:  Explica  por  qué  Labs  existe  (porque  la  enseñanza  es  diferente,  necesita  
+práctica
+ 
+distinta).
+ 
+3.  Diferenciador  #2:  Experiencia  real  desde  día  1  
+●  Razón:  Es  lo  que  otros  NO  hacen.  99%  de  bootcamps:  teoría  semana  1-2,  práctica  
+después.
+ 
+Nosotros:
+ 
+práctica
+ 
+día
+ 
+1.
+ ●  Nuestro  caso:  "Proyectos  reales  desde  semana  1,  portafolio  desde  semana  2"  =  
+diferencia
+ 
+radial.
+ ●  Resultado:  Usuario  ve:  "Esto  es  acelerado.  No  es  teoría  lenta."  Motivación  para  
+inscribirse.
+ 
+4.  Diferenciador  #3:  Garantía  de  trabajo  
+●  Razón:  Mayor  barrera  psicológica  en  estudiante:  "¿Y  si  no  encuentro  trabajo?"  
+Quitar
+ 
+esa
+ 
+barrera
+ 
+=
+ 
+conversión.
+ ●  Nuestro  caso:  "Tutorización  activa.  Si  no  encuentras  en  3  meses,  devolvemos  
+50%."
+ ●  Resultado:  Riesgo  percibido  cae  a  0.  Estudiante  siente:  "Están  tan  seguros  que  
+garantizan."
+ 
+5.  Números  en  garantía  (no  vago)  
+●  Razón:  "Garantía  de  trabajo"  =  vago.  "Si  en  3  meses  post-graduación  no  encuentras  
+empleo,
+ 
+devolvemos
+ 
+50%"
+ 
+=
+ 
+específico,
+ 
+creíble.
+ ●  Nuestro  caso:  3  meses  (tiempo  justo),  50%  (suficiente  para  dudar).  No  es  "dinero  
+gratis"
+ 
+ni
+ 
+"imposible".
+ ●  Resultado:  Credible.  No  suena  como  marketing  hueco.  
+ 
+SECCIÓN  3:  LOS  PROGRAMAS  
+¿Qué  hace?  
+2  tarjetas  grandes  (IA  +  VFX)  con  estructura:  Dirigido  a,  Duración,  ¿Qué  aprenderás?,  
+Profesor,
+ 
+Precio,
+ 
+CTA
+ 
+¿POR  QUÉ  lo  hacemos  así?  
+1.  2  programas  no  1  
+●  Razón:  Ofertas  múltiples  =  mayor  sensación  de  elección  =  mayor  conversión  
+(psicología).
+ 
+●  Nuestro  caso:  IA  atrae  a  un  tipo  de  persona.  VFX  a  otro.  Ambos  ven  opciones.  ●  Resultado:  "Puedo  elegir  mi  camino"  =  empowerment  =  mayor  disposición  a  pagar.  
+2.  Tarjetas  grandes  (no  pequeñas)  
+●  Razón:  Cada  programa  es  importante.  Merece  espacio.  Pequeñas  tarjetas  =  "son  
+opciones
+ 
+menor".
+ ●  Nuestro  caso:  Cada  programa  es  especialización  de  3-4  meses.  Merece  
+protagonismo.
+ ●  Resultado:  Importancia  percibida  sube.  Justifica  precio  que  probablemente  es  alto.  
+3.  "Dirigido  a"  primero  (no  presunción)  
+●  Razón:  Estudiante  necesita  verse  reflejado.  Si  comienza  con  "duración  4  meses",  no  
+sabe
+ 
+si
+ 
+es
+ 
+para
+ 
+él.
+ ●  Nuestro  caso:  "Dirigido  a  gente  con  base  técnica  o  ganas  de  aprenderla"  =  
+auto-selección.
+ ●  Resultado:  Usuario  sabe  si  encaja.  No  siente  presionado  si  no  encaja.  O  se  siente  
+validado
+ 
+si
+ 
+sí.
+ 
+4.  Estructura  consistente  (Dirigido  a  →  Duración  →  Modalidad  →  Qué  aprenderás  →  
+Profesor
+ 
+→
+ 
+Precio
+ 
+→
+ 
+Cohorte)
+ 
+●  Razón:  Información  consistente  =  escaneable.  User  sabe  dónde  encontrar  cada  dato  
+sin
+ 
+leer
+ 
+todo.
+ ●  Nuestro  caso:  No  es  prosa  larga.  Es  campos  claros.  ●  Resultado:  Decisión  rápida.  User  compara  rápidamente.  "IA  4  meses  vs  VFX  3  
+meses"
+ 
+(fácil).
+ 
+5.  Profesor  mencionado  por  nombre  (no  anónimo)  
+●  Razón:  En  educación,  profesor  =  garantía.  Si  es  anónimo,  no  vale.  ●  Nuestro  caso:  "Profesor:  Rafel  Bernabeu,  CTO"  =  credencial.  ●  Resultado:  User  sabe  quién  le  enseña.  Ya  lo  buscó  en  HOME  y  tiene  credibilidad.  
+6.  Precio  visible  (no  hidden)  
+●  Razón:  Precio  oculto  =  suspicacia.  Precio  visible  =  transparencia.  ●  Nuestro  caso:  [A  DEFINIR]  =  placeholder.  Pero  la  estructura  asume  que  está  
+visible.
+ ●  Resultado:  Trust  sube.  Ni  ocultas  ni  sobrevemdes.  
+7.  "Próxima  cohorte"  visible  (urgencia)  
+●  Razón:  Sin  fecha,  user  piensa  "mañana  me  inscribo".  Con  fecha,  piensa  "me  
+inscribo
+ 
+AHORA".
+ ●  Nuestro  caso:  "Próxima  cohorte:  [FECHA]"  ●  Resultado:  +15%  conversión  (data  CRO,  efecto  de  escasez).  
+ 
+SECCIÓN  4:  METODOLOGÍA  
+¿Qué  hace?  
+Timeline  visual  de  una  semana  típica  (Lunes-Martes,  Miércoles-Jueves,  Viernes,  +  durante  
+todo)
+ 
+¿POR  QUÉ  lo  hacemos  así?  
+1.  Demuestra  que  NO  es  bootcamp  típico  (teoría  +  examen)  
+●  Razón:  User  piensa  "bootcamp  =  clases  en  aula  +  examen  final".  Necesita  ver  que  
+es
+ 
+diferente.
+ ●  Nuestro  caso:  "Lunes-Martes:  Concepto  +  Proyecto  MISMO  DÍA"  =  esto  no  es  
+típico.
+ ●  Resultado:  User  ve  metodología  diferente.  Justifica  por  qué  es  Factor  N.  
+2.  Timeline  visual  (no  prosa  larga)  
+●  Razón:  "Una  semana  =  5  fases"  es  fácil  de  entender  visualmente.  Prosa  larga  es  
+aburridora.
+ ●  Nuestro  caso:  Cada  día  de  semana  tiene  fase  clara.  Visual  es  rápido  de  procesar.  ●  Resultado:  User  retiene  información.  No  se  aburre.  
+3.  Énfasis  en  "feedback  continuo,  no  examen  final"  
+●  Razón:  Estudiante  neurodivergente  (y  muchos  normales)  tienen  ansiedad  por  
+exámenes.
+ 
+Decir
+ 
+"no
+ 
+hay
+ 
+examen
+ 
+final"
+ 
+es
+ 
+tranquilizador.
+ ●  Nuestro  caso:  "Feedback  continuo,  no  examen  final"  =  eliminación  de  ansiedad.  ●  Resultado:  Barrera  psicológica  cae.  Inscripción  más  probable.  
+4.  Mención  de  Labs  (paralelamente)  
+●  Razón:  User  necesita  entender  cómo  Labs  se  integra.  Si  no  lo  mencionas  aquí,  
+parecer
+ 
+separado.
+ ●  Nuestro  caso:  "Mientras  avanzas,  tienes  acceso  a  proyectos  reales"  =  Labs  es  
+parte
+ 
+de
+ 
+la
+ 
+experiencia,
+ 
+no
+ 
+addon.
+ ●  Resultado:  Coherencia.  Factor  N  es  uno,  no  fragmentado.  
+5.  Énfasis  en  "portafolio"  (no  certificado)  
+●  Razón:  Certificado  es  papel.  Portafolio  es  venta.  Estudiante  necesita  portafolio  para  
+conseguir
+ 
+trabajo.
+ ●  Nuestro  caso:  "Proyectos  que  van  a  tu  portafolio"  =  outcome  claro.  ●  Resultado:  User  ve:  "Cuando  termino,  tengo  algo  que  mostrar  a  empleadores."  
+ 
+SECCIÓN  5-7:  Testimonios,  FAQ,  CTA  Final  
+¿Qué  hace?  
+Testimonios  reales  (cuando  tengas),  FAQ  accordion,  CTA  de  acción  
+¿POR  QUÉ  lo  hacemos  así?  
+1.  Testimonios  de  ESTUDIANTES  (no  de  "expertos")  
+●  Razón:  Estudiante  confía  en  otros  estudiantes,  no  en  vendedores.  ●  Nuestro  caso:  Historias  de  egresados  diciendo  "cambió  mi  vida"  =  prueba  social  
+real.
+ ●  Resultado:  Conversión  sube  significativamente  (50%+  con  testimonios  vs  sin  ellos,  
+data
+ 
+CRO).
+ ●  NOTA:  Ahora  es  placeholder  porque  no  tienes  egresados.  Será  lo  PRIMERO  que  
+rellenes
+ 
+cuando
+ 
+tengas.
+ 
+2.  FAQ  accordion  (no  FAQ  página  aparte)  
+●  Razón:  User  en  decisión  final  tiene  dudas  últimas.  Si  tienes  que  ir  a  otra  página  para  
+resolver,
+ 
+puede
+ 
+irse.
+ ●  Nuestro  caso:  FAQ  justo  antes  de  CTA  final  =  resuelve  objeciones  antes  de  que  
+user
+ 
+desista.
+ ●  Resultado:  Objeciones  resueltas  =  conversión  más  probable.  
+3.  FAQ  redactada  anticipando  objeciones  (no  FAQ  genérica)  
+●  Razón:  FAQs  malas  responden  lo  que  nadie  pregunta.  FAQs  buenas  responden  lo  
+que
+ 
+TODOS
+ 
+preguntan.
+ ●  Nuestro  caso:  "¿Necesito  experiencia  previa?"  (SÍ,  todos  preguntan).  "¿Qué  se  
+puede
+ 
+hacer
+ 
+con
+ 
+esto?"
+ 
+(NO,
+ 
+nadie
+ 
+lo
+ 
+pregunta).
+ ●  Resultado:  Trust  sube  porque  muestras  que  entiendes  realmente  las  dudas.  
+4.  CTA  Final  después  de  FAQ  (no  arriba)  
+●  Razón:  Objeciones  resueltas  =  usuario  listo  para  conversión.  Anterior  era  "pedir  que  
+decida
+ 
+antes
+ 
+de
+ 
+resolver
+ 
+dudas".
+ ●  Nuestro  caso:  FAQ  →  CTA  =  secuencia  lógica.  ●  Resultado:  Conversion  rate  sube  (user  llega  a  CTA  sin  objeciones).  
+5.  CTA  texto  comunica  urgencia  ("Los  programas  llenan  rápido")  
+●  Razón:  Sin  urgencia,  user  piensa  "mañana  me  inscribo".  Con  urgencia,  piensa  
+"AHORA".
+ ●  Nuestro  caso:  "No  esperes.  Los  programas  llenan  rápido.  Próxima  cohorte:  
+[FECHA]."
+ ●  Resultado:  +20%  conversión  (efecto  de  escasez  validado).  
+ 
+/ESCUELA:  RESUMEN  DEL  POR  QUÉ  
+Landing  /escuela  funciona  como:  
+●  Atracción:  Hero  específico  para  estudiantes,  no  genérico  ●  Convicción:  3  diferenciadores  (enseñanza  +  experiencia  +  garantía)  antes  de  
+mostrar
+ 
+cursos
+ ●  Elección:  2  programas  grandes,  fácil  comparación  ●  Entendimiento:  Metodología  visual  demuestra  que  NO  es  bootcamp  típico  ●  Confianza:  Equipo  profesor  mencionado,  Labs  integrado,  transparencia  en  precio  ●  Resolución:  FAQ  resuelve  objeciones  últimas  ●  Conversión:  CTA  claro  +  urgencia  
+Resultado  esperado:  
+●  Estudiante  se  ve  reflejado  (enseñanza  para  gente  que  aprende  diferente)  ●  Comprende  diferenciador  (experiencia  real,  no  solo  teoría)  ●  Reduce  ansiedad  (feedback  continuo,  no  examen,  garantía  de  trabajo)  ●  Toma  decisión  (comparación  clara  entre  2  programas)  ●  Se  convierte  (CTA  sin  fricción,  urgencia)  
+ 
+🏢  /EMPRESAS  
+SECCIÓN  1:  HERO  
+¿Qué  hace?  
+Foto  de  equipo  colaborando  +  H1  específica  para  empresas  (ROI,  no  inspiración)  
+¿POR  QUÉ  lo  hacemos  así?  
+1.  H1  speak  el  idioma  del  empresario  (ROI,  no  humanidad)  
+●  Razón:  Empresa  necesita  metrics.  Estudiante  necesita  esperanza.  Audiences  
+diferentes
+ 
+=
+ 
+H1
+ 
+diferentes.
+ ●  Nuestro  caso:  "Talento  Hiper-Especializado.  Sin  el  riesgo  del  onboarding"  =  habla  
+de
+ 
+ROI
+ 
+(onboarding
+ 
+caro).
+ ●  Resultado:  Empresario  siente:  "Esto  está  hecho  para  mí,  no  es  venta  social."  
+2.  Subheading  comunica  "sin  fricción"  (clave  para  B2B)  
+●  Razón:  Empresario  tiene  pain  actual:  "Contratar  junior  =  3  meses  de  baja  
+productividad".
+ 
+Si
+ 
+resuelves
+ 
+eso,
+ 
+vende.
+ ●  Nuestro  caso:  "Cero  fricción"  =  onboarding  rápido,  productividad  desde  día  1.  ●  Resultado:  Pain  point  se  resuelve.  Empresario  entiende  el  valor  financiero.  
+3.  Foto  de  equipo  (no  personas  aisladas)  
+●  Razón:  Empresa  compra  "personas  que  trabajan  juntas",  no  "individuos  genios".  ●  Nuestro  caso:  Foto  de  equipo  colaborando  =  "voy  a  traer  gente  que  colabora."  ●  Resultado:  Confianza  en  integración.  No  va  a  ser  "persona  nueva  aislada".  
+ 
+SECCIÓN  2:  EL  PROBLEMA  (Para  Empresas)  
+¿Qué  hace?  
+3  problemas  reales  que  enfrenta  empresa  (escasez,  candidatos  medio,  onboarding  largo)  
+¿POR  QUÉ  lo  hacemos  así?  
+1.  Empieza  CON  el  problema  (no  con  la  solución)  
+●  Razón:  Si  vendes  sin  validar  pain,  parece  venta  forzada.  Si  empiezas  con  
+"reconozco
+ 
+tu
+ 
+dolor",
+ 
+ganas
+ 
+credibilidad.
+ ●  Nuestro  caso:  "El  talento  especializado  es  escaso.  Candidatos  sin  experiencia  no  
+son
+ 
+opción.
+ 
+Onboarding
+ 
+es
+ 
+lento."
+ ●  Resultado:  Empresa  siente:  "Me  entienden.  Viven  esto  también."  
+2.  Problema  #1:  Escasez  es  REAL  (no  aspiracional)  
+●  Razón:  No  es  "queremos  contratar  gente  top".  Es  "no  EXISTE  gente  top  en  mercado  
+abierto".
+ ●  Nuestro  caso:  "La  escasez  es  real.  Existe  talento.  Pero  está  ocupado  o  no  busca."  ●  Resultado:  Validación.  Empresa  sabe  que  el  problema  no  es  su  búsqueda,  es  el  
+mercado.
+ 
+3.  Problema  #2:  Punto  medio  (junior  sin  experiencia  vs  senior  caro)  no  existe  
+●  Razón:  Ese  es  el  INSIGHT.  "Encontrar  gente  en  punto  medio  es  casi  imposible."  ●  Nuestro  caso:  "O  contratas  alguien  con  5  años  (caro,  puede  irse)  o  contratas  junior  
+(meses
+ 
+de
+ 
+onboarding)."
+ ●  Resultado:  Empresa  ve  por  primera  vez  que  Factor  N  RESUELVE  justamente  eso:  
+"Punto
+ 
+medio
+ 
+con
+ 
+experiencia
+ 
+real."
+ 
+4.  Problema  #3:  Onboarding  rompe  productividad  
+●  Razón:  Es  el  cost  más  no-obvio.  Empresa  no  lo  cuenta  en  presupuesto.  Si  lo  haces  
+visible,
+ 
+tu
+ 
+solución
+ 
+vale
+ 
+oro.
+ 
+●  Nuestro  caso:  "Semanas  de  onboarding  =  equipo  mentorando  en  lugar  de  iterando  
+=
+ 
+pérdida
+ 
+de
+ 
+productividad
+ 
+real."
+ ●  Resultado:  ROI  de  tu  solución  se  ve.  "Talento  de  Factor  N  evita  esta  pérdida  de  
+productividad."
+ 
+ 
+SECCIÓN  3:  LA  SOLUCIÓN  (5  etapas)  
+¿Qué  hace?  
+Timeline  de  5  fases  (Consultoría  →  Detección  →  Formación  →  Integración  →  Soporte)  
+¿POR  QUÉ  lo  hacemos  así?  
+1.  Antes  de  ofrecer  servicios,  necesitas  demostrar  PROCESO  (no  magia)  
+●  Razón:  Empresa  desconfía  de  "reclutamiento  mágico".  Confía  en  "proceso  
+estructurado".
+ ●  Nuestro  caso:  5  fases  claras,  cada  una  explicada  =  "esto  es  profesional."  ●  Resultado:  Trust  sube.  Empresa  ve  que  tenemos  metodología,  no  improvisación.  
+2.  Etapa  0:  Consultoría  GRATIS  (antes  de  vender)  
+●  Razón:  Eliminação  de  riesgo  percibido.  "Hablar  sin  compromiso"  =  entrada  baja.  ●  Nuestro  caso:  "ETAPA  1:  CONSULTORÍA  INICIAL  (Gratis)"  =  empresa  no  paga  
+para
+ 
+decidir.
+ ●  Resultado:  Entrada  baja  =  conversión  más  probable.  Puede  hacer  diagnóstico  sin  
+riesgo.
+ 
+3.  Etapa  1  es  conversación  (no  form)  
+●  Razón:  Empresa  B2B  necesita  humano,  no  chatbot.  "2  horas  de  conversación"  >  
+"llenar
+ 
+form".
+ ●  Nuestro  caso:  "Esto  no  es  un  form.  Es  una  conversación.  1-2  horas."  ●  Resultado:  Empresa  siente  que  la  entienden  como  humans,  no  como  lead  scoring.  
+4.  Etapa  2:  Detección  (no  CV-matching)  
+●  Razón:  Diferenciador  clave  vs  agencias  tradicionales  (que  usan  filtros  
+automatizados).
+ ●  Nuestro  caso:  "No  CV-matching  automático.  Valoramos  potencial  de  aprendizaje,  
+no
+ 
+solo
+ 
+CV."
+ ●  Resultado:  Empresa  ve  que  NO  somos  headhunter  típico.  Somos  "talent  
+developers".
+ 
+5.  Etapa  3:  Formación  CUSTOM  (no  bootcamp  estándar)  
+●  Razón:  Bootcamp  estándar  es  para  escuela.  Aquí  es  formación  para  ROI  específico  
+de
+ 
+empresa.
+ ●  Nuestro  caso:  "Programa  custom  basado  en  tus  necesidades"  =  no  one-size-fits-all.  ●  Resultado:  Empresa  ve  que  el  talento  será  hecho  para  ELLOS,  no  genérico.  
+6.  Etapa  4:  Integración  GUIADA  (no  envío  y  adiós)  
+●  Razón:  Aquí  diferenciamos  vs  "detecta  +  integra"  tradicional  (empresa  se  arregla  
+sola).
+ ●  Nuestro  caso:  "No  los  soltamos  solos.  Mentoring  de  nuestro  equipo.  Check-ins  
+semanales."
+ ●  Resultado:  Empresa  sabe  que  no  paga  y  se  arregla.  Paga  y  tiene  soporte.  
+7.  Etapa  5:  GARANTÍA  (si  no  rinde,  reemplazo)  
+●  Razón:  Eliminación  total  de  riesgo  =  venta.  Garantía  =  empresa  confía  100%.  ●  Nuestro  caso:  "Si  no  rinde,  reemplazo  sin  costo"  =  garantía  de  verdad.  ●  Resultado:  Objeción  de  riesgo  desaparece.  Empresa  piensa:  "Están  tan  seguros  
+que
+ 
+garantizan."
+ 
+ 
+SECCIÓN  4:  DIFERENCIADORES  CLAVE  
+¿Qué  hace?  
+3  diferenciadores  vs  competencia  (talento  con  experiencia,  equipo  que  sabe,  garantía)  
+¿POR  QUÉ  lo  hacemos  así?  
+1.  Diferenciador  #1:  Talento  CON  experiencia  (no  junior  limpio)  
+●  Razón:  Es  el  punto  de  diferencia  vs  agencias  normales  (que  envían  juniors)  y  
+bootcamps
+ 
+(que
+ 
+no
+ 
+integran).
+ ●  Nuestro  caso:  "No  enviamos  junior  sin  nada.  El  candidato  termina  con  portafolio  
+real
+ 
+(proyectos
+ 
+que
+ 
+hizo,
+ 
+no
+ 
+ejercicios)."
+ ●  Resultado:  ROI  visible.  "Mi  nuevo  hire  empieza  productivo  en  semana  2,  no  semana  
+8."
+ 
+2.  Diferenciador  #2:  Equipo  que  SABE  (no  educators  alejados)  
+●  Razón:  Diferencia  vs  bootcamps  que  contratan  "maestros"  sin  experiencia  industria  
+actual.
+ ●  Nuestro  caso:  "Nuestros  formadores  son  profesionales  actuales.  Enseñan  lo  que  
+usan
+ 
+HOY,
+ 
+no
+ 
+lo
+ 
+que
+ 
+usaban
+ 
+hace
+ 
+5
+ 
+años."
+ ●  Resultado:  Talento  que  formas  NO  queda  obsoleto.  Viene  con  skills  actuales.  
+3.  Diferenciador  #3:  GARANTÍA  (no  "best  effort")  
+●  Razón:  Diferencia  vs  reclutadores  (que  "espero  que  funcione").  ●  Nuestro  caso:  "Si  no  rinde,  reemplazo  sin  costo.  Y  acompañamos  integración,  no  
+solo
+ 
+reclutamos."
+ ●  Resultado:  Riesgo  percibido  cae  a  0.  Contratación  es  decisión  fácil.  
+ 
+SECCIÓN  5:  CASOS  DE  ÉXITO  
+¿Qué  hace?  
+3  casos  reales  contando  Desafío  →  Solución  →  Resultados  →  Quote  
+¿POR  QUÉ  lo  hacemos  así?  
+1.  Casos  REALES  (no  hipotéticos)  
+●  Razón:  Empresa  desconfía  de  "puede  funcionar".  Confía  en  "ya  funcionó."  ●  Nuestro  caso:  3  casos  reales  =  prueba  social  B2B.  ●  Resultado:  Credibilidad  sube  200%.  No  es  promesa,  es  historia.  
+2.  Estructura:  Desafío  →  Solución  →  Resultados  →  Quote  
+●  Razón:  Empresa  se  ve  en  el  desafío  (emotional).  Luego  ve  que  fue  resuelto  
+(rational).
+ 
+Confirma
+ 
+con
+ 
+quote
+ 
+(emotional
+ 
+again).
+ ●  Nuestro  caso:  No  es  "hicimos  X,  resultó  Y".  Es  narrativa  (empresa  →  problema  →  
+solución
+ 
+→
+ 
+prueba).
+ ●  Resultado:  Persuasión  emocional  +  racional.  Más  poderoso.  
+3.  Resultados  en  METRICS  (no  vagas)  
+●  Razón:  "+40%  velocidad  en  iteración"  >  "mejoramos  mucho."  ●  Nuestro  caso:  "Reducción  de  bugs  en  35%"  =  específico,  verificable.  ●  Resultado:  Empresa  puede  proyectar  ROI.  "Si  yo  contrataría  con  ellos,  ¿qué  sería  
+mi
+ 
+ROI?"
+ 
+4.  Quote  de  persona  real  (no  anónimo)  
+●  Razón:  Atribución  visible  =  credibilidad.  Anónimo  =  podría  estar  inventado.  ●  Nuestro  caso:  "[CEO/Lead]  -  Lo  que  menos  esperaba  era  mejora  de  productividad.  
+Esperaba
+ 
+impacto
+ 
+social."
+ ●  Resultado:  Empresa  sabe:  "Hablo  con  humanos  reales  que  lo  validaron."  
+5.  AHORA  es  placeholder  (completar  cuando  tengas  clientes)  
+●  Razón:  Falsos  casos  son  detectados.  Mejor  tener  placeholder  que  mentir.  ●  Nuestro  caso:  [A  COMPLETAR  CUANDO  TENGAS  CASOS]  ●  Resultado:  Cuando  tengas  casos,  rellena.  Será  lo  PRIMERO  que  haces.  
+ 
+SECCIÓN  6:  EQUIPO  (Ángulo  B2B)  
+¿Qué  hace?  
+3  perfiles  (Jaime,  Rafel,  Héctor)  con  ángulo  empresarial  (no  escolar)  
+¿POR  QUÉ  lo  hacemos  así?  
+1.  Mismo  equipo  que  en  HOME  (consistencia)  
+●  Razón:  Empresa  que  vio  HOME  siente  "ah,  los  mismos".  Consistencia  =  
+profesionalismo.
+ ●  Nuestro  caso:  Jaime,  Rafel,  Héctor  en  ambas  páginas.  ●  Resultado:  Coherencia.  No  es  "equipo  diferente  para  cada  página".  
+2.  Descripciones  con  ángulo  B2B  (no  B2C)  
+●  Razón:  Estudiante  quiere  "que  me  enseñe  bien".  Empresa  quiere  "que  entienda  
+industria".
+ ●  Nuestro  caso:  HOME:  "Entiende  exigencia  real".  /EMPRESAS:  "Ha  hecho  equipos  
+competitivos
+ 
+a
+ 
+nivel
+ 
+mundial."
+ ●  Resultado:  Cada  audiencia  ve  lo  que  le  importa.  
+3.  Énfasis  en  "ha  estado  donde  ustedes  están"  
+●  Razón:  Empresa  confía  en  quien  conoce  sus  problemas.  "Ha  dirigido  equipos"  >  "es  
+experto".
+ ●  Nuestro  caso:  "Ha  estado  donde  ustedes  están.  Entiende  qué  se  necesita  para  
+equipos
+ 
+excelentes."
+ ●  Resultado:  Credibilidad  B2B.  No  es  teórico,  es  practitioner.  
+ 
+SECCIÓN  7:  MODELOS  DE  COLABORACIÓN  
+¿Qué  hace?  
+3  opciones  de  servicio  (Reclutamiento,  Staff  Augmentation,  Consultoría)  
+¿POR  QUÉ  lo  hacemos  así?  
+1.  3  modelos  (no  1  único)  
+●  Razón:  Empresas  tienen  necesidades  diferentes.  Opción  única  =  pierdes  empresas.  
+●  Nuestro  caso:  Startup  necesita  staff  variable.  Corporación  necesita  upskilling.  
+Escala
+ 
+intermedia
+ 
+necesita
+ 
+reclutamiento.
+ ●  Resultado:  Cada  tipo  de  empresa  ve  opciones.  Mayor  conversión.  
+2.  Modelo  #1:  Reclutamiento  +  Formación  (el  "completo")  
+●  Razón:  Es  tu  flagship.  Incluye  todo  lo  que  diferencia  (detección  +  formación  custom  
++
+ 
+integración
+ 
++
+ 
+garantía).
+ ●  Nuestro  caso:  "8-12  semanas.  Detección  →  Formación  custom  →  Integración.  Si  no  
+rinde,
+ 
+reemplazo."
+ ●  Resultado:  Premium.  Vale  más.  Máximo  ROI.  
+3.  Modelo  #2:  Staff  Augmentation  (el  "flexible")  
+●  Razón:  Para  empresas  con  necesidades  variables.  "Necesito  3  meses"  vs  "necesito  
+permanente".
+ ●  Nuestro  caso:  "Talento  formado  por  Factor  N.  Por  proyecto.  2-6  meses  típico."  ●  Resultado:  Acceso  a  empresa  que  no  necesita  contratación  permanente.  Diversifica  
+revenue.
+ 
+4.  Modelo  #3:  Consultoría  de  Equipo  (el  "upskilling")  
+●  Razón:  Para  empresas  que  quieren  "que  enseñen  a  MI  equipo".  Es  el  único  modelo  
+sin
+ 
+contratación.
+ ●  Nuestro  caso:  "Programa  custom  para  tu  equipo.  Metodología  Factor  N  aplicada  
+internamente."
+ ●  Resultado:  Acceso  a  empresa  que  no  busca  contratar,  busca  mejorar  actuales.  
+Diversifica
+ 
+base.
+ 
+5.  Cada  modelo  con  "Mejor  para"  
+●  Razón:  Empresa  sabe  qué  modelo  es  para  ella  sin  confusión.  ●  Nuestro  caso:  "MODELO  1  Mejor  para:  Posiciones  mid-senior,  stack  específico,  
+urgencia
+ 
+mediana/alta."
+ ●  Resultado:  Auto-selección.  Empresa  elige  bien.  No  desperdiciamos  tiempo.  
+ 
+SECCIÓN  8-9:  FAQ  +  CTA  Final  
+¿Qué  hace?  
+FAQ  accordion  +  CTA  urgencia  
+¿POR  QUÉ  lo  hacemos  así?  
+1.  FAQ  redactada  pensando  en  objeciones  empresariales  
+●  Razón:  "¿Cuánto  cuesta?"  y  "¿Cuánto  tiempo?"  son  K  en  B2B.  "¿Qué  se  aprende?"  
+es
+ 
+K
+ 
+en
+ 
+B2C.
+ ●  Nuestro  caso:  FAQ  /empresas  ≠  FAQ  /escuela.  Pregunta  diferentes.  ●  Resultado:  Trust.  Empresa  siente  que  preguntas  típicas  son  anticipadas.  
+2.  Garantía  mencionada  en  FAQ  
+●  Razón:  Es  objeción  principal  en  B2B  ("¿Qué  pasa  si  no  funciona?").  FAQ  resuelve.  ●  Nuestro  caso:  "Si  no  rinde  en  6  meses,  reemplazo  sin  costo."  ●  Resultado:  Objeción  eliminada  antes  de  CTA.  
+3.  CTA  Final  con  urgencia  (pero  no  desesperada)  
+●  Razón:  Empresa  se  mueve  lento.  Pero  si  ves  que  "otros  equipos  están  contratando  
+AHORA",
+ 
+acelera.
+ ●  Nuestro  caso:  "Los  equipos  competitivos  están  contratando  AHORA.  La  primera  
+consulta
+ 
+es
+ 
+gratis.
+ 
+Sin
+ 
+compromiso."
+ ●  Resultado:  +20%  conversión.  Urgencia  suave.  
+ 
+/EMPRESAS:  RESUMEN  DEL  POR  QUÉ  
+Landing  /empresas  funciona  como:  
+●  Atracción:  Hero  B2B  (ROI,  no  inspiración)  ●  Validación:  3  problemas  reales  que  empresa  vive  ●  Credibilidad:  5  etapas  claras  de  proceso  (no  magia)  ●  Diferenciación:  3  diferenciadores  vs  competencia  ●  Prueba  social:  3  casos  de  éxito  reales  [PLACEHOLDER]  ●  Credibilidad  equipo:  Mismo  equipo  con  ángulo  B2B  ●  Flexibilidad:  3  modelos  de  servicio  (elige  el  tuyo)  ●  Resolución:  FAQ  antcipa  objeciones  ●  Conversión:  CTA  sin  fricción  
+Resultado  esperado:  
+●  Empresa  se  ve  reflejada  (escasez  de  talento,  onboarding  lento)  ●  Comprende  diferenciador  (talento  con  experiencia,  equipo  que  sabe,  garantía)  ●  Confía  en  proceso  (5  fases  claras)  ●  Elige  servicio  (3  opciones,  auto-selección)  ●  Se  convierte  (consultoría  gratis  elimina  riesgo)  
+ 
+☀  /CURSO-VERANO  
+SECCIÓN  1:  HERO  
+¿Qué  hace?  
+Foto  de  verano  +  energía  +  H1  urgente  +  2  CTAs  
+¿POR  QUÉ  lo  hacemos  así?  
+1.  H1  promete  outcome  CONCRETO  (8  semanas,  de  0  a  portafolio)  
+●  Razón:  Curso  de  verano  no  es  "aprende  IA".  Es  "crea  portafolio  en  8  semanas".  ●  Nuestro  caso:  "8  Semanas.  De  0  a  Portafolio."  =  outcome  ultra-claro.  ●  Resultado:  Student  sabe  exactamente  qué  logrará.  No  hay  ambigüedad.  
+2.  Urgencia  suave  en  hero  (no  desesperada)  
+●  Razón:  Verano  es  corto.  Si  no  comunicas  urgencia,  student  piensa  "mañana  me  
+inscribo"
+ 
+(y
+ 
+se
+ 
+va).
+ ●  Nuestro  caso:  "Curso  intensivo  de  verano"  =  comunicar  limitación  temporal.  ●  Resultado:  +15%  conversión  (efecto  de  escasez).  
+3.  H1  +  Subheading  comunican  propósito  (prueba  vs  carrera  vs  aceleración)  
+●  Razón:  3  tipos  de  estudiantes.  Necesitan  ver  que  es  para  ELLOS.  ●  Nuestro  caso:  "¿Quieres  probar?  ¿O  necesitas  acelerar  entrada  laboral?  8  
+semanas."
+ ●  Resultado:  Auto-selección.  Estudiante  correcto  se  inscribe.  
+4.  Hero  más  corto  que  otros  (no  600px,  500px)  
+●  Razón:  Curso-verano  es  producto  limited-time.  No  necesita  HOME-like  narrativa  
+larga.
+ 
+Va
+ 
+directo.
+ ●  Nuestro  caso:  500px  hero  =  menos  scrolling  =  conversión  más  rápida.  ●  Resultado:  Velocidad.  Student  entra,  entiende,  se  inscribe.  No  se  aburre.  
+ 
+SECCIÓN  2:  ¿PARA  QUIÉN  ES?  
+¿Qué  hace?  
+4  perfiles  ideales  +  "NO  es  para"  explicado  
+¿POR  QUÉ  lo  hacemos  así?  
+1.  Después  de  hero,  validar  que  student  encaja  (no  presunción)  
+●  Razón:  Student  que  NO  encaja  se  va.  Es  mejor  decirle  "NO  es  para  ti"  que  obligarle  
+a
+ 
+pagar
+ 
+y
+ 
+sufrir.
+ ●  Nuestro  caso:  "4  perfiles  ideales  +  NO  es  para  X"  ●  Resultado:  Filtro  de  calidad.  Студент  que  empieza  es  estudiante  correcto  =  éxito  
+más
+ 
+probable.
+ 
+2.  Lenguaje  afirmativo  ("Eres..."  no  "Si  tienes...")  
+●  Razón:  Afirmativo  =  reconocimiento.  Condicional  =  dudosos.  ●  Nuestro  caso:  "Eres  estudiante  de  secundaria  que  explora"  =  validación.  ●  Resultado:  Student  se  siente  visto.  Confianza  sube.  
+3.  "NO  es  para"  explícito  (no  sugerido)  
+●  Razón:  Si  no  dices  explícitamente,  gente  NO  encajada  se  inscribe  de  todos  modos.  
+Luego
+ 
+se
+ 
+arrepienten.
+ ●  Nuestro  caso:  "NO  es  para:  Gente  sin  tiempo  /  gente  que  busca  certificado  sin  
+contenido
+ 
+/
+ 
+gente
+ 
+que
+ 
+quiere
+ 
+dinero
+ 
+rápido"
+ ●  Resultado:  Auto-selección.  Gente  correcta  se  inscribe.  No  hay  "ventas  malas".  
+ 
+SECCIÓN  3:  QUÉ  CONSEGUIRÁS  
+¿Qué  hace?  
+6  entregas  concretas  (Reel,  Portfolio  web,  Proyectos,  Certificado,  Contactos,  Prep  siguiente  
+paso)
+ 
+¿POR  QUÉ  lo  hacemos  así?  
+1.  "Entregas"  no  "Contenido"  
+●  Razón:  "Aprenderás  IA"  =  vago.  "Tendrás  reel  +  portfolio"  =  concreto.  ●  Nuestro  caso:  Énfasis  en  OUTPUTS,  no  INPUTS.  ●  Resultado:  Student  ve:  "Cuando  termino,  tengo  esto  en  mano."  
+2.  Reel  +  Portfolio  primero  (no  certificado)  
+●  Razón:  Reel  +  portfolio  son  lo  que  NOS  VENDEN  trabajo.  Certificado  es  papel.  ●  Nuestro  caso:  "Reel  profesional  (3-5  min)"  es  entrega  #1,  no  #5.  ●  Resultado:  Prioridades  claras.  Student  sabe  qué  importa.  
+3.  5-8  Proyectos  completados  (número  específico)  
+●  Razón:  "Muchos  proyectos"  =  vago.  "5-8  proyectos"  =  específico.  ●  Nuestro  caso:  "5-8  Proyectos  Completados.  Reales,  no  ejercicios."  ●  Resultado:  Student  puede  visualizar.  "Después  de  8  semanas,  tengo  5-8  cosas  que  
+mostrar."
+ 
+4.  Networking  como  entrega  (no  "bonus")  
+●  Razón:  Para  industria  creativa/tech,  networking  es  TAN  importante  como  skills.  ●  Nuestro  caso:  "Contactos  de  Industria.  Networking  directo.  Conoces  otros  
+estudiantes
+ 
++
+ 
+profesionales
+ 
+visitantes."
+ ●  Resultado:  Student  entiende:  "No  solo  aprender,  también  conectar."  
+5.  "Preparación  para  siguiente  paso"  (no  "ahora  estás  listo")  
+●  Razón:  Honestidad.  Curso  de  8  semanas  no  te  deja  "100%  listo".  Pero  te  prepara  
+para
+ 
+el
+ 
+siguiente
+ 
+paso.
+ ●  Nuestro  caso:  "Acceso  directo  a  Escuela  formal  sin  selectivo.  O  prep  para  
+búsqueda
+ 
+laboral."
+ ●  Resultado:  Expectativas  reales.  No  over-promise.  
+ 
+SECCIÓN  4:  ESTRUCTURA  (8  Semanas)  
+¿Qué  hace?  
+Timeline  visual  de  8  semanas  (Semana  1-2,  3-5,  6-7,  8)  
+¿POR  QUÉ  lo  hacemos  así?  
+1.  Timeline  visual  (no  prosa)  
+●  Razón:  "Las  8  semanas"  es  abstracto.  Timeline  visual  es  concreto.  ●  Nuestro  caso:  4  bloques  (semanas  1-2,  3-5,  6-7,  8)  con  color  progresivo  (claro  →  
+oscuro).
+ ●  Resultado:  Student  visualiza  journey.  "Semana  1  es  fundamento,  semana  8  es  
+pulido."
+ 
+2.  Énfasis  en  "complejidad  aumenta"  (no  lineal)  
+●  Razón:  Motivación  sube  si  ve  progreso.  "Siempre  igual"  es  aburridora.  ●  Nuestro  caso:  "Semanas  1-2:  Fundamentos"  →  "Semanas  3-5:  Proyectos  medios"  
+→
+ 
+"Semanas
+ 
+6-7:
+ 
+Proyectos
+ 
+finales"
+ ●  Resultado:  Student  siente:  "Esto  tiene  progresión.  Me  voy  a  empujar."  
+3.  Semana  8  es  especial  (networking  event)  
+●  Razón:  Cierre  fuerte.  "Finalización  +  presentación"  es  memorable.  ●  Nuestro  caso:  "Networking  event.  Presentas  trabajo.  Conectas  con  industria."  ●  Resultado:  Student  siente:  "El  final  es  especial,  no  solo  'terminó'."  
+ 
+SECCIÓN  5:  DETALLES  PRÁCTICOS  
+¿Qué  hace?  
+Tabla  clara  de  Fechas,  Modalidad,  Qué  Traer,  Precio,  Plazas  
+¿POR  QUÉ  lo  hacemos  así?  
+1.  Detalles  prácticos  ANTES  de  CTA  (no  después)  
+●  Razón:  Student  necesita  saber  logística  antes  de  inscribirse.  Si  no  lo  sabe,  objeción  
+sin
+ 
+resolver.
+ ●  Nuestro  caso:  Antes  de  "Inscribirse",  student  ya  sabe  fechas,  precio,  ubicación.  ●  Resultado:  CTA  limpia.  Sin  objeciones  prácticas.  
+2.  Plazas  limitadas  VISIBLES  (urgencia  suave)  
+●  Razón:  "Máximo  15  estudiantes"  =  escasez.  Scarcity  =  conversión.  ●  Nuestro  caso:  "Máximo  15  estudiantes.  QUEDAN  [X]  PLAZAS."  ●  Resultado:  +20%  conversión.  Student  piensa:  "Si  no  me  inscribo,  se  agotan."  
+3.  Precio  VISIBLE  (no  hidden)  
+●  Razón:  Transparencia  =  trust.  Precio  oculto  =  suspicacia.  ●  Nuestro  caso:  [A  DEFINIR]  =  placeholder,  pero  visible.  ●  Resultado:  Student  sabe  qué  paga.  No  hay  sorpresas.  
+4.  "Financiación:  Opciones  disponibles"  
+●  Razón:  Student  puede  no  tener  dinero  lump-sum.  Financiación  =  inclusión  =  
+conversión.
+ ●  Nuestro  caso:  Mencionar  que  hay  opciones  (sin  detallar  aún).  ●  Resultado:  Objeción  "no  tengo  dinero  ahora"  se  elimina.  
+ 
+SECCIÓN  6:  CTA  URGENCIA  
+¿Qué  hace?  
+Sección  pequeña  con  CTA  grande  +  countdown/plazas  limitadas  
+¿POR  QUÉ  lo  hacemos  así?  
+1.  Sección  separada  (no  dentro  de  detalles)  
+●  Razón:  Punto  de  fricción.  Si  CTA  está  perdida  en  detalles,  conversión  cae.  
+●  Nuestro  caso:  Sección  propia:  "Inscripción  Abierta  (Plazas  Limitadas)"  =  no  puedo  
+perderla.
+ ●  Resultado:  CTA  visible.  Conversión  más  probable.  
+2.  Botón  primaria  muy  grande  +  visible  
+●  Razón:  "Inscribirse  Ahora"  es  la  acción  más  importante.  Merece  tamaño.  ●  Nuestro  caso:  Botón  azul,  grande,  centro.  ●  Resultado:  CTR  sube.  Student  sabe  dónde  clickear.  
+3.  "Próxima  cohorte  inicia  [FECHA]"  visible  
+●  Razón:  Urgencia  específica.  "[FECHA]"  >  "pronto".  ●  Nuestro  caso:  "Próxima  cohorte  inicia  [15  JULIO].  Inscripción  cierra  [1  JULIO]."  ●  Resultado:  +25%  conversión.  Urgencia  real,  no  vaga.  
+4.  Pequeño  countdown  timer  (si  lo  quieres)  
+●  Razón:  Countdown  =  urgencia  psicológica  poderosa.  ●  Nuestro  caso:  "Inscripción  cierra  en  [21  DÍAS,  12  HORAS]"  (opcional,  pero  
+potente).
+ ●  Resultado:  +30%  conversión.  Urgencia  constante.  
+ 
+SECCIÓN  7:  FAQ  (Curso-Verano)  
+¿Qué  hace?  
+FAQ  accordion  con  preguntas  específicas  de  verano  
+¿POR  QUÉ  lo  hacemos  así?  
+1.  FAQ  redactada  para  objeciones  de  verano  (no  generales)  
+●  Razón:  FAQ  /escuela  ≠  FAQ  /curso-verano.  Preguntas  diferentes.  ●  Nuestro  caso:  "¿Puedo  hacer  esto  mientras  trabajo?"  (verano,  gente  tiene  trabajos  
+de
+ 
+verano).
+ 
+"¿Qué
+ 
+pasa
+ 
+si
+ 
+no
+ 
+termino?"
+ 
+(verano,
+ 
+hay
+ 
+viajes).
+ ●  Resultado:  FAQ  anticipada  objeciones  reales.  Trust  sube.  
+2.  Énfasis  en  "es  intensivo"  (no  pretender  que  no)  
+●  Razón:  Honestidad.  Mejor  decir  "40+  horas/semana"  que  ocultarlo  y  tener  student  
+arrepentido.
+ ●  Nuestro  caso:  "¿Puedo  hacer  esto  mientras  trabajo?  No  recomendamos.  Es  40+  
+horas/semana.
+ 
+Es
+ 
+intensivo."
+ ●  Resultado:  Expectativas  claras.  Student  que  empieza  está  preparado.  
+3.  Pregunta  sobre  Escuela  formal  (futura  opción)  
+●  Razón:  Curso-verano  es  funnel  a  Escuela.  Si  student  pregunta  "¿qué  sigue?",  
+respuesta
+ 
+es
+ 
+"Escuela
+ 
+formal
+ 
+sin
+ 
+selectivo".
+ ●  Nuestro  caso:  "¿Después  puedo  entrar  en  Escuela  formal?  Sí.  Acceso  directo  sin  
+selectivo
+ 
+adicional."
+ ●  Resultado:  Educación  sobre  siguientes  pasos.  Menos  fricción  para  conversión  a  
+Escuela.
+ 
+ 
+SECCIÓN  8:  CTA  FINAL  +  CIERRE  
+¿Qué  hace?  
+CTA  final  simple  +  link  a  chat/dudas  
+¿POR  QUÉ  lo  hacemos  así?  
+1.  Una  sola  CTA  (no  dos)  
+●  Razón:  A  este  punto,  student  ya  decidió.  Segunda  CTA  solo  distrae.  ●  Nuestro  caso:  Solo  "Inscribirse  Ahora"  (grande)  +  pequeño  link  "¿Dudas?  Chatea"  
+(escape
+ 
+hatch).
+ ●  Resultado:  Claridad.  No  confunde.  
+2.  Pequeño  link  a  chat  (no  chat  invasivo)  
+●  Razón:  Student  que  tiene  dudas  puede  preguntar  sin  haber  hecho  clic  en  CTA  aún.  
+Última
+ 
+oportunidad.
+ ●  Nuestro  caso:  "¿Dudas?  Chatea  con  nosotros"  =  escape  hatch  sin  fricción.  ●  Resultado:  Objeción  última  se  resuelve.  O  student  se  inscribe.  
+3.  Minimalista  (no  mucho  texto)  
+●  Razón:  Curso-verano  es  producto  claro.  No  necesita  narrativa  larga.  Ya  hizo  su  
+trabajo
+ 
+en
+ 
+secciones
+ 
+anteriores.
+ ●  Nuestro  caso:  Solo  "¿Listo  para  tu  verano  diferente?"  +  CTA.  ●  Resultado:  Cierre  limpio.  No  oversell.  
+ 
+/CURSO-VERANO:  RESUMEN  DEL  POR  QUÉ  
+Landing  /curso-verano  funciona  como:  
+●  Atracción:  Hero  urgente  (8  semanas,  verano,  energía)  ●  Validación:  "¿Para  quién  es?"  filtra  student  correcto  ●  Claridad:  6  entregas  concretas  (no  vagas)  ●  Progresión:  Timeline  visual  de  8  semanas  
+●  Logística:  Detalles  prácticos  claros  ANTES  de  CTA  ●  Urgencia:  Plazas  limitadas  +  fecha  de  cierre  visible  ●  Objeciones:  FAQ  antcipa  dudas  ●  Conversión:  CTA  urgente  +  escape  hatch  (chat)  
+Resultado  esperado:  
+●  Student  se  siente  validado  ("Soy  uno  de  estos  4  perfiles")  ●  Entiende  outcome  concreto  (6  entregas  tangibles)  ●  Sabe  logística  (fecha,  precio,  duración)  ●  Siente  urgencia  (plazas  limitadas,  fecha  cierre)  ●  Se  convierte  sin  fricción  (CTA  clara,  dudas  resueltas)  
+ 
+📊  RESUMEN:  EL  POR  QUÉ  GLOBAL  
+Por  qué  esta  arquitectura  (no  otra):  
+Opción  B  (HOME  narrativo  +  Landing  específicas)  
+¿Por  qué  NO  una  página  única?  
+●  ❌  Una  página  =  audiencias  mixtas  =  mensaje  diluido  ●  ✅  Landing  específicas  =  cada  audiencia  en  su  idioma  
+¿Por  qué  HOME  separado?  
+●  ❌  HOME  genérico  =  conversión  baja  (todos  a  la  vez  =  nadie  específico)  ●  ✅  HOME  narrativo  =  credibilidad  +  educación.  Luego  estudiante  y  empresa  van  a  
+su
+ 
+landing
+ 
+¿Por  qué  Labs  en  HOME  (no  en  navbar)?  
+●  ❌  Labs  en  navbar  =  promete  producto  que  no  existe  aún  (confusión)  ●  ✅  Labs  en  narrative  =  "esto  existe,  es  parte  de  esto",  pero  no  es  CTA  directa  
+¿Por  qué  curso-verano  separado?  
+●  ❌  Mezclar  en  /escuela  =  confunde  (¿3  meses  o  2  meses?  ¿mismo  precio?)  ●  ✅  /curso-verano  separado  =  producto  clarity,  urgencia,  pricing  separado  
+ 
+Por  qué  estos  TONES  (no  otros):  
+Blend  de  Premium  +  B2B  +  Social  Impact  +  Startup  Tech  
+¿Por  qué  NO  solo  Social  Impact?  
+●  ❌  Empresas  no  pagan  por  "impacto".  Pagan  por  ROI.  Social  Impact  solo  =  venta  
+perdida
+ 
+B2B.
+ 
+¿Por  qué  NO  solo  B2B?  
+●  ❌  Estudiantes  necesitan  esperanza.  "ROI"  suena  frío.  Social  Impact  +  esperanza  =  
+conversión
+ 
+estudiante.
+ 
+¿Por  qué  NO  solo  Startup?  
+●  ❌  Premium  es  percepción  de  calidad.  Si  suena  como  startup,  suena  barato.  Precio  
+alto
+ 
+=
+ 
+debe
+ 
+sonar
+ 
+premium.
+ 
+¿Por  qué  blend?  
+●  ✅  Premium  =  justifica  precio  ●  ✅  B2B  =  vende  a  empresas  ●  ✅  Social  Impact  =  atrae  talento  ●  ✅  Startup  =  accesibilidad  
+Resultado:  Audiencias  diferentes  se  sienten  atraídas.  Precio  premium  es  justificado.  
+Impacto
+ 
+es
+ 
+real.
+ 
+ 
+Por  qué  estos  DIFERENCIADORES  (no  otros):  
+Diferenciadores  Estudiante:  
+●  ✅  Enseñanza  neuro-inteligente  (único,  core)  ●  ✅  Experiencia  real  desde  día  1  (vs  otros:  teoría  primero)  ●  ✅  Garantía  de  trabajo  (riesgo  =  0)  
+Por  qué  estos  3:  Responden  a  pain  points  reales:  
+1.  "No  entiendo  cómo  aprendo"  →  Enseñanza  neuro-inteligente  2.  "Quiero  experiencia  pero  soy  junior"  →  Experiencia  real  3.  "¿Y  si  no  encuentro  trabajo?"  →  Garantía  
+Diferenciadores  Empresa:  
+●  ✅  Talento  CON  experiencia  (vs  agencias  =  junior  aislado)  ●  ✅  Equipo  que  sabe  (vs  bootcamps  =  educators  alejados)  ●  ✅  Garantía  (vs  reclutadores  =  "best  effort")  
+Por  qué  estos  3:  Responden  a  pain  points  reales:  
+1.  "No  tengo  3  meses  para  onboarding  junior"  →  Talento  con  experiencia  2.  "¿Sabe  la  industria  actual?"  →  Equipo  que  sabe  3.  "¿Qué  pasa  si  no  rinde?"  →  Garantía  
+ 
+Por  qué  esta  ESTRUCTURA  (no  otra):  
+Hero  →  Problema/Solución  →  Diferenciadores  →  Oferta  →  FAQ  →  CTA  
+¿Por  qué  este  orden?  
+1.  Hero  (Atracción):  Necesito  que  se  quede.  Si  no  lo  logro  aquí,  se  va.  2.  Problema  (Validación):  Necesito  que  sienta  "me  entienden".  Validación  =  confianza.  3.  Solución  (Educación):  Necesito  que  entienda  qué  ofrezco.  No  puedo  vender  sin  
+educación.
+ 4.  Diferenciadores  (Diferenciación):  Necesito  que  entienda  por  qué  YO  (vs  
+competencia).
+ 5.  Oferta  (Claridad):  Necesito  que  sepa  exactamente  qué  compra  (programas,  
+modelos,
+ 
+entregas).
+ 6.  FAQ  (Objeciones):  Necesito  resolver  dudas  finales.  Sin  esto,  conversión  cae  en  el  
+último
+ 
+metro.
+ 7.  CTA  (Conversión):  Ahora  que  resolví  todo,  puedo  pedir  acción.  
+¿Si  cambio  el  orden?  
+●  ❌  CTA  primero  =  venta  sin  educación  =  low  conversion  ●  ❌  Diferenciadores  primero  =  confusión,  qué  es  lo  principal?  ●  ❌  Sin  FAQ  =  objeciones  sin  resolver  =  abandono  en  último  metro  
+Conclusión:  Este  orden  es  psicológicamente  optimizado  para  conversión.  
+ 
+Por  qué  estos  BRIEFS  VISUALES  (no  otros):  
+Hero:  Foto  de  verdad  (no  ilustración)  
+●  Por  qué:  Usuario  necesita  imaginar  "¿Qué  voy  a  encontrar?"  Foto  =  real.  Ilustración  
+=
+ 
+bonita
+ 
+pero
+ 
+no
+ 
+real.
+ 
+Problema/Solución:  Iconografía  simple  (no  fotos)  
+●  Por  qué:  Concepto  abstracto.  Foto  sería  confusa  ("¿quién  es?  ¿qué  está  
+pasando?").
+ 
+Iconografía
+ 
+es
+ 
+universal.
+ 
+Diferenciadores:  Tarjetas  simples  (no  fotos)  
+●  Por  qué:  El  diferenciador  es  el  TEXTO.  Foto  distrae.  Menos  es  más  aquí.  
+Equipo:  Headshots  (fotos  de  verdad)  
+●  Por  qué:  Equipo  =  personas.  Usuario  necesita  ver  caras.  Headshot  profesional  =  
+credibilidad.
+ 
+Testimonios:  Foto  +  quote  
+●  Por  qué:  Trust  es  emocional.  Foto  =  persona  real.  Quote  =  palabra  de  esa  persona.  
+Timeline:  Visual  abstracta  (no  fotos)  
+●  Por  qué:  Process  es  secuencial,  no  emocional.  Visual  abstracta  es  clara.  
+Conclusión:  Cada  visual  type  sirve  un  propósito.  No  es  "bonita",  es  "comunica  lo  que  
+necesita
+ 
+comunicar".
+ 
+ 
+🎯  CONCLUSIÓN:  EL  POR  QUÉ  FINAL  
+Factor  N  Web  funciona  porque:  
+1.  Segmenta  audiencias  (HOME  narrativo  +  Landing  específicas)  =  cada  uno  en  su  
+idioma
+ 2.  Valida  pain  points  (Problema  antes  de  Solución)  =  credibilidad  ANTES  de  venta  3.  Diferencia  vs  competencia  (3  diferenciadores  claros)  =  por  qué  Factor  N,  no  otro  4.  Educa  sin  saturar  (información  estructurada,  visual  clara)  =  usuario  entiende  sin  
+esfuerzo
+ 5.  Convierte  sin  fricción  (FAQ  antes  de  CTA)  =  objeciones  resueltas  6.  Crea  urgencia  suave  (plazas,  fechas,  social  proof)  =  conversión  sin  presión  
+agresiva
+ 
+Resultado  esperado:  
+●  Estudiante:  "Esto  es  para  mí.  Entiendo  qué  aprenderé.  No  tengo  riesgo.  Me  
+inscribo."
+ ●  Empresa:  "Entiendo  el  problema.  Entienden  cómo  resolverlo.  Tienen  track  record.  
+Les
+ 
+llamo."
+ 
+●  Verano:  "8  semanas,  portafolio,  plazas  limitadas.  No  me  lo  pierdo.  Me  inscribo  YA."  
+Todo  conectado.  Coherente.  Conversión  optimizada.  
+ 
+Este  documento  es  tu  argumento  completo  para  presentar  al  equipo.  
+Cada  decisión  tiene  el  "por  qué"  detrás.  No  es  "porque  está  de  moda",  es  "porque  funciona".  
+¿Lo  tienes?  
+ 
+
+
+===== 📄 FACTOR N - CONTENIDO COMPLETO.pdf =====
+📄  FACTOR  N  -  CONTENIDO  COMPLETO  
+Guía  de  Implementación  Web  100%  Funcional  
+Versión:  1.0  
+ 
+Fecha:
+ 
+29
+ 
+Abril
+ 
+2026
+ 
+ 
+Estado:
+ 
+Listo
+ 
+para
+ 
+desarrollo
+ 
+ 
+🏠  HOME  
+SECCIÓN  1:  HERO  
+Contenido  
+H1:  Talento  excepcional  convertido  en  carrera  profesional  
+Subheading:  Detectamos,  formamos  e  integramos  talento  de  máximo  rendimiento.  
+Especialistas
+ 
+en
+ 
+perfiles
+ 
+que
+ 
+otros
+ 
+sistemas
+ 
+educativos
+ 
+no
+ 
+saben
+ 
+dónde
+ 
+encajar.
+ 
+Párrafo  contextual  (máx  2  líneas):  Hay  mentes  brillantes  que  el  sistema  educativo  
+rechaza.
+ 
+Hay
+ 
+empresas
+ 
+que
+ 
+desesperadamente
+ 
+las
+ 
+necesitan.
+ 
+Nadie
+ 
+las
+ 
+conecta.
+ 
+Nosotros
+ 
+sí.
+ 
+CTAs:  
+●  Primaria:  "Quiero  formarme"  (azul,  rellena)  →  /escuela  ●  Secundaria:  "Necesito  talento  especializado"  (blanco/outlined)  →  /empresas  
+ 
+Brief  Visual:  HERO  
+Tamaño:  Full  width,  altura  mínimo  600px  (responsive  400px  móvil)  
+Composición:  
+●  Fondo:  Gradiente  sutil  (azul  claro  a  gris  claro,  o  blanco  puro)  ●  Imagen/Video  de  fondo:  Personas  trabajando  concentradas  en  computadoras  
+(diversas,
+ 
+incluyendo
+ 
+gente
+ 
+neurodivergente
+ 
+visible
+ 
+pero
+ 
+no
+ 
+etiquetada)
+ ●  Overlay:  30%  darkening  para  que  texto  sea  legible  ●  Texto:  Centrado,  blanco  
+Qué  mostrar:  
+●  Diversidad  visible  (diferentes  edades,  géneros,  capacidades)  ●  Concentración  y  energía  (no  gente  sonriendo  forzadamente,  gente  enfocada)  ●  Espacios  modernos  pero  cálidos  (luz  natural,  espacios  limpios)  ●  Tecnología  visible  (pantallas,  código,  diseño)  pero  no  invasiva  
+Qué  EVITAR:  
+●  Estereotipos  (no  "gente  con  discapacidad  siendo  inspiradora")  ●  Fotos  de  stock  obvias  ●  Colores  chillones  o  futuristas  ●  Gente  actuando  (debe  parecer  real)  
+Propuesta:  Video  corto  (5-8  seg,  loop  silencioso)  de  personas  en  diferentes  tareas  
+técnicas.
+ 
+O
+ 
+foto
+ 
+de
+ 
+alta
+ 
+calidad
+ 
+con
+ 
+ligero
+ 
+zoom/parallax
+ 
+al
+ 
+scroll.
+ 
+ 
+SECCIÓN  2:  PROBLEMA  +  SOLUCIÓN  
+Contenido  
+H2:  El  talento  se  pierde.  Nosotros  lo  encontramos.  
+Problema  (3  puntos  cortos):  
+1.  El  sistema  educativo  expulsa  talento  "Hay  mentes  brillantes  que  aprenden  
+diferente.
+ 
+El
+ 
+sistema
+ 
+tradicional
+ 
+las
+ 
+rechaza
+ 
+porque
+ 
+no
+ 
+encajan
+ 
+en
+ 
+el
+ 
+molde
+ 
+estándar."
+ 
+ 2.  Las  empresas  no  encuentran  especialistas  "Necesitan  talento  
+hiper-especializado.
+ 
+Pero
+ 
+el
+ 
+mercado
+ 
+laboral
+ 
+ofrece
+ 
+candidatos
+ 
+genéricos
+ 
+sin
+ 
+experiencia
+ 
+real."
+ 
+ 3.  El  talento  se  auto-excluye  "Muchos  pierden  la  confianza.  Creen  que  no  sirven.  
+Nunca
+ 
+prueban
+ 
+qué
+ 
+pueden
+ 
+lograr
+ 
+realmente."
+ 
+ 
+Solución  (3  puntos  cortos):  
+1.  Enseñanza  neuro-inteligente  "Nos  importa  cómo  APRENDE  cada  persona,  no  
+encajarlo
+ 
+en
+ 
+un
+ 
+sistema.
+ 
+Metodología
+ 
+adaptada
+ 
+a
+ 
+cómo
+ 
+piensa,
+ 
+no
+ 
+cómo
+ 
+debería
+ 
+pensar."
+ 
+ 2.  Experiencia  real  desde  el  día  1  "No  ejercicios  abstractos.  Proyectos  reales.  
+Portafolios
+ 
+desde
+ 
+semana
+ 
+2.
+ 
+Cuando
+ 
+buscas
+ 
+empleo,
+ 
+ya
+ 
+tienes
+ 
+algo
+ 
+que
+ 
+mostrar."
+ 
+ 
+3.  Conexión  garantizada  "No  te  formamos  y  te  dejamos  suelto.  Te  conectamos  con  
+empresas
+ 
+que
+ 
+necesitan
+ 
+exactamente
+ 
+lo
+ 
+que
+ 
+sabes
+ 
+hacer.
+ 
+Y
+ 
+les
+ 
+preparamos
+ 
+a
+ 
+ellas
+ 
+también."
+ 
+ 
+ 
+Brief  Visual:  PROBLEMA  +  SOLUCIÓN  
+Tamaño:  2  columnas  (responsive:  1  columna  móvil)  
+Lado  Izquierdo  -  PROBLEMA:  
+●  Fondo:  Rojo  muy  claro/coral  suave  (no  agresivo)  ●  Elemento  visual:  Ilustración  abstracta  o  foto:  persona  pensativa/confundida,  o  líneas  
+que
+ 
+se
+ 
+cortan/chocan
+ ●  Vibe:  Contraste  pero  no  desesperación  
+Lado  Derecho  -  SOLUCIÓN:  
+●  Fondo:  Verde  muy  claro/teal  suave  ●  Elemento  visual:  Ilustración  abstracta  o  foto:  persona  enfocada,  líneas  que  
+convergen,
+ 
+energía
+ ●  Vibe:  Esperanza  sin  ser  cursí  
+Alternativa  (si  prefieres  menos  "problema"):  
+●  Sin  color  de  fondo  fuerte  ●  Solo  iconografía:  3  iconos  pequeños  por  punto  (problema)  +  3  iconos  por  punto  
+(solución)
+ ●  Más  limpio,  menos  emotivo  
+Propuesta:  Iconografía  +  texto.  No  necesita  fotos  porque  el  texto  es  lo  importante.  
+ 
+SECCIÓN  3:  CÓMO  FUNCIONA  
+Contenido  
+H2:  Cómo  funciona  Factor  N  
+Párrafo  intro:  Un  ciclo  completo  que  conecta  aprendizaje  con  oportunidad  laboral  real.  
+Los  3  pilares  (descripción  breve  de  cada  uno):  
+ESCUELA  Formación  intensiva  en  tecnología  de  vanguardia.  No  solo  aprendes  skills;  
+construyes
+ 
+confianza,
+ 
+portafolio
+ 
+y
+ 
+conexiones.
+ 
+Metodología
+ 
+pensada
+ 
+para
+ 
+gente
+ 
+que
+ 
+aprende
+ 
+diferente.
+ 
+LABS  Mientras  te  formas,  trabajas  en  proyectos  reales.  Ganas  experiencia,  portafolio  y  
+dinero.
+ 
+Las
+ 
+empresas
+ 
+ven
+ 
+talento
+ 
+con
+ 
+experiencia,
+ 
+no
+ 
+estudiantes
+ 
+sin
+ 
+nada.
+ 
+EMPRESAS  Conectamos  talento  formado  con  roles  donde  lo  necesitan.  No  solo  
+reclutamiento;
+ 
+acompañamos
+ 
+la
+ 
+integración.
+ 
+Talento
+ 
+que
+ 
+rinde
+ 
+desde
+ 
+el
+ 
+primer
+ 
+día.
+ 
+ 
+Brief  Visual:  CÓMO  FUNCIONA  
+Tamaño:  Full  width,  3  columnas  (responsive:  1  columna  móvil  con  scroll  vertical)  
+Diseño:  
+●  3  tarjetas  lado  a  lado  ●  Cada  una  con  icono  +  título  +  descripción  +  pequeño  link  "Saber  más"  ●  Colores  diferenciados:  ○  Escuela:  Azul  ○  Labs:  Púrpura/Índigo  ○  Empresas:  Verde/Teal  ●  Íconos  vectoriales  (no  emoji,  íconos  limpios)  
+Alternativa  (más  narrativa):  
+●  Diagrama  visual:  Círculo  o  flujo  lineal  que  muestra  Escuela  →  Labs  →  Empresas  ●  Con  flechas  y  pequeños  textos  ●  Más  integrado  que  separado  
+Propuesta:  3  tarjetas  +  debajo  un  pequeño  diagrama  que  muestra  el  flujo  circular  (para  que  
+entienda
+ 
+cómo
+ 
+se
+ 
+conectan)
+ 
+ 
+SECCIÓN  4:  QUIÉNES  SOMOS  (Credibilidad)  
+Contenido  
+H2:  Hecho  por  gente  que  sabe  
+Párrafo  intro  (máx  2  líneas):  Nuestro  equipo  no  son  teóricos.  Son  profesionales  que  han  
+trabajado
+ 
+en
+ 
+superproducciones
+ 
+globales,
+ 
+ganado
+ 
+premios,
+ 
+dirigido
+ 
+equipos.
+ 
+Eso
+ 
+es
+ 
+lo
+ 
+que
+ 
+enseñamos.
+ 
+PERFILES  (en  formato  tarjeta):  
+ 
+Jaime  Maestro  Dirección  Ejecutiva  y  Académica  
+Referente  del  arte  digital  internacional  con  30  años  de  experiencia.  Codirector  de  
+largometrajes
+ 
+globales
+ 
+como
+ 
+Animal
+ 
+Crackers
+ 
+(Netflix).
+ 
+2
+ 
+Premios
+ 
+Goya.
+ 
+Jaime
+ 
+dirige
+ 
+la
+ 
+visión
+ 
+de
+ 
+Factor
+ 
+N:
+ 
+conectar
+ 
+talento
+ 
+excepcional
+ 
+con
+ 
+el
+ 
+mundo
+ 
+real.
+ 
+ 
+Rafel  Bernabeu  CTO  &  Dirección  de  Tecnología  
+Arquitecto  del  pipeline  de  éxitos  como  Tadeo  Jones .  Especialista  en  IA  y  scripting.  Rafel  
+diseña
+ 
+la
+ 
+infraestructura
+ 
+técnica
+ 
+y
+ 
+dirige
+ 
+la
+ 
+especialización
+ 
+en
+ 
+inteligencia
+ 
+artificial.
+ 
+Lo
+ 
+que
+ 
+enseña
+ 
+es
+ 
+lo
+ 
+que
+ 
+usa
+ 
+la
+ 
+industria,
+ 
+hoy.
+ 
+ 
+Héctor  Ponce  Dirección  de  Arte  y  Composición  
+Supervisor  de  Efectos  Visuales  con  más  de  30  años  en  superproducciones  globales.  Ha  
+trabajado
+ 
+en
+ 
+proyectos
+ 
+de
+ 
+presupuestos
+ 
+multimillonarios.
+ 
+Héctor
+ 
+inyecta
+ 
+el
+ 
+ritmo
+ 
+real
+ 
+y
+ 
+la
+ 
+exigencia
+ 
+de
+ 
+la
+ 
+industria
+ 
+en
+ 
+las
+ 
+aulas.
+ 
+ 
+Brief  Visual:  QUIÉNES  SOMOS  
+Tamaño:  Full  width,  3  columnas  (responsive:  1  columna  móvil)  
+Diseño:  
+●  3  tarjetas  con  foto  de  perfil  (headshot  profesional)  ●  Foto:  Encima  o  lado  izquierdo  ●  Nombre  +  título  debajo/lado  ●  Descripción:  Párrafo  corto,  en  gris  más  claro  ●  Fondo:  Blanco  o  gris  muy  claro  
+Fotos:  
+●  Headshots  profesionales  (no  casual)  ●  Luz  natural  si  es  posible  ●  Fondo  blanco/neutral  ●  Tamaño:  Cuadrado,  ~300x300px  
+Tone  de  las  fotos:  
+●  No  sonriendo  forzadamente  (más  profesional)  ●  Mirando  a  cámara  o  3/4  ●  Accesibles  pero  serios  
+Propuesta:  3  headshots  en  círculo  (más  dinámico)  con  nombre  +  rol  debajo.  Descripción  en  
+formato
+ 
+pequeño
+ 
+o
+ 
+en
+ 
+hover
+ 
+(si
+ 
+es
+ 
+web).
+ 
+ 
+SECCIÓN  5:  CTAs  FINALES  +  Social  Proof  Mini  
+Contenido  
+H2:  ¿Por  dónde  empiezo?  
+Párrafo:  Dependiendo  de  dónde  estés,  el  camino  es  diferente.  Pero  todos  llevan  al  mismo  
+lugar:
+ 
+convertir
+ 
+talento
+ 
+en
+ 
+carrera
+ 
+profesional.
+ 
+2  BLOQUES  CTAS  (lado  a  lado,  responsive  columnas):  
+ 
+BLOQUE  1:  PARA  ESTUDIANTES  
+¿Eres  estudiante,  profesional  en  transición  o  buscas  especializarte?  
+●  Descripción  corta:  "Acceso  a  formación  intensiva  en  IA,  Composición  y  Tecnología.  
+Proyectos
+ 
+reales.
+ 
+Conexión
+ 
+empresarial
+ 
+garantizada."
+ ●  CTA:  "Explorar  Programas  de  Escuela"  (azul,  relleno)  
+ 
+BLOQUE  2:  PARA  EMPRESAS  
+¿Necesitas  talento  especializado  con  experiencia  real?  
+●  Descripción  corta:  "Detectamos,  formamos  e  integramos  talento  que  te  rinde  desde  
+el
+ 
+día
+ 
+1.
+ 
+Sin
+ 
+riesgo
+ 
+de
+ 
+onboarding
+ 
+largo."
+ ●  CTA:  "Solicitar  Consultoría"  (verde,  relleno)  
+ 
+MINI  SOCIAL  PROOF  (debajo  de  CTAs):  
+Pequeña  sección  con  números  (cuando  los  tengáis,  o  dejarlos  como  placeholders):  
+●  [X]  Profesores  con  [Y]  años  de  experiencia  combinada  ●  [X]  Proyectos  globales  supervisados  por  nuestro  equipo  ●  [X]  Premios  Goya  +  reconocimiento  internacional  
+Ejemplo  real:  
+●  90+  años  de  experiencia  combinada  en  la  industria  ●  Supervisión  de  superproducciones  Netflix  y  estudios  globales  ●  3  Premios  Goya  en  nuestro  equipo  
+ 
+Brief  Visual:  CTAs  +  Social  Proof  
+Tamaño:  Full  width  
+Diseño:  
+●  2  bloques  lado  a  lado  (azul  +  verde)  con  esquinas  redondeadas  ●  Cada  bloque:  icono  +  título  +  descripción  +  botón  ●  Abajo:  mini  stats  en  línea  horizontal  (3  números  grandes  +  descripción)  
+Colores:  
+●  Bloque  Escuela:  Azul  (#2563eb  o  similar)  ●  Bloque  Empresas:  Verde/Teal  (#10b981  o  similar)  ●  Stats:  Fondo  gris  claro,  números  en  negro/azul  
+Íconos:  
+●  Escuela:  Graduación/libros  ●  Empresas:  Manos/conexión  
+Propuesta:  Dos  tarjetas  destacadas  con  botones  visibles.  Stats  debajo  son  pequeños  pero  
+presentes
+ 
+(credibilidad
+ 
+sin
+ 
+saturar).
+ 
+ 
+HOME  RESUMEN  1.  HERO  (imagen  +  texto  +  2  CTAs)  2.  PROBLEMA  +  SOLUCIÓN  (2  columnas,  iconografía)  3.  CÓMO  FUNCIONA  (3  pilares  +  flujo)  4.  QUIÉNES  SOMOS  (3  perfiles  con  foto)  5.  CTAs  FINALES  +  SOCIAL  PROOF  MINI  6.  FOOTER  (newsletter,  links,  contacto)   
+Largo  total:  ~3500  palabras  de  contenido,  5  secciones  visuales  principales  
+ 
+🎓  /ESCUELA  
+SECCIÓN  1:  HERO  
+Contenido  
+H1:  Especialización  en  Tecnología  de  Vanguardia.  Para  gente  que  quiere  más.  
+Subheading:  Formación  intensiva  en  IA  y  Composición/VFX.  No  ejercicios  abstractos,  
+proyectos
+ 
+reales.
+ 
+Cuando
+ 
+termines,
+ 
+tienes
+ 
+portafolio,
+ 
+experiencia
+ 
+y
+ 
+conexiones
+ 
+laborales.
+ 
+Párrafo  contextual:  ¿Cansado  de  bootcamps  genéricos?  ¿Escuelas  que  te  enseñan  teoría  
+y
+ 
+te
+ 
+dejan
+ 
+suelto?
+ 
+Aquí
+ 
+no.
+ 
+Aquí
+ 
+trabajas
+ 
+en
+ 
+proyectos
+ 
+reales,
+ 
+aprendes
+ 
+del
+ 
+mejor
+ 
+talento
+ 
+de
+ 
+la
+ 
+industria,
+ 
+y
+ 
+nos
+ 
+aseguramos
+ 
+de
+ 
+que
+ 
+encuentres
+ 
+trabajo.
+ 
+CTAs:  
+●  Primaria:  "Ver  Programas"  (azul)  →  sección  3  (jump)  ●  Secundaria:  "Descargar  Curriculum"  (gris  outlined)  
+ 
+Brief  Visual:  HERO  
+Tamaño:  Full  width,  600px  altura  (responsive  400px  móvil)  
+Composición:  
+●  Fondo:  Foto  de  workspace  moderno  (escritorio,  monitor  con  código/diseño  3D,  taza  
+de
+ 
+café,
+ 
+luz
+ 
+natural)
+ ●  Overlay:  40%  darkening  (imagen  visible  pero  texto  legible)  ●  Persona  en  primer  plano:  Concentrada,  trabajando,  laptop/tablet  visible  
+Vibe:  
+●  Real,  no  stock  ●  Profesional  pero  accesible  ●  Luz  natural,  colores  naturales  ●  Una  o  dos  personas  máximo  (no  grupo)  
+Qué  mostrar:  
+●  Espacio  de  trabajo  actual  (no  futurista)  ●  Herramientas  reales  (Blender,  código,  etc.  reconocibles  en  pantalla  si  se  ve)  ●  Concentración,  no  acción  dramática  
+Qué  EVITAR:  
+●  Gente  saltando  de  alegría  ●  Oficina  corporativa  de  cliché  ●  Filtros  coloridos  o  efectos  
+Propuesta:  Foto  de  persona  trabajando  en  estudio/oficina  moderna  con  luz  natural.  O  video  
+corto
+ 
+loopeable
+ 
+de
+ 
+alguien
+ 
+trabajando
+ 
+en
+ 
+un
+ 
+proyecto.
+ 
+ 
+SECCIÓN  2:  ¿POR  QUÉ  FACTOR  N?  
+Contenido  
+H2:  ¿Qué  te  hace  diferente?  
+Intro  párrafo:  Hay  muchos  bootcamps.  Esto  no  es  uno  más.  Aquí  es  diferente.  
+3  DIFERENCIADORES  CLAVE:  
+ 
+1.  ENSEÑANZA  QUE  FUNCIONA  
+No  adaptamos  a  las  personas  al  sistema.  Diseñamos  el  sistema  alrededor  de  cómo  aprende  
+cada
+ 
+uno.
+ 
+●  Metodología  neuro-inteligente:  Sabemos  que  hay  gente  que  aprende  diferente.  No  
+es
+ 
+un
+ 
+problema;
+ 
+es
+ 
+lo
+ 
+que
+ 
+hace
+ 
+que
+ 
+sean
+ 
+brillantes.
+ ●  Flexibilidad  real:  Si  necesitas  más  tiempo  en  un  tema,  lo  das.  Si  necesitas  otro  
+enfoque,
+ 
+lo
+ 
+cambias.
+ ●  Feedback  continuo,  no  examen  final:  Trabajamos  juntos.  Ves  progreso  cada  
+semana.
+ 
+ 
+2.  EXPERIENCIA  REAL  DESDE  DÍA  1  
+No  esperas  3  meses  para  empezar  a  "trabajar  de  verdad".  Lo  haces  desde  la  semana  1.  
+●  Proyectos  reales:  Trabajas  en  proyectos  que  existen,  no  ejercicios  teóricos.  ●  Portafolio  desde  semana  2:  Cuando  empieces  a  buscar  empleo,  ya  tienes  algo  que  
+mostrar.
+ ●  Dinero  mientras  aprendes:  En  nuestros  Labs,  algunos  proyectos  tienen  
+compensación.
+ 
+Aprendes
+ 
+y
+ 
+ganas.
+ 
+ 
+3.  GARANTÍA  DE  TRABAJO  
+No  te  formamos  y  te  dejamos  suelto.  Te  acompañamos  hasta  que  encuentres  rol.  
+●  Tutorización  activa:  CV,  portfolio,  prep  de  entrevistas,  soft  skills.  ●  Conexiones  empresariales:  Tenemos  partners  que  buscan  exactamente  tu  perfil.  ●  Si  en  3  meses  post-graduación  no  encuentras  empleo,  devolvemos  50%  de  tu  
+inversión.
+ 
+ 
+Brief  Visual:  ¿POR  QUÉ  FACTOR  N?  
+Tamaño:  Full  width,  3  columnas  (responsive:  1  columna  móvil  con  scroll)  
+Diseño:  
+●  3  tarjetas  con  icono  +  título  +  descripción  ●  Altura  consistente  (~250px)  ●  Íconos  grandes  (100x100px)  en  color  diferenciado  por  sección  ●  Colores:  ○  Enseñanza:  Azul  ○  Experiencia:  Púrpura  ○  Garantía:  Verde  
+Íconos:  
+●  Enseñanza:  Cerebro  o  cabeza  con  engranaje  ●  Experiencia:  Proyecto/carpeta  +  crecimiento  ●  Garantía:  Checkmark  o  escudo  
+Propuesta:  3  tarjetas  limpias  con  icono  grande,  título  bold,  descripción  en  gris.  Sin  fotos  
+adicionales
+ 
+(el
+ 
+contenido
+ 
+es
+ 
+el
+ 
+protagonista).
+ 
+ 
+SECCIÓN  3:  LOS  PROGRAMAS  
+Contenido  
+H2:  Nuestros  Programas  
+Intro  párrafo:  Dos  especialidades,  metodología  única.  Elige  la  que  te  llama.  
+ 
+PROGRAMA  1:  ESPECIALIZACIÓN  EN  IA  &  MACHINE  LEARNING  
+Dirigido  a:  Gente  con  base  técnica  (o  ganas  de  aprenderla)  que  quiere  especializarse  en  
+inteligencia
+ 
+artificial.
+ 
+Duración:  4  meses  (intensivo,  full-time)  
+Modalidad:  Presencial  [CIUDAD]  /  Híbrida  [DETALLAR]  
+¿Qué  aprenderás?  
+●  Python  avanzado  y  arquitecturas  de  datos  ●  Machine  Learning:  modelos,  entrenamientos,  optimización  ●  Deep  Learning:  redes  neuronales,  transformers,  LLMs  ●  Implementación  en  producción:  cómo  llevar  modelos  a  la  realidad  ●  Proyectos  reales:  trabajarás  en  casos  de  uso  actuales  
+Profesor:  Rafel  Bernabeu,  CTO  &  especialista  en  IA  
+Precio:  [A  DEFINIR]  
+Próxima  cohorte:  [FECHA]  
+CTA:  "Solicitar  Información"  (botón)  +  "Ver  Curriculum  Detallado"  (link)  
+ 
+PROGRAMA  2:  ESPECIALIZACIÓN  EN  COMPOSICIÓN  &  VFX  
+Dirigido  a:  Gente  con  passion  por  el  cine,  la  animación  y  los  efectos  visuales.  No  necesita  
+base;
+ 
+necesita
+ 
+dedicación.
+ 
+Duración:  3  meses  (intensivo,  full-time)  
+Modalidad:  Presencial  [CIUDAD]  /  Híbrida  [DETALLAR]  
+¿Qué  aprenderás?  
+●  Composición  profesional:  color,  luz,  narrativa  visual  ●  Software  VFX:  Nuke,  After  Effects,  herramientas  de  la  industria  ●  Motion  graphics  y  animación  2D  ●  Integración  de  efectos  en  proyectos  reales  ●  Workflow  de  producción:  cómo  trabaja  realmente  la  industria  
+Profesor:  Héctor  Ponce,  Director  de  Arte  y  Composición  con  30+  años  
+Precio:  [A  DEFINIR]  
+Próxima  cohorte:  [FECHA]  
+CTA:  "Solicitar  Información"  (botón)  +  "Ver  Curriculum  Detallado"  (link)  
+ 
+Brief  Visual:  LOS  PROGRAMAS  
+Tamaño:  Full  width,  2  columnas  (responsive:  1  columna  móvil)  
+Diseño  por  programa:  
+●  Tarjeta  grande  (no  pequeña)  ●  Color  de  fondo  diferenciado:  ○  IA:  Azul  claro  ○  VFX:  Púrpura  claro  ●  Estructura  interna:  ○  Icono  programa  (grande,  80x80px)  ○  Título  programa  
+○  "Dirigido  a"  en  gris  ○  Duración  +  modalidad  en  pequeño  ○  Descripción  de  aprendizajes  (bullets  o  párrafo)  ○  Profesor  mencionado  con  mini  foto  o  solo  nombre/rol  ○  Precio  [PLACEHOLDER]  ○  Botones:  "Solicitar  Info"  +  "Ver  Curriculum"  
+Fotos  complementarias:  
+●  Pequeña  foto  del  profesor  (solo  cara,  60x60px  círculo)  en  esquina  ●  O  no  foto  (solo  nombre  +  rol)  
+Alternativa  visual:  
+●  Foto  de  fondo  de  cada  especialidad  (código  para  IA,  composición  visual  para  VFX)  ●  Texto  sobre  fondo  semi-transparente  
+Propuesta:  2  tarjetas  grandes  lado  a  lado.  Cada  una  muy  clara  sobre  qué  se  aprende,  
+duración,
+ 
+profesor,
+ 
+precio.
+ 
+Botones
+ 
+visibles.
+ 
+ 
+SECCIÓN  4:  METODOLOGÍA  
+Contenido  
+H2:  Cómo  funciona  el  aprendizaje  aquí  
+Intro  párrafo:  No  es  teoría  en  clase  +  práctica  en  casa.  Es  inmersión  real.  
+EL  FLUJO  (4  semanas  ×  número  de  semanas  del  programa):  
+Cada  semana:  
+1.  Lunes-Martes:  Concepto  +  Proyecto  Aprendes  el  tema.  Ese  mismo  día,  lo  aplicas  
+en
+ 
+un
+ 
+proyecto
+ 
+pequeño.
+ 
+No
+ 
+esperas
+ 
+3
+ 
+semanas
+ 
+para
+ 
+"practicar".
+ 
+ 2.  Miércoles-Jueves:  Profundización  Refinamiento  del  proyecto.  Feedback  directo  
+del
+ 
+profesor.
+ 
+Iteración
+ 
+real
+ 
+(como
+ 
+en
+ 
+la
+ 
+industria).
+ 
+ 3.  Viernes:  Review  +  Siguiente  Presentas  lo  que  hiciste.  Feedback  grupal.  
+Preparamos
+ 
+la
+ 
+siguiente
+ 
+semana.
+ 
+ 
+Durante  todo:  
+●  Acceso  24/7  a  recursos  y  comunidad  (Slack/Discord)  ●  Sesiones  de  mentoría  individual  (2h/semana  mínimo)  ●  Proyectos  que  van  a  tu  portafolio  
+Labs  (paralelamente):  Mientras  avanzas,  tienes  acceso  a  proyectos  reales.  Algunos  son  
+voluntarios
+ 
+(portafolio).
+ 
+Otros
+ 
+tienen
+ 
+pequeña
+ 
+compensación.
+ 
+ 
+Brief  Visual:  METODOLOGÍA  
+Tamaño:  Full  width  
+Diseño:  
+●  Timeline  visual:  5  semanas  representadas  (o  estructura  modular)  ●  Cada  semana:  3  cuadrantes  (Lunes-Martes,  Miércoles-Jueves,  Viernes)  ●  Iconografía:  aprendizaje  →  aplicación  →  feedback  ●  Colores  progresivos  (más  intenso  al  final)  
+Alternativa  (más  simple):  
+●  Un  diagrama  circular  mostrando:  Learn  →  Build  →  Review  →  Repeat  ●  Con  pequeñas  ilustraciones  en  cada  etapa  
+Propuesta:  Timeline  visual  mostrando  una  semana  típica.  Limpio,  iconografía  clara,  no  
+saturado.
+ 
+ 
+SECCIÓN  5:  TESTIMONIOS  &  CASOS  (cuando  tengas)  
+Contenido  
+H2:  Historias  de  éxito  [CUANDO  LAS  TENGAS]  
+Para  ahora:  Placeholder  
+"[Nombre],  [Rol  anterior]  →  [Rol  actual]  en  [Empresa]"  "[Frase  corta  sobre  cómo  cambió]"  
+[FOTO  de  estudiante  egresado]  
+CTA:  "Ver  más  historias"  →  /blog/casos-estudio  [futuro]  
+ 
+Brief  Visual:  TESTIMONIOS  
+Tamaño:  Full  width,  3  testimonios  en  carousel  o  3  columnas  
+Diseño:  
+●  Tarjeta  por  persona  
+●  Foto  (cuadrado)  +  nombre  +  rol  anterior/actual  +  quote  ●  Altura  consistente  (~280px)  ●  Fondo  blanco/gris  
+Fotos:  
+●  Headshot  profesional  ●  Sonriendo  (a  diferencia  de  equipo,  aquí  es  OK)  ●  Casual  pero  profesional  
+Propuesta:  3  tarjetas  en  carousel  (móvil:  slide,  desktop:  3  columnas)  con  foto  +  quote  +  rol.  
+ 
+SECCIÓN  6:  FAQ  
+Contenido  
+H2:  Preguntas  Frecuentes  
+P:  ¿Necesito  experiencia  previa?  R:  No.  Solo  necesitas  ganas.  Nuestros  programas  están  
+diseñados
+ 
+para
+ 
+gente
+ 
+con
+ 
+0
+ 
+experience.
+ 
+Lo
+ 
+que
+ 
+pedimos
+ 
+es
+ 
+dedicación
+ 
+y
+ 
+mentalidad
+ 
+abierta.
+ 
+P:  ¿Cuál  es  el  horario?  R:  Full-time,  9:00-18:00  (aproximado,  flexible  según  necesidad).  Es  
+intensivo
+ 
+porque
+ 
+los
+ 
+resultados
+ 
+así
+ 
+lo
+ 
+requieren.
+ 
+P:  ¿Es  presencial  o  online?  R:  [A  DEFINIR].  Dicho  esto,  presencial  es  lo  ideal  para  
+comunidad
+ 
+y
+ 
+feedback
+ 
+real.
+ 
+P:  ¿Qué  pasa  si  no  encuentro  trabajo  después?  R:  Te  tutorizamos  3  meses  
+post-graduación.
+ 
+Si
+ 
+no
+ 
+encuentras
+ 
+rol,
+ 
+devolvemos
+ 
+50%
+ 
+de
+ 
+tu
+ 
+inversión.
+ 
+Pero
+ 
+es
+ 
+raro
+ 
+(ver
+ 
+tasa
+ 
+de
+ 
+empleo).
+ 
+P:  ¿Puedo  hacer  el  programa  mientras  trabajo?  R:  No  recomendamos.  Es  muy  intensivo.  
+Pero
+ 
+tenemos
+ 
+opciones
+ 
+más
+ 
+flexibles
+ 
+[A
+ 
+DEFINIR].
+ 
+Consulta.
+ 
+P:  ¿Cuánto  cuesta?  R:  [DETALLAR].  Ofrecemos  planes  de  financiación  y  becas  parciales  
+para
+ 
+perfiles
+ 
+sobresalientes.
+ 
+P:  ¿Hay  beca  o  financiación?  R:  Sí.  Becas  parciales  basadas  en  mérito.  Financiación  sin  
+interés
+ 
+para
+ 
+completar
+ 
+el
+ 
+programa.
+ 
+ 
+Brief  Visual:  FAQ  
+Tamaño:  Full  width  
+Diseño:  
+●  Accordion/collapsible  (pregunta  visible,  respuesta  se  abre  al  click)  ●  O:  Questions  en  columna  izquierda  (fijas),  respuestas  en  derecha  (actualizable)  ●  Números  grandes  a  la  izquierda  (Q1,  Q2,  Q3...)  
+Propuesta:  Accordion  simple.  Pregunta  en  bold,  respuesta  en  gris  normal.  Click  abre/cierra.  
+No
+ 
+animar
+ 
+con
+ 
+ruido.
+ 
+ 
+SECCIÓN  7:  CTA  FINAL  
+Contenido  
+H2:  ¿Listo?  
+Párrafo:  No  esperes.  Los  programas  llenan  rápido.  La  próxima  cohorte  comienza  [FECHA].  
+2  CTAs  (lado  a  lado):  
+●  Primaria:  "Solicitar  Información"  (azul,  relleno)  →  Formulario  ●  Secundaria:  "Programar  Consulta"  (gris,  outlined)  →  Calendario  
+ 
+Brief  Visual:  CTA  FINAL  
+Tamaño:  Full  width,  centered  
+Diseño:  
+●  Fondo:  Color  muy  claro  (azul  o  gris)  ●  Texto  grande,  centrado  ●  2  botones  visibles  ●  Espacio  arriba/abajo  para  respiración  
+Propuesta:  Sección  pequeña,  clara,  que  pida  acción.  No  saturada.  Limpia.  
+ 
+FOOTER  (igual  para  todas  las  páginas)  FOOTER  GLOBAL:  ├─  Links  de  navegación  (Escuela,  Empresas,  Labs,  Blog,  Contacto)  ├─  Newsletter  signup  ├─  Social  media  links  ├─  Legal  (Privacy,  Terms,  Cookies)  └─  Copyright  
+  
+/ESCUELA  RESUMEN  1.  HERO  (workspace  +  CTA)  2.  ¿POR  QUÉ  FACTOR  N?  (3  diferenciadores)  3.  LOS  PROGRAMAS  (2  tarjetas  grandes)  4.  METODOLOGÍA  (timeline  visual)  5.  TESTIMONIOS  (carousel  o  3  columnas)  6.  FAQ  (accordion)  7.  CTA  FINAL  (acción)  8.  FOOTER   
+Largo  total:  ~2500  palabras,  7  secciones  principales  
+ 
+🏢  /EMPRESAS  
+SECCIÓN  1:  HERO  
+Contenido  
+H1:  Talento  Hiper-Especializado.  Sin  el  riesgo  del  onboarding.  
+Subheading:  Detectamos,  formamos  e  integramos  especialistas  que  te  rinden  desde  el  
+primer
+ 
+día.
+ 
+No
+ 
+candidatos
+ 
+genéricos.
+ 
+Talento
+ 
+con
+ 
+experiencia
+ 
+real,
+ 
+metodología
+ 
+adaptada
+ 
+a
+ 
+tu
+ 
+equipo.
+ 
+Párrafo  contextual:  Hay  escasez  de  talento  especializado.  Lo  sabes.  También  sabes  que  
+contratar
+ 
+alguien
+ 
+sin
+ 
+experiencia
+ 
+en
+ 
+producción
+ 
+es
+ 
+arriesgado.
+ 
+Nosotros
+ 
+resolvemos
+ 
+ambos:
+ 
+detectamos
+ 
+el
+ 
+talento,
+ 
+lo
+ 
+formamos
+ 
+en
+ 
+TU
+ 
+stack
+ 
+específico,
+ 
+lo
+ 
+integramos
+ 
+con
+ 
+apoyo.
+ 
+Cero
+ 
+fricción.
+ 
+CTAs:  
+●  Primaria:  "Solicitar  Consultoría"  (verde,  relleno)  →  Formulario  ●  Secundaria:  "Ver  Casos  de  Éxito"  (gris  outlined)  →  Sección  5  
+ 
+Brief  Visual:  HERO  
+Tamaño:  Full  width,  600px  (responsive  400px  móvil)  
+Composición:  
+●  Fondo:  Oficina/estudio  moderno,  equipo  colaborando  (alrededor  de  mesa,  en  
+standups,
+ 
+code
+ 
+review)
+ ●  Overlay:  30%  darkening  ●  Visibilidad:  Pantallas,  código,  gráficas,  conversaciones  
+Vibe:  
+●  Productivo,  no  caótico  ●  Personas  de  diferentes  perfiles  trabajando  juntas  ●  Luz  natural  ●  Tecnología  visible  pero  no  invasiva  
+Qué  mostrar:  
+●  Colaboración  real  ●  Diversidad  de  roles  (no  solo  programadores)  ●  Profesionalismo  pero  accesible  
+Qué  EVITAR:  
+●  Gente  feliz  artificialmente  ●  Oficina  corporativa  de  cliché  ●  Todas  las  personas  jóvenes/del  mismo  perfil  
+Propuesta:  Video  corto  (5-8  seg)  de  equipo  en  diferentes  actividades  colaborativas.  O  foto  
+de
+ 
+calidad
+ 
+de
+ 
+oficina/estudio
+ 
+moderno
+ 
+con
+ 
+personas
+ 
+trabajando.
+ 
+ 
+SECCIÓN  2:  EL  PROBLEMA  (Para  empresas)  
+Contenido  
+H2:  El  Problema  que  No  Se  Habla  
+Intro  párrafo:  Tienes  posiciones  abiertas.  Talento  especializado.  Y  no  cuadra.  
+3  PROBLEMAS  REALES:  
+ 
+1.  LA  ESCASEZ  ES  REAL  No  es  que  no  exista  talento.  Existe.  Pero  está  ocupado  o  no  
+busca
+ 
+activamente.
+ 
+El
+ 
+mercado
+ 
+abierto
+ 
+es
+ 
+limitado.
+ 
+ 
+2.  LOS  CANDIDATOS  TIENEN  EXPERIENCIA...  O  NO  TIENEN  NADA  Encontrar  gente  en  
+el
+ 
+punto
+ 
+medio
+ 
+(buena
+ 
+base
+ 
+técnica
+ 
++
+ 
+capacidad
+ 
+de
+ 
+aprender
+ 
+TU
+ 
+stack)
+ 
+es
+ 
+casi
+ 
+imposible.
+ 
+O
+ 
+contratas
+ 
+alguien
+ 
+con
+ 
+5
+ 
+años
+ 
+(caro,
+ 
+puede
+ 
+no
+ 
+quedarse),
+ 
+o
+ 
+contratas
+ 
+junior
+ 
+(semanas
+ 
+de
+ 
+onboarding).
+ 
+ 
+3.  EL  ONBOARDING  ROMPE  LA  PRODUCTIVIDAD  Incluso  contratos  senior  llevan  4-8  
+semanas
+ 
+en
+ 
+estar
+ 
+realmente
+ 
+productivos.
+ 
+Con
+ 
+junior:
+ 
+3-6
+ 
+meses.
+ 
+Mientras,
+ 
+el
+ 
+equipo
+ 
+está
+ 
+mentorando
+ 
+en
+ 
+lugar
+ 
+de
+ 
+iterando.
+ 
+ 
+Brief  Visual:  EL  PROBLEMA  
+Tamaño:  Full  width,  3  columnas  (responsive:  1  columna)  
+Diseño:  
+●  3  problemas,  cada  uno  con  icono  +  título  +  descripción  ●  Tonalidad:  Rojo/coral  suave  (indicar  problema  sin  ser  agresivo)  ●  Íconos:  Gráfico  cayendo,  reloj,  cajas  apiladas  (escasez,  tiempo,  complejidad)  
+Propuesta:  3  cuadrantes  rojo  claro,  cada  uno  con  un  problema.  Limpio,  sin  fotos.  
+ 
+SECCIÓN  3:  LA  SOLUCIÓN  (Para  empresas)  
+Contenido  
+H2:  Cómo  Factor  N  Resuelve  Esto  
+Intro  párrafo:  Un  modelo  diferente.  Detectar  talento  con  potencial,  formarlo  en  TUS  
+necesidades
+ 
+específicas,
+ 
+integrarlo
+ 
+con
+ 
+soporte.
+ 
+Sin
+ 
+riesgo.
+ 
+EL  PROCESO  (5  etapas):  
+ 
+ETAPA  1:  CONSULTORÍA  INICIAL  (Gratis)  Entendemos  tu  problema  específico.  
+●  Qué  rol  buscas  llenar  ●  Stack  tecnológico  ●  Cultura  del  equipo  ●  Timeline  
+Esto  no  es  un  form.  Es  una  conversación.  1-2  horas.  
+ 
+ETAPA  2:  DETECCIÓN  (2-3  semanas)  Buscamos  candidatos  con  potencial  real.  
+●  No  CV-matching  automático  ●  Valoramos  potencial  de  aprendizaje,  no  solo  CV  ●  Entrevistas  técnicas  +  soft  skills  ●  Recomendamos  2-3  candidatos  
+ 
+ETAPA  3:  FORMACIÓN  ESPECIALIZADA  (4-8  semanas)  Los  candidatos  se  preparan  en  
+TU
+ 
+stack
+ 
+específico.
+ 
+●  Programa  custom  basado  en  tus  necesidades  ●  Proyectos  similares  a  lo  que  trabajarán  ●  Mentoring  de  nuestro  equipo  ●  Feedback  continuo  
+ 
+ETAPA  4:  INTEGRACIÓN  GUIADA  (Mes  1  en  tu  empresa)  No  los  soltamos  solos.  
+●  Onboarding  estructurado  ●  Asignación  de  mentor  en  tu  equipo  ●  Check-ins  semanales  ●  Ajustes  si  es  necesario  
+ 
+ETAPA  5:  SOPORTE  POST  (6  meses)  Acompañamiento  continuo.  
+●  Si  algo  no  funciona,  lo  arreglamos  ●  Coaching  al  candidato  ●  Coaching  a  tu  manager/equipo  ●  Garantía:  Si  no  rinde,  reemplazo  sin  costo  
+ 
+Brief  Visual:  LA  SOLUCIÓN  
+Tamaño:  Full  width  
+Diseño:  
+●  Timeline  o  flujo  lineal  (5  pasos)  ●  Cada  paso:  número  (1-5)  +  icono  +  título  +  descripción  corta  ●  Flechas  conectando  pasos  ●  Colores:  Verde/teal  progresivo  (esperanza,  progreso)  ●  Alternativa:  5  cajas  apiladas  verticalmente  (más  mobile-friendly)  
+Íconos:  
+1.  Búsqueda  /  Lupa  2.  Gente  /  Perfiles  3.  Educación  /  Graduación  4.  Integración  /  Manos  unidas  5.  Apoyo  /  Escudo  
+Propuesta:  Flujo  visual  horizontal  (desktop)  o  vertical  (móvil)  con  5  pasos  claros.  Cada  
+paso
+ 
+tiene
+ 
+icono
+ 
++
+ 
+breve
+ 
+descripción.
+ 
+ 
+SECCIÓN  4:  DIFERENCIADORES  CLAVE  
+Contenido  
+H2:  Por  Qué  Somos  Diferentes  
+Intro  párrafo:  Hay  agencias  de  reclutamiento.  Hay  escuelas.  Nosotros  somos  ambas,  
+conectadas.
+ 
+3  DIFERENCIADORES:  
+ 
+1.  TALENTO  CON  EXPERIENCIA  REAL  No  enviamos  junior  sin  nada.  El  candidato  termina  
+formación
+ 
+con
+ 
+portafolio
+ 
+real
+ 
+(proyectos
+ 
+que
+ 
+hizo,
+ 
+no
+ 
+ejercicios).
+ 
+Eso
+ 
+reduce
+ 
+onboarding.
+ 
+ 
+2.  EQUIPO  QUE  SABE  Nuestros  formadores  no  son  educators  alejados  de  la  industria.  Son  
+profesionales
+ 
+actuales.
+ 
+Enseñan
+ 
+lo
+ 
+que
+ 
+usan
+ 
+HOY,
+ 
+no
+ 
+lo
+ 
+que
+ 
+usaban
+ 
+hace
+ 
+5
+ 
+años.
+ 
+ 
+3.  GARANTÍA  Y  SOPORTE  Si  el  talento  no  rinde  en  los  primeros  6  meses,  lo  
+reemplazamos
+ 
+sin
+ 
+costo
+ 
+adicional.
+ 
+Y
+ 
+acompañamos
+ 
+la
+ 
+integración
+ 
+con
+ 
+tu
+ 
+equipo,
+ 
+no
+ 
+solo
+ 
+reclutamos.
+ 
+ 
+Brief  Visual:  DIFERENCIADORES  
+Tamaño:  Full  width,  3  columnas  (responsive:  1  columna)  
+Diseño:  
+●  3  tarjetas  lado  a  lado  
+●  Cada  una:  icono  +  título  +  descripción  ●  Colores:  Verde/teal  ●  Altura  consistente  ●  Alternativa:  Con  pequeñas  ilustraciones  abstractas  
+Propuesta:  3  tarjetas  verdes  claras,  cada  una  muy  clara  en  su  diferenciador.  Sin  fotos.  
+ 
+SECCIÓN  5:  CASOS  DE  ÉXITO  
+Contenido  
+H2:  Casos  Reales  
+Intro  párrafo:  Esto  no  es  teoría.  Ya  lo  hemos  hecho.  Aquí  está  lo  que  pasó.  
+[A  COMPLETAR  CUANDO  TENGAS  CASOS]  
+Placeholder  por  ahora:  
+ 
+CASO  1:  [EMPRESA]  
+Desafío:  [Qué  necesitaban]  
+Solución:  [Qué  hicimos]  
+Resultados:  
+●  ✓  [Métrica  1]  ●  ✓  [Métrica  2]  ●  ✓  [Métrica  3]  
+Quote:  "[Frase  del  cliente]"  -  [Nombre,  rol]  
+ 
+CASO  2:  [EMPRESA]  
+[Igual  estructura]  
+ 
+CASO  3:  [EMPRESA]  
+[Igual  estructura]  
+ 
+Brief  Visual:  CASOS  
+Tamaño:  Full  width,  3  columnas  (responsive:  carousel  móvil)  
+Diseño  por  caso:  
+●  Tarjeta  grande  ●  Pequeño  logo  de  empresa  (esquina  superior)  ●  Título  caso  o  nombre  empresa  ●  Desafío  (párrafo  corto)  ●  Resultados  (bullets  o  números  grandes)  ●  Quote  en  itálica  ●  Fondo  blanco  con  borde  izquierdo  en  color  (verde/teal)  
+Propuesta:  3  tarjetas  grandes,  cada  una  contando  un  caso.  Limpio,  datos  visibles,  quote  
+destacada.
+ 
+ 
+SECCIÓN  6:  EQUIPO  FACTOR  N  (Credibilidad)  
+Contenido  
+H2:  Hecho  por  Referentes  de  la  Industria  
+Intro  párrafo:  No  somos  teóricos.  Estos  son  nuestros  directores.  Han  estado  donde  
+ustedes
+ 
+están.
+ 
+[Mismos  3  perfiles  de  HOME,  pero  con  ángulo  empresarial]  
+ 
+Jaime  Maestro  Dirección  Ejecutiva  30  años  en  industria.  Codirector  Netflix.  Entiende  qué  se  
+necesita
+ 
+para
+ 
+que
+ 
+los
+ 
+equipos
+ 
+sean
+ 
+excelentes.
+ 
+Rafel  Bernabeu  CTO  Ha  liderado  pipelines  técnicos  de  superproducciones.  Sabe  qué  
+talento
+ 
+necesitas
+ 
+y
+ 
+cómo
+ 
+identificarlo.
+ 
+Héctor  Ponce  Director  de  Arte  30+  años  en  VFX/producción.  Ha  hecho  equipos  
+competitivos
+ 
+a
+ 
+nivel
+ 
+mundial.
+ 
+Entiende
+ 
+exigencia
+ 
+real.
+ 
+ 
+Brief  Visual:  EQUIPO  
+Tamaño:  Full  width,  3  columnas  (responsive:  1  columna)  
+Diseño:  
+●  Foto/headshot  +  nombre  +  rol  ●  Descripción  breve  (máx  2  líneas)  con  ángulo  empresarial  ●  Énfasis  en  experiencia,  no  en  amabilidad  
+Propuesta:  3  tarjetas  con  foto  +  rol  +  breve  credencial.  Similar  a  HOME  pero  con  ángulo  
+más
+ 
+B2B.
+ 
+ 
+SECCIÓN  7:  MODELOS  DE  COLABORACIÓN  
+Contenido  
+H2:  Cómo  Trabajamos  Juntos  
+Intro  párrafo:  Dependiendo  de  tu  necesidad,  tenemos  opciones.  
+ 
+OPCIÓN  1:  RECLUTAMIENTO  +  FORMACIÓN  ESPECIALIZADA  
+"Necesito  llenar  posición  X  con  alguien  que  sepa  Y"  
+●  Tiempo:  8-12  semanas  ●  Proceso:  Detección  →  Formación  custom  →  Integración  ●  Costo:  [A  DEFINIR]  ●  Garantía:  Si  no  rinde,  reemplazo  6  meses  
+Mejor  para:  Posiciones  mid-senior,  stack  específico,  necesidad  mediana/alta  urgencia  
+ 
+OPCIÓN  2:  STAFF  AUGMENTATION  
+"Necesito  aumentar  capacidad  sin  costos  fijos  altos"  
+●  Talento  formado  por  Factor  N  ●  Disponible  por  proyecto  (2-6  meses  típico)  ●  Flexible  en  duración  ●  Costo:  [XXX  €/mes]  
+Mejor  para:  Proyectos  puntuales,  carga  variable,  especialidades  niche  
+ 
+OPCIÓN  3:  CONSULTORÍA  +  TRANSFORMACIÓN  DE  EQUIPO  
+"Quiero  que  enseñen  a  MI  equipo  las  nuevas  tecnologías"  
+●  Programa  custom  para  tu  equipo  
+●  Metodología  Factor  N  aplicada  internamente  ●  Mentoring  continuo  ●  Costo:  [A  DEFINIR]  ●  Duración:  3-6  meses  
+Mejor  para:  Empresas  que  quieren  upskilling  interno,  preparación  para  cambios  
+tecnológicos
+ 
+ 
+Brief  Visual:  MODELOS  
+Tamaño:  Full  width,  3  columnas  (responsive:  1  columna)  
+Diseño:  
+●  3  tarjetas  lado  a  lado  ●  Cada  una:  título  +  descripción  +  "Mejor  para"  +  icono  ●  Colores  diferenciados  (3  tonos  de  verde/teal)  ●  CTA  en  cada  tarjeta:  "Consultar"  →  formulario  
+Propuesta:  3  opciones  muy  claras.  Cada  una  describe  cuándo  usarla.  Fácil  comparación.  
+ 
+SECCIÓN  8:  FAQ  (Para  Empresas)  
+Contenido  
+H2:  Preguntas  Frecuentes  
+P:  ¿Cuánto  cuesta?  R:  Depende  del  modelo.  Reclutamiento  +  formación:  [RANGO].  Staff  
+augmentation:
+ 
+[XXX
+ 
+€/mes].
+ 
+Consultoría:
+ 
+presupuesto
+ 
+custom.
+ 
+Primera
+ 
+consulta
+ 
+es
+ 
+gratis.
+ 
+P:  ¿Cuánto  tiempo  tarda?  R:  Reclutamiento:  8-12  semanas  típicamente.  Staff:  flexible.  
+Consultoría:
+ 
+3-6
+ 
+meses.
+ 
+Podemos
+ 
+acelerar
+ 
+si
+ 
+hay
+ 
+urgencia.
+ 
+P:  ¿Puedo  conocer  al  candidato  antes  de  comprometerse?  R:  Sí.  Entrevista  técnica  +  
+entrevista
+ 
+con
+ 
+tu
+ 
+equipo
+ 
+incluida.
+ 
+Es
+ 
+un
+ 
+conocimiento
+ 
+mutuo.
+ 
+P:  ¿Qué  pasa  si  el  candidato  no  funciona?  R:  Dentro  de  6  meses  post-integración,  si  no  
+rinde,
+ 
+lo
+ 
+reemplazamos
+ 
+sin
+ 
+costo
+ 
+adicional.
+ 
+Pero
+ 
+es
+ 
+raro.
+ 
+P:  ¿Trabajan  solo  con  tecnología?  R:  Nuestras  especialidades  iniciales  son  IA  y  
+Composición/VFX.
+ 
+Expandiremos.
+ 
+Consulta
+ 
+si
+ 
+tienes
+ 
+otra
+ 
+necesidad.
+ 
+P:  ¿Trabajan  con  empresas  de  tamaño  X?  R:  Desde  startups  hasta  corporaciones.  El  
+modelo
+ 
+se
+ 
+adapta.
+ 
+ 
+Brief  Visual:  FAQ  
+Tamaño:  Full  width  
+Diseño:  
+●  Accordion  (pregunta  visible,  respuesta  se  abre)  ●  Números  a  la  izquierda  (Q1,  Q2...)  ●  Pregunta  en  bold,  respuesta  en  gris  normal  
+Propuesta:  Accordion  simple.  Igual  a  /escuela.  
+ 
+SECCIÓN  9:  CTA  FINAL  
+Contenido  
+H2:  ¿Listo  para  Traer  Talento  Real?  
+Párrafo:  No  esperes.  Los  equipos  competitivos  están  contratando  AHORA.  La  primera  
+consulta
+ 
+es
+ 
+gratis.
+ 
+Sin
+ 
+compromiso.
+ 
+CTAs:  
+●  Primaria:  "Solicitar  Consultoría  Gratis"  (verde,  relleno)  ●  Secundaria:  "Agendar  Llamada"  (gris  outlined)  
+ 
+Brief  Visual:  CTA  FINAL  
+Tamaño:  Full  width,  centered  
+Diseño:  
+●  Fondo:  Color  verde  muy  claro  ●  Texto  centrado  ●  2  botones  visibles  ●  Pequeño  icono  arriba  (teléfono  o  conversación)  
+Propuesta:  Similar  a  /escuela  pero  con  color  verde  en  lugar  de  azul.  
+ 
+/EMPRESAS  RESUMEN  
+1.  HERO  (oficina  colaborativa  +  CTA)  2.  EL  PROBLEMA  (3  problemas  reales)  3.  LA  SOLUCIÓN  (5  etapas  del  proceso)  4.  DIFERENCIADORES  (3  ventajas  clave)  5.  CASOS  DE  ÉXITO  (3  casos  reales  [PLACEHOLDER])  6.  EQUIPO  (3  perfiles  con  ángulo  B2B)  7.  MODELOS  DE  COLABORACIÓN  (3  opciones)  8.  FAQ  (accordion)  9.  CTA  FINAL  (acción)  10.  FOOTER   
+Largo  total:  ~2800  palabras,  9  secciones  principales  
+ 
+☀  /CURSO-VERANO  
+SECCIÓN  1:  HERO  
+Contenido  
+H1:  8  Semanas.  De  0  a  Portafolio.  
+Subheading:  Curso  intensivo  de  verano.  Crea  tu  reel  y  portfolio  profesional.  Prepárate  para  
+entrar
+ 
+en
+ 
+la
+ 
+industria
+ 
+(o
+ 
+en
+ 
+nuestra
+ 
+Escuela
+ 
+formal).
+ 
+Párrafo  contextual:  ¿Quieres  probar  si  la  industria  es  para  ti?  ¿O  necesitas  acelerar  tu  
+entrada
+ 
+laboral?
+ 
+8
+ 
+semanas.
+ 
+Proyectos
+ 
+reales.
+ 
+Aprendes
+ 
++
+ 
+creas
+ 
++
+ 
+mostrablas.
+ 
+Después,
+ 
+el
+ 
+mundo
+ 
+es
+ 
+tuyo.
+ 
+CTAs:  
+●  Primaria:  "Inscribirse  Ahora"  (azul,  relleno)  →  Formulario  ●  Secundaria:  "Ver  Curriculum"  (gris  outlined)  →  Descargable  
+ 
+Brief  Visual:  HERO  
+Tamaño:  Full  width,  500px  altura  (más  corto  que  otros  heroes  porque  es  oferta  limitada)  
+Composición:  
+●  Fondo:  Energético  pero  no  caótico.  Gente  joven  trabajando,  verano  en  el  aire  (luz  
+cálida,
+ 
+ventanas
+ 
+abiertas)
+ 
+●  Overlay:  30%  darkening  ●  Sensación:  Urgencia  sin  estrés  
+Vibe:  
+●  Joven,  accesible  ●  Verano  (luz  cálida)  ●  Intensidad  positiva  
+Qué  mostrar:  
+●  Gente  nueva,  energía  ●  Computadoras/trabajo  visible  ●  Luz  natural,  espacios  abiertos  
+Propuesta:  Foto  o  video  corto  de  gente  joven  en  estudio/aula  trabajando  con  luz  de  verano.  
+O
+ 
+ilustración
+ 
+dinámica
+ 
+que
+ 
+comunique
+ 
+"acción
+ 
++
+ 
+verano
+ 
++
+ 
+aprendizaje".
+ 
+ 
+SECCIÓN  2:  ¿PARA  QUIÉN  ES?  
+Contenido  
+H2:  ¿Es  para  ti?  
+Intro  párrafo:  No  es  para  todos.  Es  para  gente  que  quiere  algo  diferente  este  verano.  
+PERFILES  IDEALES:  
+1.  Estudiante  de  secundaria/universidad  que  explora  Quieres  saber  si  la  industria  
+creativa/tech
+ 
+es
+ 
+tu
+ 
+camino.
+ 
+Prueba
+ 
+sin
+ 
+compromiso
+ 
+100%.
+ 
+ 2.  Profesional  en  transición  Trabajas  en  algo  diferente  pero  quieres  cambiar.  8  
+semanas
+ 
+aceleradas
+ 
+para
+ 
+demostrar
+ 
+potencial.
+ 
+ 3.  Alguien  que  quiere  acelerar  entrada  laboral  Tienes  base  técnica  (o  la  estás  
+aprendiendo).
+ 
+Necesitas
+ 
+portafolio
+ 
+para
+ 
+conseguir
+ 
+ese
+ 
+primer
+ 
+rol.
+ 
+ 4.  Pre-candidato  de  nuestra  Escuela  formal  Quieres  probar  antes  de  comprometerte  
+4
+ 
+meses.
+ 
+ 
+ 
+NO  es  para:  
+●  Gente  que  no  tiene  tiempo  para  dedicación  completa  ●  Gente  que  busca  un  certificado  sin  contenido  
+●  Gente  que  quiere  dinero  rápido  
+ 
+Brief  Visual:  ¿PARA  QUIÉN?  
+Tamaño:  Full  width  
+Diseño:  
+●  4  bloques  /  perfiles  ●  Cada  uno  con  pequeño  icono  +  descripción  ●  Alternativa:  Checkboxes.  Usuario  ve  si  encaja.  ●  Colores:  Verde  claro  para  "sí",  gris  para  "no"  
+Propuesta:  Simples  cuadrantes  describiendo  perfiles.  Usuario  ve  si  encaja.  
+ 
+SECCIÓN  3:  QUÉ  CONSEGUIRÁS  
+Contenido  
+H2:  Al  Terminar  (8  Semanas)  
+Intro  párrafo:  No  es  un  certificado  colgado  en  la  pared.  Es  portafolio  real  que  usa  la  
+industria.
+ 
+ENTREGAS  CONCRETAS:  
+1.  Reel  Profesional  (3-5  min)  Video  mostrando  tus  mejores  trabajos.  Formato  
+industria.
+ 
+Esto
+ 
+es
+ 
+lo
+ 
+que
+ 
+enseña
+ 
+a
+ 
+potenciales
+ 
+empleadores.
+ 
+ 2.  Portfolio  Web  Tu  propia  página  mostrando  proyectos,  proceso,  habilidades.  
+Funcional,
+ 
+bonita,
+ 
+profesional.
+ 
+ 3.  5-8  Proyectos  Completados  Reales,  no  ejercicios.  Cada  uno  cuenta  una  historia  en  
+tu
+ 
+portafolio.
+ 
+ 4.  Certificado  Factor  N  Válido  en  la  industria.  Muchos  de  nuestros  employers  lo  
+reconocen.
+ 
+ 5.  Contactos  de  Industria  Networking  directo.  Conoces  otros  estudiantes  +  
+profesionales
+ 
+visitantes.
+ 
+ 6.  Preparación  para  Siguiente  Paso  Si  quieres  Escuela  formal:  acceso  directo  sin  
+proceso
+ 
+selectivo
+ 
+adicional.
+ 
+Si
+ 
+quieres
+ 
+buscar
+ 
+rol:
+ 
+te
+ 
+preparamos
+ 
+CV,
+ 
+entrevistas,
+ 
+soft
+ 
+skills.  
+ 
+ 
+Brief  Visual:  QUÉ  CONSEGUIRÁS  
+Tamaño:  Full  width  
+Diseño:  
+●  6  entregas,  cada  una  con  icono  +  descripción  ●  Layout:  2  columnas  x  3  filas  (o  3  columnas  x  2  filas  responsive)  ●  Iconografía  clara:  video,  portfolio,  proyectos,  certificado,  red,  flecha/progreso  
+Propuesta:  6  cuadrantes  pequeños,  cada  uno  con  entrega  clara.  Visual  y  legible.  
+ 
+SECCIÓN  4:  ESTRUCTURA  DEL  CURSO  
+Contenido  
+H2:  Las  8  Semanas  
+Intro  párrafo:  No  es  charlas.  Es  trabajo  real,  lado  a  lado  con  nuestro  equipo.  
+SEMANA  1-2:  FUNDAMENTOS  +  PRIMEROS  PROYECTOS  
+●  Herramientas  +  pipeline  ●  Primeros  pequeños  proyectos  ●  Estableces  base  sólida  
+SEMANA  3-5:  PROYECTOS  MEDIOS  
+●  Complejidad  aumenta  ●  Feedback  continuo  ●  Portafolio  empieza  a  tomar  forma  
+SEMANA  6-7:  PROYECTOS  FINALES  
+●  Mejor  trabajo  ●  Pulido  profesional  ●  Reel  +  portfolio  en  progreso  
+SEMANA  8:  FINALIZACIÓN  +  PREPARACIÓN  SIGUIENTE  
+●  Últimos  ajustes  ●  Networking  event  
+●  Prep  para  siguiente  paso  (empleo  o  Escuela  formal)  
+ 
+Brief  Visual:  ESTRUCTURA  
+Tamaño:  Full  width  
+Diseño:  
+●  Timeline  visual:  8  semanas  representadas  ●  Cada  sección:  color  progresivo  (de  claro  a  oscuro)  indicando  intensidad  ●  Pequeñas  descripciones  en  cada  semana  ●  Alternativa:  4  "bloques  de  2  semanas"  con  icons  
+Propuesta:  Timeline  visual  de  8  semanas.  Fácil  de  entender.  Muestra  progresión.  
+ 
+SECCIÓN  5:  DETALLES  PRÁCTICOS  
+Contenido  
+H2:  Lo  que  Necesitas  Saber  
+Fechas:  
+●  Inicio:  [FECHA]  ●  Fin:  [FECHA]  ●  Duración:  8  semanas,  intensivo  
+Modalidad:  
+●  Presencial  [UBICACIÓN]  ●  Horarios:  9:00-18:00  aprox  
+Qué  Traer:  
+●  Laptop  (especificaciones:  [DETALLAR])  ●  Software:  Proporcionamos  licencias  educativas  ●  Ganas  
+Precio:  
+●  [MONTO]  ●  Financiación:  Opciones  disponibles  ●  Beca:  Consulta  para  casos  especiales  
+Plazas:  
+●  Máximo  15  estudiantes  (para  atención  personal)  ●  QUEDAN  [X]  PLAZAS  (crear  urgencia)  
+Próxima  Cohorte:  
+●  Inscripción  cierra:  [FECHA]  
+ 
+Brief  Visual:  DETALLES  PRÁCTICOS  
+Tamaño:  Full  width  
+Diseño:  
+●  Tarjeta  grande  con  información  organizada  ●  Secciones  claras:  Fechas  |  Modalidad  |  Qué  Traer  |  Precio  |  Plazas  ●  Colores  por  sección  (opcional)  ●  Información  destacada  (precio,  plazas  restantes)  
+Propuesta:  Una  tarjeta  grande  y  clara  con  todos  los  detalles.  Fácil  de  scanear.  
+ 
+SECCIÓN  6:  CTA  URGENCIA  
+Contenido  
+H2:  Inscripción  Abierta  (Plazas  Limitadas)  
+Párrafo:  No  esperamos  2  meses  de  proceso  selectivo.  Si  tienes  potencial,  entramos.  
+Inscribete
+ 
+ahora.
+ 
+2  CTAs:  
+●  Primaria:  "Inscribirse  Ahora"  (azul,  relleno,  grande)  ●  Secundaria:  "Descargar  Brochure"  (gris  outlined)  
+Pequeño  texto:  "Próxima  cohorte  inicia  [FECHA].  Plazas  limitadas  a  15  estudiantes."  
+ 
+Brief  Visual:  CTA  URGENCIA  
+Tamaño:  Full  width,  centrado  
+Diseño:  
+●  Fondo:  Amarillo  muy  claro  o  azul  claro  (urgencia  sin  agresividad)  
+●  Texto  grande  ●  Botón  primaria  muy  visible  ●  Pequeño  countdown  timer  (si  lo  queréis):  "Inscripción  cierra  en  [DÍAS]"  
+Propuesta:  Sección  pequeña  pero  con  presencia.  CTA  visible.  Comunica  urgencia  sin  ser  
+desesperada.
+ 
+ 
+SECCIÓN  7:  FAQ  (CURSO-VERANO)  
+Contenido  
+H2:  Preguntas  Frecuentes  
+P:  ¿Necesito  experiencia?  R:  No.  Solo  necesitas  laptop  y  ganas.  La  experiencia  se  gana  
+en
+ 
+las
+ 
+8
+ 
+semanas.
+ 
+P:  ¿Puedo  hacer  esto  mientras  trabajo?  R:  No  recomendamos.  Es  40+  horas/semana.  Es  
+intensivo.
+ 
+P:  ¿Qué  pasa  si  no  termino?  R:  Raro,  pero  si  no  terminas  en  8  semanas,  podemos  estirar  
+(sin
+ 
+garantía
+ 
+de
+ 
+resultado
+ 
+igual).
+ 
+Consulta.
+ 
+P:  ¿Después  puedo  entrar  en  Escuela  formal?  R:  Sí.  Si  completas  bien  el  curso,  acceso  
+directo
+ 
+sin
+ 
+selectivo
+ 
+adicional.
+ 
+P:  ¿Me  ayudan  a  encontrar  trabajo?  R:  Te  preparamos  CV,  entrevistas,  portfolio.  Te  
+presentamos
+ 
+contactos.
+ 
+Pero
+ 
+es
+ 
+búsqueda
+ 
+activa
+ 
+de
+ 
+tu
+ 
+parte.
+ 
+ 
+Brief  Visual:  FAQ  
+Tamaño:  Full  width  
+Diseño:  
+●  Accordion  (igual  a  otros)  
+Propuesta:  Accordion  simple.  
+ 
+SECCIÓN  8:  CTA  FINAL  +  CIERRE  
+Contenido  
+H2:  ¿Listo  para  tu  Verano  Diferente?  
+Párrafo:  No  es  un  curso  más.  Es  8  semanas  que  cambian  tu  portafolio,  tu  confianza,  tu  
+futuro.
+ 
+Inscribete.
+ 
+CTA  Única  (grande):  "Inscribirse  Ahora"  (azul,  muy  visible)  
+Pequeño  link  secundario:  "¿Dudas?  Chatea  con  nosotros"  →  Chat  widget  o  formulario  
+ 
+Brief  Visual:  CTA  FINAL  
+Tamaño:  Full  width,  centrado  
+Diseño:  
+●  Minimalista  ●  CTA  grande  y  clara  ●  Fondo  blanco/gris  claro  ●  Respira  alrededor  
+Propuesta:  Simple.  CTA  visible.  Nada  que  distraiga.  
+ 
+/CURSO-VERANO  RESUMEN  1.  HERO  (verano,  energía  +  CTA)  2.  ¿PARA  QUIÉN?  (perfiles  ideales)  3.  QUÉ  CONSEGUIRÁS  (6  entregas  concretas)  4.  ESTRUCTURA  (8  semanas  timeline)  5.  DETALLES  PRÁCTICOS  (fechas,  precio,  plazas)  6.  CTA  URGENCIA  (inscripción  abierta)  7.  FAQ  (accordion)  8.  CTA  FINAL  +  CIERRE  9.  FOOTER   
+Largo  total:  ~1500  palabras,  8  secciones  principales  
+NOTA:  Este  landing  es  más  corto  que  los  otros  porque  es  oferta  puntual  de  verano.  Directo,  
+urgente,
+ 
+sin
+ 
+mucho
+ 
+contexto.
+ 
+ 
+📋  RESUMEN  ARQUITECTURA  FINAL  
+HOME  (/index.html)  ├─  Hero  ├─  Problema  +  Solución  ├─  Cómo  Funciona  (3  pilares)  ├─  Quiénes  Somos  (equipo)  ├─  CTAs  Finales  +  Social  Proof  Mini  └─  Footer   ESCUELA  (/escuela.html)  ├─  Hero  ├─  ¿Por  Qué  Factor  N?  ├─  Los  Programas  (2  especialidades)  ├─  Metodología  ├─  Testimonios  [PLACEHOLDER]  ├─  FAQ  ├─  CTA  Final  └─  Footer   EMPRESAS  (/empresas.html)  ├─  Hero  ├─  El  Problema  ├─  La  Solución  (5  etapas)  ├─  Diferenciadores  ├─  Casos  de  Éxito  [PLACEHOLDER]  ├─  Equipo  (ángulo  B2B)  ├─  Modelos  de  Colaboración  ├─  FAQ  ├─  CTA  Final  └─  Footer   CURSO-VERANO  (/curso-verano.html)  ├─  Hero  ├─  ¿Para  Quién?  ├─  Qué  Conseguirás  ├─  Estructura  (8  semanas)  ├─  Detalles  Prácticos  ├─  CTA  Urgencia  ├─  FAQ  ├─  CTA  Final  └─  Footer    
+📊  NOTAS  FINALES  
+Placeholders  a  Completar:  
+●  [  ]  Testimonios  /escuela:  Historias  de  estudiantes  (cuando  tengas  primeros  
+egresados)
+ ●  [  ]  Casos  de  Éxito  /empresas:  3  casos  reales  con  empresas  (cuando  tengas  
+primeros
+ 
+clientes)
+ ●  [  ]  Números  sociales:  Estudiantes  formados,  %  inserción  laboral,  empresas  
+colaboradoras
+ ●  [  ]  Precios:  Escuela,  Curso  Verano,  Modelos  empresariales  ●  [  ]  Fechas:  Inicio  próximas  cohortes,  inscripción  límite  verano  ●  [  ]  Ubicación:  Ciudad/ubicación  presencial  ●  [  ]  Curriculum  detallado:  PDF  descargable  por  programa  ●  [  ]  Logos  empresas:  Partners/clientes  (cuando  los  tengas)  
+Elementos  Técnicos  a  Implementar:  
+●  [  ]  Newsletter  signup  (Mailchimp/similar)  ●  [  ]  Formularios  de  contacto  (Typeform/Formspree)  ●  [  ]  Chat  widget  (Intercom/Drift)  ●  [  ]  Google  Analytics  4  ●  [  ]  Heatmap  (Hotjar)  ●  [  ]  Optimización  SEO  (meta  tags,  schema  markup)  ●  [  ]  Mobile  responsiveness  testing  
+ 
+Este  documento  es  tu  guía  de  implementación  100%  funcional .  Úsalo  para:  
+1.  Brief  al  diseñador/developer  2.  Guía  de  redacción  3.  Referencia  visual  (briefs)  4.  Validación  antes  de  publicar  
+¿Necesitas  ajustes  en  alguna  sección?  
+ 

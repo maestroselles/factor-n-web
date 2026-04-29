@@ -24,9 +24,10 @@ async function renderHomeBanner() {
                 <!-- Imagen con efecto de Zoom al Hover -->
                 <img src="${c.banner.image}" alt="${c.title}" class="w-full h-full object-cover brightness-[0.75] transition-transform duration-700 group-hover/banner:scale-105">
                 
-                <!-- Gradientes en término medio (70%) -->
-                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/15 to-transparent"></div>
-                <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-transparent to-transparent"></div>
+                <!-- Degradados laterales sutiles (25% ancho) -->
+                <div class="absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-black/30 to-transparent z-10 pointer-events-none"></div>
+                <div class="absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-black/30 to-transparent z-10 pointer-events-none"></div>
+
                 
                 <!-- Info Esquina Superior Derecha -->
                 <div class="absolute top-6 right-8 md:right-12 z-20">
