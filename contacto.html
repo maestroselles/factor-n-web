@@ -184,7 +184,7 @@
                         
                         <h2 class="text-2xl font-bold text-white mb-2">Formulario de Contacto Inteligente</h2>
                         <p class="text-sm text-factor-textMuted mb-8">Selecciona tu perfil para que podamos derivar tu solicitud al departamento adecuado.</p>
-                                      <form id="contact-form">
+                                      <form id="contact-form" action="https://formsubmit.co/maestroselles@gmail.com" method="POST">
                             <!-- Selector Inicial (Radio Buttons) -->
                             <div class="mb-8">
                                 <label class="block text-xs font-bold uppercase tracking-wider text-factor-textMuted mb-4">¿En qué podemos ayudarte?</label>
@@ -282,7 +282,7 @@
         const btnIcon = document.getElementById('btn-icon');
         const status = document.getElementById('form-status');
 
-        form.addEventListener('submit', async (e) => {
+        /* form.addEventListener('submit', async (e) => {
             e.preventDefault();
             
             btn.disabled = true;
@@ -318,7 +318,7 @@
                 btnText.innerText = 'Iniciar Proceso de Admisión';
                 btnIcon.className = 'fa-solid fa-paper-plane';
             }
-        });
+        }); */
     </script>
 </body>
 </html>
